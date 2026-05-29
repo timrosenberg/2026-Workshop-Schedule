@@ -1,883 +1,691 @@
 [
   {
     "date": "2025-06-23",
-    "time": "8:30 - 11:30 AM",
     "themeTitle": "🎬 Sax & Screen",
     "themeDescription": "Wear something that shows your favorite film or musical.",
-    "activity": "Registration and Check-in",
-    "location": "Hatter Hall Dormitory",
-    "mapUrl": "https://maps.app.goo.gl/…",
-    "notes": []
-  },
-  {
-    "date": "2025-06-23",
-    "time": "10:30 - 11:30 AM",
-    "themeTitle": "🎬 Sax & Screen",
-    "themeDescription": "Wear something that shows your favorite film or musical.",
-    "activity": "Young Artist Auditions Final Round",
-    "location": "Hatter Hall, Floor 2 Lounge",
-    "mapUrl": "",
-    "notes": [
-      "Young Artist finalists will be notified via email with their audition time.",
-      "Dr. Rosenberg will adjudicate the final round auditions.",
-      "Winners will be announced at the meeting later in the day."
-    ]
-  },
-  {
-    "date": "2025-06-23",
-    "time": "12:00 - 12:45 PM",
-    "themeTitle": "🎬 Sax & Screen",
-    "themeDescription": "Wear something that shows your favorite film or musical.",
-    "activity": "🥪 Lunch",
-    "location": "Carlton Union Building (CUB)",
-    "mapUrl": "https://maps.app.goo.gl/wdAMPGnM3GRCCsnA8",
-    "notes": [
-      "Students meet in lobby of Hatter Hall.",
-      "Students will be escorted to CUB by workshop staff.",
-      "Students must have their workshop name badge to enter."
-    ]
-  },
-  {
-    "date": "2025-06-23",
-    "time": "1:00 - 1:45 PM",
-    "themeTitle": "🎬 Sax & Screen",
-    "themeDescription": "Wear something that shows your favorite film or musical.",
-    "activity": "Opening Meeting",
-    "location": "Feasel Hall",
-    "mapUrl": "https://maps.app.goo.gl/5mDXBVoTABQhHF5L6",
-    "notes": [
-      "Feasel Hall is <em>inside</em> McMahan Hall.",
-      "Bring large ensemble and chamber ensemble instruments."
-    ]
-  },
-  {
-    "date": "2025-06-23",
-    "time": "1:45 - 3:15 PM",
-    "themeTitle": "🎬 Sax & Screen",
-    "themeDescription": "Wear something that shows your favorite film or musical.",
-    "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
-    "location": "",
-    "mapUrl": "",
-    "notes": [
-      "Symphonic Saxophones (10th-12+ grade): Large Ensemble - Feasel Hall",
-      "Concert Saxophones (7th-9th grade): Chamber Ensembles - Various Rooms (<a href=\"/rooms.html\">see guide</a>)"
-    ]
-  },
-  {
-    "date": "2025-06-23",
-    "time": "3:15 - 4:45 PM",
-    "themeTitle": "🎬 Sax & Screen",
-    "themeDescription": "Wear something that shows your favorite film or musical.",
-    "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
-    "location": "",
-    "mapUrl": "",
-    "notes": [
-      "Symphonic Saxophones: Chamber Ensembles - Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
-      "Concert Saxophones: Large Ensemble - Lee Chapel (inside Elizabeth Hall (<a href=\"https://maps.app.goo.gl/kmcVc2dHF1nawH2Q8\">map</a>))"
-    ]
-  },
-  {
-    "date": "2025-06-23",
-    "time": "5:00 - 6:00 PM",
-    "themeTitle": "🎬 Sax & Screen",
-    "themeDescription": "Wear something that shows your favorite film or musical.",
-    "activity": "Jazz Classes",
-    "location": "Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-23",
-    "time": "6:15 - 7:00 PM",
-    "themeTitle": "🎬 Sax & Screen",
-    "themeDescription": "Wear something that shows your favorite film or musical.",
-    "activity": "🍽️ Dinner",
-    "location": "CUB",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-23",
-    "time": "7:15 - 8:00 PM",
-    "themeTitle": "🎬 Sax & Screen",
-    "themeDescription": "Wear something that shows your favorite film or musical.",
-    "activity": "Faculty Recital: Saxophone Workshop Staff",
-    "location": "Lee Chapel",
-    "mapUrl": "https://maps.app.goo.gl/Dvm3E7u6dcQk4WHg7",
-    "notes": [
-      "Lee Chapel is inside Elizabeth Hall"
-    ]
-  },
-  {
-    "date": "2025-06-23",
-    "time": "8:00 - 9:00 PM",
-    "themeTitle": "🎬 Sax & Screen",
-    "themeDescription": "Wear something that shows your favorite film or musical.",
-    "activity": "Practice Time or Relax in Dorm",
-    "location": "Presser or Hatter Hall",
-    "mapUrl": "",
-    "notes": [
-      "Students may stay in Presser to practice or go to Hatter Hall to relax.",
-      "Students will be escorted to Hatter Hall in a group."
-    ]
-  },
-  {
-    "date": "2025-06-23",
-    "time": "9:00 - 9:15 PM",
-    "themeTitle": "🎬 Sax & Screen",
-    "themeDescription": "Wear something that shows your favorite film or musical.",
-    "activity": "All Students in Dorm",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-23",
-    "time": "9:15 - 9:30 PM",
-    "themeTitle": "🎬 Sax & Screen",
-    "themeDescription": "Wear something that shows your favorite film or musical.",
-    "activity": "Hall Meeting with Counselors",
-    "location": "Lounge of your floor in Hatter Hall",
-    "mapUrl": "",
-    "notes": [
-      "Students will meet with the counselor staff to discuss the rules and procedures for the rest of the week.",
-      "After the meeting students will relax in the dorm."
-    ]
-  },
-  {
-    "date": "2025-06-23",
-    "time": "10:00 PM",
-    "themeTitle": "🎬 Sax & Screen",
-    "themeDescription": "Wear something that shows your favorite film or musical.",
-    "activity": "🛌 Lights Out",
-    "location": "",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-24",
-    "time": "7:15 - 8:00 AM",
-    "themeTitle": "Sharks & Jets",
-    "themeDescription": "Wear something with a 🦈 shark or a ✈️ jet on it. 🫰… 🫰… 🫰…",
-    "activity": "⏰ Wake up; prepare for the day.",
-    "location": "",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-24",
-    "time": "8:00 AM",
-    "themeTitle": "Sharks & Jets",
-    "themeDescription": "Wear something with a 🦈 shark or a ✈️ jet on it. 🫰… 🫰… 🫰…",
-    "activity": "Students meet staff members in designated locations",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-24",
-    "time": "8:15 - 8:45 AM",
-    "themeTitle": "Sharks & Jets",
-    "themeDescription": "Wear something with a 🦈 shark or a ✈️ jet on it. 🫰… 🫰… 🫰…",
-    "activity": "🥞 Breakfast",
-    "location": "CUB",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-24",
-    "time": "9:00 - 9:35 AM",
-    "themeTitle": "Sharks & Jets",
-    "themeDescription": "Wear something with a 🦈 shark or a ✈️ jet on it. 🫰… 🫰… 🫰…",
-    "activity": "Fundamentals Class",
-    "location": "Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
-    "mapUrl": "",
-    "notes": [
-      "Class is determined by instrument played in large ensemble."
+    "activities": [
+      {
+        "time": "8:30 - 11:30 AM",
+        "activity": "Registration and Check-in",
+        "location": "Hatter Hall Dormitory",
+        "mapUrl": "https://maps.app.goo.gl/…",
+        "notes": []
+      },
+      {
+        "time": "10:30 - 11:30 AM",
+        "activity": "Young Artist Auditions Final Round",
+        "location": "Hatter Hall, Floor 2 Lounge",
+        "mapUrl": "",
+        "notes": [
+          "Young Artist finalists will be notified via email with their audition time.",
+          "Dr. Rosenberg will adjudicate the final round auditions.",
+          "Winners will be announced at the meeting later in the day."
+        ]
+      },
+      {
+        "time": "12:00 - 12:45 PM",
+        "activity": "🥪 Lunch",
+        "location": "Carlton Union Building (CUB)",
+        "mapUrl": "https://maps.app.goo.gl/wdAMPGnM3GRCCsnA8",
+        "notes": [
+          "Students meet in lobby of Hatter Hall.",
+          "Students will be escorted to CUB by workshop staff.",
+          "Students must have their workshop name badge to enter."
+        ]
+      },
+      {
+        "time": "1:00 - 1:45 PM",
+        "activity": "Opening Meeting",
+        "location": "Feasel Hall",
+        "mapUrl": "https://maps.app.goo.gl/5mDXBVoTABQhHF5L6",
+        "notes": [
+          "Feasel Hall is <em>inside</em> McMahan Hall.",
+          "Bring large ensemble and chamber ensemble instruments."
+        ]
+      },
+      {
+        "time": "1:45 - 3:15 PM",
+        "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
+        "location": "",
+        "mapUrl": "",
+        "notes": [
+          "Symphonic Saxophones (10th-12+ grade): Large Ensemble - Feasel Hall",
+          "Concert Saxophones (7th-9th grade): Chamber Ensembles - Various Rooms (<a href=\"/rooms.html\">see guide</a>)"
+        ]
+      },
+      {
+        "time": "3:15 - 4:45 PM",
+        "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
+        "location": "",
+        "mapUrl": "",
+        "notes": [
+          "Symphonic Saxophones: Chamber Ensembles - Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
+          "Concert Saxophones: Large Ensemble - Lee Chapel (inside Elizabeth Hall (<a href=\"https://maps.app.goo.gl/kmcVc2dHF1nawH2Q8\">map</a>))"
+        ]
+      },
+      {
+        "time": "5:00 - 6:00 PM",
+        "activity": "Jazz Classes",
+        "location": "Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "6:15 - 7:00 PM",
+        "activity": "🍽️ Dinner",
+        "location": "CUB",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "7:15 - 8:00 PM",
+        "activity": "Faculty Recital: Saxophone Workshop Staff",
+        "location": "Lee Chapel",
+        "mapUrl": "https://maps.app.goo.gl/Dvm3E7u6dcQk4WHg7",
+        "notes": [
+          "Lee Chapel is inside Elizabeth Hall"
+        ]
+      },
+      {
+        "time": "8:00 - 9:00 PM",
+        "activity": "Practice Time or Relax in Dorm",
+        "location": "Presser or Hatter Hall",
+        "mapUrl": "",
+        "notes": [
+          "Students may stay in Presser to practice or go to Hatter Hall to relax.",
+          "Students will be escorted to Hatter Hall in a group."
+        ]
+      },
+      {
+        "time": "9:00 - 9:15 PM",
+        "activity": "All Students in Dorm",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "9:15 - 9:30 PM",
+        "activity": "Hall Meeting with Counselors",
+        "location": "Lounge of your floor in Hatter Hall",
+        "mapUrl": "",
+        "notes": [
+          "Students will meet with the counselor staff to discuss the rules and procedures for the rest of the week.",
+          "After the meeting students will relax in the dorm."
+        ]
+      },
+      {
+        "time": "10:00 PM",
+        "activity": "🛌 Lights Out",
+        "location": "",
+        "mapUrl": "",
+        "notes": []
+      }
     ]
   },
   {
     "date": "2025-06-24",
-    "time": "9:45 - 11:45 AM",
     "themeTitle": "Sharks & Jets",
     "themeDescription": "Wear something with a 🦈 shark or a ✈️ jet on it. 🫰… 🫰… 🫰…",
-    "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
-    "location": "",
-    "mapUrl": "",
-    "notes": [
-      "Symphonic Saxophones: Large Ensemble - Feasel Hall",
-      "Concert Saxophones: Chamber Ensembles - Various Rooms (<a href=\"/rooms.html\">see guide</a>)"
-    ]
-  },
-  {
-    "date": "2025-06-24",
-    "time": "12:00 - 12:45 PM",
-    "themeTitle": "Sharks & Jets",
-    "themeDescription": "Wear something with a 🦈 shark or a ✈️ jet on it. 🫰… 🫰… 🫰…",
-    "activity": "🥪 Lunch",
-    "location": "CUB",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-24",
-    "time": "1:00 - 2:30 PM",
-    "themeTitle": "Sharks & Jets",
-    "themeDescription": "Wear something with a 🦈 shark or a ✈️ jet on it. 🫰… 🫰… 🫰…",
-    "activity": "Masterclass: Scott Devlin",
-    "location": "Feasel Hall",
-    "mapUrl": "",
-    "notes": [
-      "Young Artist winners will be coached by Mr. Devlin on their pieces for the concert."
-    ]
-  },
-  {
-    "date": "2025-06-24",
-    "time": "2:45 - 4:45 PM",
-    "themeTitle": "Sharks & Jets",
-    "themeDescription": "Wear something with a 🦈 shark or a ✈️ jet on it. 🫰… 🫰… 🫰…",
-    "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
-    "location": "",
-    "mapUrl": "",
-    "notes": [
-      "Symphonic Saxophones: Chamber Ensembles - Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
-      "Concert Saxophones: Large Ensemble - Lee Chapel"
-    ]
-  },
-  {
-    "date": "2025-06-24",
-    "time": "5:00 - 6:00 PM",
-    "themeTitle": "Sharks & Jets",
-    "themeDescription": "Wear something with a 🦈 shark or a ✈️ jet on it. 🫰… 🫰… 🫰…",
-    "activity": "Jazz Classes",
-    "location": "Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-24",
-    "time": "6:15 - 7:00 PM",
-    "themeTitle": "Sharks & Jets",
-    "themeDescription": "Wear something with a 🦈 shark or a ✈️ jet on it. 🫰… 🫰… 🫰…",
-    "activity": "🍽️ Dinner",
-    "location": "CUB",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-24",
-    "time": "7:15 - 8:00 PM",
-    "themeTitle": "Sharks & Jets",
-    "themeDescription": "Wear something with a 🦈 shark or a ✈️ jet on it. 🫰… 🫰… 🫰…",
-    "activity": "Faculty Recital: Dr. Rosenberg and Ms. Charlton",
-    "location": "Lee Chapel",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-24",
-    "time": "8:15 - 10:00 PM",
-    "themeTitle": "Sharks & Jets",
-    "themeDescription": "Wear something with a 🦈 shark or a ✈️ jet on it. 🫰… 🫰… 🫰…",
-    "activity": "📽️ Movie Night",
-    "location": "Lynn Business Center (LBC) Auditorium",
-    "mapUrl": "https://maps.app.goo.gl/EWgwrXaMnaUfqTv66",
-    "notes": [
-      "Students will meet staff members in designated locations and will travel to LBC together.",
-      "Snacks and drinks will be provided. No delivery food allowed.",
-      "After the movie, students will meet up with staff members to walk to Hatter Hall."
-    ]
-  },
-  {
-    "date": "2025-06-24",
-    "time": "10:00 PM",
-    "themeTitle": "Sharks & Jets",
-    "themeDescription": "Wear something with a 🦈 shark or a ✈️ jet on it. 🫰… 🫰… 🫰…",
-    "activity": "🛌 Lights Out",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-25",
-    "time": "7:15 - 8:00 AM",
-    "themeTitle": "⚡ Greased Lightning",
-    "themeDescription": "Wear something retro! Bandanas, rolled sleeves, bowling shirts, sunglasses. Inspired by 🕶️ <em><a href=\"https://res.cloudinary.com/dwh6m5mbn/image/upload/c_lfill,w_830/What%27s%20On/Review-_Grease_The_Musical_2024.jpg\">Grease</a></em>, 💃 <a href=\"https://i0.wp.com/pepperdinebeacon.com/wp-content/uploads/2021/12/West-Side-Story-Review.png?resize=1140%2C570&amp;ssl=1\"><em>West Side Story</em></a>, 🎭 <em><a href=\"https://i.redd.it/rzwi0hm1hc2a1.jpg\">Fame</a></em>, 👣 <em><a href=\"https://saltlakemagazine-webaholics.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/01133937/The-Cast-of-the-Film-Footloose-from-1984_SLM-JA24_Paramount_Courtesy-Everett-Collection.jpg\">Footloose</a></em>).",
-    "activity": "⏰ Wake up; prepare for the day.",
-    "location": "",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-25",
-    "time": "8:00 AM",
-    "themeTitle": "⚡ Greased Lightning",
-    "themeDescription": "Wear something retro! Bandanas, rolled sleeves, bowling shirts, sunglasses. Inspired by 🕶️ <em><a href=\"https://res.cloudinary.com/dwh6m5mbn/image/upload/c_lfill,w_830/What%27s%20On/Review-_Grease_The_Musical_2024.jpg\">Grease</a></em>, 💃 <a href=\"https://i0.wp.com/pepperdinebeacon.com/wp-content/uploads/2021/12/West-Side-Story-Review.png?resize=1140%2C570&amp;ssl=1\"><em>West Side Story</em></a>, 🎭 <em><a href=\"https://i.redd.it/rzwi0hm1hc2a1.jpg\">Fame</a></em>, 👣 <em><a href=\"https://saltlakemagazine-webaholics.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/01133937/The-Cast-of-the-Film-Footloose-from-1984_SLM-JA24_Paramount_Courtesy-Everett-Collection.jpg\">Footloose</a></em>).",
-    "activity": "Students meet staff members in designated locations",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-25",
-    "time": "8:15 - 8:45 AM",
-    "themeTitle": "⚡ Greased Lightning",
-    "themeDescription": "Wear something retro! Bandanas, rolled sleeves, bowling shirts, sunglasses. Inspired by 🕶️ <em><a href=\"https://res.cloudinary.com/dwh6m5mbn/image/upload/c_lfill,w_830/What%27s%20On/Review-_Grease_The_Musical_2024.jpg\">Grease</a></em>, 💃 <a href=\"https://i0.wp.com/pepperdinebeacon.com/wp-content/uploads/2021/12/West-Side-Story-Review.png?resize=1140%2C570&amp;ssl=1\"><em>West Side Story</em></a>, 🎭 <em><a href=\"https://i.redd.it/rzwi0hm1hc2a1.jpg\">Fame</a></em>, 👣 <em><a href=\"https://saltlakemagazine-webaholics.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/01133937/The-Cast-of-the-Film-Footloose-from-1984_SLM-JA24_Paramount_Courtesy-Everett-Collection.jpg\">Footloose</a></em>).",
-    "activity": "🥞 Breakfast",
-    "location": "CUB",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-25",
-    "time": "9:00 - 9:35 AM",
-    "themeTitle": "⚡ Greased Lightning",
-    "themeDescription": "Wear something retro! Bandanas, rolled sleeves, bowling shirts, sunglasses. Inspired by 🕶️ <em><a href=\"https://res.cloudinary.com/dwh6m5mbn/image/upload/c_lfill,w_830/What%27s%20On/Review-_Grease_The_Musical_2024.jpg\">Grease</a></em>, 💃 <a href=\"https://i0.wp.com/pepperdinebeacon.com/wp-content/uploads/2021/12/West-Side-Story-Review.png?resize=1140%2C570&amp;ssl=1\"><em>West Side Story</em></a>, 🎭 <em><a href=\"https://i.redd.it/rzwi0hm1hc2a1.jpg\">Fame</a></em>, 👣 <em><a href=\"https://saltlakemagazine-webaholics.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/01133937/The-Cast-of-the-Film-Footloose-from-1984_SLM-JA24_Paramount_Courtesy-Everett-Collection.jpg\">Footloose</a></em>).",
-    "activity": "Fundamentals Class",
-    "location": "Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-25",
-    "time": "9:45 - 11:45 AM",
-    "themeTitle": "⚡ Greased Lightning",
-    "themeDescription": "Wear something retro! Bandanas, rolled sleeves, bowling shirts, sunglasses. Inspired by 🕶️ <em><a href=\"https://res.cloudinary.com/dwh6m5mbn/image/upload/c_lfill,w_830/What%27s%20On/Review-_Grease_The_Musical_2024.jpg\">Grease</a></em>, 💃 <a href=\"https://i0.wp.com/pepperdinebeacon.com/wp-content/uploads/2021/12/West-Side-Story-Review.png?resize=1140%2C570&amp;ssl=1\"><em>West Side Story</em></a>, 🎭 <em><a href=\"https://i.redd.it/rzwi0hm1hc2a1.jpg\">Fame</a></em>, 👣 <em><a href=\"https://saltlakemagazine-webaholics.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/01133937/The-Cast-of-the-Film-Footloose-from-1984_SLM-JA24_Paramount_Courtesy-Everett-Collection.jpg\">Footloose</a></em>).",
-    "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
-    "location": "",
-    "mapUrl": "",
-    "notes": [
-      "Symphonic Saxophones: Large Ensemble - Feasel Hall",
-      "Concert Saxophones: Chamber Ensembles - Various Rooms (<a href=\"/rooms.html\">see guide</a>)"
+    "activities": [
+      {
+        "time": "7:15 - 8:00 AM",
+        "activity": "⏰ Wake up; prepare for the day.",
+        "location": "",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "8:00 AM",
+        "activity": "Students meet staff members in designated locations",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "8:15 - 8:45 AM",
+        "activity": "🥞 Breakfast",
+        "location": "CUB",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "9:00 - 9:35 AM",
+        "activity": "Fundamentals Class",
+        "location": "Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
+        "mapUrl": "",
+        "notes": [
+          "Class is determined by instrument played in large ensemble."
+        ]
+      },
+      {
+        "time": "9:45 - 11:45 AM",
+        "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
+        "location": "",
+        "mapUrl": "",
+        "notes": [
+          "Symphonic Saxophones: Large Ensemble - Feasel Hall",
+          "Concert Saxophones: Chamber Ensembles - Various Rooms (<a href=\"/rooms.html\">see guide</a>)"
+        ]
+      },
+      {
+        "time": "12:00 - 12:45 PM",
+        "activity": "🥪 Lunch",
+        "location": "CUB",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "1:00 - 2:30 PM",
+        "activity": "Masterclass: Scott Devlin",
+        "location": "Feasel Hall",
+        "mapUrl": "",
+        "notes": [
+          "Young Artist winners will be coached by Mr. Devlin on their pieces for the concert."
+        ]
+      },
+      {
+        "time": "2:45 - 4:45 PM",
+        "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
+        "location": "",
+        "mapUrl": "",
+        "notes": [
+          "Symphonic Saxophones: Chamber Ensembles - Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
+          "Concert Saxophones: Large Ensemble - Lee Chapel"
+        ]
+      },
+      {
+        "time": "5:00 - 6:00 PM",
+        "activity": "Jazz Classes",
+        "location": "Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "6:15 - 7:00 PM",
+        "activity": "🍽️ Dinner",
+        "location": "CUB",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "7:15 - 8:00 PM",
+        "activity": "Faculty Recital: Dr. Rosenberg and Ms. Charlton",
+        "location": "Lee Chapel",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "8:15 - 10:00 PM",
+        "activity": "📽️ Movie Night",
+        "location": "Lynn Business Center (LBC) Auditorium",
+        "mapUrl": "https://maps.app.goo.gl/EWgwrXaMnaUfqTv66",
+        "notes": [
+          "Students will meet staff members in designated locations and will travel to LBC together.",
+          "Snacks and drinks will be provided. No delivery food allowed.",
+          "After the movie, students will meet up with staff members to walk to Hatter Hall."
+        ]
+      },
+      {
+        "time": "10:00 PM",
+        "activity": "🛌 Lights Out",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": []
+      }
     ]
   },
   {
     "date": "2025-06-25",
-    "time": "12:00 - 12:45 PM",
     "themeTitle": "⚡ Greased Lightning",
     "themeDescription": "Wear something retro! Bandanas, rolled sleeves, bowling shirts, sunglasses. Inspired by 🕶️ <em><a href=\"https://res.cloudinary.com/dwh6m5mbn/image/upload/c_lfill,w_830/What%27s%20On/Review-_Grease_The_Musical_2024.jpg\">Grease</a></em>, 💃 <a href=\"https://i0.wp.com/pepperdinebeacon.com/wp-content/uploads/2021/12/West-Side-Story-Review.png?resize=1140%2C570&amp;ssl=1\"><em>West Side Story</em></a>, 🎭 <em><a href=\"https://i.redd.it/rzwi0hm1hc2a1.jpg\">Fame</a></em>, 👣 <em><a href=\"https://saltlakemagazine-webaholics.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/01133937/The-Cast-of-the-Film-Footloose-from-1984_SLM-JA24_Paramount_Courtesy-Everett-Collection.jpg\">Footloose</a></em>).",
-    "activity": "🥪 Lunch",
-    "location": "CUB",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-25",
-    "time": "1:00 - 3:00 PM",
-    "themeTitle": "⚡ Greased Lightning",
-    "themeDescription": "Wear something retro! Bandanas, rolled sleeves, bowling shirts, sunglasses. Inspired by 🕶️ <em><a href=\"https://res.cloudinary.com/dwh6m5mbn/image/upload/c_lfill,w_830/What%27s%20On/Review-_Grease_The_Musical_2024.jpg\">Grease</a></em>, 💃 <a href=\"https://i0.wp.com/pepperdinebeacon.com/wp-content/uploads/2021/12/West-Side-Story-Review.png?resize=1140%2C570&amp;ssl=1\"><em>West Side Story</em></a>, 🎭 <em><a href=\"https://i.redd.it/rzwi0hm1hc2a1.jpg\">Fame</a></em>, 👣 <em><a href=\"https://saltlakemagazine-webaholics.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/01133937/The-Cast-of-the-Film-Footloose-from-1984_SLM-JA24_Paramount_Courtesy-Everett-Collection.jpg\">Footloose</a></em>).",
-    "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
-    "location": "",
-    "mapUrl": "",
-    "notes": [
-      "Symphonic Saxophones: Chamber Ensembles - Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
-      "Concert Saxophones: Large Ensemble - Lee Chapel"
-    ]
-  },
-  {
-    "date": "2025-06-25",
-    "time": "3:15 - 4:15 PM",
-    "themeTitle": "⚡ Greased Lightning",
-    "themeDescription": "Wear something retro! Bandanas, rolled sleeves, bowling shirts, sunglasses. Inspired by 🕶️ <em><a href=\"https://res.cloudinary.com/dwh6m5mbn/image/upload/c_lfill,w_830/What%27s%20On/Review-_Grease_The_Musical_2024.jpg\">Grease</a></em>, 💃 <a href=\"https://i0.wp.com/pepperdinebeacon.com/wp-content/uploads/2021/12/West-Side-Story-Review.png?resize=1140%2C570&amp;ssl=1\"><em>West Side Story</em></a>, 🎭 <em><a href=\"https://i.redd.it/rzwi0hm1hc2a1.jpg\">Fame</a></em>, 👣 <em><a href=\"https://saltlakemagazine-webaholics.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/01133937/The-Cast-of-the-Film-Footloose-from-1984_SLM-JA24_Paramount_Courtesy-Everett-Collection.jpg\">Footloose</a></em>).",
-    "activity": "Masterclass: Greg Osby",
-    "location": "Feasel Hall",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-25",
-    "time": "4:25 - 6:00 PM",
-    "themeTitle": "⚡ Greased Lightning",
-    "themeDescription": "Wear something retro! Bandanas, rolled sleeves, bowling shirts, sunglasses. Inspired by 🕶️ <em><a href=\"https://res.cloudinary.com/dwh6m5mbn/image/upload/c_lfill,w_830/What%27s%20On/Review-_Grease_The_Musical_2024.jpg\">Grease</a></em>, 💃 <a href=\"https://i0.wp.com/pepperdinebeacon.com/wp-content/uploads/2021/12/West-Side-Story-Review.png?resize=1140%2C570&amp;ssl=1\"><em>West Side Story</em></a>, 🎭 <em><a href=\"https://i.redd.it/rzwi0hm1hc2a1.jpg\">Fame</a></em>, 👣 <em><a href=\"https://saltlakemagazine-webaholics.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/01133937/The-Cast-of-the-Film-Footloose-from-1984_SLM-JA24_Paramount_Courtesy-Everett-Collection.jpg\">Footloose</a></em>).",
-    "activity": "🔎 Scavenger Hunt",
-    "location": "Feasel & Campus",
-    "mapUrl": "",
-    "notes": [
-      "Students learn the rules and objectives in Feasel",
-      "All students return to Feasel by 5:45 PM",
-      "Winners announced at 6:00 PM in Feasel"
-    ]
-  },
-  {
-    "date": "2025-06-25",
-    "time": "6:15 - 7:00 PM",
-    "themeTitle": "⚡ Greased Lightning",
-    "themeDescription": "Wear something retro! Bandanas, rolled sleeves, bowling shirts, sunglasses. Inspired by 🕶️ <em><a href=\"https://res.cloudinary.com/dwh6m5mbn/image/upload/c_lfill,w_830/What%27s%20On/Review-_Grease_The_Musical_2024.jpg\">Grease</a></em>, 💃 <a href=\"https://i0.wp.com/pepperdinebeacon.com/wp-content/uploads/2021/12/West-Side-Story-Review.png?resize=1140%2C570&amp;ssl=1\"><em>West Side Story</em></a>, 🎭 <em><a href=\"https://i.redd.it/rzwi0hm1hc2a1.jpg\">Fame</a></em>, 👣 <em><a href=\"https://saltlakemagazine-webaholics.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/01133937/The-Cast-of-the-Film-Footloose-from-1984_SLM-JA24_Paramount_Courtesy-Everett-Collection.jpg\">Footloose</a></em>).",
-    "activity": "🍽️ Dinner",
-    "location": "CUB",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-25",
-    "time": "7:15 - 8:15 PM",
-    "themeTitle": "⚡ Greased Lightning",
-    "themeDescription": "Wear something retro! Bandanas, rolled sleeves, bowling shirts, sunglasses. Inspired by 🕶️ <em><a href=\"https://res.cloudinary.com/dwh6m5mbn/image/upload/c_lfill,w_830/What%27s%20On/Review-_Grease_The_Musical_2024.jpg\">Grease</a></em>, 💃 <a href=\"https://i0.wp.com/pepperdinebeacon.com/wp-content/uploads/2021/12/West-Side-Story-Review.png?resize=1140%2C570&amp;ssl=1\"><em>West Side Story</em></a>, 🎭 <em><a href=\"https://i.redd.it/rzwi0hm1hc2a1.jpg\">Fame</a></em>, 👣 <em><a href=\"https://saltlakemagazine-webaholics.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/01133937/The-Cast-of-the-Film-Footloose-from-1984_SLM-JA24_Paramount_Courtesy-Everett-Collection.jpg\">Footloose</a></em>).",
-    "activity": "Guest Artist Recital: Greg Osby",
-    "location": "Tinsley Hall",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-25",
-    "time": "8:15 - 9:15 PM",
-    "themeTitle": "⚡ Greased Lightning",
-    "themeDescription": "Wear something retro! Bandanas, rolled sleeves, bowling shirts, sunglasses. Inspired by 🕶️ <em><a href=\"https://res.cloudinary.com/dwh6m5mbn/image/upload/c_lfill,w_830/What%27s%20On/Review-_Grease_The_Musical_2024.jpg\">Grease</a></em>, 💃 <a href=\"https://i0.wp.com/pepperdinebeacon.com/wp-content/uploads/2021/12/West-Side-Story-Review.png?resize=1140%2C570&amp;ssl=1\"><em>West Side Story</em></a>, 🎭 <em><a href=\"https://i.redd.it/rzwi0hm1hc2a1.jpg\">Fame</a></em>, 👣 <em><a href=\"https://saltlakemagazine-webaholics.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/01133937/The-Cast-of-the-Film-Footloose-from-1984_SLM-JA24_Paramount_Courtesy-Everett-Collection.jpg\">Footloose</a></em>).",
-    "activity": "Jam Session with Greg Osby & Band",
-    "location": "Tinsley Hall",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-25",
-    "time": "9:30 - 10:00 PM",
-    "themeTitle": "⚡ Greased Lightning",
-    "themeDescription": "Wear something retro! Bandanas, rolled sleeves, bowling shirts, sunglasses. Inspired by 🕶️ <em><a href=\"https://res.cloudinary.com/dwh6m5mbn/image/upload/c_lfill,w_830/What%27s%20On/Review-_Grease_The_Musical_2024.jpg\">Grease</a></em>, 💃 <a href=\"https://i0.wp.com/pepperdinebeacon.com/wp-content/uploads/2021/12/West-Side-Story-Review.png?resize=1140%2C570&amp;ssl=1\"><em>West Side Story</em></a>, 🎭 <em><a href=\"https://i.redd.it/rzwi0hm1hc2a1.jpg\">Fame</a></em>, 👣 <em><a href=\"https://saltlakemagazine-webaholics.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/01133937/The-Cast-of-the-Film-Footloose-from-1984_SLM-JA24_Paramount_Courtesy-Everett-Collection.jpg\">Footloose</a></em>).",
-    "activity": "Students in Dorm",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-25",
-    "time": "10:00 PM",
-    "themeTitle": "⚡ Greased Lightning",
-    "themeDescription": "Wear something retro! Bandanas, rolled sleeves, bowling shirts, sunglasses. Inspired by 🕶️ <em><a href=\"https://res.cloudinary.com/dwh6m5mbn/image/upload/c_lfill,w_830/What%27s%20On/Review-_Grease_The_Musical_2024.jpg\">Grease</a></em>, 💃 <a href=\"https://i0.wp.com/pepperdinebeacon.com/wp-content/uploads/2021/12/West-Side-Story-Review.png?resize=1140%2C570&amp;ssl=1\"><em>West Side Story</em></a>, 🎭 <em><a href=\"https://i.redd.it/rzwi0hm1hc2a1.jpg\">Fame</a></em>, 👣 <em><a href=\"https://saltlakemagazine-webaholics.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/01133937/The-Cast-of-the-Film-Footloose-from-1984_SLM-JA24_Paramount_Courtesy-Everett-Collection.jpg\">Footloose</a></em>).",
-    "activity": "🛌 Lights Out",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-26",
-    "time": "7:15 - 8:00 AM",
-    "themeTitle": "🐱 Purrs-day Thursday",
-    "themeDescription": "Wear a 🐈 cat-themed outfit. Bonus points for <a href=\"https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1920/v1638481741/adhcqgo2sadh0sqskunk.jpg\"><i>Cats</i></a> musical merch (no costumes). Bring your camp shirt for the photo!",
-    "activity": "⏰ Wake up; prepare for the day.",
-    "location": "",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-26",
-    "time": "8:00 AM",
-    "themeTitle": "🐱 Purrs-day Thursday",
-    "themeDescription": "Wear a 🐈 cat-themed outfit. Bonus points for <a href=\"https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1920/v1638481741/adhcqgo2sadh0sqskunk.jpg\"><i>Cats</i></a> musical merch (no costumes). Bring your camp shirt for the photo!",
-    "activity": "Students meet staff members in designated locations",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-26",
-    "time": "8:15 - 8:45 AM",
-    "themeTitle": "🐱 Purrs-day Thursday",
-    "themeDescription": "Wear a 🐈 cat-themed outfit. Bonus points for <a href=\"https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1920/v1638481741/adhcqgo2sadh0sqskunk.jpg\"><i>Cats</i></a> musical merch (no costumes). Bring your camp shirt for the photo!",
-    "activity": "🥞 Breakfast",
-    "location": "CUB",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-26",
-    "time": "9:00 - 9:35 AM",
-    "themeTitle": "🐱 Purrs-day Thursday",
-    "themeDescription": "Wear a 🐈 cat-themed outfit. Bonus points for <a href=\"https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1920/v1638481741/adhcqgo2sadh0sqskunk.jpg\"><i>Cats</i></a> musical merch (no costumes). Bring your camp shirt for the photo!",
-    "activity": "Fundamentals Class",
-    "location": "Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
-    "mapUrl": "",
-    "notes": [
-      "Class is determined by instrument played in large ensemble."
+    "activities": [
+      {
+        "time": "7:15 - 8:00 AM",
+        "activity": "⏰ Wake up; prepare for the day.",
+        "location": "",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "8:00 AM",
+        "activity": "Students meet staff members in designated locations",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "8:15 - 8:45 AM",
+        "activity": "🥞 Breakfast",
+        "location": "CUB",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "9:00 - 9:35 AM",
+        "activity": "Fundamentals Class",
+        "location": "Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "9:45 - 11:45 AM",
+        "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
+        "location": "",
+        "mapUrl": "",
+        "notes": [
+          "Symphonic Saxophones: Large Ensemble - Feasel Hall",
+          "Concert Saxophones: Chamber Ensembles - Various Rooms (<a href=\"/rooms.html\">see guide</a>)"
+        ]
+      },
+      {
+        "time": "12:00 - 12:45 PM",
+        "activity": "🥪 Lunch",
+        "location": "CUB",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "1:00 - 3:00 PM",
+        "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
+        "location": "",
+        "mapUrl": "",
+        "notes": [
+          "Symphonic Saxophones: Chamber Ensembles - Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
+          "Concert Saxophones: Large Ensemble - Lee Chapel"
+        ]
+      },
+      {
+        "time": "3:15 - 4:15 PM",
+        "activity": "Masterclass: Greg Osby",
+        "location": "Feasel Hall",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "4:25 - 6:00 PM",
+        "activity": "🔎 Scavenger Hunt",
+        "location": "Feasel & Campus",
+        "mapUrl": "",
+        "notes": [
+          "Students learn the rules and objectives in Feasel",
+          "All students return to Feasel by 5:45 PM",
+          "Winners announced at 6:00 PM in Feasel"
+        ]
+      },
+      {
+        "time": "6:15 - 7:00 PM",
+        "activity": "🍽️ Dinner",
+        "location": "CUB",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "7:15 - 8:15 PM",
+        "activity": "Guest Artist Recital: Greg Osby",
+        "location": "Tinsley Hall",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "8:15 - 9:15 PM",
+        "activity": "Jam Session with Greg Osby & Band",
+        "location": "Tinsley Hall",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "9:30 - 10:00 PM",
+        "activity": "Students in Dorm",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "10:00 PM",
+        "activity": "🛌 Lights Out",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": []
+      }
     ]
   },
   {
     "date": "2025-06-26",
-    "time": "9:45 - 11:45 AM",
     "themeTitle": "🐱 Purrs-day Thursday",
     "themeDescription": "Wear a 🐈 cat-themed outfit. Bonus points for <a href=\"https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1920/v1638481741/adhcqgo2sadh0sqskunk.jpg\"><i>Cats</i></a> musical merch (no costumes). Bring your camp shirt for the photo!",
-    "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
-    "location": "",
-    "mapUrl": "",
-    "notes": [
-      "Symphonic Saxophones: Large Ensemble - Feasel Hall",
-      "Concert Saxophones: Chamber Ensembles - Various Rooms (<a href=\"/rooms.html\">see guide</a>)"
-    ]
-  },
-  {
-    "date": "2025-06-26",
-    "time": "12:00 - 12:45 PM",
-    "themeTitle": "🐱 Purrs-day Thursday",
-    "themeDescription": "Wear a 🐈 cat-themed outfit. Bonus points for <a href=\"https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1920/v1638481741/adhcqgo2sadh0sqskunk.jpg\"><i>Cats</i></a> musical merch (no costumes). Bring your camp shirt for the photo!",
-    "activity": "🥪 Lunch",
-    "location": "CUB",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-26",
-    "time": "1:00 - 2:30 PM",
-    "themeTitle": "🐱 Purrs-day Thursday",
-    "themeDescription": "Wear a 🐈 cat-themed outfit. Bonus points for <a href=\"https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1920/v1638481741/adhcqgo2sadh0sqskunk.jpg\"><i>Cats</i></a> musical merch (no costumes). Bring your camp shirt for the photo!",
-    "activity": "Masterclass: Preparing for All-State Auditions",
-    "location": "Feasel Hall",
-    "mapUrl": "",
-    "notes": [
-      "7-8 grade: Presser 112",
-      "9-10 grade: Presser 352",
-      "11-12 grade: Feasel"
-    ]
-  },
-  {
-    "date": "2025-06-26",
-    "time": "2:45 - 4:45 PM",
-    "themeTitle": "🐱 Purrs-day Thursday",
-    "themeDescription": "Wear a 🐈 cat-themed outfit. Bonus points for <a href=\"https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1920/v1638481741/adhcqgo2sadh0sqskunk.jpg\"><i>Cats</i></a> musical merch (no costumes). Bring your camp shirt for the photo!",
-    "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
-    "location": "",
-    "mapUrl": "",
-    "notes": [
-      "Symphonic Saxophones: Chamber Ensembles - Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
-      "Concert Saxophones: Large Ensemble - Lee Chapel"
-    ]
-  },
-  {
-    "date": "2025-06-26",
-    "time": "5:00 - 5:50 PM",
-    "themeTitle": "🐱 Purrs-day Thursday",
-    "themeDescription": "Wear a 🐈 cat-themed outfit. Bonus points for <a href=\"https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1920/v1638481741/adhcqgo2sadh0sqskunk.jpg\"><i>Cats</i></a> musical merch (no costumes). Bring your camp shirt for the photo!",
-    "activity": "Jazz Classes",
-    "location": "Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
-    "mapUrl": "",
-    "notes": [
-      "Change into workshop t-shirt after class"
-    ]
-  },
-  {
-    "date": "2025-06-26",
-    "time": "6:00 - 6:10 PM",
-    "themeTitle": "🐱 Purrs-day Thursday",
-    "themeDescription": "Wear a 🐈 cat-themed outfit. Bonus points for <a href=\"https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1920/v1638481741/adhcqgo2sadh0sqskunk.jpg\"><i>Cats</i></a> musical merch (no costumes). Bring your camp shirt for the photo!",
-    "activity": "📸 Workshop Photo",
-    "location": "Sampson Hall steps (<a href=\"https://maps.app.goo.gl/xjX7xrKMzvb5211VA\">map</a>)",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-26",
-    "time": "6:15 - 7:00 PM",
-    "themeTitle": "🐱 Purrs-day Thursday",
-    "themeDescription": "Wear a 🐈 cat-themed outfit. Bonus points for <a href=\"https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1920/v1638481741/adhcqgo2sadh0sqskunk.jpg\"><i>Cats</i></a> musical merch (no costumes). Bring your camp shirt for the photo!",
-    "activity": "🍕 Dinner: Pizza Party",
-    "location": "Palm Court (<a href=\"https://maps.app.goo.gl/onJmxu1JX1MWwk4k8\">map</a>)",
-    "mapUrl": "",
-    "notes": [
-      "Young Artist winners will meet staff member at 6:45 PM to go to Lee Chapel for warm-up."
-    ]
-  },
-  {
-    "date": "2025-06-26",
-    "time": "7:15 - 8:00 PM",
-    "themeTitle": "🐱 Purrs-day Thursday",
-    "themeDescription": "Wear a 🐈 cat-themed outfit. Bonus points for <a href=\"https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1920/v1638481741/adhcqgo2sadh0sqskunk.jpg\"><i>Cats</i></a> musical merch (no costumes). Bring your camp shirt for the photo!",
-    "activity": "Young Artist Honors Recital",
-    "location": "Lee Chapel",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-26",
-    "time": "8:15 - 10:00 PM",
-    "themeTitle": "🐱 Purrs-day Thursday",
-    "themeDescription": "Wear a 🐈 cat-themed outfit. Bonus points for <a href=\"https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1920/v1638481741/adhcqgo2sadh0sqskunk.jpg\"><i>Cats</i></a> musical merch (no costumes). Bring your camp shirt for the photo!",
-    "activity": "🎬 Movie Night: Part 2. This time with more Oz.",
-    "location": "Lynn Business Center (LBC) Auditorium",
-    "mapUrl": "",
-    "notes": [
-      "No food delivery. There will be 🍿 snacks."
-    ]
-  },
-  {
-    "date": "2025-06-26",
-    "time": "10:00 PM",
-    "themeTitle": "🐱 Purrs-day Thursday",
-    "themeDescription": "Wear a 🐈 cat-themed outfit. Bonus points for <a href=\"https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1920/v1638481741/adhcqgo2sadh0sqskunk.jpg\"><i>Cats</i></a> musical merch (no costumes). Bring your camp shirt for the photo!",
-    "activity": "🛌 Lights Out",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-27",
-    "time": "7:15 - 8:00 AM",
-    "themeTitle": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green",
-    "themeDescription": "Wear something 👚 pink or something 🍏 green to show your support for <a href=\"https://en.wikipedia.org/wiki/Glinda\">Glinda</a> (pink) or <a href=\"https://en.wikipedia.org/wiki/Elphaba\">Elphaba</a> (green)&#8230; or maybe some of both!",
-    "activity": "⏰ Wake up; prepare for the day.",
-    "location": "",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-27",
-    "time": "8:00 AM",
-    "themeTitle": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green",
-    "themeDescription": "Wear something 👚 pink or something 🍏 green to show your support for <a href=\"https://en.wikipedia.org/wiki/Glinda\">Glinda</a> (pink) or <a href=\"https://en.wikipedia.org/wiki/Elphaba\">Elphaba</a> (green)&#8230; or maybe some of both!",
-    "activity": "Students meet staff members in designated locations",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-27",
-    "time": "8:15 - 8:45 AM",
-    "themeTitle": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green",
-    "themeDescription": "Wear something 👚 pink or something 🍏 green to show your support for <a href=\"https://en.wikipedia.org/wiki/Glinda\">Glinda</a> (pink) or <a href=\"https://en.wikipedia.org/wiki/Elphaba\">Elphaba</a> (green)&#8230; or maybe some of both!",
-    "activity": "🥞 Breakfast",
-    "location": "CUB",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-27",
-    "time": "9:00 - 9:35 AM",
-    "themeTitle": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green",
-    "themeDescription": "Wear something 👚 pink or something 🍏 green to show your support for <a href=\"https://en.wikipedia.org/wiki/Glinda\">Glinda</a> (pink) or <a href=\"https://en.wikipedia.org/wiki/Elphaba\">Elphaba</a> (green)&#8230; or maybe some of both!",
-    "activity": "Fundamentals Class",
-    "location": "Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-27",
-    "time": "9:45 - 11:45 AM",
-    "themeTitle": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green",
-    "themeDescription": "Wear something 👚 pink or something 🍏 green to show your support for <a href=\"https://en.wikipedia.org/wiki/Glinda\">Glinda</a> (pink) or <a href=\"https://en.wikipedia.org/wiki/Elphaba\">Elphaba</a> (green)&#8230; or maybe some of both!",
-    "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
-    "location": "",
-    "mapUrl": "",
-    "notes": [
-      "Symphonic Saxophones: Large Ensemble - Feasel Hall",
-      "Concert Saxophones: Chamber Ensembles - Various Rooms (<a href=\"/rooms.html\">see guide</a>)"
+    "activities": [
+      {
+        "time": "7:15 - 8:00 AM",
+        "activity": "⏰ Wake up; prepare for the day.",
+        "location": "",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "8:00 AM",
+        "activity": "Students meet staff members in designated locations",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "8:15 - 8:45 AM",
+        "activity": "🥞 Breakfast",
+        "location": "CUB",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "9:00 - 9:35 AM",
+        "activity": "Fundamentals Class",
+        "location": "Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
+        "mapUrl": "",
+        "notes": [
+          "Class is determined by instrument played in large ensemble."
+        ]
+      },
+      {
+        "time": "9:45 - 11:45 AM",
+        "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
+        "location": "",
+        "mapUrl": "",
+        "notes": [
+          "Symphonic Saxophones: Large Ensemble - Feasel Hall",
+          "Concert Saxophones: Chamber Ensembles - Various Rooms (<a href=\"/rooms.html\">see guide</a>)"
+        ]
+      },
+      {
+        "time": "12:00 - 12:45 PM",
+        "activity": "🥪 Lunch",
+        "location": "CUB",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "1:00 - 2:30 PM",
+        "activity": "Masterclass: Preparing for All-State Auditions",
+        "location": "Feasel Hall",
+        "mapUrl": "",
+        "notes": [
+          "7-8 grade: Presser 112",
+          "9-10 grade: Presser 352",
+          "11-12 grade: Feasel"
+        ]
+      },
+      {
+        "time": "2:45 - 4:45 PM",
+        "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
+        "location": "",
+        "mapUrl": "",
+        "notes": [
+          "Symphonic Saxophones: Chamber Ensembles - Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
+          "Concert Saxophones: Large Ensemble - Lee Chapel"
+        ]
+      },
+      {
+        "time": "5:00 - 5:50 PM",
+        "activity": "Jazz Classes",
+        "location": "Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
+        "mapUrl": "",
+        "notes": [
+          "Change into workshop t-shirt after class"
+        ]
+      },
+      {
+        "time": "6:00 - 6:10 PM",
+        "activity": "📸 Workshop Photo",
+        "location": "Sampson Hall steps (<a href=\"https://maps.app.goo.gl/xjX7xrKMzvb5211VA\">map</a>)",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "6:15 - 7:00 PM",
+        "activity": "🍕 Dinner: Pizza Party",
+        "location": "Palm Court (<a href=\"https://maps.app.goo.gl/onJmxu1JX1MWwk4k8\">map</a>)",
+        "mapUrl": "",
+        "notes": [
+          "Young Artist winners will meet staff member at 6:45 PM to go to Lee Chapel for warm-up."
+        ]
+      },
+      {
+        "time": "7:15 - 8:00 PM",
+        "activity": "Young Artist Honors Recital",
+        "location": "Lee Chapel",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "8:15 - 10:00 PM",
+        "activity": "🎬 Movie Night: Part 2. This time with more Oz.",
+        "location": "Lynn Business Center (LBC) Auditorium",
+        "mapUrl": "",
+        "notes": [
+          "No food delivery. There will be 🍿 snacks."
+        ]
+      },
+      {
+        "time": "10:00 PM",
+        "activity": "🛌 Lights Out",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": []
+      }
     ]
   },
   {
     "date": "2025-06-27",
-    "time": "12:00 - 12:45 PM",
     "themeTitle": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green",
     "themeDescription": "Wear something 👚 pink or something 🍏 green to show your support for <a href=\"https://en.wikipedia.org/wiki/Glinda\">Glinda</a> (pink) or <a href=\"https://en.wikipedia.org/wiki/Elphaba\">Elphaba</a> (green)&#8230; or maybe some of both!",
-    "activity": "🥪 Lunch",
-    "location": "CUB",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-27",
-    "time": "1:00 - 3:00 PM",
-    "themeTitle": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green",
-    "themeDescription": "Wear something 👚 pink or something 🍏 green to show your support for <a href=\"https://en.wikipedia.org/wiki/Glinda\">Glinda</a> (pink) or <a href=\"https://en.wikipedia.org/wiki/Elphaba\">Elphaba</a> (green)&#8230; or maybe some of both!",
-    "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
-    "location": "",
-    "mapUrl": "",
-    "notes": [
-      "Symphonic Saxophones: Chamber Ensembles - Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
-      "Concert Saxophones: Large Ensemble - Lee Chapel"
-    ]
-  },
-  {
-    "date": "2025-06-27",
-    "time": "3:10 - 4:10 PM",
-    "themeTitle": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green",
-    "themeDescription": "Wear something 👚 pink or something 🍏 green to show your support for <a href=\"https://en.wikipedia.org/wiki/Glinda\">Glinda</a> (pink) or <a href=\"https://en.wikipedia.org/wiki/Elphaba\">Elphaba</a> (green)&#8230; or maybe some of both!",
-    "activity": "Jazz Classes",
-    "location": "Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-27",
-    "time": "4:15 - 6:00 PM",
-    "themeTitle": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green",
-    "themeDescription": "Wear something 👚 pink or something 🍏 green to show your support for <a href=\"https://en.wikipedia.org/wiki/Glinda\">Glinda</a> (pink) or <a href=\"https://en.wikipedia.org/wiki/Elphaba\">Elphaba</a> (green)&#8230; or maybe some of both!",
-    "activity": "Chamber Music Dress Rehearsal",
-    "location": "Lee Chapel",
-    "mapUrl": "",
-    "notes": [
-      "Students will sit in assigned areas before and after performance.",
-      "Chamber groups will run-through their piece(s)."
-    ]
-  },
-  {
-    "date": "2025-06-27",
-    "time": "6:15 - 7:00 PM",
-    "themeTitle": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green",
-    "themeDescription": "Wear something 👚 pink or something 🍏 green to show your support for <a href=\"https://en.wikipedia.org/wiki/Glinda\">Glinda</a> (pink) or <a href=\"https://en.wikipedia.org/wiki/Elphaba\">Elphaba</a> (green)&#8230; or maybe some of both!",
-    "activity": "🍽️ Dinner",
-    "location": "CUB",
-    "mapUrl": "",
-    "notes": [
-      "Students have the option to leave the CUB for Hatter Hall at 6:45 to prepare for the concert.",
-      "Students will be escorted to Hatter Hall by staff member(s)."
-    ]
-  },
-  {
-    "date": "2025-06-27",
-    "time": "7:00 - 7:15 PM",
-    "themeTitle": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green",
-    "themeDescription": "Wear something 👚 pink or something 🍏 green to show your support for <a href=\"https://en.wikipedia.org/wiki/Glinda\">Glinda</a> (pink) or <a href=\"https://en.wikipedia.org/wiki/Elphaba\">Elphaba</a> (green)&#8230; or maybe some of both!",
-    "activity": "Change Clothes for Concert",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": [
-      "Remaining group of students will move from CUB to Hatter Hall with staff members."
-    ]
-  },
-  {
-    "date": "2025-06-27",
-    "time": "7:15 - 7:25 PM",
-    "themeTitle": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green",
-    "themeDescription": "Wear something 👚 pink or something 🍏 green to show your support for <a href=\"https://en.wikipedia.org/wiki/Glinda\">Glinda</a> (pink) or <a href=\"https://en.wikipedia.org/wiki/Elphaba\">Elphaba</a> (green)&#8230; or maybe some of both!",
-    "activity": "Walk to Lee Chapel",
-    "location": "Hatter Hall → Lee Chapel",
-    "mapUrl": "",
-    "notes": [
-      "All students will meet staff members at their AM locations to walk to Lee Chapel."
-    ]
-  },
-  {
-    "date": "2025-06-27",
-    "time": "7:30 - 8:45 PM",
-    "themeTitle": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green",
-    "themeDescription": "Wear something 👚 pink or something 🍏 green to show your support for <a href=\"https://en.wikipedia.org/wiki/Glinda\">Glinda</a> (pink) or <a href=\"https://en.wikipedia.org/wiki/Elphaba\">Elphaba</a> (green)&#8230; or maybe some of both!",
-    "activity": "Chamber Music Concert",
-    "location": "Lee Chapel",
-    "mapUrl": "",
-    "notes": [
-      "Students sit in assigned areas as rehearsed."
-    ]
-  },
-  {
-    "date": "2025-06-27",
-    "time": "9:00 - 10:00 PM",
-    "themeTitle": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green",
-    "themeDescription": "Wear something 👚 pink or something 🍏 green to show your support for <a href=\"https://en.wikipedia.org/wiki/Glinda\">Glinda</a> (pink) or <a href=\"https://en.wikipedia.org/wiki/Elphaba\">Elphaba</a> (green)&#8230; or maybe some of both!",
-    "activity": "Students in Dorm",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": [
-      "Student begin packing for move out."
-    ]
-  },
-  {
-    "date": "2025-06-27",
-    "time": "10:00 PM",
-    "themeTitle": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green",
-    "themeDescription": "Wear something 👚 pink or something 🍏 green to show your support for <a href=\"https://en.wikipedia.org/wiki/Glinda\">Glinda</a> (pink) or <a href=\"https://en.wikipedia.org/wiki/Elphaba\">Elphaba</a> (green)&#8230; or maybe some of both!",
-    "activity": "🛌 Lights Out",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-28",
-    "time": "7:00 AM",
-    "themeTitle": "🎓 School Spirit Day",
-    "themeDescription": "Show off your 🧑‍🎓 school pride with your favorite school-themed attire!",
-    "activity": "⏰ <strong>Early wake up</strong>; students <em>complete</em> packing for move out.",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": [
-      "Students <em>do not</em> need to wear concert clothes yet."
+    "activities": [
+      {
+        "time": "7:15 - 8:00 AM",
+        "activity": "⏰ Wake up; prepare for the day.",
+        "location": "",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "8:00 AM",
+        "activity": "Students meet staff members in designated locations",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "8:15 - 8:45 AM",
+        "activity": "🥞 Breakfast",
+        "location": "CUB",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "9:00 - 9:35 AM",
+        "activity": "Fundamentals Class",
+        "location": "Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "9:45 - 11:45 AM",
+        "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
+        "location": "",
+        "mapUrl": "",
+        "notes": [
+          "Symphonic Saxophones: Large Ensemble - Feasel Hall",
+          "Concert Saxophones: Chamber Ensembles - Various Rooms (<a href=\"/rooms.html\">see guide</a>)"
+        ]
+      },
+      {
+        "time": "12:00 - 12:45 PM",
+        "activity": "🥪 Lunch",
+        "location": "CUB",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "1:00 - 3:00 PM",
+        "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
+        "location": "",
+        "mapUrl": "",
+        "notes": [
+          "Symphonic Saxophones: Chamber Ensembles - Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
+          "Concert Saxophones: Large Ensemble - Lee Chapel"
+        ]
+      },
+      {
+        "time": "3:10 - 4:10 PM",
+        "activity": "Jazz Classes",
+        "location": "Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "4:15 - 6:00 PM",
+        "activity": "Chamber Music Dress Rehearsal",
+        "location": "Lee Chapel",
+        "mapUrl": "",
+        "notes": [
+          "Students will sit in assigned areas before and after performance.",
+          "Chamber groups will run-through their piece(s)."
+        ]
+      },
+      {
+        "time": "6:15 - 7:00 PM",
+        "activity": "🍽️ Dinner",
+        "location": "CUB",
+        "mapUrl": "",
+        "notes": [
+          "Students have the option to leave the CUB for Hatter Hall at 6:45 to prepare for the concert.",
+          "Students will be escorted to Hatter Hall by staff member(s)."
+        ]
+      },
+      {
+        "time": "7:00 - 7:15 PM",
+        "activity": "Change Clothes for Concert",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": [
+          "Remaining group of students will move from CUB to Hatter Hall with staff members."
+        ]
+      },
+      {
+        "time": "7:15 - 7:25 PM",
+        "activity": "Walk to Lee Chapel",
+        "location": "Hatter Hall → Lee Chapel",
+        "mapUrl": "",
+        "notes": [
+          "All students will meet staff members at their AM locations to walk to Lee Chapel."
+        ]
+      },
+      {
+        "time": "7:30 - 8:45 PM",
+        "activity": "Chamber Music Concert",
+        "location": "Lee Chapel",
+        "mapUrl": "",
+        "notes": [
+          "Students sit in assigned areas as rehearsed."
+        ]
+      },
+      {
+        "time": "9:00 - 10:00 PM",
+        "activity": "Students in Dorm",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": [
+          "Student begin packing for move out."
+        ]
+      },
+      {
+        "time": "10:00 PM",
+        "activity": "🛌 Lights Out",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": []
+      }
     ]
   },
   {
     "date": "2025-06-28",
-    "time": "7:15 AM",
     "themeTitle": "🎓 School Spirit Day",
     "themeDescription": "Show off your 🧑‍🎓 school pride with your favorite school-themed attire!",
-    "activity": "Students meet staff members in designated locations",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-28",
-    "time": "7:30 - 8:00 AM",
-    "themeTitle": "🎓 School Spirit Day",
-    "themeDescription": "Show off your 🧑‍🎓 school pride with your favorite school-themed attire!",
-    "activity": "🥞 Breakfast",
-    "location": "CUB",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-28",
-    "time": "8:15 - 9:15 AM",
-    "themeTitle": "🎓 School Spirit Day",
-    "themeDescription": "Show off your 🧑‍🎓 school pride with your favorite school-themed attire!",
-    "activity": "Dress Rehearsals",
-    "location": "",
-    "mapUrl": "",
-    "notes": [
-      "Symphonic Saxophones: Feasel",
-      "Concert Saxophones: Lee Chapel",
-      "Combined Ensemble: Lee Chapel"
+    "activities": [
+      {
+        "time": "7:00 AM",
+        "activity": "⏰ <strong>Early wake up</strong>; students <em>complete</em> packing for move out.",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": [
+          "Students <em>do not</em> need to wear concert clothes yet."
+        ]
+      },
+      {
+        "time": "7:15 AM",
+        "activity": "Students meet staff members in designated locations",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "7:30 - 8:00 AM",
+        "activity": "🥞 Breakfast",
+        "location": "CUB",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "8:15 - 9:15 AM",
+        "activity": "Dress Rehearsals",
+        "location": "",
+        "mapUrl": "",
+        "notes": [
+          "Symphonic Saxophones: Feasel",
+          "Concert Saxophones: Lee Chapel",
+          "Combined Ensemble: Lee Chapel"
+        ]
+      },
+      {
+        "time": "9:30 - 10:45 AM",
+        "activity": "Dress for concert & check out",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": [
+          "All students will go to Hatter Hall to check out",
+          "Parents pick up student's belongings from Hatter Hall.",
+          "Students need to:<ul><li>✅ wear concert clothes</li><li>✅ bring saxophone(s) &amp; equipment for concert (reeds, mpc. neckstrap, etc.)<ul><li>⚠️ other personal saxophones should be packed</li><li>⚠️ borrowed saxophones &amp; equipment will be returned after concert</li></ul></li><li>✅ bring music folder for concert</li></ul>"
+        ]
+      },
+      {
+        "time": "10:45 AM",
+        "activity": "Students meet staff members in designated locations",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": [
+          "Parents will go to Lee Chapel separately"
+        ]
+      },
+      {
+        "time": "11:00 AM",
+        "activity": "Call time for students",
+        "location": "Lee Chapel",
+        "mapUrl": "",
+        "notes": [
+          "Students sit in assigned areas."
+        ]
+      },
+      {
+        "time": "11:30 AM - 12:30 PM",
+        "activity": "Saxophone Ensembles Concert",
+        "location": "Lee Chapel",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "12:30 - 1:30 PM",
+        "activity": "Return borrowed music, saxophones, equipment",
+        "location": "Tinsley Hall",
+        "mapUrl": "",
+        "notes": []
+      }
     ]
-  },
-  {
-    "date": "2025-06-28",
-    "time": "9:30 - 10:45 AM",
-    "themeTitle": "🎓 School Spirit Day",
-    "themeDescription": "Show off your 🧑‍🎓 school pride with your favorite school-themed attire!",
-    "activity": "Dress for concert & check out",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": [
-      "All students will go to Hatter Hall to check out",
-      "Parents pick up student's belongings from Hatter Hall.",
-      "Students need to:<ul><li>✅ wear concert clothes</li><li>✅ bring saxophone(s) &amp; equipment for concert (reeds, mpc. neckstrap, etc.)<ul><li>⚠️ other personal saxophones should be packed</li><li>⚠️ borrowed saxophones &amp; equipment will be returned after concert</li></ul></li><li>✅ bring music folder for concert</li></ul>"
-    ]
-  },
-  {
-    "date": "2025-06-28",
-    "time": "10:45 AM",
-    "themeTitle": "🎓 School Spirit Day",
-    "themeDescription": "Show off your 🧑‍🎓 school pride with your favorite school-themed attire!",
-    "activity": "Students meet staff members in designated locations",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": [
-      "Parents will go to Lee Chapel separately"
-    ]
-  },
-  {
-    "date": "2025-06-28",
-    "time": "11:00 AM",
-    "themeTitle": "🎓 School Spirit Day",
-    "themeDescription": "Show off your 🧑‍🎓 school pride with your favorite school-themed attire!",
-    "activity": "Call time for students",
-    "location": "Lee Chapel",
-    "mapUrl": "",
-    "notes": [
-      "Students sit in assigned areas."
-    ]
-  },
-  {
-    "date": "2025-06-28",
-    "time": "11:30 AM - 12:30 PM",
-    "themeTitle": "🎓 School Spirit Day",
-    "themeDescription": "Show off your 🧑‍🎓 school pride with your favorite school-themed attire!",
-    "activity": "Saxophone Ensembles Concert",
-    "location": "Lee Chapel",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-28",
-    "time": "12:30 - 1:30 PM",
-    "themeTitle": "🎓 School Spirit Day",
-    "themeDescription": "Show off your 🧑‍🎓 school pride with your favorite school-themed attire!",
-    "activity": "Return borrowed music, saxophones, equipment",
-    "location": "Tinsley Hall",
-    "mapUrl": "",
-    "notes": []
   }
 ]

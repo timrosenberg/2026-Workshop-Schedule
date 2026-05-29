@@ -1,993 +1,804 @@
 [
   {
     "date": "2025-06-23",
-    "time": "8:30 - 11:30 AM",
     "themeTitle": "🎬 Sax & Screen",
     "themeDescription": "Wear something that shows your favorite film or musical.",
-    "activity": "Registration and Check-in",
-    "location": "Hatter Hall Dormitory",
-    "mapUrl": "https://maps.app.goo.gl/…",
-    "notes": [
-      "See <a href=\"check-in.html\">Faculty Check-in Duties</a> page."
-    ]
-  },
-  {
-    "date": "2025-06-23",
-    "time": "10:30 - 11:30 AM",
-    "themeTitle": "🎬 Sax & Screen",
-    "themeDescription": "Wear something that shows your favorite film or musical.",
-    "activity": "Young Artist Auditions Final Round",
-    "location": "Hatter Hall, Floor 2 Lounge",
-    "mapUrl": "",
-    "notes": [
-      "Tim hearing auditions on Hatter Floor 2."
-    ]
-  },
-  {
-    "date": "2025-06-23",
-    "time": "12:00 - 12:45 PM",
-    "themeTitle": "🎬 Sax & Screen",
-    "themeDescription": "Wear something that shows your favorite film or musical.",
-    "activity": "🥪 Lunch",
-    "location": "Carlton Union Building (CUB)",
-    "mapUrl": "https://maps.app.goo.gl/wdAMPGnM3GRCCsnA8",
-    "notes": [
-      "See <a href=\"walking-groups.html\">Walking Groups</a> page."
-    ]
-  },
-  {
-    "date": "2025-06-23",
-    "time": "1:00 - 1:45 PM",
-    "themeTitle": "🎬 Sax & Screen",
-    "themeDescription": "Wear something that shows your favorite film or musical.",
-    "activity": "Opening Meeting",
-    "location": "Feasel Hall",
-    "mapUrl": "https://maps.app.goo.gl/5mDXBVoTABQhHF5L6",
-    "notes": [
-      "Students & staff attend the meeting. Michelle monitor Feasel hallway as needed."
-    ]
-  },
-  {
-    "date": "2025-06-23",
-    "time": "1:45 - 3:15 PM",
-    "themeTitle": "🎬 Sax & Screen",
-    "themeDescription": "Wear something that shows your favorite film or musical.",
-    "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
-    "location": "",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
-      "<a href=\"presser-monitor.html\">Presser Hall Monitors</a>: Michelle (F1), Sara (F2), Holly (F3)"
-    ]
-  },
-  {
-    "date": "2025-06-23",
-    "time": "3:15 - 4:45 PM",
-    "themeTitle": "🎬 Sax & Screen",
-    "themeDescription": "Wear something that shows your favorite film or musical.",
-    "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
-    "location": "",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
-      "<a href=\"presser-monitor.html\">Presser Hall Monitors</a>: Michelle (F1), Andrew (F2), David (F3)"
-    ]
-  },
-  {
-    "date": "2025-06-23",
-    "time": "5:00 - 6:00 PM",
-    "themeTitle": "🎬 Sax & Screen",
-    "themeDescription": "Wear something that shows your favorite film or musical.",
-    "activity": "Jazz Classes",
-    "location": "Various Rooms",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
-      "<a href=\"presser-monitor.html\">Presser Hall Monitors</a>: Michelle (F1), Andrew (F2), David (F3), Celeste (McMahan Hallway)",
-      "⚠️ Tim, Bill, Jarrod, Holly: Set up Lee Chapel for Staff Concert"
-    ]
-  },
-  {
-    "date": "2025-06-23",
-    "time": "6:15 - 7:00 PM",
-    "themeTitle": "🎬 Sax & Screen",
-    "themeDescription": "Wear something that shows your favorite film or musical.",
-    "activity": "🍽️ Dinner",
-    "location": "CUB",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
-      "🕵️‍♂️ Tim, Jeremy, Jerrod, Marc: Sweep Music Buildings before leaving."
-    ]
-  },
-  {
-    "date": "2025-06-23",
-    "time": "7:15 - 8:00 PM",
-    "themeTitle": "🎬 Sax & Screen",
-    "themeDescription": "Wear something that shows your favorite film or musical.",
-    "activity": "Faculty Recital: Saxophone Workshop Staff",
-    "location": "Lee Chapel",
-    "mapUrl": "https://maps.app.goo.gl/Dvm3E7u6dcQk4WHg7",
-    "notes": [
-      "Michelle monitors the back of Lee and the bathroom during the concert."
-    ]
-  },
-  {
-    "date": "2025-06-23",
-    "time": "8:00 - 9:00 PM",
-    "themeTitle": "🎬 Sax & Screen",
-    "themeDescription": "Wear something that shows your favorite film or musical.",
-    "activity": "Practice Time or Relax in Dorm",
-    "location": "Presser or Hatter Hall",
-    "mapUrl": "",
-    "notes": [
-      "Students may stay in Presser to practice or go to Hatter Hall to relax.",
-      "Michelle will determine which staff will go to Hatter and who will stay in the music buildings. Hatter crew needs at least two male and one female staff.",
-      "⚠️ Tim, Jeremy, Marc: Reset Lee Chapel for Concert Ensemble Rehearsal"
-    ]
-  },
-  {
-    "date": "2025-06-23",
-    "time": "9:00 - 9:15 PM",
-    "themeTitle": "🎬 Sax & Screen",
-    "themeDescription": "Wear something that shows your favorite film or musical.",
-    "activity": "All Students in Dorm",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": [
-      "<a href=\"hall-monitor.html\">Hatter Hall Night Monitors</a>: 🛡️ <strong>Sara</strong>, Matt, Steve.",
-      "Ranger (off campus): Celeste",
-      "See <a href=\"hall-monitor.html\">Hatter Hall Night Monitors</a> page for full schedule and descriptions of roles."
-    ]
-  },
-  {
-    "date": "2025-06-23",
-    "time": "9:15 - 9:30 PM",
-    "themeTitle": "🎬 Sax & Screen",
-    "themeDescription": "Wear something that shows your favorite film or musical.",
-    "activity": "Hall Meeting with Counselors",
-    "location": "Lounge of your floor in Hatter Hall",
-    "mapUrl": "",
-    "notes": [
-      "Students will meet with the counselor staff to discuss the rules and procedures for the rest of the week.",
-      "Meeting Leaders: Michelle (F1), Jeremy (F2), Steve (F3)",
-      "After the meeting students will relax in the dorm."
-    ]
-  },
-  {
-    "date": "2025-06-23",
-    "time": "10:00 PM",
-    "themeTitle": "🎬 Sax & Screen",
-    "themeDescription": "Wear something that shows your favorite film or musical.",
-    "activity": "🛌 Lights Out",
-    "location": "",
-    "mapUrl": "",
-    "notes": [
-      "🛡️ Night's Watch: Sara"
+    "activities": [
+      {
+        "time": "8:30 - 11:30 AM",
+        "activity": "Registration and Check-in",
+        "location": "Hatter Hall Dormitory",
+        "mapUrl": "https://maps.app.goo.gl/…",
+        "notes": [
+          "See <a href=\"check-in.html\">Faculty Check-in Duties</a> page."
+        ]
+      },
+      {
+        "time": "10:30 - 11:30 AM",
+        "activity": "Young Artist Auditions Final Round",
+        "location": "Hatter Hall, Floor 2 Lounge",
+        "mapUrl": "",
+        "notes": [
+          "Tim hearing auditions on Hatter Floor 2."
+        ]
+      },
+      {
+        "time": "12:00 - 12:45 PM",
+        "activity": "🥪 Lunch",
+        "location": "Carlton Union Building (CUB)",
+        "mapUrl": "https://maps.app.goo.gl/wdAMPGnM3GRCCsnA8",
+        "notes": [
+          "See <a href=\"walking-groups.html\">Walking Groups</a> page."
+        ]
+      },
+      {
+        "time": "1:00 - 1:45 PM",
+        "activity": "Opening Meeting",
+        "location": "Feasel Hall",
+        "mapUrl": "https://maps.app.goo.gl/5mDXBVoTABQhHF5L6",
+        "notes": [
+          "Students & staff attend the meeting. Michelle monitor Feasel hallway as needed."
+        ]
+      },
+      {
+        "time": "1:45 - 3:15 PM",
+        "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
+        "location": "",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
+          "<a href=\"presser-monitor.html\">Presser Hall Monitors</a>: Michelle (F1), Sara (F2), Holly (F3)"
+        ]
+      },
+      {
+        "time": "3:15 - 4:45 PM",
+        "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
+        "location": "",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
+          "<a href=\"presser-monitor.html\">Presser Hall Monitors</a>: Michelle (F1), Andrew (F2), David (F3)"
+        ]
+      },
+      {
+        "time": "5:00 - 6:00 PM",
+        "activity": "Jazz Classes",
+        "location": "Various Rooms",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
+          "<a href=\"presser-monitor.html\">Presser Hall Monitors</a>: Michelle (F1), Andrew (F2), David (F3), Celeste (McMahan Hallway)",
+          "⚠️ Tim, Bill, Jarrod, Holly: Set up Lee Chapel for Staff Concert"
+        ]
+      },
+      {
+        "time": "6:15 - 7:00 PM",
+        "activity": "🍽️ Dinner",
+        "location": "CUB",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
+          "🕵️‍♂️ Tim, Jeremy, Jerrod, Marc: Sweep Music Buildings before leaving."
+        ]
+      },
+      {
+        "time": "7:15 - 8:00 PM",
+        "activity": "Faculty Recital: Saxophone Workshop Staff",
+        "location": "Lee Chapel",
+        "mapUrl": "https://maps.app.goo.gl/Dvm3E7u6dcQk4WHg7",
+        "notes": [
+          "Michelle monitors the back of Lee and the bathroom during the concert."
+        ]
+      },
+      {
+        "time": "8:00 - 9:00 PM",
+        "activity": "Practice Time or Relax in Dorm",
+        "location": "Presser or Hatter Hall",
+        "mapUrl": "",
+        "notes": [
+          "Students may stay in Presser to practice or go to Hatter Hall to relax.",
+          "Michelle will determine which staff will go to Hatter and who will stay in the music buildings. Hatter crew needs at least two male and one female staff.",
+          "⚠️ Tim, Jeremy, Marc: Reset Lee Chapel for Concert Ensemble Rehearsal"
+        ]
+      },
+      {
+        "time": "9:00 - 9:15 PM",
+        "activity": "All Students in Dorm",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": [
+          "<a href=\"hall-monitor.html\">Hatter Hall Night Monitors</a>: 🛡️ <strong>Sara</strong>, Matt, Steve.",
+          "Ranger (off campus): Celeste",
+          "See <a href=\"hall-monitor.html\">Hatter Hall Night Monitors</a> page for full schedule and descriptions of roles."
+        ]
+      },
+      {
+        "time": "9:15 - 9:30 PM",
+        "activity": "Hall Meeting with Counselors",
+        "location": "Lounge of your floor in Hatter Hall",
+        "mapUrl": "",
+        "notes": [
+          "Students will meet with the counselor staff to discuss the rules and procedures for the rest of the week.",
+          "Meeting Leaders: Michelle (F1), Jeremy (F2), Steve (F3)",
+          "After the meeting students will relax in the dorm."
+        ]
+      },
+      {
+        "time": "10:00 PM",
+        "activity": "🛌 Lights Out",
+        "location": "",
+        "mapUrl": "",
+        "notes": [
+          "🛡️ Night's Watch: Sara"
+        ]
+      }
     ]
   },
   {
     "date": "2025-06-24",
-    "time": "7:15 - 8:00 AM",
     "themeTitle": "Sharks & Jets",
     "themeDescription": "Wear something with a 🦈 shark or a ✈️ jet on it. 🫰… 🫰… 🫰…",
-    "activity": "⏰ Wake up; prepare for the day.",
-    "location": "",
-    "mapUrl": "",
-    "notes": [
-      "Door knockers: Bill, Steve, Sara, Celeste, David, Holly",
-      "📱 Tim will be off-campus for the morning to pick up Greg Osby. Text or call if needed."
-    ]
-  },
-  {
-    "date": "2025-06-24",
-    "time": "8:00 AM",
-    "themeTitle": "Sharks & Jets",
-    "themeDescription": "Wear something with a 🦈 shark or a ✈️ jet on it. 🫰… 🫰… 🫰…",
-    "activity": "Students meet staff members in designated locations",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
-      "🕵️‍♂️ Tim, Jeremy, Jerrod, Marc: Sweep Hatter Hall before leaving."
-    ]
-  },
-  {
-    "date": "2025-06-24",
-    "time": "8:15 - 8:45 AM",
-    "themeTitle": "Sharks & Jets",
-    "themeDescription": "Wear something with a 🦈 shark or a ✈️ jet on it. 🫰… 🫰… 🫰…",
-    "activity": "🥞 Breakfast",
-    "location": "CUB",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"walking-groups.html\">Walking Groups</a> page."
-    ]
-  },
-  {
-    "date": "2025-06-24",
-    "time": "9:00 - 9:35 AM",
-    "themeTitle": "Sharks & Jets",
-    "themeDescription": "Wear something with a 🦈 shark or a ✈️ jet on it. 🫰… 🫰… 🫰…",
-    "activity": "Fundamentals Class",
-    "location": "Various Rooms",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
-      "Hall Monitors: Michelle (F1), Marc (F2), Tim (F3), Jarrod (McMahan Hallway)"
-    ]
-  },
-  {
-    "date": "2025-06-24",
-    "time": "9:45 - 11:45 AM",
-    "themeTitle": "Sharks & Jets",
-    "themeDescription": "Wear something with a 🦈 shark or a ✈️ jet on it. 🫰… 🫰… 🫰…",
-    "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
-    "location": "",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
-      "<a href=\"presser-monitor.html\">Presser Hall Monitors</a>: Michelle (F1), Sara (F2), Holly (F3)"
-    ]
-  },
-  {
-    "date": "2025-06-24",
-    "time": "12:00 - 12:45 PM",
-    "themeTitle": "Sharks & Jets",
-    "themeDescription": "Wear something with a 🦈 shark or a ✈️ jet on it. 🫰… 🫰… 🫰…",
-    "activity": "🥪 Lunch",
-    "location": "CUB",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
-      "🕵️‍♂️ Tim, Jeremy, Jerrod, Marc: Sweep Music Buildings before leaving."
-    ]
-  },
-  {
-    "date": "2025-06-24",
-    "time": "1:00 - 2:30 PM",
-    "themeTitle": "Sharks & Jets",
-    "themeDescription": "Wear something with a 🦈 shark or a ✈️ jet on it. 🫰… 🫰… 🫰…",
-    "activity": "Masterclass: Scott Devlin",
-    "location": "Feasel Hall",
-    "mapUrl": "",
-    "notes": [
-      "Michelle: Monitor Feasel hallway as needed"
-    ]
-  },
-  {
-    "date": "2025-06-24",
-    "time": "2:45 - 4:45 PM",
-    "themeTitle": "Sharks & Jets",
-    "themeDescription": "Wear something with a 🦈 shark or a ✈️ jet on it. 🫰… 🫰… 🫰…",
-    "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
-    "location": "",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
-      "<a href=\"presser-monitor.html\">Presser Hall Monitors</a>: Michelle (F1), Andrew (F2), David (F3)"
-    ]
-  },
-  {
-    "date": "2025-06-24",
-    "time": "5:00 - 6:00 PM",
-    "themeTitle": "Sharks & Jets",
-    "themeDescription": "Wear something with a 🦈 shark or a ✈️ jet on it. 🫰… 🫰… 🫰…",
-    "activity": "Jazz Classes",
-    "location": "Various Rooms",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
-      "<a href=\"presser-monitor.html\">Presser Hall Monitors</a>: Michelle (F1), Andrew (F2), David (F3), Celeste (McMahan Hallway)",
-      "⚠️ Bill & Holly: set up stage for Tim's recital.",
-      "⚠️ Jarrod, Tim: Set up Movie Night"
-    ]
-  },
-  {
-    "date": "2025-06-24",
-    "time": "6:15 - 7:00 PM",
-    "themeTitle": "Sharks & Jets",
-    "themeDescription": "Wear something with a 🦈 shark or a ✈️ jet on it. 🫰… 🫰… 🫰…",
-    "activity": "🍽️ Dinner",
-    "location": "CUB",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
-      "⚠️ Tim, Jeremy, Jarrod, Marc: Re-set Feasel for Symphonic Rehearsal",
-      "🕵️‍♂️ Tim, Jeremy, Jerrod, Marc: Sweep Music Buildings before leaving."
-    ]
-  },
-  {
-    "date": "2025-06-24",
-    "time": "7:15 - 8:00 PM",
-    "themeTitle": "Sharks & Jets",
-    "themeDescription": "Wear something with a 🦈 shark or a ✈️ jet on it. 🫰… 🫰… 🫰…",
-    "activity": "Faculty Recital: Dr. Rosenberg and Ms. Charlton",
-    "location": "Lee Chapel",
-    "mapUrl": "",
-    "notes": [
-      "Michelle: Monitor Feasel hallway as needed",
-      "🙅‍♂️ Students <strong>can not</strong> order delivery food tonight. There will be snacks and drinks at the movie."
-    ]
-  },
-  {
-    "date": "2025-06-24",
-    "time": "8:15 - 10:00 PM",
-    "themeTitle": "Sharks & Jets",
-    "themeDescription": "Wear something with a 🦈 shark or a ✈️ jet on it. 🫰… 🫰… 🫰…",
-    "activity": "📽️ Movie Night",
-    "location": "Lynn Business Center (LBC) Auditorium",
-    "mapUrl": "https://maps.app.goo.gl/EWgwrXaMnaUfqTv66",
-    "notes": [
-      "Jeremy: Go to LBC right after recital to prepare movie, lay out snacks, etc.",
-      "<a href=\"walking-groups.html\">Walking Groups</a> move together.",
-      "Groups will walk <em>through</em> McMahan and out the S. exit, then cross Michigan.",
-      "Michelle will designate one or two staff to monitor the lobby/bathrooms.",
-      "Students should be encourage to watch the movie. But, if they really don't want to, or can't, they can sit <em>quietly</em> in the lobby. <strong>Do not advertise this as an option!</strong>. We do not want a big group in the lobby. Students must choose to stay in the Aud. or sit in lobby—they can not move back-and-forth (bathroom breaks are OK)."
-    ]
-  },
-  {
-    "date": "2025-06-24",
-    "time": "10:00 PM",
-    "themeTitle": "Sharks & Jets",
-    "themeDescription": "Wear something with a 🦈 shark or a ✈️ jet on it. 🫰… 🫰… 🫰…",
-    "activity": "🛌 Lights Out",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": [
-      "<a href=\"walking-groups.html\">Walking Groups</a> go to Hatter after movie, then right to rooms and bed.",
-      "⚠️ Tim, Jeremy, Marc: Clean up LBC Aud.",
-      "<a href=\"hall-monitor.html\">Hatter Hall Night Monitors</a>: 🛡️ Andrew, Celeste, Steve. No ranger.",
-      "Night's Watch: 🛡️ Andrew"
+    "activities": [
+      {
+        "time": "7:15 - 8:00 AM",
+        "activity": "⏰ Wake up; prepare for the day.",
+        "location": "",
+        "mapUrl": "",
+        "notes": [
+          "Door knockers: Bill, Steve, Sara, Celeste, David, Holly",
+          "📱 Tim will be off-campus for the morning to pick up Greg Osby. Text or call if needed."
+        ]
+      },
+      {
+        "time": "8:00 AM",
+        "activity": "Students meet staff members in designated locations",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
+          "🕵️‍♂️ Tim, Jeremy, Jerrod, Marc: Sweep Hatter Hall before leaving."
+        ]
+      },
+      {
+        "time": "8:15 - 8:45 AM",
+        "activity": "🥞 Breakfast",
+        "location": "CUB",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"walking-groups.html\">Walking Groups</a> page."
+        ]
+      },
+      {
+        "time": "9:00 - 9:35 AM",
+        "activity": "Fundamentals Class",
+        "location": "Various Rooms",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
+          "Hall Monitors: Michelle (F1), Marc (F2), Tim (F3), Jarrod (McMahan Hallway)"
+        ]
+      },
+      {
+        "time": "9:45 - 11:45 AM",
+        "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
+        "location": "",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
+          "<a href=\"presser-monitor.html\">Presser Hall Monitors</a>: Michelle (F1), Sara (F2), Holly (F3)"
+        ]
+      },
+      {
+        "time": "12:00 - 12:45 PM",
+        "activity": "🥪 Lunch",
+        "location": "CUB",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
+          "🕵️‍♂️ Tim, Jeremy, Jerrod, Marc: Sweep Music Buildings before leaving."
+        ]
+      },
+      {
+        "time": "1:00 - 2:30 PM",
+        "activity": "Masterclass: Scott Devlin",
+        "location": "Feasel Hall",
+        "mapUrl": "",
+        "notes": [
+          "Michelle: Monitor Feasel hallway as needed"
+        ]
+      },
+      {
+        "time": "2:45 - 4:45 PM",
+        "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
+        "location": "",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
+          "<a href=\"presser-monitor.html\">Presser Hall Monitors</a>: Michelle (F1), Andrew (F2), David (F3)"
+        ]
+      },
+      {
+        "time": "5:00 - 6:00 PM",
+        "activity": "Jazz Classes",
+        "location": "Various Rooms",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
+          "<a href=\"presser-monitor.html\">Presser Hall Monitors</a>: Michelle (F1), Andrew (F2), David (F3), Celeste (McMahan Hallway)",
+          "⚠️ Bill & Holly: set up stage for Tim's recital.",
+          "⚠️ Jarrod, Tim: Set up Movie Night"
+        ]
+      },
+      {
+        "time": "6:15 - 7:00 PM",
+        "activity": "🍽️ Dinner",
+        "location": "CUB",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
+          "⚠️ Tim, Jeremy, Jarrod, Marc: Re-set Feasel for Symphonic Rehearsal",
+          "🕵️‍♂️ Tim, Jeremy, Jerrod, Marc: Sweep Music Buildings before leaving."
+        ]
+      },
+      {
+        "time": "7:15 - 8:00 PM",
+        "activity": "Faculty Recital: Dr. Rosenberg and Ms. Charlton",
+        "location": "Lee Chapel",
+        "mapUrl": "",
+        "notes": [
+          "Michelle: Monitor Feasel hallway as needed",
+          "🙅‍♂️ Students <strong>can not</strong> order delivery food tonight. There will be snacks and drinks at the movie."
+        ]
+      },
+      {
+        "time": "8:15 - 10:00 PM",
+        "activity": "📽️ Movie Night",
+        "location": "Lynn Business Center (LBC) Auditorium",
+        "mapUrl": "https://maps.app.goo.gl/EWgwrXaMnaUfqTv66",
+        "notes": [
+          "Jeremy: Go to LBC right after recital to prepare movie, lay out snacks, etc.",
+          "<a href=\"walking-groups.html\">Walking Groups</a> move together.",
+          "Groups will walk <em>through</em> McMahan and out the S. exit, then cross Michigan.",
+          "Michelle will designate one or two staff to monitor the lobby/bathrooms.",
+          "Students should be encourage to watch the movie. But, if they really don't want to, or can't, they can sit <em>quietly</em> in the lobby. <strong>Do not advertise this as an option!</strong>. We do not want a big group in the lobby. Students must choose to stay in the Aud. or sit in lobby—they can not move back-and-forth (bathroom breaks are OK)."
+        ]
+      },
+      {
+        "time": "10:00 PM",
+        "activity": "🛌 Lights Out",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": [
+          "<a href=\"walking-groups.html\">Walking Groups</a> go to Hatter after movie, then right to rooms and bed.",
+          "⚠️ Tim, Jeremy, Marc: Clean up LBC Aud.",
+          "<a href=\"hall-monitor.html\">Hatter Hall Night Monitors</a>: 🛡️ Andrew, Celeste, Steve. No ranger.",
+          "Night's Watch: 🛡️ Andrew"
+        ]
+      }
     ]
   },
   {
     "date": "2025-06-25",
-    "time": "7:15 - 8:00 AM",
     "themeTitle": "⚡ Greased Lightning",
     "themeDescription": "Wear something retro! Bandanas, rolled sleeves, bowling shirts, sunglasses. Inspired by 🕶️ <em><a href=\"https://res.cloudinary.com/dwh6m5mbn/image/upload/c_lfill,w_830/What%27s%20On/Review-_Grease_The_Musical_2024.jpg\">Grease</a></em>, 💃 <a href=\"https://i0.wp.com/pepperdinebeacon.com/wp-content/uploads/2021/12/West-Side-Story-Review.png?resize=1140%2C570&amp;ssl=1\"><em>West Side Story</em></a>, 🎭 <em><a href=\"https://i.redd.it/rzwi0hm1hc2a1.jpg\">Fame</a></em>, 👣 <em><a href=\"https://saltlakemagazine-webaholics.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/01133937/The-Cast-of-the-Film-Footloose-from-1984_SLM-JA24_Paramount_Courtesy-Everett-Collection.jpg\">Footloose</a></em>).",
-    "activity": "⏰ Wake up; prepare for the day.",
-    "location": "",
-    "mapUrl": "",
-    "notes": [
-      "Door knockers: Bill, Steve, Sara, Celeste, David, Holly"
-    ]
-  },
-  {
-    "date": "2025-06-25",
-    "time": "8:00 AM",
-    "themeTitle": "⚡ Greased Lightning",
-    "themeDescription": "Wear something retro! Bandanas, rolled sleeves, bowling shirts, sunglasses. Inspired by 🕶️ <em><a href=\"https://res.cloudinary.com/dwh6m5mbn/image/upload/c_lfill,w_830/What%27s%20On/Review-_Grease_The_Musical_2024.jpg\">Grease</a></em>, 💃 <a href=\"https://i0.wp.com/pepperdinebeacon.com/wp-content/uploads/2021/12/West-Side-Story-Review.png?resize=1140%2C570&amp;ssl=1\"><em>West Side Story</em></a>, 🎭 <em><a href=\"https://i.redd.it/rzwi0hm1hc2a1.jpg\">Fame</a></em>, 👣 <em><a href=\"https://saltlakemagazine-webaholics.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/01133937/The-Cast-of-the-Film-Footloose-from-1984_SLM-JA24_Paramount_Courtesy-Everett-Collection.jpg\">Footloose</a></em>).",
-    "activity": "Students meet staff members in designated locations",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": [
-      "Coordinate Presser and McMahan monitors for after-concert practice time during jazz jam",
-      "Coordinate Presser and McMahan monitors for after-concert practice time during jazz jam"
-    ]
-  },
-  {
-    "date": "2025-06-25",
-    "time": "8:15 - 8:45 AM",
-    "themeTitle": "⚡ Greased Lightning",
-    "themeDescription": "Wear something retro! Bandanas, rolled sleeves, bowling shirts, sunglasses. Inspired by 🕶️ <em><a href=\"https://res.cloudinary.com/dwh6m5mbn/image/upload/c_lfill,w_830/What%27s%20On/Review-_Grease_The_Musical_2024.jpg\">Grease</a></em>, 💃 <a href=\"https://i0.wp.com/pepperdinebeacon.com/wp-content/uploads/2021/12/West-Side-Story-Review.png?resize=1140%2C570&amp;ssl=1\"><em>West Side Story</em></a>, 🎭 <em><a href=\"https://i.redd.it/rzwi0hm1hc2a1.jpg\">Fame</a></em>, 👣 <em><a href=\"https://saltlakemagazine-webaholics.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/01133937/The-Cast-of-the-Film-Footloose-from-1984_SLM-JA24_Paramount_Courtesy-Everett-Collection.jpg\">Footloose</a></em>).",
-    "activity": "🥞 Breakfast",
-    "location": "CUB",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-25",
-    "time": "9:00 - 9:35 AM",
-    "themeTitle": "⚡ Greased Lightning",
-    "themeDescription": "Wear something retro! Bandanas, rolled sleeves, bowling shirts, sunglasses. Inspired by 🕶️ <em><a href=\"https://res.cloudinary.com/dwh6m5mbn/image/upload/c_lfill,w_830/What%27s%20On/Review-_Grease_The_Musical_2024.jpg\">Grease</a></em>, 💃 <a href=\"https://i0.wp.com/pepperdinebeacon.com/wp-content/uploads/2021/12/West-Side-Story-Review.png?resize=1140%2C570&amp;ssl=1\"><em>West Side Story</em></a>, 🎭 <em><a href=\"https://i.redd.it/rzwi0hm1hc2a1.jpg\">Fame</a></em>, 👣 <em><a href=\"https://saltlakemagazine-webaholics.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/01133937/The-Cast-of-the-Film-Footloose-from-1984_SLM-JA24_Paramount_Courtesy-Everett-Collection.jpg\">Footloose</a></em>).",
-    "activity": "Fundamentals Class",
-    "location": "Various Rooms",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
-      "Hall Monitors: Michelle (F1), Marc (F2), Tim (F3), Jarrod (McMahan Hallway)"
-    ]
-  },
-  {
-    "date": "2025-06-25",
-    "time": "9:45 - 11:45 AM",
-    "themeTitle": "⚡ Greased Lightning",
-    "themeDescription": "Wear something retro! Bandanas, rolled sleeves, bowling shirts, sunglasses. Inspired by 🕶️ <em><a href=\"https://res.cloudinary.com/dwh6m5mbn/image/upload/c_lfill,w_830/What%27s%20On/Review-_Grease_The_Musical_2024.jpg\">Grease</a></em>, 💃 <a href=\"https://i0.wp.com/pepperdinebeacon.com/wp-content/uploads/2021/12/West-Side-Story-Review.png?resize=1140%2C570&amp;ssl=1\"><em>West Side Story</em></a>, 🎭 <em><a href=\"https://i.redd.it/rzwi0hm1hc2a1.jpg\">Fame</a></em>, 👣 <em><a href=\"https://saltlakemagazine-webaholics.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/01133937/The-Cast-of-the-Film-Footloose-from-1984_SLM-JA24_Paramount_Courtesy-Everett-Collection.jpg\">Footloose</a></em>).",
-    "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
-    "location": "",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
-      "<a href=\"presser-monitor.html\">Presser Hall Monitors</a>: Michelle (F1), Sara (F2), Holly (F3)"
-    ]
-  },
-  {
-    "date": "2025-06-25",
-    "time": "12:00 - 12:45 PM",
-    "themeTitle": "⚡ Greased Lightning",
-    "themeDescription": "Wear something retro! Bandanas, rolled sleeves, bowling shirts, sunglasses. Inspired by 🕶️ <em><a href=\"https://res.cloudinary.com/dwh6m5mbn/image/upload/c_lfill,w_830/What%27s%20On/Review-_Grease_The_Musical_2024.jpg\">Grease</a></em>, 💃 <a href=\"https://i0.wp.com/pepperdinebeacon.com/wp-content/uploads/2021/12/West-Side-Story-Review.png?resize=1140%2C570&amp;ssl=1\"><em>West Side Story</em></a>, 🎭 <em><a href=\"https://i.redd.it/rzwi0hm1hc2a1.jpg\">Fame</a></em>, 👣 <em><a href=\"https://saltlakemagazine-webaholics.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/01133937/The-Cast-of-the-Film-Footloose-from-1984_SLM-JA24_Paramount_Courtesy-Everett-Collection.jpg\">Footloose</a></em>).",
-    "activity": "🥪 Lunch",
-    "location": "CUB",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
-      "🕵️‍♂️ Tim, Jeremy, Jerrod, Marc: Sweep Music Buildings before leaving."
-    ]
-  },
-  {
-    "date": "2025-06-25",
-    "time": "1:00 - 3:00 PM",
-    "themeTitle": "⚡ Greased Lightning",
-    "themeDescription": "Wear something retro! Bandanas, rolled sleeves, bowling shirts, sunglasses. Inspired by 🕶️ <em><a href=\"https://res.cloudinary.com/dwh6m5mbn/image/upload/c_lfill,w_830/What%27s%20On/Review-_Grease_The_Musical_2024.jpg\">Grease</a></em>, 💃 <a href=\"https://i0.wp.com/pepperdinebeacon.com/wp-content/uploads/2021/12/West-Side-Story-Review.png?resize=1140%2C570&amp;ssl=1\"><em>West Side Story</em></a>, 🎭 <em><a href=\"https://i.redd.it/rzwi0hm1hc2a1.jpg\">Fame</a></em>, 👣 <em><a href=\"https://saltlakemagazine-webaholics.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/01133937/The-Cast-of-the-Film-Footloose-from-1984_SLM-JA24_Paramount_Courtesy-Everett-Collection.jpg\">Footloose</a></em>).",
-    "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
-    "location": "",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
-      "<a href=\"presser-monitor.html\">Presser Hall Monitors</a>: Michelle (F1), Andrew (F2), David (F3)"
-    ]
-  },
-  {
-    "date": "2025-06-25",
-    "time": "3:15 - 4:15 PM",
-    "themeTitle": "⚡ Greased Lightning",
-    "themeDescription": "Wear something retro! Bandanas, rolled sleeves, bowling shirts, sunglasses. Inspired by 🕶️ <em><a href=\"https://res.cloudinary.com/dwh6m5mbn/image/upload/c_lfill,w_830/What%27s%20On/Review-_Grease_The_Musical_2024.jpg\">Grease</a></em>, 💃 <a href=\"https://i0.wp.com/pepperdinebeacon.com/wp-content/uploads/2021/12/West-Side-Story-Review.png?resize=1140%2C570&amp;ssl=1\"><em>West Side Story</em></a>, 🎭 <em><a href=\"https://i.redd.it/rzwi0hm1hc2a1.jpg\">Fame</a></em>, 👣 <em><a href=\"https://saltlakemagazine-webaholics.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/01133937/The-Cast-of-the-Film-Footloose-from-1984_SLM-JA24_Paramount_Courtesy-Everett-Collection.jpg\">Footloose</a></em>).",
-    "activity": "Masterclass: Greg Osby",
-    "location": "Feasel Hall",
-    "mapUrl": "",
-    "notes": [
-      "🚨 All hands needed at 3:00 to quickly set up Feasel for Masterclass",
-      "⚠️ Jeremy, Jarrod, Marc, Bill: Set up Tinsley for Greg Osby concert.",
-      "⚠️ Steve, Sara, Celeste, Matt, David, Holly: Set up scavenger hunt."
-    ]
-  },
-  {
-    "date": "2025-06-25",
-    "time": "4:25 - 6:00 PM",
-    "themeTitle": "⚡ Greased Lightning",
-    "themeDescription": "Wear something retro! Bandanas, rolled sleeves, bowling shirts, sunglasses. Inspired by 🕶️ <em><a href=\"https://res.cloudinary.com/dwh6m5mbn/image/upload/c_lfill,w_830/What%27s%20On/Review-_Grease_The_Musical_2024.jpg\">Grease</a></em>, 💃 <a href=\"https://i0.wp.com/pepperdinebeacon.com/wp-content/uploads/2021/12/West-Side-Story-Review.png?resize=1140%2C570&amp;ssl=1\"><em>West Side Story</em></a>, 🎭 <em><a href=\"https://i.redd.it/rzwi0hm1hc2a1.jpg\">Fame</a></em>, 👣 <em><a href=\"https://saltlakemagazine-webaholics.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/01133937/The-Cast-of-the-Film-Footloose-from-1984_SLM-JA24_Paramount_Courtesy-Everett-Collection.jpg\">Footloose</a></em>).",
-    "activity": "🔎 Scavenger Hunt",
-    "location": "Feasel & Campus",
-    "mapUrl": "",
-    "notes": [
-      "All staff (except Tim): supervise your scavenger hunt team. Teams return to Feasel at 5:45.",
-      "Tim will help Greg and monitor Feasel and anyone sitting out of the scavenger hunt."
-    ]
-  },
-  {
-    "date": "2025-06-25",
-    "time": "6:15 - 7:00 PM",
-    "themeTitle": "⚡ Greased Lightning",
-    "themeDescription": "Wear something retro! Bandanas, rolled sleeves, bowling shirts, sunglasses. Inspired by 🕶️ <em><a href=\"https://res.cloudinary.com/dwh6m5mbn/image/upload/c_lfill,w_830/What%27s%20On/Review-_Grease_The_Musical_2024.jpg\">Grease</a></em>, 💃 <a href=\"https://i0.wp.com/pepperdinebeacon.com/wp-content/uploads/2021/12/West-Side-Story-Review.png?resize=1140%2C570&amp;ssl=1\"><em>West Side Story</em></a>, 🎭 <em><a href=\"https://i.redd.it/rzwi0hm1hc2a1.jpg\">Fame</a></em>, 👣 <em><a href=\"https://saltlakemagazine-webaholics.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/01133937/The-Cast-of-the-Film-Footloose-from-1984_SLM-JA24_Paramount_Courtesy-Everett-Collection.jpg\">Footloose</a></em>).",
-    "activity": "🍽️ Dinner",
-    "location": "CUB",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
-      "🕵️‍♂️ Tim, Jeremy, Jerrod, Marc: Sweep Music Buildings before leaving."
-    ]
-  },
-  {
-    "date": "2025-06-25",
-    "time": "7:15 - 8:15 PM",
-    "themeTitle": "⚡ Greased Lightning",
-    "themeDescription": "Wear something retro! Bandanas, rolled sleeves, bowling shirts, sunglasses. Inspired by 🕶️ <em><a href=\"https://res.cloudinary.com/dwh6m5mbn/image/upload/c_lfill,w_830/What%27s%20On/Review-_Grease_The_Musical_2024.jpg\">Grease</a></em>, 💃 <a href=\"https://i0.wp.com/pepperdinebeacon.com/wp-content/uploads/2021/12/West-Side-Story-Review.png?resize=1140%2C570&amp;ssl=1\"><em>West Side Story</em></a>, 🎭 <em><a href=\"https://i.redd.it/rzwi0hm1hc2a1.jpg\">Fame</a></em>, 👣 <em><a href=\"https://saltlakemagazine-webaholics.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/01133937/The-Cast-of-the-Film-Footloose-from-1984_SLM-JA24_Paramount_Courtesy-Everett-Collection.jpg\">Footloose</a></em>).",
-    "activity": "Guest Artist Recital: Greg Osby",
-    "location": "Tinsley Hall",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-25",
-    "time": "8:15 - 9:15 PM",
-    "themeTitle": "⚡ Greased Lightning",
-    "themeDescription": "Wear something retro! Bandanas, rolled sleeves, bowling shirts, sunglasses. Inspired by 🕶️ <em><a href=\"https://res.cloudinary.com/dwh6m5mbn/image/upload/c_lfill,w_830/What%27s%20On/Review-_Grease_The_Musical_2024.jpg\">Grease</a></em>, 💃 <a href=\"https://i0.wp.com/pepperdinebeacon.com/wp-content/uploads/2021/12/West-Side-Story-Review.png?resize=1140%2C570&amp;ssl=1\"><em>West Side Story</em></a>, 🎭 <em><a href=\"https://i.redd.it/rzwi0hm1hc2a1.jpg\">Fame</a></em>, 👣 <em><a href=\"https://saltlakemagazine-webaholics.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/01133937/The-Cast-of-the-Film-Footloose-from-1984_SLM-JA24_Paramount_Courtesy-Everett-Collection.jpg\">Footloose</a></em>).",
-    "activity": "Jam Session with Greg Osby & Band",
-    "location": "Tinsley Hall",
-    "mapUrl": "",
-    "notes": [
-      "Michelle will coordinate Presser and McMahan monitors for after-concert practice time during jazz jam. No students leave the music buildings until after the jam."
-    ]
-  },
-  {
-    "date": "2025-06-25",
-    "time": "9:30 - 10:00 PM",
-    "themeTitle": "⚡ Greased Lightning",
-    "themeDescription": "Wear something retro! Bandanas, rolled sleeves, bowling shirts, sunglasses. Inspired by 🕶️ <em><a href=\"https://res.cloudinary.com/dwh6m5mbn/image/upload/c_lfill,w_830/What%27s%20On/Review-_Grease_The_Musical_2024.jpg\">Grease</a></em>, 💃 <a href=\"https://i0.wp.com/pepperdinebeacon.com/wp-content/uploads/2021/12/West-Side-Story-Review.png?resize=1140%2C570&amp;ssl=1\"><em>West Side Story</em></a>, 🎭 <em><a href=\"https://i.redd.it/rzwi0hm1hc2a1.jpg\">Fame</a></em>, 👣 <em><a href=\"https://saltlakemagazine-webaholics.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/01133937/The-Cast-of-the-Film-Footloose-from-1984_SLM-JA24_Paramount_Courtesy-Everett-Collection.jpg\">Footloose</a></em>).",
-    "activity": "Students in Dorm",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
-      "🕵️‍♂️ Tim, Jeremy, Marc: Sweep Music Buildings.",
-      "⚠️ Tim, Jeremy, Marc: clean up Tinsley, re-set Feasel.",
-      "<a href=\"hall-monitor.html\">Hatter Hall Night Monitors</a>: 🛡️ Holly, Matt, David. Ranger: Andrew"
-    ]
-  },
-  {
-    "date": "2025-06-25",
-    "time": "10:00 PM",
-    "themeTitle": "⚡ Greased Lightning",
-    "themeDescription": "Wear something retro! Bandanas, rolled sleeves, bowling shirts, sunglasses. Inspired by 🕶️ <em><a href=\"https://res.cloudinary.com/dwh6m5mbn/image/upload/c_lfill,w_830/What%27s%20On/Review-_Grease_The_Musical_2024.jpg\">Grease</a></em>, 💃 <a href=\"https://i0.wp.com/pepperdinebeacon.com/wp-content/uploads/2021/12/West-Side-Story-Review.png?resize=1140%2C570&amp;ssl=1\"><em>West Side Story</em></a>, 🎭 <em><a href=\"https://i.redd.it/rzwi0hm1hc2a1.jpg\">Fame</a></em>, 👣 <em><a href=\"https://saltlakemagazine-webaholics.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/01133937/The-Cast-of-the-Film-Footloose-from-1984_SLM-JA24_Paramount_Courtesy-Everett-Collection.jpg\">Footloose</a></em>).",
-    "activity": "🛌 Lights Out",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": [
-      "Night's Watch: 🛡️ Holly"
+    "activities": [
+      {
+        "time": "7:15 - 8:00 AM",
+        "activity": "⏰ Wake up; prepare for the day.",
+        "location": "",
+        "mapUrl": "",
+        "notes": [
+          "Door knockers: Bill, Steve, Sara, Celeste, David, Holly"
+        ]
+      },
+      {
+        "time": "8:00 AM",
+        "activity": "Students meet staff members in designated locations",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": [
+          "Coordinate Presser and McMahan monitors for after-concert practice time during jazz jam",
+          "Coordinate Presser and McMahan monitors for after-concert practice time during jazz jam"
+        ]
+      },
+      {
+        "time": "8:15 - 8:45 AM",
+        "activity": "🥞 Breakfast",
+        "location": "CUB",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "9:00 - 9:35 AM",
+        "activity": "Fundamentals Class",
+        "location": "Various Rooms",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
+          "Hall Monitors: Michelle (F1), Marc (F2), Tim (F3), Jarrod (McMahan Hallway)"
+        ]
+      },
+      {
+        "time": "9:45 - 11:45 AM",
+        "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
+        "location": "",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
+          "<a href=\"presser-monitor.html\">Presser Hall Monitors</a>: Michelle (F1), Sara (F2), Holly (F3)"
+        ]
+      },
+      {
+        "time": "12:00 - 12:45 PM",
+        "activity": "🥪 Lunch",
+        "location": "CUB",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
+          "🕵️‍♂️ Tim, Jeremy, Jerrod, Marc: Sweep Music Buildings before leaving."
+        ]
+      },
+      {
+        "time": "1:00 - 3:00 PM",
+        "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
+        "location": "",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
+          "<a href=\"presser-monitor.html\">Presser Hall Monitors</a>: Michelle (F1), Andrew (F2), David (F3)"
+        ]
+      },
+      {
+        "time": "3:15 - 4:15 PM",
+        "activity": "Masterclass: Greg Osby",
+        "location": "Feasel Hall",
+        "mapUrl": "",
+        "notes": [
+          "🚨 All hands needed at 3:00 to quickly set up Feasel for Masterclass",
+          "⚠️ Jeremy, Jarrod, Marc, Bill: Set up Tinsley for Greg Osby concert.",
+          "⚠️ Steve, Sara, Celeste, Matt, David, Holly: Set up scavenger hunt."
+        ]
+      },
+      {
+        "time": "4:25 - 6:00 PM",
+        "activity": "🔎 Scavenger Hunt",
+        "location": "Feasel & Campus",
+        "mapUrl": "",
+        "notes": [
+          "All staff (except Tim): supervise your scavenger hunt team. Teams return to Feasel at 5:45.",
+          "Tim will help Greg and monitor Feasel and anyone sitting out of the scavenger hunt."
+        ]
+      },
+      {
+        "time": "6:15 - 7:00 PM",
+        "activity": "🍽️ Dinner",
+        "location": "CUB",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
+          "🕵️‍♂️ Tim, Jeremy, Jerrod, Marc: Sweep Music Buildings before leaving."
+        ]
+      },
+      {
+        "time": "7:15 - 8:15 PM",
+        "activity": "Guest Artist Recital: Greg Osby",
+        "location": "Tinsley Hall",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "8:15 - 9:15 PM",
+        "activity": "Jam Session with Greg Osby & Band",
+        "location": "Tinsley Hall",
+        "mapUrl": "",
+        "notes": [
+          "Michelle will coordinate Presser and McMahan monitors for after-concert practice time during jazz jam. No students leave the music buildings until after the jam."
+        ]
+      },
+      {
+        "time": "9:30 - 10:00 PM",
+        "activity": "Students in Dorm",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
+          "🕵️‍♂️ Tim, Jeremy, Marc: Sweep Music Buildings.",
+          "⚠️ Tim, Jeremy, Marc: clean up Tinsley, re-set Feasel.",
+          "<a href=\"hall-monitor.html\">Hatter Hall Night Monitors</a>: 🛡️ Holly, Matt, David. Ranger: Andrew"
+        ]
+      },
+      {
+        "time": "10:00 PM",
+        "activity": "🛌 Lights Out",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": [
+          "Night's Watch: 🛡️ Holly"
+        ]
+      }
     ]
   },
   {
     "date": "2025-06-26",
-    "time": "7:15 - 8:00 AM",
     "themeTitle": "🐱 Purrs-day Thursday",
     "themeDescription": "Wear a 🐈 cat-themed outfit. Bonus points for <a href=\"https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1920/v1638481741/adhcqgo2sadh0sqskunk.jpg\"><i>Cats</i></a> musical merch (no costumes). Bring your camp shirt for the photo!",
-    "activity": "⏰ Wake up; prepare for the day.",
-    "location": "",
-    "mapUrl": "",
-    "notes": [
-      "Door knockers: Bill, Steve, Sara, Celeste, David, Holly",
-      "📱 Tim will be off-campus for the morning to drop off Greg Osby. Text or call if needed."
-    ]
-  },
-  {
-    "date": "2025-06-26",
-    "time": "8:00 AM",
-    "themeTitle": "🐱 Purrs-day Thursday",
-    "themeDescription": "Wear a 🐈 cat-themed outfit. Bonus points for <a href=\"https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1920/v1638481741/adhcqgo2sadh0sqskunk.jpg\"><i>Cats</i></a> musical merch (no costumes). Bring your camp shirt for the photo!",
-    "activity": "Students meet staff members in designated locations",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
-      "🕵️‍♂️ Tim, Jeremy, Jerrod, Marc: Sweep Hatter Hall before leaving."
-    ]
-  },
-  {
-    "date": "2025-06-26",
-    "time": "8:15 - 8:45 AM",
-    "themeTitle": "🐱 Purrs-day Thursday",
-    "themeDescription": "Wear a 🐈 cat-themed outfit. Bonus points for <a href=\"https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1920/v1638481741/adhcqgo2sadh0sqskunk.jpg\"><i>Cats</i></a> musical merch (no costumes). Bring your camp shirt for the photo!",
-    "activity": "🥞 Breakfast",
-    "location": "CUB",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-26",
-    "time": "9:00 - 9:35 AM",
-    "themeTitle": "🐱 Purrs-day Thursday",
-    "themeDescription": "Wear a 🐈 cat-themed outfit. Bonus points for <a href=\"https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1920/v1638481741/adhcqgo2sadh0sqskunk.jpg\"><i>Cats</i></a> musical merch (no costumes). Bring your camp shirt for the photo!",
-    "activity": "Fundamentals Class",
-    "location": "Various Rooms",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
-      "Hall Monitors: Michelle (F1), Marc (F2), Tim (F3), Jarrod (McMahan Hallway)"
-    ]
-  },
-  {
-    "date": "2025-06-26",
-    "time": "9:45 - 11:45 AM",
-    "themeTitle": "🐱 Purrs-day Thursday",
-    "themeDescription": "Wear a 🐈 cat-themed outfit. Bonus points for <a href=\"https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1920/v1638481741/adhcqgo2sadh0sqskunk.jpg\"><i>Cats</i></a> musical merch (no costumes). Bring your camp shirt for the photo!",
-    "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
-    "location": "",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
-      "<a href=\"presser-monitor.html\">Presser Hall Monitors</a>: Michelle (F1), Sara (F2), Holly (F3)"
-    ]
-  },
-  {
-    "date": "2025-06-26",
-    "time": "12:00 - 12:45 PM",
-    "themeTitle": "🐱 Purrs-day Thursday",
-    "themeDescription": "Wear a 🐈 cat-themed outfit. Bonus points for <a href=\"https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1920/v1638481741/adhcqgo2sadh0sqskunk.jpg\"><i>Cats</i></a> musical merch (no costumes). Bring your camp shirt for the photo!",
-    "activity": "🥪 Lunch",
-    "location": "CUB",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
-      "🕵️‍♂️ Tim, Jeremy, Jerrod, Marc: Sweep Music Buildings before leaving."
-    ]
-  },
-  {
-    "date": "2025-06-26",
-    "time": "1:00 - 2:30 PM",
-    "themeTitle": "🐱 Purrs-day Thursday",
-    "themeDescription": "Wear a 🐈 cat-themed outfit. Bonus points for <a href=\"https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1920/v1638481741/adhcqgo2sadh0sqskunk.jpg\"><i>Cats</i></a> musical merch (no costumes). Bring your camp shirt for the photo!",
-    "activity": "Masterclass: Preparing for All-State Auditions",
-    "location": "Feasel Hall",
-    "mapUrl": "",
-    "notes": [
-      "Bill & Marc: 7-8 All State, Steve & Jarrod: 9-10 All-State, Tim & Jeremy: 11-12 All-State",
-      "<a href=\"presser-monitor.html\">Presser Hall Monitors</a>: Michelle (F1), Sara (F2), Holly (F3)"
-    ]
-  },
-  {
-    "date": "2025-06-26",
-    "time": "2:45 - 4:45 PM",
-    "themeTitle": "🐱 Purrs-day Thursday",
-    "themeDescription": "Wear a 🐈 cat-themed outfit. Bonus points for <a href=\"https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1920/v1638481741/adhcqgo2sadh0sqskunk.jpg\"><i>Cats</i></a> musical merch (no costumes). Bring your camp shirt for the photo!",
-    "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
-    "location": "",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
-      "<a href=\"presser-monitor.html\">Presser Hall Monitors</a>: Michelle (F1), Andrew (F2), David (F3)"
-    ]
-  },
-  {
-    "date": "2025-06-26",
-    "time": "5:00 - 5:50 PM",
-    "themeTitle": "🐱 Purrs-day Thursday",
-    "themeDescription": "Wear a 🐈 cat-themed outfit. Bonus points for <a href=\"https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1920/v1638481741/adhcqgo2sadh0sqskunk.jpg\"><i>Cats</i></a> musical merch (no costumes). Bring your camp shirt for the photo!",
-    "activity": "Jazz Classes",
-    "location": "Various Rooms",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
-      "<a href=\"presser-monitor.html\">Presser Hall Monitors</a>: Michelle (F1), Andrew (F2), David (F3), Celeste (McMahan Hallway)",
-      "⚠️ Jarrod & Bill: Set up Lee Chapel for YA Concert, then help Tim and Holly with Pizza Party",
-      "⚠️ Tim & Holly: Set up Pizza Party.",
-      "🛎️ Class ends at 5:50 to do group photo."
-    ]
-  },
-  {
-    "date": "2025-06-26",
-    "time": "6:00 - 6:10 PM",
-    "themeTitle": "🐱 Purrs-day Thursday",
-    "themeDescription": "Wear a 🐈 cat-themed outfit. Bonus points for <a href=\"https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1920/v1638481741/adhcqgo2sadh0sqskunk.jpg\"><i>Cats</i></a> musical merch (no costumes). Bring your camp shirt for the photo!",
-    "activity": "📸 Workshop Photo",
-    "location": "Sampson Hall steps (<a href=\"https://maps.app.goo.gl/xjX7xrKMzvb5211VA\">map</a>)",
-    "mapUrl": "",
-    "notes": [
-      "<a href=\"walking-groups.html\">Walking Groups</a> meet up before walking to Sampson Hall Steps.",
-      "Jeremy, Jarrod, Marc: Sweep Music Buildings"
-    ]
-  },
-  {
-    "date": "2025-06-26",
-    "time": "6:15 - 7:00 PM",
-    "themeTitle": "🐱 Purrs-day Thursday",
-    "themeDescription": "Wear a 🐈 cat-themed outfit. Bonus points for <a href=\"https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1920/v1638481741/adhcqgo2sadh0sqskunk.jpg\"><i>Cats</i></a> musical merch (no costumes). Bring your camp shirt for the photo!",
-    "activity": "🍕 Dinner: Pizza Party",
-    "location": "Palm Court (<a href=\"https://maps.app.goo.gl/onJmxu1JX1MWwk4k8\">map</a>)",
-    "mapUrl": "",
-    "notes": [
-      "Tim: Take YA to Green Room at 6:40 for change & warm-up",
-      "Marc, Steve, Michelle: Sweep Palm Court"
-    ]
-  },
-  {
-    "date": "2025-06-26",
-    "time": "7:15 - 8:00 PM",
-    "themeTitle": "🐱 Purrs-day Thursday",
-    "themeDescription": "Wear a 🐈 cat-themed outfit. Bonus points for <a href=\"https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1920/v1638481741/adhcqgo2sadh0sqskunk.jpg\"><i>Cats</i></a> musical merch (no costumes). Bring your camp shirt for the photo!",
-    "activity": "Young Artist Honors Recital",
-    "location": "Lee Chapel",
-    "mapUrl": "",
-    "notes": [
-      "Jarrod, Bill, Celeste, Andrew, David, Holly: Clean up pizza party.",
-      "Jarrod, Bill, plus anyone else needed: Bring coolers & Snacks to LBC for Movie Night.",
-      "Michelle monitors the back of Lee and the bathroom during the concert.",
-      "Steve (F1 Lobby), Sara (F2 Top of Stairs): Greet families in lobby of Lee."
-    ]
-  },
-  {
-    "date": "2025-06-26",
-    "time": "8:15 - 9:00 PM",
-    "themeTitle": "🐱 Purrs-day Thursday",
-    "themeDescription": "Wear a 🐈 cat-themed outfit. Bonus points for <a href=\"https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1920/v1638481741/adhcqgo2sadh0sqskunk.jpg\"><i>Cats</i></a> musical merch (no costumes). Bring your camp shirt for the photo!",
-    "activity": "Practice Time or Relax in Dorm",
-    "location": "Presser or Hatter Hall",
-    "mapUrl": "",
-    "notes": [
-      "Movie Night: Part 2. This time with the music on, please."
+    "activities": [
+      {
+        "time": "7:15 - 8:00 AM",
+        "activity": "⏰ Wake up; prepare for the day.",
+        "location": "",
+        "mapUrl": "",
+        "notes": [
+          "Door knockers: Bill, Steve, Sara, Celeste, David, Holly",
+          "📱 Tim will be off-campus for the morning to drop off Greg Osby. Text or call if needed."
+        ]
+      },
+      {
+        "time": "8:00 AM",
+        "activity": "Students meet staff members in designated locations",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
+          "🕵️‍♂️ Tim, Jeremy, Jerrod, Marc: Sweep Hatter Hall before leaving."
+        ]
+      },
+      {
+        "time": "8:15 - 8:45 AM",
+        "activity": "🥞 Breakfast",
+        "location": "CUB",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "9:00 - 9:35 AM",
+        "activity": "Fundamentals Class",
+        "location": "Various Rooms",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
+          "Hall Monitors: Michelle (F1), Marc (F2), Tim (F3), Jarrod (McMahan Hallway)"
+        ]
+      },
+      {
+        "time": "9:45 - 11:45 AM",
+        "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
+        "location": "",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
+          "<a href=\"presser-monitor.html\">Presser Hall Monitors</a>: Michelle (F1), Sara (F2), Holly (F3)"
+        ]
+      },
+      {
+        "time": "12:00 - 12:45 PM",
+        "activity": "🥪 Lunch",
+        "location": "CUB",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
+          "🕵️‍♂️ Tim, Jeremy, Jerrod, Marc: Sweep Music Buildings before leaving."
+        ]
+      },
+      {
+        "time": "1:00 - 2:30 PM",
+        "activity": "Masterclass: Preparing for All-State Auditions",
+        "location": "Feasel Hall",
+        "mapUrl": "",
+        "notes": [
+          "Bill & Marc: 7-8 All State, Steve & Jarrod: 9-10 All-State, Tim & Jeremy: 11-12 All-State",
+          "<a href=\"presser-monitor.html\">Presser Hall Monitors</a>: Michelle (F1), Sara (F2), Holly (F3)"
+        ]
+      },
+      {
+        "time": "2:45 - 4:45 PM",
+        "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
+        "location": "",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
+          "<a href=\"presser-monitor.html\">Presser Hall Monitors</a>: Michelle (F1), Andrew (F2), David (F3)"
+        ]
+      },
+      {
+        "time": "5:00 - 5:50 PM",
+        "activity": "Jazz Classes",
+        "location": "Various Rooms",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
+          "<a href=\"presser-monitor.html\">Presser Hall Monitors</a>: Michelle (F1), Andrew (F2), David (F3), Celeste (McMahan Hallway)",
+          "⚠️ Jarrod & Bill: Set up Lee Chapel for YA Concert, then help Tim and Holly with Pizza Party",
+          "⚠️ Tim & Holly: Set up Pizza Party.",
+          "🛎️ Class ends at 5:50 to do group photo."
+        ]
+      },
+      {
+        "time": "6:00 - 6:10 PM",
+        "activity": "📸 Workshop Photo",
+        "location": "Sampson Hall steps (<a href=\"https://maps.app.goo.gl/xjX7xrKMzvb5211VA\">map</a>)",
+        "mapUrl": "",
+        "notes": [
+          "<a href=\"walking-groups.html\">Walking Groups</a> meet up before walking to Sampson Hall Steps.",
+          "Jeremy, Jarrod, Marc: Sweep Music Buildings"
+        ]
+      },
+      {
+        "time": "6:15 - 7:00 PM",
+        "activity": "🍕 Dinner: Pizza Party",
+        "location": "Palm Court (<a href=\"https://maps.app.goo.gl/onJmxu1JX1MWwk4k8\">map</a>)",
+        "mapUrl": "",
+        "notes": [
+          "Tim: Take YA to Green Room at 6:40 for change & warm-up",
+          "Marc, Steve, Michelle: Sweep Palm Court"
+        ]
+      },
+      {
+        "time": "7:15 - 8:00 PM",
+        "activity": "Young Artist Honors Recital",
+        "location": "Lee Chapel",
+        "mapUrl": "",
+        "notes": [
+          "Jarrod, Bill, Celeste, Andrew, David, Holly: Clean up pizza party.",
+          "Jarrod, Bill, plus anyone else needed: Bring coolers & Snacks to LBC for Movie Night.",
+          "Michelle monitors the back of Lee and the bathroom during the concert.",
+          "Steve (F1 Lobby), Sara (F2 Top of Stairs): Greet families in lobby of Lee."
+        ]
+      },
+      {
+        "time": "8:15 - 9:00 PM",
+        "activity": "Practice Time or Relax in Dorm",
+        "location": "Presser or Hatter Hall",
+        "mapUrl": "",
+        "notes": [
+          "Movie Night: Part 2. This time with the music on, please."
+        ]
+      }
     ]
   },
   {
     "date": "2025-06-27",
-    "time": "7:15 - 8:00 AM",
     "themeTitle": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green",
     "themeDescription": "Wear something 👚 pink or something 🍏 green to show your support for <a href=\"https://en.wikipedia.org/wiki/Glinda\">Glinda</a> (pink) or <a href=\"https://en.wikipedia.org/wiki/Elphaba\">Elphaba</a> (green)&#8230; or maybe some of both!",
-    "activity": "⏰ Wake up; prepare for the day.",
-    "location": "",
-    "mapUrl": "",
-    "notes": [
-      "Door knockers: Bill, Steve, Sara, Celeste, David, Holly"
-    ]
-  },
-  {
-    "date": "2025-06-27",
-    "time": "8:00 AM",
-    "themeTitle": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green",
-    "themeDescription": "Wear something 👚 pink or something 🍏 green to show your support for <a href=\"https://en.wikipedia.org/wiki/Glinda\">Glinda</a> (pink) or <a href=\"https://en.wikipedia.org/wiki/Elphaba\">Elphaba</a> (green)&#8230; or maybe some of both!",
-    "activity": "Students meet staff members in designated locations",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
-      "🕵️‍♂️ Tim, Jeremy, Jerrod, Marc: Sweep Hatter Hall before leaving."
-    ]
-  },
-  {
-    "date": "2025-06-27",
-    "time": "8:15 - 8:45 AM",
-    "themeTitle": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green",
-    "themeDescription": "Wear something 👚 pink or something 🍏 green to show your support for <a href=\"https://en.wikipedia.org/wiki/Glinda\">Glinda</a> (pink) or <a href=\"https://en.wikipedia.org/wiki/Elphaba\">Elphaba</a> (green)&#8230; or maybe some of both!",
-    "activity": "🥞 Breakfast",
-    "location": "CUB",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-27",
-    "time": "9:00 - 9:35 AM",
-    "themeTitle": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green",
-    "themeDescription": "Wear something 👚 pink or something 🍏 green to show your support for <a href=\"https://en.wikipedia.org/wiki/Glinda\">Glinda</a> (pink) or <a href=\"https://en.wikipedia.org/wiki/Elphaba\">Elphaba</a> (green)&#8230; or maybe some of both!",
-    "activity": "Fundamentals Class",
-    "location": "Various Rooms",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
-      "Hall Monitors: Michelle (F1), Marc (F2), Tim (F3), Jarrod (McMahan Hallway)"
-    ]
-  },
-  {
-    "date": "2025-06-27",
-    "time": "9:45 - 11:45 AM",
-    "themeTitle": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green",
-    "themeDescription": "Wear something 👚 pink or something 🍏 green to show your support for <a href=\"https://en.wikipedia.org/wiki/Glinda\">Glinda</a> (pink) or <a href=\"https://en.wikipedia.org/wiki/Elphaba\">Elphaba</a> (green)&#8230; or maybe some of both!",
-    "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
-    "location": "",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
-      "<a href=\"presser-monitor.html\">Presser Hall Monitors</a>: Michelle (F1), Sara (F2), Holly (F3)"
-    ]
-  },
-  {
-    "date": "2025-06-27",
-    "time": "12:00 - 12:45 PM",
-    "themeTitle": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green",
-    "themeDescription": "Wear something 👚 pink or something 🍏 green to show your support for <a href=\"https://en.wikipedia.org/wiki/Glinda\">Glinda</a> (pink) or <a href=\"https://en.wikipedia.org/wiki/Elphaba\">Elphaba</a> (green)&#8230; or maybe some of both!",
-    "activity": "🥪 Lunch",
-    "location": "CUB",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
-      "🕵️‍♂️ Tim, Jeremy, Jerrod, Marc: Sweep Music Buildings before leaving."
-    ]
-  },
-  {
-    "date": "2025-06-27",
-    "time": "1:00 - 3:00 PM",
-    "themeTitle": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green",
-    "themeDescription": "Wear something 👚 pink or something 🍏 green to show your support for <a href=\"https://en.wikipedia.org/wiki/Glinda\">Glinda</a> (pink) or <a href=\"https://en.wikipedia.org/wiki/Elphaba\">Elphaba</a> (green)&#8230; or maybe some of both!",
-    "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
-    "location": "",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
-      "<a href=\"presser-monitor.html\">Presser Hall Monitors</a>: Michelle (F1), Andrew (F2), David (F3)"
-    ]
-  },
-  {
-    "date": "2025-06-27",
-    "time": "3:10 - 4:10 PM",
-    "themeTitle": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green",
-    "themeDescription": "Wear something 👚 pink or something 🍏 green to show your support for <a href=\"https://en.wikipedia.org/wiki/Glinda\">Glinda</a> (pink) or <a href=\"https://en.wikipedia.org/wiki/Elphaba\">Elphaba</a> (green)&#8230; or maybe some of both!",
-    "activity": "Jazz Classes",
-    "location": "Various Rooms",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
-      "<a href=\"presser-monitor.html\">Presser Hall Monitors</a>: Michelle (F1), Andrew (F2), David (F3), Celeste (McMahan Hallway)",
-      "⚠️ Tim, Jarrod, Bill, Holly: Set up Lee Chapel for Chamber Ensemble Dress Rehearsal"
-    ]
-  },
-  {
-    "date": "2025-06-27",
-    "time": "4:15 - 6:00 PM",
-    "themeTitle": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green",
-    "themeDescription": "Wear something 👚 pink or something 🍏 green to show your support for <a href=\"https://en.wikipedia.org/wiki/Glinda\">Glinda</a> (pink) or <a href=\"https://en.wikipedia.org/wiki/Elphaba\">Elphaba</a> (green)&#8230; or maybe some of both!",
-    "activity": "Chamber Music Dress Rehearsal",
-    "location": "Lee Chapel",
-    "mapUrl": "",
-    "notes": [
-      "Jeremy & Marc: Direct the dress rehearsal.",
-      "All other staff assist as needed."
-    ]
-  },
-  {
-    "date": "2025-06-27",
-    "time": "6:15 - 7:00 PM",
-    "themeTitle": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green",
-    "themeDescription": "Wear something 👚 pink or something 🍏 green to show your support for <a href=\"https://en.wikipedia.org/wiki/Glinda\">Glinda</a> (pink) or <a href=\"https://en.wikipedia.org/wiki/Elphaba\">Elphaba</a> (green)&#8230; or maybe some of both!",
-    "activity": "🍽️ Dinner",
-    "location": "CUB",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
-      "Matt, Steve, & Michelle: take early group to Hatter to change.",
-      "Michelle will coordinate with other staff for late group count."
-    ]
-  },
-  {
-    "date": "2025-06-27",
-    "time": "7:00 - 7:15 PM",
-    "themeTitle": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green",
-    "themeDescription": "Wear something 👚 pink or something 🍏 green to show your support for <a href=\"https://en.wikipedia.org/wiki/Glinda\">Glinda</a> (pink) or <a href=\"https://en.wikipedia.org/wiki/Elphaba\">Elphaba</a> (green)&#8230; or maybe some of both!",
-    "activity": "Change Clothes for Concert",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-27",
-    "time": "7:15 - 7:25 PM",
-    "themeTitle": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green",
-    "themeDescription": "Wear something 👚 pink or something 🍏 green to show your support for <a href=\"https://en.wikipedia.org/wiki/Glinda\">Glinda</a> (pink) or <a href=\"https://en.wikipedia.org/wiki/Elphaba\">Elphaba</a> (green)&#8230; or maybe some of both!",
-    "activity": "Walk to Lee Chapel",
-    "location": "Hatter Hall → Lee Chapel",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
-      "Students in place by 7:25 PM.",
-      "Celeste (F1 Lobby, Holly (F1 Door), Sara (F2 Top of Stairs), Steve (F2 Door): Greet families in lobby and at doors of Lee."
-    ]
-  },
-  {
-    "date": "2025-06-27",
-    "time": "7:30 - 8:45 PM",
-    "themeTitle": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green",
-    "themeDescription": "Wear something 👚 pink or something 🍏 green to show your support for <a href=\"https://en.wikipedia.org/wiki/Glinda\">Glinda</a> (pink) or <a href=\"https://en.wikipedia.org/wiki/Elphaba\">Elphaba</a> (green)&#8230; or maybe some of both!",
-    "activity": "Chamber Music Concert",
-    "location": "Lee Chapel",
-    "mapUrl": "",
-    "notes": [
-      "Jeremy & Marc: Stage-manage the concert"
-    ]
-  },
-  {
-    "date": "2025-06-27",
-    "time": "9:00 - 10:00 PM",
-    "themeTitle": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green",
-    "themeDescription": "Wear something 👚 pink or something 🍏 green to show your support for <a href=\"https://en.wikipedia.org/wiki/Glinda\">Glinda</a> (pink) or <a href=\"https://en.wikipedia.org/wiki/Elphaba\">Elphaba</a> (green)&#8230; or maybe some of both!",
-    "activity": "Students in Dorm",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
-      "🕵️‍♂️ Tim, Jeremy, Jerrod, Marc: Sweep Music Buildings. Then reset Lee for large ensemble dress rehearsal.",
-      "<a href=\"hall-monitor.html\">Hatter Hall Night Monitors</a>: 🛡️ <strong>Celeste</strong>, Steve, Matt. Ranger: Sara."
-    ]
-  },
-  {
-    "date": "2025-06-27",
-    "time": "10:00 PM",
-    "themeTitle": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green",
-    "themeDescription": "Wear something 👚 pink or something 🍏 green to show your support for <a href=\"https://en.wikipedia.org/wiki/Glinda\">Glinda</a> (pink) or <a href=\"https://en.wikipedia.org/wiki/Elphaba\">Elphaba</a> (green)&#8230; or maybe some of both!",
-    "activity": "🛌 Lights Out",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": [
-      "🛡️ Night's Watch: Celeste"
+    "activities": [
+      {
+        "time": "7:15 - 8:00 AM",
+        "activity": "⏰ Wake up; prepare for the day.",
+        "location": "",
+        "mapUrl": "",
+        "notes": [
+          "Door knockers: Bill, Steve, Sara, Celeste, David, Holly"
+        ]
+      },
+      {
+        "time": "8:00 AM",
+        "activity": "Students meet staff members in designated locations",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
+          "🕵️‍♂️ Tim, Jeremy, Jerrod, Marc: Sweep Hatter Hall before leaving."
+        ]
+      },
+      {
+        "time": "8:15 - 8:45 AM",
+        "activity": "🥞 Breakfast",
+        "location": "CUB",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "9:00 - 9:35 AM",
+        "activity": "Fundamentals Class",
+        "location": "Various Rooms",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
+          "Hall Monitors: Michelle (F1), Marc (F2), Tim (F3), Jarrod (McMahan Hallway)"
+        ]
+      },
+      {
+        "time": "9:45 - 11:45 AM",
+        "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
+        "location": "",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
+          "<a href=\"presser-monitor.html\">Presser Hall Monitors</a>: Michelle (F1), Sara (F2), Holly (F3)"
+        ]
+      },
+      {
+        "time": "12:00 - 12:45 PM",
+        "activity": "🥪 Lunch",
+        "location": "CUB",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
+          "🕵️‍♂️ Tim, Jeremy, Jerrod, Marc: Sweep Music Buildings before leaving."
+        ]
+      },
+      {
+        "time": "1:00 - 3:00 PM",
+        "activity": "Large Ensemble & Chamber Ensemble Rehearsal",
+        "location": "",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
+          "<a href=\"presser-monitor.html\">Presser Hall Monitors</a>: Michelle (F1), Andrew (F2), David (F3)"
+        ]
+      },
+      {
+        "time": "3:10 - 4:10 PM",
+        "activity": "Jazz Classes",
+        "location": "Various Rooms",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"teaching.html\">Teaching Duties</a> page and <a href=\"rooms.html\">Room Guide</a>.",
+          "<a href=\"presser-monitor.html\">Presser Hall Monitors</a>: Michelle (F1), Andrew (F2), David (F3), Celeste (McMahan Hallway)",
+          "⚠️ Tim, Jarrod, Bill, Holly: Set up Lee Chapel for Chamber Ensemble Dress Rehearsal"
+        ]
+      },
+      {
+        "time": "4:15 - 6:00 PM",
+        "activity": "Chamber Music Dress Rehearsal",
+        "location": "Lee Chapel",
+        "mapUrl": "",
+        "notes": [
+          "Jeremy & Marc: Direct the dress rehearsal.",
+          "All other staff assist as needed."
+        ]
+      },
+      {
+        "time": "6:15 - 7:00 PM",
+        "activity": "🍽️ Dinner",
+        "location": "CUB",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
+          "Matt, Steve, & Michelle: take early group to Hatter to change.",
+          "Michelle will coordinate with other staff for late group count."
+        ]
+      },
+      {
+        "time": "7:00 - 7:15 PM",
+        "activity": "Change Clothes for Concert",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "7:15 - 7:25 PM",
+        "activity": "Walk to Lee Chapel",
+        "location": "Hatter Hall → Lee Chapel",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
+          "Students in place by 7:25 PM.",
+          "Celeste (F1 Lobby, Holly (F1 Door), Sara (F2 Top of Stairs), Steve (F2 Door): Greet families in lobby and at doors of Lee."
+        ]
+      },
+      {
+        "time": "7:30 - 8:45 PM",
+        "activity": "Chamber Music Concert",
+        "location": "Lee Chapel",
+        "mapUrl": "",
+        "notes": [
+          "Jeremy & Marc: Stage-manage the concert"
+        ]
+      },
+      {
+        "time": "9:00 - 10:00 PM",
+        "activity": "Students in Dorm",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
+          "🕵️‍♂️ Tim, Jeremy, Jerrod, Marc: Sweep Music Buildings. Then reset Lee for large ensemble dress rehearsal.",
+          "<a href=\"hall-monitor.html\">Hatter Hall Night Monitors</a>: 🛡️ <strong>Celeste</strong>, Steve, Matt. Ranger: Sara."
+        ]
+      },
+      {
+        "time": "10:00 PM",
+        "activity": "🛌 Lights Out",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": [
+          "🛡️ Night's Watch: Celeste"
+        ]
+      }
     ]
   },
   {
     "date": "2025-06-28",
-    "time": "7:00 AM",
     "themeTitle": "🎓 School Spirit Day",
     "themeDescription": "Show off your 🧑‍🎓 school pride with your favorite school-themed attire!",
-    "activity": "⏰ <strong>Early wake up</strong>; students <em>complete</em> packing for move out.",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": [
-      "Door knockers: Bill, Steve, Sara, Celeste, David, Holly",
-      "Students <strong>do not</strong> need to wear their concert clothes yet."
-    ]
-  },
-  {
-    "date": "2025-06-28",
-    "time": "7:15 AM",
-    "themeTitle": "🎓 School Spirit Day",
-    "themeDescription": "Show off your 🧑‍🎓 school pride with your favorite school-themed attire!",
-    "activity": "Students meet staff members in designated locations",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
-      "🕵️‍♂️ Tim, Jeremy, Jerrod, Marc: Sweep Hatter Hall before leaving."
-    ]
-  },
-  {
-    "date": "2025-06-28",
-    "time": "7:30 - 8:00 AM",
-    "themeTitle": "🎓 School Spirit Day",
-    "themeDescription": "Show off your 🧑‍🎓 school pride with your favorite school-themed attire!",
-    "activity": "🥞 Breakfast",
-    "location": "CUB",
-    "mapUrl": "",
-    "notes": [
-      "Ensembles rehearse in their normal rehearsal rooms."
-    ]
-  },
-  {
-    "date": "2025-06-28",
-    "time": "8:15 - 9:15 AM",
-    "themeTitle": "🎓 School Spirit Day",
-    "themeDescription": "Show off your 🧑‍🎓 school pride with your favorite school-themed attire!",
-    "activity": "Dress Rehearsals",
-    "location": "",
-    "mapUrl": "",
-    "notes": [
-      "At 8:50 Symphonic Saxophones move to Lee for combined ensemble.",
-      "9:00-9:15 Rehearse Camp Theme with combined ensemble."
-    ]
-  },
-  {
-    "date": "2025-06-28",
-    "time": "9:30 - 10:45 AM",
-    "themeTitle": "🎓 School Spirit Day",
-    "themeDescription": "Show off your 🧑‍🎓 school pride with your favorite school-themed attire!",
-    "activity": "Dress for concert & check out",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": [
-      "<a href=\"walking-groups.html\">Walking Groups</a> meet, then return to Hatter.",
-      "🕵️‍♂️ Tim, Jeremy, Jerrod, Marc: Sweep Music Buildings.",
-      "Steve & Sara: Check students out of dorm. Celeste, Matt, Andrew, David, Holly assist."
-    ]
-  },
-  {
-    "date": "2025-06-28",
-    "time": "10:45 AM",
-    "themeTitle": "🎓 School Spirit Day",
-    "themeDescription": "Show off your 🧑‍🎓 school pride with your favorite school-themed attire!",
-    "activity": "Students meet staff members in designated locations",
-    "location": "Hatter Hall",
-    "mapUrl": "",
-    "notes": [
-      "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
-      "Michelle: Sweep Hatter Hall"
-    ]
-  },
-  {
-    "date": "2025-06-28",
-    "time": "11:00 AM",
-    "themeTitle": "🎓 School Spirit Day",
-    "themeDescription": "Show off your 🧑‍🎓 school pride with your favorite school-themed attire!",
-    "activity": "Call time for students",
-    "location": "Lee Chapel",
-    "mapUrl": "",
-    "notes": [
-      "Celeste (F1 Lobby, Holly (F1 Door), Sara (F2 Top of Stairs), Steve (F2 Door): Greet families in lobby and at doors of Lee."
-    ]
-  },
-  {
-    "date": "2025-06-28",
-    "time": "11:30 AM - 12:30 PM",
-    "themeTitle": "🎓 School Spirit Day",
-    "themeDescription": "Show off your 🧑‍🎓 school pride with your favorite school-themed attire!",
-    "activity": "Saxophone Ensembles Concert",
-    "location": "Lee Chapel",
-    "mapUrl": "",
-    "notes": []
-  },
-  {
-    "date": "2025-06-28",
-    "time": "12:30 - 2:00 PM",
-    "themeTitle": "🎓 School Spirit Day",
-    "themeDescription": "Show off your 🧑‍🎓 school pride with your favorite school-themed attire!",
-    "activity": "Equipment return, reset Music Buildings, reset Hatter",
-    "location": "Tinsley Hall",
-    "mapUrl": "",
-    "notes": [
-      "Equipment return team: Jeremy, Marc, Jarrod, Steve, Matt",
-      "Music Buildings & Hatter Reset Team: Bill, Michelle, Sara, Celeste, David, Andrew, Holly"
+    "activities": [
+      {
+        "time": "7:00 AM",
+        "activity": "⏰ <strong>Early wake up</strong>; students <em>complete</em> packing for move out.",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": [
+          "Door knockers: Bill, Steve, Sara, Celeste, David, Holly",
+          "Students <strong>do not</strong> need to wear their concert clothes yet."
+        ]
+      },
+      {
+        "time": "7:15 AM",
+        "activity": "Students meet staff members in designated locations",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
+          "🕵️‍♂️ Tim, Jeremy, Jerrod, Marc: Sweep Hatter Hall before leaving."
+        ]
+      },
+      {
+        "time": "7:30 - 8:00 AM",
+        "activity": "🥞 Breakfast",
+        "location": "CUB",
+        "mapUrl": "",
+        "notes": [
+          "Ensembles rehearse in their normal rehearsal rooms."
+        ]
+      },
+      {
+        "time": "8:15 - 9:15 AM",
+        "activity": "Dress Rehearsals",
+        "location": "",
+        "mapUrl": "",
+        "notes": [
+          "At 8:50 Symphonic Saxophones move to Lee for combined ensemble.",
+          "9:00-9:15 Rehearse Camp Theme with combined ensemble."
+        ]
+      },
+      {
+        "time": "9:30 - 10:45 AM",
+        "activity": "Dress for concert & check out",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": [
+          "<a href=\"walking-groups.html\">Walking Groups</a> meet, then return to Hatter.",
+          "🕵️‍♂️ Tim, Jeremy, Jerrod, Marc: Sweep Music Buildings.",
+          "Steve & Sara: Check students out of dorm. Celeste, Matt, Andrew, David, Holly assist."
+        ]
+      },
+      {
+        "time": "10:45 AM",
+        "activity": "Students meet staff members in designated locations",
+        "location": "Hatter Hall",
+        "mapUrl": "",
+        "notes": [
+          "See <a href=\"walking-groups.html\">Walking Groups</a> page.",
+          "Michelle: Sweep Hatter Hall"
+        ]
+      },
+      {
+        "time": "11:00 AM",
+        "activity": "Call time for students",
+        "location": "Lee Chapel",
+        "mapUrl": "",
+        "notes": [
+          "Celeste (F1 Lobby, Holly (F1 Door), Sara (F2 Top of Stairs), Steve (F2 Door): Greet families in lobby and at doors of Lee."
+        ]
+      },
+      {
+        "time": "11:30 AM - 12:30 PM",
+        "activity": "Saxophone Ensembles Concert",
+        "location": "Lee Chapel",
+        "mapUrl": "",
+        "notes": []
+      },
+      {
+        "time": "12:30 - 2:00 PM",
+        "activity": "Equipment return, reset Music Buildings, reset Hatter",
+        "location": "Tinsley Hall",
+        "mapUrl": "",
+        "notes": [
+          "Equipment return team: Jeremy, Marc, Jarrod, Steve, Matt",
+          "Music Buildings & Hatter Reset Team: Bill, Michelle, Sara, Celeste, David, Andrew, Holly"
+        ]
+      }
     ]
   }
 ]

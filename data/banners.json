@@ -1,9 +1,9 @@
-			{
+{
   "globalNotice": {
     "text": ""
   },
   "banners": {
-    "june-23": [
+    "2025-06-23": [
       {
         "time": "08:00",
         "message": "📢 Welcome to Stetson! Bring your instruments with you when we leave for lunch.",
@@ -29,7 +29,7 @@
         "enabled": false
       }
     ],
-    "june-24": [
+    "2025-06-24": [
       {
         "time": "07:00",
         "message": "Sharks & Jets: Wear something with a 🦈 shark or a ✈️ jet on it. 🫰… 🫰… 🫰…",
@@ -61,7 +61,7 @@
         "enabled": false
       }
     ],
-    "june-25": [
+    "2025-06-25": [
       {
         "time": "07:15",
         "message": "⚡ Greased Lightning: Wear something retro!",
@@ -87,7 +87,7 @@
         "enabled": true
       }
     ],
-    "june-26": [
+    "2025-06-26": [
       {
         "time": "07:15",
         "message": "🐱 Purrs-day Thursday! Rememberg: 📸 Bring your camp shirt for the group photo!",
@@ -113,7 +113,7 @@
         "enabled": false
       }
     ],
-    "june-27": [
+    "2025-06-27": [
       {
         "time": "07:15",
         "message": "🧚‍♀️ Team Pink or 🧙‍♀️ Team Green: Wear something 👚 pink or something 🍏 green.",
@@ -139,7 +139,7 @@
         "enabled": true
       }
     ],
-    "june-28": [
+    "2025-06-28": [
       {
         "time": "08:00",
         "message": "🎓 Congratulations! Final Concert at 11:30 AM.",
