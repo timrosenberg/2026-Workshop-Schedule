@@ -1,0 +1,985 @@
+/* ===================================
+   Base Styles
+=================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+a {
+  color: #2b644a;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #4dab4f;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 1rem 0;
+}
+
+ul li {
+  padding: 0.5rem 0;
+  margin-left: 0;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+/* ===================================
+   Header & Buttons
+=================================== */
+header {
+  position: relative;
+  background-color: #2b644a;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+  z-index: 999;
+}
+
+.header-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  gap: 0.25rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+}
+
+#menu-toggle,
+.dark-mode-toggle,
+#manual-dark-toggle {
+  background: none;
+  border: none;
+  color: #d7eccb;
+  cursor: pointer;
+  transition: color 0.3s;
+  padding: 0;
+}
+
+#menu-toggle {
+  font-size: 2rem; /* manual icon size adjustment */
+  font-weight: 700;
+}
+
+#manual-dark-toggle {
+  font-size: 1.25rem; /* manual icon size adjustment */
+}
+
+#menu-toggle:hover,
+.dark-mode-toggle:hover,
+#manual-dark-toggle:hover {
+  color: #ffffff;
+}
+
+body.dark-mode #menu-toggle,
+body.dark-mode .dark-mode-toggle,
+body.dark-mode #manual-dark-toggle {
+  color: #78aa7c;
+}
+
+@media (max-width: 450px) {
+  .main-title {
+    font-size: 1.8rem;
+    padding-right: 3.5rem; /* extra space for buttons on very small screens */
+  }
+}
+
+.main-header {
+  position: relative;
+  padding: 2.5rem 1rem 2rem; /* Adjust top and bottom padding as needed */
+  text-align: center;
+}
+
+.main-title {
+  font-size: clamp(1.8rem, 6vw, 2rem);
+  margin: 0 auto;
+  max-width: 100%;
+  line-height: 1.2;
+  padding: 0.5rem 2rem; /* Provides space for the buttons */
+}
+
+.header-buttons {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+
+/* ===================================
+   Dark Mode
+=================================== */
+body.dark-mode {
+  background-color: #182c25;
+  color: rgb(232, 230, 227);
+}
+
+body.dark-mode header {
+  background-color: #2c4c3b;
+}
+
+body.dark-mode a {
+  color: #68ac77;
+}
+
+body.dark-mode h3 {
+  color: #78aa7c;
+}
+
+body.dark-mode time,
+body.dark-mode li ul,
+body.dark-mode summary {
+  color: rgb(232, 230, 227);
+}
+
+body.dark-mode .notice,
+body.dark-mode .workshop-banner,
+body.dark-mode .day,
+body.dark-mode .activity-box,
+body.dark-mode #contact-menu {
+  background-color: #1e453e;
+  color: rgb(232, 230, 227);
+  border-color: #455b55;
+}
+
+body.dark-mode .notice,
+body.dark-mode .workshop-banner {
+  background-color: #182c25;
+}
+
+body.dark-mode .theme-description {
+  color: rgb(232, 230, 227);
+  background-color: #182c25;
+}
+
+body.dark-mode .footer-links a {
+  color: #78aa7c;
+}
+
+body.dark-mode .cc-attribution {
+  color: #78aa7c;
+}
+
+.dark-mode-toggle i {
+  transition: transform 0.5s ease;
+}
+
+body.dark-mode .dark-mode-toggle i {
+  transform: rotate(180deg);
+}
+
+/* ===================================
+   Contact Menu
+=================================== */
+#contact-menu {
+  position: absolute;
+  right: 1rem;
+  top: 3.5rem;
+  text-align: left;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  padding: 0.5rem 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  z-index: 1000 !important;
+}
+
+#contact-menu.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+#contact-menu a {
+  display: block;
+  padding: 0.6rem 1rem;
+  font-weight: bold;
+  color: #2b644a;
+  transition: background 0.2s;
+}
+
+body.dark-mode #contact-menu a {
+  color: #78aa7c;
+}
+
+#contact-menu a:hover {
+  background-color: #f0fdf7;
+}
+
+#contact-menu a,
+#contact-menu a:visited,
+#contact-menu a:hover,
+#contact-menu a:focus {
+  text-decoration: none !important;
+}
+
+
+/* ===================================
+   Main Content & Utilities
+=================================== */
+main {
+  padding: 2rem;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+#schedule-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 1rem;
+}
+
+.now-next-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem 1rem 2rem;
+  max-width: 600px;
+}
+
+@media (max-width: 600px) {
+  .now-next-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: .5rem;
+  }
+}
+
+.activity-box {
+  flex: 1;
+  background: white;
+  border: 2px solid #2b644a;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.activity-box h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  color: #2b644a;
+}
+
+.activity-box a {
+  display: block;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #2b644a;
+}
+
+/* ===================================
+   Schedule & Lists
+=================================== */
+.day {
+  background: white;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1.5rem;
+  max-width: 900px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.day > *:not(summary),
+.day ul li {
+  font-size: inherit;
+}
+
+.day > ul > li {
+  border-bottom: 1px dashed #ccc;
+  padding: 0.5rem 0;
+}
+
+.day ul ul li {
+  padding: 0.2rem 0;
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.theme-description {
+  background-color: #d2edc8;
+  border: 1px solid #3a634c;
+  padding: 0.75rem 1rem;
+  margin-top: 0.75rem;
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: 500;
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  color: #333;
+}
+
+li ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  font-size: 0.97rem;
+  color: #555;
+}
+
+ul ul {
+  margin-top: 0.1rem;
+  margin-bottom: 0;
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+
+.day > ul > li.blink-highlight {
+  background-color: #fcf0c6;
+  box-shadow: 0 0 0 4px #fcf0c6;
+  border-radius: 4px;
+  transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+body.dark-mode .day > ul > li.blink-highlight {
+  background-color: #182c25;
+  box-shadow: 0 0 0 4px #182c25;
+}
+
+/* ===================================
+   Notice & Banner
+=================================== */
+.notice,
+.workshop-banner {
+  font-size: 1rem;
+  padding: 0.75rem 2.5rem;
+  margin: 1rem auto;
+  text-align: center;
+  width: fit-content;
+  /* max-width: 90vw; */
+  border-radius: 6px;
+  white-space: normal;
+  word-break: break-word;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.notice {
+  background: #ffefc1;
+  color: #7a6000;
+}
+
+.workshop-banner {
+  background-color: #cbeec5;
+  color: #2b644a;
+  font-weight: 600;
+  display: none;
+  position: relative;
+  max-width: 600px;
+}
+
+.close-banner {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #2b644a;
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* ===================================
+   Footer
+=================================== */
+footer {
+  flex-wrap: wrap;
+  border-top: 1px solid #d0d0d0;
+  padding: 1rem 1rem 2rem;
+  font-size: 0.9rem;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: #2b644a;
+}
+
+.footer-note {
+  text-align: center;
+  color: #555;
+}
+
+.cc-attribution {
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  max-width: 100%;
+  word-break: break-word;
+  white-space: normal;
+  display: block;
+  overflow-wrap: break-word;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.cc-attribution a {
+  color: inherit;
+  text-decoration: none;
+  align-items: center;
+  gap: 0.3em;
+}
+
+.cc-icon {
+  height: 1.4em;
+  width: 1.4em;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+body.dark-mode footer {
+  background-color: #1d2b25;
+  border-top: 1px solid #2c4c3b;
+}
+
+/* ===================================
+   Summary Dropdown
+=================================== */
+summary {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #293c2e;
+  cursor: pointer;
+  background: none;
+  padding: 0.5rem 0;
+  list-style: none;
+  position: relative;
+  z-index: 1;
+}
+
+summary::marker,
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-right: 1rem;
+  vertical-align: middle;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 11px solid #334b3c;
+  transition: transform 0.2s ease-in-out;
+}
+
+body.dark-mode summary::before {
+  border-left-color: rgb(232, 230, 227);
+}
+
+details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+/* ===================================
+   ADD TO HOMESCREEN
+=================================== */
+.install-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #d2edc8;
+  color: #3a634c;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  transform: translateY(100%); /* Initially hidden below screen */
+  transition: transform 0.4s ease-in-out;
+  box-sizing: border-box;
+}
+
+.install-banner.show {
+  transform: translateY(0);
+}
+
+#install-homescreen-text { 
+  margin-bottom: 0.75rem; /* Space between text block and button block */
+}
+
+#install-homescreen-text p#install-text {
+  margin: 0; 
+  line-height: 1.3; /* Adjust this value to control spacing for wrapped text. */
+  white-space: normal;
+  word-break: break-word;
+}
+
+.install-banner button { /* General styling for buttons in the banner */
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  background-color: #d7eccb;
+  border: 2px solid #3a634c;
+  border-radius: 50px;
+  color: #3a634c;
+  margin: 0.25rem 0.35rem; /* Small margin around each button */
+  cursor: pointer;
+}
+
+/* ===================================
+   PAGE STYLES
+=================================== */
+
+body.page h1, 
+body.page h2,
+body.page h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-align: left !important;
+}
+
+body.page header {
+  text-align: left !important;
+}
+
+body.page .page-header {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1.page-title {
+  text-align: left;
+}
+
+body.page main .main-title {
+  text-align: left !important;
+  margin: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+body.page .main-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
+  align-items: start;
+}
+
+body.page .content-inner {
+  text-align: left;
+}
+
+.styled-table {
+  width: 100%;
+  max-width: 600px;
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  background-color: var(--bg-main, #fff);
+  color: var(--text-main, #333);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.styled-table thead {
+  background-color: #555555;
+  color: #fff;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 0.75em 1em;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+body.dark-mode .styled-table {
+  background-color: #2c2c2c;
+  color: #ccc;
+}
+
+body.dark-mode .styled-table thead {
+  background-color: #555555;
+  color: #fff;
+}
+
+body.dark-mode .styled-table tbody tr:nth-child(even) {
+  background-color: #3a3a3a;
+}
+
+/* ========== PAGE BREADCRUMB NAVIGATION ========== */
+.breadcrumb {
+  margin-top: 0.2rem;
+  font-size: 0.9rem;
+}
+
+.breadcrumb a {
+  color: #78aa7c;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: #e8f3ec;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* ========== PAGE ORDERED LISTS ========== */
+ol {
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+  counter-reset: item;
+  list-style: none;
+}
+
+ol li {
+  counter-increment: item;
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.2em;
+}
+
+ol li::before {
+  content: counter(item) ".";
+  position: absolute;
+  left: 0;
+  color: #78aa7c;
+  font-weight: bold;
+}
+
+/* ======== PAGE UNORDERED LISTS ========= */
+
+body.page ul {
+  list-style-type: disc;
+  padding-left: 1rem;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+body.page li {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+body.page ul ul {
+  list-style-type: circle;
+  padding-left: 0.25rem;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+body.page ul ul ul {
+  list-style-type: square;
+  padding-left: 0.25rem;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+body.page ul li {
+  padding: 0 !important;
+  margin-top: .5rem !important;
+  margin-bottom: .5rem !important;
+}
+
+body.page ul li:first-child {
+  margin-top: 0;
+}
+
+/* === STYLED ORDERED LISTS FOR STUDENT GROUPS === */
+
+.group-list ol {
+  padding-left: 2rem !important;
+}
+
+.group-list ol li {
+  counter-increment: list-counter;
+  position: relative;
+  padding-left: 2rem !important;
+  margin-bottom: 0.5rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+.group-list ol li::before {
+  content: counter(list-counter) ".";
+  position: absolute;
+  left: 0;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Dark mode adjustments */
+body.dark-mode .group-list ol li {
+  color: #ccc;
+}
+
+body.dark-mode .group-list ol li::before {
+  color: #ccc;
+}
+
+
+/* ===================================
+   AUDIO PLAYER
+=================================== */
+body.page .audio-player {
+  width: 100%;
+  max-width: 400px;
+  outline: none;
+}
+
+@media (max-width: 500px) {
+  body.page .audio-player {
+    max-width: 90vw;
+  }
+}
+
+body.page .content-inner.recordings-page{
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+/* ==== RESPONSIVE  IFRAMES ==== */
+.responsive-iframe {
+  width: 100%;
+  max-width: 100%;
+  height: 52px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.responsive-iframe iframe {
+  width: 100%;
+  height: 52px;
+  display: block;
+  box-sizing: border-box;
+}
+
+/* ===================================
+   FAQ PAGE STYLES
+=================================== */
+.faq-section {
+  margin-top: 1rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+ .faq-item {
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  display: block;
+  width: 100%;
+}
+
+.faq-item summary {
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #2b644a;
+  display: flex;
+  align-items: center;
+}
+
+.faq-item summary::before {
+  width: 0;
+  height: 0; 
+  margin-right: 1rem;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 11px solid #334b3c;
+  transition: transform 0.2s ease-in-out;
+  flex-shrink: 0;
+}
+
+.faq-item[open] {
+  background-color: #f0fdf7;
+  border-color: #78aa7c;
+}
+
+.faq-item p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+body.page .main-container.faq-block-display {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  body.page .main-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  body.page h2 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Dark Mode Support */
+body.dark-mode .faq-item {
+  background: #1e453e;
+  border-color: #455b55;
+}
+
+body.dark-mode .faq-item[open] {
+  background-color: #28443e;
+}
+
+body.dark-mode .faq-item summary {
+  color: rgb(232, 230, 227);
+}
+
+/* NAVIGATION */
+/* ===================================
+   Navigation Menu
+=================================== */
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+  background-color: #e6f3ec;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: #2b644a;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+  color: #1f4b37;
+}
+
+body.dark-mode .nav-links {
+  background-color: #1f2f2a;
+  border-color: #2c4c3b;
+}
+
+body.dark-mode .nav-links a {
+  color: #78aa7c;
+}
+
+.hamburger {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  color: inherit;
+  cursor: pointer;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.hamburger-icon {
+  font-size: 1.7rem;
+  line-height: 1;
+  vertical-align: middle;
+  display: inline-block;
+  transform: translateY(-2px); /* tweak this value as needed */
+}
+
+@media (max-width: 440px) {
+  .hamburger {
+    display: flex;
+    padding: 0.75rem 0; /* Use this padding instead of the larger 1rem padding */
+  }
+
+  .nav-links {
+    /* Base styles for the mobile nav container */
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 0;
+    background-color: var(--background-color, #fff);
+    border-top: 1px solid #ccc;
+  }
+
+  .nav-links.active {
+    display: flex; /* The JS toggle makes it visible */
+  }
+
+  .nav-links a {
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem 1rem;
+    display: block;
+  }
+
+  .nav-links a:not(:last-child) {
+    border-bottom: 1px solid #e0e0e0; 
+  }
+  
+  body.dark-mode .nav-links a:not(:last-child),
+  body.dark-mode .hamburger {
+      border-bottom: 1px solid #2c4c3b;
+  }
+}

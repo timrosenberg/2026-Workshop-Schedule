@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Faculty Directory – Faculty</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/faculty.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#555555" />
+</head>
+
+<body class="page">
+<header class="main-header">
+  <div class="page-header">
+    <h1 class="page-title">Faculty Directory</h1>
+    <nav class="breadcrumb"><a href="index.html">← Back to Dashboard</a></nav>
+  </div>
+
+  <div class="header-buttons">
+    <button id="menu-toggle" title="Menu">☰</button>
+    <button id="manual-dark-toggle" class="dark-mode-toggle" title="Toggle dark mode">
+      <i class="fa-solid fa-circle-half-stroke"></i>
+    </button>
+  </div>
+</header>
+
+<!-- CONTACT MENU -->
+    <div id="contact-menu">
+        <a href="sms:+14074940603">📱 Text Dr. Rosenberg</a>
+        <a href="mailto:you@example.com">📧 Email Dr. Rosenberg</a>
+        <a href="tel:+14074940603">📞 Call Dr. Rosenberg</a>
+        <a href="https://instagram.com/stetsonsaxophoneworkshop" target="_blank" style="display: flex; align-items: center;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="height: 20px; margin-right: 0.5rem;">Workshop IG
+        </a>
+        <a href="https://www.facebook.com/stetsonsaxos" target="_blank" rel="noopener">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="height: 20px; vertical-align: middle; margin-right: 0.5rem;">Stetson Saxos FB
+        </a>
+        <a href="https://www.stetson.edu/other/visit/media/deland-campus-map.pdf" target="_blank">🗺️ Stetson Campus Map</a>
+    </div>
+
+  <!-- NAV and CONTACT -->
+  <div data-include="/includes/nav-faculty.html"></div>
+
+  <!-- MAIN -->
+  <main id="faculty-directory" class="main-container">
+    <ul class="faculty-list">
+        <li>
+        <strong>Tim Rosenberg</strong>
+        <div><a href="mailto:trosenberg@stetson.edu">trosenberg@stetson.edu</a></div>
+        <div>📱 (315) 382-7346 — <a href="sms:+13153827346">Text</a> | <a href="tel:+13153827346">Call</a></div>
+        </li>
+        <li>
+        <strong>Steve Amann</strong>
+        <div><a href="mailto:sgamann5693@gmail.com">sgamann5693@gmail.com</a></div>
+        <div>📱 (352) 348-8266 — <a href="sms:+13523488266">Text</a> | <a href="tel:+13523488266">Call</a></div>
+        </li>
+        <li>
+        <strong>Andrew Becker</strong>
+        <div><a href="mailto:ajbecker@pasco.k12.fl.us">ajbecker@pasco.k12.fl.us</a></div>
+        <div>📱 (352) 409-3851 — <a href="sms:+13524093851">Text</a> | <a href="tel:+13524093851">Call</a></div>
+        </li>
+        <li>
+        <strong>Scott Devlin</strong>
+        <div><a href="mailto:devlinmusicstudio@gmail.com">devlinmusicstudio@gmail.com</a></div>
+        <div>📱 (407) 491-5193 — <a href="sms:+14074915193">Text</a> | <a href="tel:+14074915193">Call</a></div>
+        </li>
+        <li>
+        <strong>Ryan Devlin</strong>
+        <div><a href="mailto:ryandevlinjazz@gmail.com">ryandevlinjazz@gmail.com</a></div>
+        <div>📱 (407) 491-4005 — <a href="sms:+14074914005">Text</a> | <a href="tel:+14074914005">Call</a></div>
+        </li>
+        <li>
+        <strong>Bill Guthrie</strong>
+        <div><a href="mailto:mrgu3@mac.com">mrgu3@mac.com</a></div>
+        <div>📱 (386) 717-9198 — <a href="sms:+13867179198">Text</a> | <a href="tel:+13867179198">Call</a></div>
+        </li>
+        <li>
+        <strong>David Hinote</strong>
+        <div><a href="mailto:dhinote@stetson.edu">dhinote@stetson.edu</a></div>
+        <div>📱 (352) 298-2239 — <a href="sms:+13522982239">Text</a> | <a href="tel:+13522982239">Call</a></div>
+        </li>
+        <li>
+        <strong>Jarrod Koskoski</strong>
+        <div><a href="mailto:jfkoskos@volusia.k12.fl.us">jfkoskos@volusia.k12.fl.us</a></div>
+        <div>📱 (419) 559-8309 — <a href="sms:+14195598309">Text</a> | <a href="tel:+14195598309">Call</a></div>
+        </li>
+        <li>
+        <strong>Marc Kolodinsky</strong>
+        <div><a href="mailto:makmusiclessons@gmail.com">makmusiclessons@gmail.com</a></div>
+        <div>📱 (386) 801-1176 — <a href="sms:+13868011176">Text</a> | <a href="tel:+13868011176">Call</a></div>
+        </li>
+        <li>
+        <strong>Michelle Lugo</strong>
+        <div><a href="mailto:mmlugo17@gmail.com">mmlugo17@gmail.com</a></div>
+        <div>📱 (321) 514-1454 — <a href="sms:+13215141454">Text</a> | <a href="tel:+13215141454">Call</a></div>
+        </li>
+        <li>
+        <strong>Celeste Manzano</strong>
+        <div><a href="mailto:celeste3298081@gmail.com">celeste3298081@gmail.com</a></div>
+        <div>📱 (813) 297-6076 — <a href="sms:+18132976076">Text</a> | <a href="tel:+18132976076">Call</a></div>
+        </li>
+        <li>
+        <strong>Matt Murphy</strong>
+        <div><a href="mailto:matthewjmurphy@att.net">matthewjmurphy@att.net</a></div>
+        <div>📱 (321) 279-3392 — <a href="sms:+13212793392">Text</a> | <a href="tel:+13212793392">Call</a></div>
+        </li>
+        <li>
+        <strong>Sara Pyburn</strong>
+        <div><a href="mailto:sarapyburn@gmail.com">sarapyburn@gmail.com</a></div>
+        <div>📱 (407) 633-0203 — <a href="sms:+14076330203">Text</a> | <a href="tel:+14076330203">Call</a></div>
+        </li>
+        <li>
+        <strong>Holly Trudell</strong>
+        <div><a href="mailto:hntrudell@gmail.com">hntrudell@gmail.com</a></div>
+        <div>📱 (321) 289-9727 — <a href="sms:+13212899727">Text</a> | <a href="tel:+13212899727">Call</a></div>
+        </li>
+        <li>
+        <strong>Jeremy Williamson</strong>
+        <div><a href="mailto:jeremy_williamson@scps.k12.fl.us">jeremy_williamson@scps.k12.fl.us</a></div>
+        <div>📱 (407) 782-2729 — <a href="sms:+14077822729">Text</a> | <a href="tel:+14077822729">Call</a></div>
+        </li>
+    </ul>
+  </main>
+
+  <footer>
+    <div id="footer-container"></div>
+  </footer>
+
+  <script src="/js/script.js" defer></script>
+</body>
+</html>

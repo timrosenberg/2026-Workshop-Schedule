@@ -1,0 +1,541 @@
+/* === BASE STYLES === */
+body {
+  background-color: #e0e0e0;
+  color: #222; /* Default text color */
+}
+
+/* === FACULTY BANNER === */
+#faculty-banner {
+  background-color: #555;  /* Dark gray */
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+/* === HEADER === */
+header.main-header,
+header.main-header h1,
+header.main-header .page-title {
+  background-color: #555;
+  color: white !important;
+}
+
+header.main-header h1.main-title::after {
+  content: " – Faculty Version";
+}
+
+/* === NAVIGATION === */
+.nav-links {
+  background-color: #e0e0e0 !important;
+  color: #222 !important;
+}
+
+.nav-links a {
+  color: #222 !important;
+  background-color: transparent !important;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #000 !important;
+}
+
+.hamburger,
+.hamburger-icon {
+  color: #222 !important;
+}
+
+/* === MOBILE NAV === */
+@media (max-width: 400px) {
+  .nav-links a:not(:last-child) {
+    border-bottom: 1px solid #bbb !important;
+  }
+}
+
+@media (max-width: 400px) {
+  body.dark-mode .nav-links a:not(:last-child),
+  body.dark-mode .hamburger {
+    border-bottom: 1px solid #555 !important;
+    border-top: none;
+  }
+
+  body.dark-mode .nav-links {
+    background-color: #404040 !important;
+    border-top: none;
+  }
+
+  .nav-links a {
+    background-color: #e0e0e0 !important;
+  }
+}
+
+/* === BUTTONS === */
+#menu-toggle,
+.dark-mode-toggle,
+#manual-dark-toggle {
+  color: #909090 !important;  /* dark gray in light mode */
+}
+
+#menu-toggle:hover,
+.dark-mode-toggle:hover,
+#manual-dark-toggle:hover {
+  color: #c5c5c5 !important;
+}
+
+body.dark-mode #menu-toggle,
+body.dark-mode .dark-mode-toggle,
+body.dark-mode #manual-dark-toggle {
+  color: #ccc !important;  /* light gray in dark mode */
+}
+
+button,
+input,
+select,
+textarea {
+  background-color: #e0e0e0;
+  color: #111;
+  border: 1px solid #aaa;
+}
+
+/* button:hover {
+  background-color: #ccc;
+} */
+
+/* === BREADCRUMBS === */
+.breadcrumb a {
+  color: #909090 !important;
+}
+
+.breadcrumb a:hover {
+  color: #c5c5c5 !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* === SUMMARY TAGS === */
+summary {
+  background-color: #fff !important;
+  color: #222 !important;
+}
+
+summary:hover {
+  color: #000 !important;
+}
+
+summary::before {
+  border-left-color: #111 !important;
+}
+
+/* === MAIN CONTENT === */
+main,
+.main-container,
+.page {
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+/* === ACTIVITY BLOCKS === */
+.activity-box,
+.day {
+  border: 1px solid #aaa;
+  box-shadow: none;
+}
+
+#now-box,
+#next-box {
+  background-color: #e0e0e0;
+  border-color: #888;
+}
+
+#now-box h3,
+#next-box h3,
+#now-box a,
+#next-box a {
+  color: #111;
+}
+
+/* === NOTICES AND BANNERS === */
+.notice,
+.workshop-banner {
+  background-color: #e2e2e2;
+  color: #333;
+}
+
+/* === CONTACT MENU === */
+#contact-menu a {
+  color: #111 !important; /* black text */
+}
+
+#contact-menu a:hover {
+  background-color: #e0e0e0 !important;
+  color: #000 !important;
+}
+
+body.dark-mode #contact-menu a {
+  color: #ccc !important;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #ddd;
+  color: #333;
+}
+
+.footer-links a {
+  color: #111 !important;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #000 !important;
+  text-decoration: underline;
+}
+
+body.dark-mode footer {
+  border-top: 1px solid #555;
+}
+
+body.dark-mode .cc-attribution a {
+  color: #ccc;
+}
+
+body.dark-mode .footer-links a {
+  color: #ccc !important;
+}
+
+body.dark-mode .footer-links a:hover {
+  color: #fff !important;
+}
+
+/* === THEME DESCRIPTION === */
+.theme-description {
+  background-color: #e0e0e0 !important;
+  border: 1px solid #aaa !important;
+  color: #222 !important;
+}
+
+body.dark-mode .theme-description {
+  background-color: #333 !important;
+  border-color: #555 !important;
+  color: #ccc !important;
+}
+
+/* === DARK MODE BASE === */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #ccc;
+}
+
+body.dark-mode .nav-links,
+body.dark-mode .nav-links a,
+body.dark-mode .hamburger,
+body.dark-mode .hamburger-icon {
+  color: #ccc !important;
+  background-color: #333 !important;
+}
+
+body.dark-mode header.main-header {
+  background-color: #333;
+}
+
+body.dark-mode footer {
+  background-color: #222;
+  color: #aaa;
+}
+
+/* === GREEN SHADE CLEANUP === */
+[class*="green"],
+[class*="success"],
+a[style*="color:"] {
+  color: #111 !important;
+}
+
+/* === FACULTY DARK MODE – GRAYSCALE OVERRIDES === */
+
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #ccc;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: #cccccc;
+}
+
+/* Header */
+body.dark-mode header,
+body.dark-mode header.main-header {
+  background-color: #333;
+  color: #eee;
+}
+
+body.dark-mode header.main-header,
+body.dark-mode header.main-header h1,
+body.dark-mode header.main-header .page-title {
+  background-color: #333;
+  color: white !important;
+}
+
+/* Main Containers */
+body.dark-mode main,
+body.dark-mode .main-container,
+body.dark-mode .page {
+  background-color: #1e1e1e;
+  color: #ccc;
+}
+
+/* Nav Links */
+body.dark-mode .nav-links,
+body.dark-mode .nav-links a {
+  background-color: #404040 !important;
+  color: #ccc !important;
+}
+
+body.dark-mode .nav-links a:hover {
+  color: #fff !important;
+}
+
+@media (max-width: 400px) {
+  body.dark-mode .hamburger,
+  body.dark-mode .hamburger-icon {
+    background-color: #404040 !important;
+  }
+}
+
+/* Buttons and Toggles */
+body.dark-mode #menu-toggle,
+body.dark-mode .dark-mode-toggle,
+body.dark-mode #manual-dark-toggle {
+  color: #ccc !important;
+}
+
+/* Summary Tags */
+body.dark-mode summary {
+  background-color: #2b2b2b !important;
+  color: #ccc !important;
+}
+
+body.dark-mode summary::before {
+  border-left-color: #ccc !important;
+}
+
+/* Boxes and Sections */
+body.dark-mode #now-box,
+body.dark-mode #next-box,
+body.dark-mode .activity-box,
+body.dark-mode .day {
+  background-color: #2b2b2b;
+  border-color: #555;
+  color: #ccc;
+}
+
+body.dark-mode #now-box h3,
+body.dark-mode #next-box h3,
+body.dark-mode #now-box a,
+body.dark-mode #next-box a {
+  color: #eee;
+}
+
+/* Contact Menu */
+body.dark-mode #contact-menu {
+  background-color: #2b2b2b;
+  border-color: #555;
+  color: #ccc;
+}
+
+body.dark-mode #contact-menu a {
+  color: #ccc !important;
+}
+
+body.dark-mode #contact-menu a:hover {
+  background-color: #444 !important;
+  color: #fff !important;
+}
+
+/* Theme Description */
+body.dark-mode .theme-description {
+  background-color: #333 !important;
+  border-color: #555 !important;
+  color: #ccc !important;
+}
+
+/* Breadcrumb Links */
+body.dark-mode .breadcrumb a {
+  color: #aaa !important;
+}
+
+body.dark-mode .breadcrumb a:hover {
+  color: #fff !important;
+}
+
+/* Footer */
+body.dark-mode footer {
+  background-color: #222;
+  color: #aaa;
+}
+
+body.dark-mode .footer-links a {
+  color: #ccc !important;
+}
+
+body.dark-mode .footer-links a:hover {
+  color: #fff !important;
+}
+
+/* Miscellaneous Cleanup */
+body.dark-mode [class*="green"],
+body.dark-mode [class*="success"],
+body.dark-mode a[style*="color:"] {
+  color: #ccc !important;
+}
+
+@media (max-width: 440px) {
+  /* LIGHT MODE */
+  body:not(.dark-mode) .nav-links,
+  body.page:not(.dark-mode) .nav-links,
+  body.page:not(.dark-mode) .hamburger {
+    background-color: #e0e0e0 !important;
+  }
+
+  body:not(.dark-mode) .nav-links a,
+  body.page:not(.dark-mode) .nav-links a {
+    background-color: #e0e0e0 !important;
+    color: #222 !important;
+  }
+
+  body:not(.dark-mode) .nav-links a:not(:last-child),
+  body.page:not(.dark-mode) .nav-links a:not(:last-child) {
+    border-bottom: 1px solid #bbb !important;
+  }
+
+  /* DARK MODE */
+  body.dark-mode .nav-links,
+  body.page.dark-mode .nav-links,
+  body.page.dark-mode .hamburger {
+    background-color: #404040 !important;
+  }
+
+  body.dark-mode .nav-links a,
+  body.page.dark-mode .nav-links a {
+    background-color: #404040 !important;
+    color: #ccc !important;
+  }
+
+  body.dark-mode .nav-links a:not(:last-child),
+  body.page.dark-mode .nav-links a:not(:last-child) {
+    border-bottom: 1px solid #555 !important;
+  }
+}
+
+/* === FACULTY DIRECTORY LAYOUT === */
+/* #faculty-directory {
+  max-width: 100%;
+  padding: 1rem 0 0 0 !important;
+  margin: 0 !important;
+  display: flex;
+  justify-content: center;
+}
+
+#faculty-directory .faculty-list {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: .5rem 0 !important;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  column-gap: 1rem;
+  row-gap: 0 !important;
+} */
+
+#faculty-directory {
+  max-width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex;
+  justify-content: center;
+}
+
+#faculty-directory .faculty-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem !important;
+  list-style: none;
+}
+
+/* === FACULTY CARD STYLE === */
+
+#faculty-directory .faculty-list li {
+  background-color: #fff;
+  padding: 1rem 1rem !important;
+  margin: 0 !important;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  line-height: 1.5 !important;
+}
+
+#faculty-directory .faculty-list strong {
+  display: block;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+#faculty-directory .faculty-list a {
+  color: #2b644a;
+  font-weight: 500;
+}
+
+#faculty-directory .faculty-list a:hover {
+  text-decoration: underline;
+}
+
+/* === DARK MODE SUPPORT === */
+body.dark-mode #faculty-directory .faculty-list li {
+  background-color: #333;
+  border-color: #555;
+}
+
+body.dark-mode #faculty-directory .faculty-list strong {
+  color: #ccc;
+}
+
+body.dark-mode #faculty-directory .faculty-list a {
+  color: #78aa7c;
+}
+
+/* === STYLED ORDERED LISTS FOR STUDENT GROUPS === */
+
+.group-list ol li {
+  counter-increment: list-counter;
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+  line-height: 1.5;
+}
+
+.group-list ol li::before {
+  content: counter(list-counter) ".";
+  position: absolute;
+  left: 0;
+  color: #222;
+  font-weight: bold;
+}
+
+/* Dark mode adjustments */
+body.dark-mode .group-list ol li {
+  color: #ccc;
+}
+
+body.dark-mode .group-list ol li::before {
+  color: #ccc;
+}
