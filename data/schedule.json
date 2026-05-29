@@ -69,7 +69,7 @@
         "mapUrl": "",
         "notes": [
           "Symphonic Saxophones: Chamber Ensembles — Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
-          "Concert Saxophones: Large Ensemble — Tinsley Hall"
+          "Concert Saxophones: Large Ensemble — Tinsley Hall (inside Presser Hall)"
         ]
       },
       {
@@ -203,7 +203,7 @@
         "mapUrl": "",
         "notes": [
           "Symphonic Saxophones: Chamber Ensembles — Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
-          "Concert Saxophones: Large Ensemble — Tinsley Hall"
+          "Concert Saxophones: Large Ensemble — Tinsley Hall (inside Presser Hall)"
         ]
       },
       {
@@ -347,7 +347,9 @@
         "activity": "Jazz Guest Artist Recital: Melissa Aldana",
         "location": "Tinsley Hall",
         "mapUrl": "",
-        "notes": []
+        "notes": [
+          "Tinsley Hall is <em>inside</em> Presser Hall."
+        ]
       },
       {
         "time": "8:15 - 8:45 PM",
@@ -434,7 +436,7 @@
         "location": "Feasel Hall",
         "mapUrl": "https://maps.app.goo.gl/5mDXBVoTABQhHF5L6",
         "notes": [
-          "Yamaha Instrument Try-Out also available in Tinsley Hall — groups rotate every 15 min."
+          "Yamaha Instrument Try-Out also available in Tinsley Hall (inside Presser Hall) — groups rotate every 15 min."
         ]
       },
       {
@@ -700,7 +702,9 @@
         "activity": "Return borrowed music, saxophones, equipment",
         "location": "Tinsley Hall",
         "mapUrl": "",
-        "notes": []
+        "notes": [
+          "Tinsley Hall is <em>inside</em> Presser Hall."
+        ]
       },
       {
         "time": "12:30 PM",
