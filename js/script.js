@@ -112,33 +112,24 @@ function groupFlatSchedule(flatData) {
   const grouped = {};
 
   for (const item of flatData) {
-    const date = item["Date"];
+    const date = item.date;
     if (!date) continue;
 
     if (!grouped[date]) {
       grouped[date] = {
         date,
-        day: item["Day"] || "",
-        themeTitle: item["Theme Title"] || "",
-        themeDescription: item["Theme Description"] || "",
+        themeTitle: item.themeTitle || "",
+        themeDescription: item.themeDescription || "",
         activities: []
       };
     }
 
-    const notes = [];
-    // This loop robustly handles cases with up to 5 subpoints (for faculty)
-    // or fewer (for students) without error.
-    for (let i = 1; i <= 5; i++) {
-      const note = item[`Subpoint ${i}`];
-      if (note) notes.push(note);
-    }
-
     grouped[date].activities.push({
-      time: item["Time"] || "",
-      title: item["Activity"] || "",
-      location: item["Location"] || "",
-      mapUrl: item["Map URL"] || "",
-      notes
+      time: item.time || "",
+      title: item.activity || "",
+      location: item.location || "",
+      mapUrl: item.mapUrl || "",
+      notes: item.notes || []
     });
   }
 
