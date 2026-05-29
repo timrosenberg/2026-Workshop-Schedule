@@ -15,6 +15,14 @@
       scroll-behavior: smooth;
     }
   </style>
+  <!-- ONESIGNAL -->
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+  <script>
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(async function(OneSignal) {
+      await OneSignal.init({ appId: "9e1ae8eb-4c86-4b27-b078-2d98c6190f76" });
+    });
+  </script>
 </head>
 
 <body class="page">
