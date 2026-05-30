@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- META -->
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
   <meta name="description" content="View the full schedule for the 2026 Stetson Saxophone Workshop, including daily themes, activities, and performance events. Updated regularly for students and families." />
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="theme-color" content="#2b644a" />
-  <!-- TITLE -->
-  <title>Summer Workshop Schedule</title>
-  <!-- STYLESHEETS -->
+  <meta name="theme-color" content="#1B4035" />
+  <title>Stetson Saxophone Workshop 2026</title>
   <link rel="stylesheet" href="/css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="manifest" href="manifest.json">
   <link rel="icon" href="assets/icons/icon-192.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon" href="assets/icons/icon-180.png">
-  <!-- SCRIPTS -->
-  <script src="https://kit.fontawesome.com/8a346dba79.js" crossorigin="anonymous"></script>
   <!-- ONESIGNAL -->
   <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
   <script>
@@ -34,104 +31,155 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-7CPFWK23N3');
 </script>
 
 <body>
 
-<!-- HEADER -->  
-  <header class="main-header">
-      <h1 class="main-title">🎷 2025 Saxophone Workshop Schedule</h1>
+<!-- Event detail sheet -->
+<div class="overlay" id="eventOverlay">
+  <div class="sheet">
+    <div class="sheet-handle"></div>
+    <div id="eventDetail"></div>
+    <button class="sheet-close" id="eventClose">Close</button>
+  </div>
+</div>
 
-    <div class="header-buttons">
-      <button id="menu-toggle" title="Menu">☰</button>
-      <button id="manual-dark-toggle" class="dark-mode-toggle" title="Toggle dark mode">
-        <i class="fa-solid fa-circle-half-stroke"></i>
+<!-- Contact sheet -->
+<div class="overlay" id="overlay">
+  <div class="sheet">
+    <div class="sheet-handle"></div>
+    <div class="sheet-title">Contact</div>
+    <a href="sms:+14074940603" class="contact-item">
+      <span class="c-icon">
+        <svg class="icon icon-sm" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 9h8"/><path d="M8 13h6"/><path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"/></svg>
+      </span>
+      <span class="c-lbl">Text Dr. Rosenberg</span>
+    </a>
+    <a href="mailto:trosenberg@stetson.edu" class="contact-item">
+      <span class="c-icon">
+        <svg class="icon icon-sm" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"/><path d="M3 7l9 6l9 -6"/></svg>
+      </span>
+      <span class="c-lbl">Email Dr. Rosenberg</span>
+    </a>
+    <a href="tel:+14074940603" class="contact-item">
+      <span class="c-icon">
+        <svg class="icon icon-sm" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"/></svg>
+      </span>
+      <span class="c-lbl">Call Dr. Rosenberg</span>
+    </a>
+    <a href="https://instagram.com/stetsonsaxophoneworkshop" target="_blank" class="contact-item">
+      <span class="c-icon">
+        <svg class="icon icon-sm" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"/><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/><path d="M16.5 7.5l0 .01"/></svg>
+      </span>
+      <span class="c-lbl">Workshop Instagram</span>
+    </a>
+    <a href="https://www.facebook.com/stetsonsaxos" target="_blank" rel="noopener" class="contact-item">
+      <span class="c-icon">
+        <svg class="icon icon-sm" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"/></svg>
+      </span>
+      <span class="c-lbl">Stetson Saxos Facebook</span>
+    </a>
+    <a href="https://www.stetson.edu/other/visit/media/deland-campus-map.pdf" target="_blank" class="contact-item">
+      <span class="c-icon">
+        <svg class="icon icon-sm" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"/></svg>
+      </span>
+      <span class="c-lbl">Campus Map</span>
+    </a>
+  </div>
+</div>
+
+<div class="app">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="wordmark">
+      <div class="wm-name">
+        <img src="assets/icons/saxophone.png" class="sax-icon" alt="">
+        Stetson Saxophone Workshop
+      </div>
+    </div>
+    <div class="hbtns">
+      <button class="hbtn" id="darkBtn" title="Toggle dark mode">
+        <svg id="darkIcon" class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454l0 .008"/></svg>
+      </button>
+      <button class="hbtn" id="contactBtn" title="Contact">
+        <svg class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"/></svg>
       </button>
     </div>
-    
-  <!-- STATIC BANNER -->
-  <div id="global-notice" class="notice" style="display:none;"></div>
-
-  <!-- DAILY BANNER -->
-  <div class="workshop-banner" id="daily-banner" style="display:none;">
-    <span id="banner-text"></span>
-    <button class="close-banner" aria-label="Dismiss notice">&times;</button>
-  </div>
-
-  <!-- TEST MODE TOGGLE -->
-    <!-- <label for="test-mode-select" style="margin: 1rem auto; display: block; text-align: center;">
-      Test Mode:
-      <select id="test-mode-select">
-        <option value="">(live time)</option>
-        <option value="2025-06-23T08:45">June 23 @ 8:45 AM</option>
-        <option value="2025-06-23T11:00">June 23 @ 11:00 AM</option>
-        <option value="2025-06-23T13:45">June 23 @ 1:45 PM</option>
-        <option value="2025-06-23T19:45">June 23 @ 7:45 PM</option>
-        <option value="2025-06-23T20:01">June 23 @ 8:01 PM</option>
-        <option value="2025-06-23T22:00">June 23 @ 10:00 PM</option>
-        <option value="2025-06-24T07:15">June 24 @ 7:15 AM</option>
-        <option value="2025-06-24T08:46">June 24 @ 8:46 AM</option>
-        <option value="2025-06-24T19:15">June 24 @ 7:15 PM</option>
-        <option value="2025-06-25T07:15">June 25 @ 7:15 AM</option>
-        <option value="2025-06-26T07:15">June 26 @ 7:15 AM</option>
-        <option value="2025-06-27T07:15">June 27 @ 7:15 AM</option>
-        <option value="2025-06-28T07:00">June 28 @ 7:00 AM</option>
-      </select>
-    </label> -->
-
   </header>
 
- <!-- CONTACT AND NAV --> 
-  <!-- CONTACT MENU -->
-    <div id="contact-menu">
-      <a href="sms:+14074940603">📱 Text Dr. Rosenberg</a>
-      <a href="mailto:you@example.com">📧 Email Dr. Rosenberg</a>
-      <a href="tel:+14074940603">📞 Call Dr. Rosenberg</a>
-      <a href="https://instagram.com/stetsonsaxophoneworkshop" target="_blank" style="display: flex; align-items: center;">
-        <img src="/assets/icons/Instagram.png" alt="Instagram" style="height: 20px; margin-right: 0.5rem;">Workshop IG
-      </a>
-      <a href="https://www.facebook.com/stetsonsaxos" target="_blank" rel="noopener">
-        <img src="/assets/icons/Facebook.svg" alt="Facebook" style="height: 20px; vertical-align: middle; margin-right: 0.5rem;">Stetson Saxos FB
-      </a>
-      <a href="https://www.stetson.edu/other/visit/media/deland-campus-map.pdf" target="_blank">🗺️ Stetson Campus Map</a>
+  <!-- GLOBAL NOTICE BANNER -->
+  <div id="global-notice" class="banner" style="display:none">
+    <svg class="icon icon-sm" style="flex-shrink:0;margin-top:1px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 8a3 3 0 0 1 0 6"/><path d="M10 8v11a1 1 0 0 1 -1 1h-1a1 1 0 0 1 -1 -1v-5"/><path d="M12 8l4.524 -3.77a.9 .9 0 0 1 1.476 .692v12.156a.9 .9 0 0 1 -1.476 .692l-4.524 -3.77h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h8"/></svg>
+    <span class="banner-txt" id="global-notice-text"></span>
+  </div>
+
+  <!-- DAILY BANNER -->
+  <div class="banner" id="daily-banner" style="display:none">
+    <svg class="icon icon-sm" style="flex-shrink:0;margin-top:1px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 8a3 3 0 0 1 0 6"/><path d="M10 8v11a1 1 0 0 1 -1 1h-1a1 1 0 0 1 -1 -1v-5"/><path d="M12 8l4.524 -3.77a.9 .9 0 0 1 1.476 .692v12.156a.9 .9 0 0 1 -1.476 .692l-4.524 -3.77h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h8"/></svg>
+    <span class="banner-txt" id="banner-text"></span>
+    <button class="banner-x close-banner" id="bannerX">×</button>
+  </div>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- NOW / NEXT -->
+    <div class="now-next">
+      <div class="now-pane" id="nowPane">
+        <div class="now-label">
+          <div class="pulse-dot"></div>
+          <span class="now-lbl-txt">Now</span>
+        </div>
+        <div class="now-name" id="nowName">Loading…</div>
+        <div class="now-meta" id="nowMeta"></div>
+        <div class="now-pills" id="nowPills"></div>
+      </div>
+      <div class="next-pane" id="nextPane">
+        <span class="next-lbl">Next:</span>
+        <span class="next-name" id="nextName">—</span>
+        <span class="next-time" id="nextTime"></span>
+        <svg class="icon icon-sm" style="color:var(--text3);flex-shrink:0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6"/></svg>
+      </div>
     </div>
 
-  <!-- NAVIGATION MENU -->  
-  <div data-include="/includes/nav.html"></div>
-
-<!-- MAIN -->  
-
-  <main class="main-container">
-  <!-- NOW & NEXT BOXES -->
-    <section class="now-next-container">
-      <div class="activity-box" id="now-box">
-        <h3>Now</h3>
-        <a id="current-activity" href="#">⌛</a>
-      </div>
-      <div class="activity-box" id="next-box">
-        <h3>Next</h3>
-        <a id="next-activity" href="#">➡️</a>
-      </div>
-    </section>
-
-  <!-- SCHEDULE BODY -->
-    <div id="schedule-container"></div>
+    <!-- SCHEDULE -->
+    <div class="sched" id="schedule-container"></div>
 
   </main>
 
-<!-- ADD TO HOMESCREEN BANNER -->  
-  <div id="install-banner" class="install-banner">
-    <div id="install-homescreen-text"><p id="install-text"></p></div>
-    <div id="install-banner-buttons"><button id="install-dismiss">Dismiss</button></div>
-  </div>
+  <!-- BOTTOM NAV -->
+  <nav class="bottom-nav">
+    <a href="/" class="nav-item active">
+      <svg class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12"/><path d="M16 3v4"/><path d="M8 3v4"/><path d="M4 11h16"/><path d="M11 15h1"/><path d="M12 15v3"/></svg>
+      <span class="nav-lbl">Schedule</span>
+    </a>
+    <a href="/rooms.html" class="nav-item">
+      <svg class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 12v.01"/><path d="M3 21h18"/><path d="M6 21v-16a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v16"/></svg>
+      <span class="nav-lbl">Rooms</span>
+    </a>
+    <a href="/faculty-list.html" class="nav-item">
+      <svg class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"/><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"/></svg>
+      <span class="nav-lbl">Faculty</span>
+    </a>
+    <a href="/recordings.html" class="nav-item">
+      <svg class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M13 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M9 17v-13h10v13"/><path d="M9 8h10"/></svg>
+      <span class="nav-lbl">Recordings</span>
+    </a>
+    <a href="/faq.html" class="nav-item">
+      <svg class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 16v.01"/><path d="M12 13a2 2 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483"/></svg>
+      <span class="nav-lbl">FAQ</span>
+    </a>
+  </nav>
 
-<!-- FOOTER -->  
-<footer>
-  <div id="footer-container"></div>
-</footer>
+</div>
 
+<!-- ADD TO HOMESCREEN BANNER -->
+<div id="install-banner" class="install-banner">
+  <div id="install-homescreen-text"><p id="install-text"></p></div>
+  <div id="install-banner-buttons"><button id="install-dismiss">Dismiss</button></div>
+</div>
 
 <script src="/js/script.js" defer></script>
 </body>

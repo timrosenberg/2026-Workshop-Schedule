@@ -1,6 +1,85 @@
 let scheduleData = [];
 let globalBannerData = {};
 
+// Event detail sheet state
+let selectedRow = null;
+let nowActivity  = null;
+let nowActivityDay = null;
+let nowRowEl     = null;
+let nextRowEl    = null;
+
+const sunSVG  = `<svg class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"/><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"/></svg>`;
+const moonSVG = `<svg class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454l0 .008"/></svg>`;
+
+function themeTag(theme) {
+  const m = theme.match(/^(\p{Emoji_Presentation}️?\s*)(.*)/su);
+  return m ? `${m[1]}<em>${m[2]}</em>` : `<em>${theme}</em>`;
+}
+
+function fmtTime(d) {
+  if (!d) return '';
+  let h = d.getHours(), m = d.getMinutes();
+  const suf = h >= 12 ? 'PM' : 'AM';
+  h = h % 12 || 12;
+  return m === 0 ? `${h} ${suf}` : `${h}:${String(m).padStart(2,'0')} ${suf}`;
+}
+
+function parseActivityTimes(timeStr, dayDateStr) {
+  const [year, month, dayNum] = dayDateStr.split('-').map(Number);
+  const refDate = new Date(year, month - 1, dayNum);
+  const parts = (timeStr || '').split('-').map(t => t.trim());
+  const isRange = parts.length > 1;
+  let startStr = parts[0];
+  let endStr = isRange ? parts[parts.length - 1] : parts[0];
+  if (isRange) {
+    const startHasAmPm = /\s(AM|PM)$/i.test(startStr);
+    const endHasAmPm   = /\s(AM|PM)$/i.test(endStr);
+    if (!startHasAmPm && endHasAmPm) startStr += endStr.match(/\s(AM|PM)$/i)[0];
+    else if (startHasAmPm && !endHasAmPm) endStr += startStr.match(/\s(AM|PM)$/i)[0];
+  }
+  const start = parseTime(startStr, refDate);
+  let end = parseTime(endStr, refDate);
+  if (!isRange && start) end = new Date(start.getTime() + 60000);
+  return { start, end };
+}
+
+function updateDarkBtnIcon() {
+  const btn = document.getElementById('darkBtn');
+  if (!btn) return;
+  const isDark = document.body.classList.contains('dark');
+  btn.innerHTML = isDark ? sunSVG : moonSVG;
+}
+
+function showEvent(act, rowEl) {
+  if (selectedRow) selectedRow.classList.remove('selected');
+  selectedRow = rowEl;
+  if (rowEl) rowEl.classList.add('selected');
+
+  const clockSVG = `<svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"/><path d="M12 7v5l3 3"/></svg>`;
+  const pinSVG  = `<svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"/></svg>`;
+
+  let html = `<div class="event-hd">${act.activity}</div>`;
+  html += `<div class="event-meta-row"><span class="c-icon">${clockSVG}</span><span>${act.time}</span></div>`;
+  if (act.location) {
+    let locHTML = act.location;
+    if (act.mapUrl) locHTML += ` <a href="${act.mapUrl}" target="_blank" style="color:var(--forest-mid)">↗ Map</a>`;
+    html += `<div class="event-meta-row"><span class="c-icon">${pinSVG}</span><span>${locHTML}</span></div>`;
+  }
+  if (act.notes && act.notes.length) {
+    html += `<div class="event-notes"><div class="event-notes-lbl">Notes</div>`;
+    html += act.notes.map(n => `<div class="event-note-line"><span>${n}</span></div>`).join('');
+    html += `</div>`;
+  }
+
+  document.getElementById('eventDetail').innerHTML = html;
+  document.getElementById('eventOverlay').classList.add('show');
+}
+
+function closeEvent() {
+  if (selectedRow) { selectedRow.classList.remove('selected'); selectedRow = null; }
+  document.getElementById('eventOverlay').classList.remove('show');
+}
+
 function refreshDisplayForCurrentTime() {
   if (!scheduleData || scheduleData.length === 0) return;
 
@@ -57,67 +136,84 @@ async function loadSchedule() {
 function renderSchedule(scheduleData) {
   const container = document.getElementById('schedule-container');
   container.innerHTML = '';
+  nowActivity = null; nowActivityDay = null; nowRowEl = null; nextRowEl = null;
 
-  for (const day of scheduleData) {
-    const details = document.createElement('details');
-    details.className = 'day';
-    details.id = day.date;
+  const now = getCurrentTime();
+  const todayStr = now.getFullYear() + '-' +
+    String(now.getMonth() + 1).padStart(2, '0') + '-' +
+    String(now.getDate()).padStart(2, '0');
 
-    const summary = document.createElement('summary');
-    const [year, month, dayNum] = day.date.split('-').map(Number);
-    const localDate = new Date(year, month - 1, dayNum);
-    const weekdayName = localDate.toLocaleDateString('en-US', { weekday: 'long' });
-    summary.innerHTML = `<span class="day-name">${weekdayName}</span>, ${formatDate(day.date)}`;
-    details.appendChild(summary);
+  scheduleData.forEach(day => {
+    const isToday = day.date === todayStr;
 
-    if (day.themeDescription) {
-      const theme = document.createElement('div');
-      theme.className = 'theme-description';
-      if (day.themeTitle) {
-        theme.innerHTML = `<strong>${day.themeTitle}:</strong> ${day.themeDescription}`;
-      } else {
-        theme.textContent = day.themeDescription;
-      }
-      details.appendChild(theme);
+    let curIdx = -1;
+    if (isToday) {
+      day.activities.forEach((act, i) => {
+        const { start, end } = parseActivityTimes(act.time, day.date);
+        if (start && end && now >= start && now < end) curIdx = i;
+      });
     }
+
+    const card = document.createElement('div');
+    card.className = 'day-card' + (isToday ? ' open' : '');
+    card.id = day.date;
+
+    const [year, month, dayNum] = day.date.split('-').map(Number);
+    const weekdayName = new Date(year, month - 1, dayNum).toLocaleDateString('en-US', { weekday: 'long' });
+
+    const tog = document.createElement('button');
+    tog.className = 'day-toggle';
+    tog.type = 'button';
+    tog.innerHTML = `
+      <div class="chevron"></div>
+      <div class="day-hd"><div class="day-name">${weekdayName}</div></div>
+      <div class="day-tags">
+        ${isToday ? '<span class="tag tag-today">Today</span>' : ''}
+        ${day.themeTitle ? `<span class="tag tag-theme">${themeTag(day.themeTitle)}</span>` : ''}
+      </div>`;
+    tog.addEventListener('click', () => card.classList.toggle('open'));
+    card.appendChild(tog);
 
     const ul = document.createElement('ul');
-    for (const act of day.activities) {
-      const li = document.createElement('li');
-      li.setAttribute('id', `activity-${day.date}-${act.time.replace(/[^a-zA-Z0-9]/g, '')}`);
-      li.innerHTML = `<time>${act.time}</time> — <strong>${act.activity}</strong>`;
-      if (act.location) li.innerHTML += ` @ ${act.location}`;
-      if (act.mapUrl) li.innerHTML += ` <a href="${act.mapUrl}" target="_blank">(map)</a>`;
+    ul.className = 'act-list';
 
-      if (act.notes && act.notes.length > 0) {
-        const subUl = document.createElement('ul');
-        act.notes.forEach(note => {
-          const subLi = document.createElement('li');
-          subLi.innerHTML = note;
-          subUl.appendChild(subLi);
-        });
-        li.appendChild(subUl);
+    day.activities.forEach((act, i) => {
+      const isCur = isToday && i === curIdx;
+      let isPast = false;
+      if (isToday && !isCur) {
+        const { end } = parseActivityTimes(act.time, day.date);
+        isPast = !!(end && end <= now);
       }
 
-      ul.appendChild(li);
-    }
+      const { start } = parseActivityTimes(act.time, day.date);
+      const timeDisplay = start ? fmtTime(start) : act.time.split(/\s*-\s*/)[0].trim();
 
-    details.appendChild(ul);
-    container.appendChild(details);
-  }
+      const li = document.createElement('li');
+      li.id = `activity-${day.date}-${act.time.replace(/[^a-zA-Z0-9]/g, '')}`;
+      li.className = 'act-row' + (isCur ? ' current' : '') + (isPast ? ' past' : '');
+      li.innerHTML = `
+        <div class="act-time">${timeDisplay}</div>
+        <div class="act-body">
+          <div class="act-name">${act.activity}</div>
+          ${act.location ? `<div class="act-loc">${act.location}</div>` : ''}
+          ${act.notes && act.notes.length ? `<div class="act-notes">${act.notes.map(n => `<span class="act-note"><span>${n}</span></span>`).join('')}</div>` : ''}
+        </div>`;
+
+      if (isCur) { nowActivity = act; nowActivityDay = day; nowRowEl = li; }
+      if (isToday && i === curIdx + 1) nextRowEl = li;
+
+      li.addEventListener('click', () => showEvent(act, li));
+      ul.appendChild(li);
+    });
+
+    card.appendChild(ul);
+    container.appendChild(card);
+  });
 }
 
 function updateNowNextFromHiddenData() {
     const now = getCurrentTime();
     const todayDateString = now.getFullYear() + '-' + String(now.getMonth() + 1).padStart(2, '0') + '-' + String(now.getDate()).padStart(2, '0');
-
-    const currentActivityEl = document.getElementById('current-activity');
-    const nextActivityEl = document.getElementById('next-activity');
-
-    currentActivityEl.innerHTML = '⌛ No current activity';
-    currentActivityEl.removeAttribute('href'); currentActivityEl.onclick = null;
-    nextActivityEl.innerHTML = '⏭️ Nothing upcoming';
-    nextActivityEl.removeAttribute('href'); nextActivityEl.onclick = null;
 
     let foundNowActivity = null;
     let nowActivityDayDetails = null;
@@ -236,23 +332,47 @@ function updateNowNextFromHiddenData() {
         }
     }
 
-    if (activityToDisplayAsNow && dayToDisplayAsNow) {
-        const anchorId = `activity-${dayToDisplayAsNow.date}-${activityToDisplayAsNow.time.replace(/[^a-zA-Z0-9]/g, '')}`;
-        currentActivityEl.innerHTML = `<a href="#${anchorId}">⌛ ${activityToDisplayAsNow.time}: ${activityToDisplayAsNow.activity}</a>`;
-        addClickAndScroll(currentActivityEl, anchorId, dayToDisplayAsNow.date);
-    }
+    // Update Now card
+    const nowNameEl  = document.getElementById('nowName');
+    const nowMetaEl  = document.getElementById('nowMeta');
+    const nowPillsEl = document.getElementById('nowPills');
 
-    if (activityToDisplayAsNext && dayToDisplayAsNext) {
-        const anchorId = `activity-${dayToDisplayAsNext.date}-${activityToDisplayAsNext.time.replace(/[^a-zA-Z0-9]/g, '')}`;
-        let nextText = `⏭️ ${activityToDisplayAsNext.time}`;
-        if (dayToDisplayAsNext.date !== todayDateString) {
-            if (!dayToDisplayAsNow || dayToDisplayAsNext.date !== dayToDisplayAsNow.date) {
-                nextText += ` (${formatDateShort(dayToDisplayAsNext.date)})`;
+    if (nowNameEl && activityToDisplayAsNow && dayToDisplayAsNow) {
+        nowNameEl.textContent = activityToDisplayAsNow.activity;
+
+        const { start, end } = parseActivityTimes(activityToDisplayAsNow.time, dayToDisplayAsNow.date);
+        let metaParts = [];
+        if (activityToDisplayAsNow.location) metaParts.push(`<span>${activityToDisplayAsNow.location}</span><span class="now-sep">·</span>`);
+        if (start) metaParts.push(`<span>${fmtTime(start)}${end ? ' – ' + fmtTime(end) : ''}</span>`);
+        if (nowMetaEl) nowMetaEl.innerHTML = metaParts.join('');
+
+        if (nowPillsEl) {
+            if (activityToDisplayAsNow.notes && activityToDisplayAsNow.notes.length) {
+                nowPillsEl.innerHTML = activityToDisplayAsNow.notes.map(n =>
+                    `<span class="now-pill"><span>${n}</span></span>`).join('');
+            } else {
+                nowPillsEl.innerHTML = '';
             }
         }
-        nextText += `: ${activityToDisplayAsNext.activity}`;
-        nextActivityEl.innerHTML = `<a href="#${anchorId}">${nextText}</a>`;
-        addClickAndScroll(nextActivityEl, anchorId, dayToDisplayAsNext.date);
+
+        // Store for tap handler — look up row after renderSchedule has run
+        nowActivity    = activityToDisplayAsNow;
+        nowActivityDay = dayToDisplayAsNow;
+        const actId = `activity-${dayToDisplayAsNow.date}-${activityToDisplayAsNow.time.replace(/[^a-zA-Z0-9]/g, '')}`;
+        nowRowEl = document.getElementById(actId);
+    }
+
+    // Update Next row
+    const nextNameEl = document.getElementById('nextName');
+    const nextTimeEl = document.getElementById('nextTime');
+
+    if (nextNameEl && activityToDisplayAsNext && dayToDisplayAsNext) {
+        nextNameEl.textContent = activityToDisplayAsNext.activity;
+        const { start } = parseActivityTimes(activityToDisplayAsNext.time, dayToDisplayAsNext.date);
+        if (nextTimeEl) nextTimeEl.textContent = start ? fmtTime(start) : activityToDisplayAsNext.time.split(/\s*-\s*/)[0].trim();
+
+        const actId = `activity-${dayToDisplayAsNext.date}-${activityToDisplayAsNext.time.replace(/[^a-zA-Z0-9]/g, '')}`;
+        nextRowEl = document.getElementById(actId);
     }
 }
 
@@ -313,8 +433,9 @@ function getCurrentTime() {
 function applyBanner() {
   const noticeEl = document.getElementById('global-notice');
   if (globalBannerData.globalNotice?.text) {
-    noticeEl.textContent = globalBannerData.globalNotice.text;
-    noticeEl.style.display = 'block';
+    const noticeTextEl = noticeEl?.querySelector('#global-notice-text');
+    if (noticeTextEl) noticeTextEl.textContent = globalBannerData.globalNotice.text;
+    if (noticeEl) noticeEl.style.display = 'flex';
   }
 
   const bannerEl = document.getElementById('daily-banner');
@@ -350,7 +471,7 @@ function applyBanner() {
   if (localStorage.getItem(dismissKey)) return;
 
   bannerText.textContent = bannerEntry.message || bannerEntry;
-  bannerEl.style.display = 'block';
+  bannerEl.style.display = 'flex';
 
   bannerEl.querySelector('.close-banner')?.addEventListener('click', () => {
     bannerEl.style.display = 'none';
@@ -359,11 +480,12 @@ function applyBanner() {
 }
 
 // FOOTER FETCHER
-fetch('/includes/footer.html')
-  .then(res => res.text())
-  .then(html => {
-    document.getElementById('footer-container').innerHTML = html;
-  });
+const _footerContainer = document.getElementById('footer-container');
+if (_footerContainer) {
+  fetch('/includes/footer.html')
+    .then(res => res.text())
+    .then(html => { _footerContainer.innerHTML = html; });
+}
 
 function formatDate(isoDate) {
   const [year, month, day] = isoDate.split('-').map(Number);
@@ -398,7 +520,7 @@ function setUserDarkModePreference(value) {
 }
 
 function setDarkMode(isDark) {
-  document.body.classList.toggle('dark-mode', isDark);
+  document.body.classList.toggle('dark', isDark);
 
   const themeColorMeta = document.querySelector('meta[name="theme-color"]');
   if (!themeColorMeta) return;
@@ -407,7 +529,7 @@ function setDarkMode(isDark) {
   if (isFacultyPage) {
     themeColorMeta.content = isDark ? '#333333' : '#555555';
   } else {
-    themeColorMeta.content = isDark ? '#334b3c' : '#2b644a';
+    themeColorMeta.content = isDark ? '#0E2018' : '#1B4035';
   }
 }
 
@@ -467,10 +589,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   await Promise.all(includePromises);
 
+  // Supporting pages: contact dropdown + hamburger nav
   document.getElementById('menu-toggle')?.addEventListener('click', () => {
     document.getElementById('contact-menu')?.classList.toggle('show');
   });
-
   document.addEventListener('click', (event) => {
     const menu = document.getElementById('contact-menu');
     const toggle = document.getElementById('menu-toggle');
@@ -479,16 +601,54 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   });
 
+  // Supporting pages: dark mode toggle
   document.getElementById('manual-dark-toggle')?.addEventListener('click', () => {
-    const isDark = document.body.classList.contains('dark-mode');
+    const isDark = document.body.classList.contains('dark');
     const toggledTo = isDark ? 'light' : 'dark';
     const currentPref = getUserDarkModePreference();
-    if (currentPref === toggledTo) {
-      setUserDarkModePreference(null);
-    } else {
-      setUserDarkModePreference(toggledTo);
-    }
+    if (currentPref === toggledTo) setUserDarkModePreference(null);
+    else setUserDarkModePreference(toggledTo);
     updateDarkMode();
+  });
+
+  // Main page: dark mode toggle
+  document.getElementById('darkBtn')?.addEventListener('click', () => {
+    const isDark = document.body.classList.contains('dark');
+    const toggledTo = isDark ? 'light' : 'dark';
+    const currentPref = getUserDarkModePreference();
+    if (currentPref === toggledTo) setUserDarkModePreference(null);
+    else setUserDarkModePreference(toggledTo);
+    updateDarkMode();
+    updateDarkBtnIcon();
+  });
+
+  // Main page: contact sheet
+  const contactOverlay = document.getElementById('overlay');
+  document.getElementById('contactBtn')?.addEventListener('click', () => contactOverlay?.classList.add('show'));
+  contactOverlay?.addEventListener('click', e => { if (e.target === contactOverlay) contactOverlay.classList.remove('show'); });
+
+  // Main page: event detail sheet
+  document.getElementById('eventClose')?.addEventListener('click', () => closeEvent());
+  document.getElementById('eventOverlay')?.addEventListener('click', e => { if (e.target === e.currentTarget) closeEvent(); });
+
+  // Main page: daily banner dismiss
+  document.getElementById('bannerX')?.addEventListener('click', () => {
+    document.getElementById('daily-banner').style.display = 'none';
+  });
+
+  // Main page: next-pane scroll
+  document.getElementById('nextPane')?.addEventListener('click', () => {
+    if (!nextRowEl) return;
+    nextRowEl.closest('.day-card')?.classList.add('open');
+    nextRowEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    nextRowEl.classList.remove('flash');
+    void nextRowEl.offsetWidth;
+    nextRowEl.classList.add('flash');
+  });
+
+  // Main page: now-pane tap
+  document.getElementById('nowPane')?.addEventListener('click', () => {
+    if (nowActivity) showEvent(nowActivity, nowRowEl);
   });
 
   try {
@@ -500,11 +660,13 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   refreshDisplayForCurrentTime();
+  updateDarkBtnIcon();
 
   // Only run the interval when not in ?time= test mode
   setInterval(() => {
     if (!new URLSearchParams(window.location.search).get('time')) {
       refreshDisplayForCurrentTime();
+      updateDarkBtnIcon();
     }
   }, 60000);
 });
