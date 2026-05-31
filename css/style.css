@@ -411,7 +411,7 @@ body.dark .act-row.current .act-time { color: var(--forest-lt); }
 .act-notes { display: flex; flex-direction: column; gap: 2px; margin-top: 4px; }
 
 .act-note {
-  font-size: 0.875rem; color: var(--text3); line-height: 1.35;
+  font-size: 0.9rem; color: var(--text3); line-height: 1.35;
   display: flex; gap: 0.35em; align-items: flex-start;
 }
 .act-note::before { content: '·'; flex-shrink: 0; }
