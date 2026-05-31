@@ -702,7 +702,7 @@ body.page .theme-description {
   padding: 0.75rem 1rem; margin-top: 0.75rem; border-radius: 6px;
   font-weight: 500; text-align: center;
 }
-body.page li ul { list-style-type: disc; margin-left: 1.5rem; font-size: 0.97rem; color: var(--text2); }
+body.page li ul { list-style-type: disc; margin-left: 1.5rem; font-size: 1rem; color: var(--text2); }
 
 body.page .day > ul > li.blink-highlight {
   background-color: var(--gold-pale); box-shadow: 0 0 0 4px var(--gold-pale);
@@ -764,14 +764,14 @@ body.page details[open] summary::before { transform: rotate(90deg); }
 .breadcrumb a:hover { color: #e8f3ec; transition: color 0.3s ease; }
 
 body.page ol { padding-left: 1.5rem; margin: 1rem 0; counter-reset: item; list-style: none; }
-body.page ol li { counter-increment: item; margin-bottom: 0.5rem; position: relative; padding-left: 1.2em; }
+body.page ol li { counter-increment: item; font-size: 1.0625rem; margin-bottom: 0.5rem; position: relative; padding-left: 1.2em; }
 body.page ol li::before { content: counter(item) "."; position: absolute; left: 0; color: var(--forest-lt); font-weight: bold; }
 
 body.page ul { list-style-type: disc; padding-left: 1rem; margin-bottom: 0 !important; padding-bottom: 0 !important; margin-top: 0 !important; padding-top: 0 !important; }
 body.page li { margin-top: 0 !important; margin-bottom: 0 !important; }
 body.page ul ul { list-style-type: circle; padding-left: 0.25rem; margin-bottom: 0 !important; padding-bottom: 0 !important; margin-top: 0 !important; padding-top: 0 !important; }
 body.page ul ul ul { list-style-type: square; padding-left: 0.25rem; margin-bottom: 0 !important; padding-bottom: 0 !important; margin-top: 0 !important; padding-top: 0 !important; }
-body.page ul li { padding: 0 !important; margin-top: .5rem !important; margin-bottom: .5rem !important; }
+body.page ul li { font-size: 1.0625rem; padding: 0 !important; margin-top: .5rem !important; margin-bottom: .5rem !important; }
 body.page ul li:first-child { margin-top: 0; }
 
 .group-list ol { padding-left: 2rem !important; }
