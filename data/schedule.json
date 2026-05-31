@@ -23,10 +23,14 @@
       },
       {
         "time": "11:35 AM",
-        "activity": "Group up at Hatter Hall rally points",
+        "activity": "Meet at Hatter Hall rally points",
         "location": "Hatter Hall",
         "mapUrl": "",
-        "notes": []
+        "notes": [],
+        "groupMap": [
+          {"floor": "Floor 1", "groups": ["A","B","C","D"], "mapUrl": "/assets/images/hatter-floor-1-rally.png"},
+          {"floor": "Floor 2", "groups": ["E","F","G","H"], "mapUrl": "/assets/images/hatter-floor-2-rally.png"}
+        ]
       },
       {
         "time": "11:40 AM",
@@ -81,10 +85,13 @@
       },
       {
         "time": "6:25 PM",
-        "activity": "Group up at Presser rally points",
+        "activity": "Meet at Presser rally points",
         "location": "Presser Hall",
         "mapUrl": "",
-        "notes": []
+        "notes": [],
+        "groupMap": [
+          {"floor": "", "groups": ["A","B","C","D","E","F","G","H"], "mapUrl": "/assets/images/music-rally.png"}
+        ]
       },
       {
         "time": "6:30 - 7:00 PM",

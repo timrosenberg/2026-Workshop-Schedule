@@ -3,6 +3,7 @@ let globalBannerData = {};
 
 // Event detail sheet state
 let selectedRow = null;
+let currentAct   = null;
 let nowActivity  = null;
 let nowActivityDay = null;
 let nowRowEl     = null;
@@ -61,6 +62,7 @@ function updateDarkBtnIcon() {
 }
 
 function showEvent(act, rowEl) {
+  currentAct = act;
   if (selectedRow) selectedRow.classList.remove('selected');
   selectedRow = rowEl;
   if (rowEl) rowEl.classList.add('selected');
@@ -72,13 +74,18 @@ function showEvent(act, rowEl) {
   html += `<div class="event-meta-row"><span class="c-icon">${clockSVG}</span><span>${act.time}</span></div>`;
   if (act.location) {
     let locHTML = act.location;
-    if (act.mapUrl) locHTML += ` <a href="${act.mapUrl}" target="_blank" style="color:var(--forest-mid)">↗ Map</a>`;
+    if (act.mapUrl) locHTML += ` <a href="${act.mapUrl}" target="_blank" style="display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px">↗ Map</a>`;
     html += `<div class="event-meta-row"><span class="c-icon">${pinSVG}</span><span>${locHTML}</span></div>`;
   }
   if (act.notes && act.notes.length) {
     html += `<div class="event-notes"><div class="event-notes-lbl">Notes</div>`;
     html += act.notes.map(n => `<div class="event-note-line"><span>${n}</span></div>`).join('');
     html += `</div>`;
+  }
+  if (act.groupMap) {
+    html += renderGroupSelector(act.groupMap);
+  } else if (act.detail) {
+    html += `<div class="event-detail">${act.detail}</div>`;
   }
 
   document.getElementById('eventDetail').innerHTML = html;
@@ -88,6 +95,43 @@ function showEvent(act, rowEl) {
 function closeEvent() {
   if (selectedRow) { selectedRow.classList.remove('selected'); selectedRow = null; }
   document.getElementById('eventOverlay').classList.remove('show');
+}
+
+function renderGroupSelector(groupMap) {
+  const saved = localStorage.getItem('campGroup');
+  const mapBtnStyle = "display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:6px";
+  const grpBtnStyle = "margin:2px;padding:5px 11px;background:var(--surface2);color:var(--text);border:1.5px solid var(--border);border-radius:var(--r-full);font-size:0.9em;cursor:pointer;font-family:inherit;font-weight:600";
+
+  if (saved) {
+    const entry = groupMap.find(f => f.groups.includes(saved));
+    const floorLabel = entry && entry.floor ? ` → ${entry.floor}` : '';
+    const mapUrl = entry ? entry.mapUrl : groupMap[0].mapUrl;
+    const mapLink = mapUrl ? `<a href='${mapUrl}' target='_blank' style='${mapBtnStyle}'>↗ Map</a>` : '';
+    return `<div class="event-detail"><p><strong>Your group: ${saved}</strong>${floorLabel}${mapLink}</p><button onclick='clearCampGroup()' style='background:none;border:none;color:var(--text3);font-size:0.8em;cursor:pointer;text-decoration:underline;padding:0;font-family:inherit'>Change group</button></div>`;
+  }
+
+  const multiFloor = groupMap.length > 1;
+  let html = `<div class="event-detail"><p style='font-style:italic;color:var(--text2);margin:0 0 0.5rem'>Tap your group for customized instructions.</p>`;
+  groupMap.forEach(entry => {
+    html += `<div style='margin-bottom:0.35rem'>`;
+    if (multiFloor && entry.floor) html += `<span style='font-size:0.82em;color:var(--text2);margin-right:4px'>${entry.floor}:</span>`;
+    entry.groups.forEach(g => {
+      html += `<button onclick='selectCampGroup("${g}")' style='${grpBtnStyle}'>${g}</button>`;
+    });
+    html += `</div>`;
+  });
+  html += `</div>`;
+  return html;
+}
+
+function selectCampGroup(group) {
+  localStorage.setItem('campGroup', group);
+  if (currentAct && selectedRow) showEvent(currentAct, selectedRow);
+}
+
+function clearCampGroup() {
+  localStorage.removeItem('campGroup');
+  if (currentAct && selectedRow) showEvent(currentAct, selectedRow);
 }
 
 function refreshDisplayForCurrentTime() {
