@@ -536,10 +536,10 @@ body.dark .c-icon { color: var(--forest-lt); }
    RESPONSIVE — TABLET (≥ 600px)
 ================================ */
 @media (min-width: 600px) {
-  .app { max-width: 640px; }
-  .bottom-nav { max-width: 640px; }
+  .app { max-width: none; }
+  .bottom-nav { max-width: none; left: 0; transform: none; }
   .sheet { max-width: 580px; }
-  .main { padding: 16px 18px 0; }
+  .main { max-width: 640px; margin: 0 auto; padding: 16px 18px 0; }
 }
 
 /* ================================
