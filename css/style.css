@@ -389,6 +389,7 @@ body.dark .act-row.current .act-time { color: var(--forest-lt); }
   display: flex; gap: 0.35em; align-items: flex-start;
 }
 .act-note::before { content: '·'; flex-shrink: 0; }
+.act-note.no-dot::before { content: none; }
 
 /* ================================
    EVENT DETAIL SHEET
