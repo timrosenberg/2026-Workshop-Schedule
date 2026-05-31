@@ -497,7 +497,7 @@ body.dark .nav-item.active { color: var(--forest-lt); }
 .sheet {
   background: var(--surface);
   border-radius: var(--r-lg) var(--r-lg) 0 0;
-  width: 100%; max-width: 430px;
+  width: 100%;
   padding: 12px 14px calc(14px + env(safe-area-inset-bottom, 0px));
   animation: sheetUp 0.28s ease-out;
 }
@@ -565,7 +565,7 @@ body.dark .c-icon { color: var(--forest-lt); }
 @media (min-width: 600px) {
   .app { max-width: none; }
   .bottom-nav { max-width: none; left: 0; transform: none; }
-  .sheet { max-width: 580px; }
+  .sheet { max-width: 600px; margin: 0 auto; }
   .main { max-width: 640px; margin: 0 auto; padding: 16px 18px 0; }
 }
 
