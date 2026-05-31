@@ -29,6 +29,17 @@
 
   --sh-sm: 0 1px 3px rgba(0,0,0,0.07);
   --sh-md: 0 4px 14px rgba(0,0,0,0.08), 0 1px 3px rgba(0,0,0,0.04);
+
+  /* School alumni colors */
+  --clr-ithaca:  #163a6d;
+  --clr-msu:     #18453B;
+  --clr-berklee: #CC0000;
+  --clr-asu:     #8C1D40;
+  --clr-cmu:     #6A0032;
+  --clr-famu:    #CC5500;
+  --clr-iup:     #8B0000;
+  --clr-fsu:     #782F40;
+  --clr-ucf:     #b89010;
 }
 
 body.dark {
@@ -42,6 +53,17 @@ body.dark {
   --border2:     #1C2E22;
   --forest-pale: #1A3522;
   --gold-pale:   #1E1500;
+
+  /* School alumni colors — lightened for dark backgrounds */
+  --clr-ithaca:  #7aaee8;
+  --clr-msu:     #72c491;
+  --clr-berklee: #ff7070;
+  --clr-asu:     #e0708a;
+  --clr-cmu:     #d46898;
+  --clr-famu:    #ff8c42;
+  --clr-iup:     #e06060;
+  --clr-fsu:     #d47a88;
+  --clr-ucf:     #e8c040;
 }
 
 /* ================================
