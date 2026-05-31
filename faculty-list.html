@@ -15,10 +15,6 @@
   <link rel="manifest" href="manifest.json">
   <link rel="icon" href="assets/icons/icon-192.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon" href="assets/icons/icon-180.png">
-  <style>
-    #stetson-alumni { font-weight: bold; color: #3a634c; }
-    #ucf-alumni { font-weight: bold; color: #f1c22a; }
-  </style>
   <!-- ONESIGNAL -->
   <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
   <script>
@@ -113,21 +109,125 @@
 <main class="main-container">
   <h1 class="page-title" style="padding: 1.5rem 1.5rem 0">Workshop Faculty</h1>
   <div style="padding: 0 1.5rem 2rem">
-    <ul>
-      <li><a href="https://www.stetson.edu/other/faculty/timothy-rosenberg.php">Timothy Rosenberg</a>, Workshop director, Professor of Saxophone, Stetson University. <span style="font-weight: bold; color: #163a6d;">Ithaca College</span> & <span style="font-weight: bold; color: #25443b;">Michigan State</span> <span style="font-weight: bold;">Alumni</span></li>
-      <li>Steven Amann, Adjunct Professor of Saxophone and Clarinet at Seminole State College, Sanford, FL. <span id="ucf-alumni">UCF Alumni</span></li>
-      <li>Andrew Becker, Director of Bands, Pine View Middle School, Land O' Lakes, FL. <span id="stetson-alumni">Stetson Alumni</span></li>
-      <li>Bill Guthrie, Band Director, River Springs Middle School, Orange City, FL. <span id="stetson-alumni">Stetson Alumni</span></li>
-      <li>David Hinote, Third-Year Undergraduate Student, Stetson University</li>
-      <li>Marc Kolodinsky, Director of Bands, Windermere High School, Windermere, FL. <span id="stetson-alumni">Stetson Alumni</span></li>
-      <li>Jarrod Koskoski, Director of Bands, University High School, Orange City, FL. <span id="ucf-alumni">UCF Alumni</span></li>
-      <li>Michelle Lugo, Band Director, Southwestern Middle School, DeLand, FL. <span id="ucf-alumni">UCF Alumni</span></li>
-      <li>Celeste Manzano, Elementary Music Teacher, John Snively Elementary, Winter Haven, FL. <span id="stetson-alumni">Stetson Alumni</span></li>
-      <li>Matthew Murphy, Band and Orchestra Director, Audubon Park School, Orlando, FL. <span id="stetson-alumni">Stetson Alumni</span></li>
-      <li>Sara Pyburn, Band Director, Umatilla Middle School, Umatilla, FL. <span id="stetson-alumni">Stetson Alumni</span></li>
-      <li>Holly Trudell, Senior Sales Associate, Music & Arts, Sanford, FL. <span id="stetson-alumni">Stetson Alumni</span></li>
-      <li>Jeremy Williamson, Director of Bands, Jackson Heights Middle School, Oviedo, FL. <span id="stetson-alumni">Stetson</span> & <span style="font-weight: bold; color: #3c2164">Northwestern</span> <strong>Alumni</strong></li>
-    </ul>
+    <div class="sched" style="padding-bottom: 1rem;">
+
+      <div class="day-card open">
+        <button class="day-toggle" onclick="this.closest('.day-card').classList.toggle('open')">
+          <span class="chevron"></span>
+          <span class="day-hd"><span class="day-name">Workshop Director</span></span>
+        </button>
+        <ul class="act-list">
+          <li class="act-row">
+            <div class="act-body">
+              <div class="act-name"><a href="https://www.stetson.edu/other/faculty/timothy-rosenberg.php">Timothy Rosenberg</a></div>
+              <div class="act-loc">Professor of Saxophone, Stetson University</div>
+              <div class="act-notes">
+                <span class="act-note"><span><span style="font-weight:600; color:#163a6d;">Ithaca College</span> &amp; <span style="font-weight:600; color:#25443b;">Michigan State</span> Alumni</span></span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="day-card open">
+        <button class="day-toggle" onclick="this.closest('.day-card').classList.toggle('open')">
+          <span class="chevron"></span>
+          <span class="day-hd"><span class="day-name">Faculty</span></span>
+        </button>
+        <ul class="act-list">
+          <li class="act-row">
+            <div class="act-body">
+              <div class="act-name">Steven Amann</div>
+              <div class="act-loc">Adjunct Professor of Saxophone and Clarinet, Seminole State College · Sanford, FL</div>
+              <div class="act-notes"><span class="act-note"><span style="font-weight:600; color:#b89010;">UCF Alumni</span></span></div>
+            </div>
+          </li>
+          <li class="act-row">
+            <div class="act-body">
+              <div class="act-name">Andrew Becker</div>
+              <div class="act-loc">Director of Bands, Pine View Middle School · Land O' Lakes, FL</div>
+              <div class="act-notes"><span class="act-note"><span style="font-weight:600; color:var(--forest-mid);">Stetson Alumni</span></span></div>
+            </div>
+          </li>
+          <li class="act-row">
+            <div class="act-body">
+              <div class="act-name">Scott Devlin</div>
+              <div class="act-loc">Guest Artist</div>
+            </div>
+          </li>
+          <li class="act-row">
+            <div class="act-body">
+              <div class="act-name">Bill Guthrie</div>
+              <div class="act-loc">Band Director, River Springs Middle School · Orange City, FL</div>
+              <div class="act-notes"><span class="act-note"><span style="font-weight:600; color:var(--forest-mid);">Stetson Alumni</span></span></div>
+            </div>
+          </li>
+          <li class="act-row">
+            <div class="act-body">
+              <div class="act-name">David Hinote</div>
+              <div class="act-loc">Third-Year Undergraduate Student, Stetson University</div>
+            </div>
+          </li>
+          <li class="act-row">
+            <div class="act-body">
+              <div class="act-name">Marc Kolodinsky</div>
+              <div class="act-loc">Director of Bands, Windermere High School · Windermere, FL</div>
+              <div class="act-notes"><span class="act-note"><span style="font-weight:600; color:var(--forest-mid);">Stetson Alumni</span></span></div>
+            </div>
+          </li>
+          <li class="act-row">
+            <div class="act-body">
+              <div class="act-name">Jarrod Koskoski</div>
+              <div class="act-loc">Director of Bands, University High School · Orange City, FL</div>
+              <div class="act-notes"><span class="act-note"><span style="font-weight:600; color:#b89010;">UCF Alumni</span></span></div>
+            </div>
+          </li>
+          <li class="act-row">
+            <div class="act-body">
+              <div class="act-name">Michelle Lugo</div>
+              <div class="act-loc">Band Director, Southwestern Middle School · DeLand, FL</div>
+              <div class="act-notes"><span class="act-note"><span style="font-weight:600; color:#b89010;">UCF Alumni</span></span></div>
+            </div>
+          </li>
+          <li class="act-row">
+            <div class="act-body">
+              <div class="act-name">Celeste Manzano</div>
+              <div class="act-loc">Elementary Music Teacher, John Snively Elementary · Winter Haven, FL</div>
+              <div class="act-notes"><span class="act-note"><span style="font-weight:600; color:var(--forest-mid);">Stetson Alumni</span></span></div>
+            </div>
+          </li>
+          <li class="act-row">
+            <div class="act-body">
+              <div class="act-name">Matthew Murphy</div>
+              <div class="act-loc">Band and Orchestra Director, Audubon Park School · Orlando, FL</div>
+              <div class="act-notes"><span class="act-note"><span style="font-weight:600; color:var(--forest-mid);">Stetson Alumni</span></span></div>
+            </div>
+          </li>
+          <li class="act-row">
+            <div class="act-body">
+              <div class="act-name">Sara Pyburn</div>
+              <div class="act-loc">Band Director, Umatilla Middle School · Umatilla, FL</div>
+              <div class="act-notes"><span class="act-note"><span style="font-weight:600; color:var(--forest-mid);">Stetson Alumni</span></span></div>
+            </div>
+          </li>
+          <li class="act-row">
+            <div class="act-body">
+              <div class="act-name">Holly Trudell</div>
+              <div class="act-loc">Senior Sales Associate, Music &amp; Arts · Sanford, FL</div>
+              <div class="act-notes"><span class="act-note"><span style="font-weight:600; color:var(--forest-mid);">Stetson Alumni</span></span></div>
+            </div>
+          </li>
+          <li class="act-row">
+            <div class="act-body">
+              <div class="act-name">Jeremy Williamson</div>
+              <div class="act-loc">Director of Bands, Jackson Heights Middle School · Oviedo, FL</div>
+              <div class="act-notes"><span class="act-note"><span style="font-weight:600; color:var(--forest-mid);">Stetson</span> &amp; <span style="font-weight:600; color:#3c2164;">Northwestern</span> Alumni</span></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
   </div>
 </main>
 
