@@ -100,7 +100,7 @@ function refreshDisplayForCurrentTime() {
 
   const currentTime = getCurrentTime();
 
-  renderSchedule(scheduleData);
+  renderSchedule(scheduleData, { animate: false });
 
   if (openCardIds.size > 0) {
     openCardIds.forEach(id => {
@@ -144,7 +144,7 @@ async function loadSchedule() {
 }
 
 
-function renderSchedule(scheduleData) {
+function renderSchedule(scheduleData, { animate = true } = {}) {
   const container = document.getElementById('schedule-container');
   container.innerHTML = '';
   nowActivity = null; nowActivityDay = null; nowRowEl = null; nextRowEl = null;
@@ -166,7 +166,7 @@ function renderSchedule(scheduleData) {
     }
 
     const card = document.createElement('div');
-    card.className = 'day-card' + (isToday ? ' open' : '');
+    card.className = 'day-card' + (isToday ? ' open' : '') + (animate ? '' : ' no-animate');
     card.id = day.date;
 
     const [year, month, dayNum] = day.date.split('-').map(Number);

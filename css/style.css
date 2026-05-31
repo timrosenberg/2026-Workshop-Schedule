@@ -309,6 +309,7 @@ body.dark .now-pane:hover, body.dark .now-pane:active { background: #1A3525; }
 .day-card:nth-child(4) { animation-delay: 0.17s; }
 .day-card:nth-child(5) { animation-delay: 0.21s; }
 .day-card:nth-child(6) { animation-delay: 0.25s; }
+.day-card.no-animate { animation: none; }
 
 .day-toggle {
   width: 100%; padding: 11px 14px;
