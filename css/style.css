@@ -121,7 +121,8 @@ body.dark .header { background: var(--forest-deep); }
 .sax-icon {
   width: 20px; height: 20px;
   flex-shrink: 0;
-  filter: brightness(0) invert(1);
+  filter: invert(1);
+  mix-blend-mode: screen;
   transform: scaleX(-1);
   opacity: 0.85;
 }
@@ -508,6 +509,76 @@ body.dark .c-icon { color: var(--forest-lt); }
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes modalIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ================================
+   RESPONSIVE — TABLET (≥ 600px)
+================================ */
+@media (min-width: 600px) {
+  .app { max-width: 640px; }
+  .bottom-nav { max-width: 640px; }
+  .sheet { max-width: 580px; }
+  .main { padding: 16px 18px 0; }
+}
+
+/* ================================
+   RESPONSIVE — DESKTOP (≥ 960px)
+================================ */
+@media (min-width: 960px) {
+  :root { --sticky-top: 73px; }
+
+  .app { max-width: 1060px; }
+  .header { padding: 12px 24px 10px; }
+
+  .main {
+    display: grid;
+    grid-template-columns: minmax(0, 320px) 1fr;
+    align-items: start;
+    gap: 20px;
+    padding: 20px 24px 0;
+  }
+
+  .now-next {
+    position: sticky;
+    top: var(--sticky-top);
+    align-self: start;
+    max-height: calc(100vh - var(--sticky-top) - 10px);
+    overflow-y: auto;
+  }
+
+  .sched { min-height: 200px; }
+  .bottom-nav { max-width: 1060px; }
+
+  /* Sheets become centered modals */
+  .overlay { align-items: center; }
+  .sheet {
+    border-radius: var(--r-lg);
+    max-width: 480px;
+    max-height: 85vh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding-bottom: 14px;
+    animation: modalIn 0.22s ease-out;
+  }
+}
+
+/* ================================
+   RESPONSIVE — WIDE (≥ 1280px)
+================================ */
+@media (min-width: 1280px) {
+  .app { max-width: 1200px; }
+  .bottom-nav { max-width: 1200px; }
+
+  .main {
+    grid-template-columns: minmax(0, 360px) 1fr;
+    gap: 24px;
+    padding: 24px 32px 0;
+  }
 }
 
 /* ================================

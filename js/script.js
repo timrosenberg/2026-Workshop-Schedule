@@ -11,6 +11,16 @@ let nextRowEl    = null;
 const sunSVG  = `<svg class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"/><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"/></svg>`;
 const moonSVG = `<svg class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454l0 .008"/></svg>`;
 
+function updateStickyTop() {
+  const header = document.querySelector('.header');
+  const notice = document.getElementById('global-notice');
+  const daily  = document.getElementById('daily-banner');
+  let h = header ? header.getBoundingClientRect().height : 53;
+  if (notice && notice.style.display !== 'none') h += notice.getBoundingClientRect().height;
+  if (daily  && daily.style.display  !== 'none') h += daily.getBoundingClientRect().height;
+  document.documentElement.style.setProperty('--sticky-top', `${Math.ceil(h) + 12}px`);
+}
+
 function themeTag(theme) {
   const m = theme.match(/^(\p{Emoji_Presentation}️?\s*)(.*)/su);
   return m ? `${m[1]}<em>${m[2]}</em>` : `<em>${theme}</em>`;
@@ -108,6 +118,7 @@ function refreshDisplayForCurrentTime() {
 
   updateNowNextFromHiddenData();
   applyBanner();
+  updateStickyTop();
   updateDarkMode();
 }
 
@@ -476,6 +487,7 @@ function applyBanner() {
   bannerEl.querySelector('.close-banner')?.addEventListener('click', () => {
     bannerEl.style.display = 'none';
     localStorage.setItem(dismissKey, 'true');
+    updateStickyTop();
   });
 }
 
@@ -634,6 +646,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Main page: daily banner dismiss
   document.getElementById('bannerX')?.addEventListener('click', () => {
     document.getElementById('daily-banner').style.display = 'none';
+    updateStickyTop();
   });
 
   // Main page: next-pane scroll
@@ -661,6 +674,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   refreshDisplayForCurrentTime();
   updateDarkBtnIcon();
+
+  window.addEventListener('resize', updateStickyTop);
 
   // Only run the interval when not in ?time= test mode
   setInterval(() => {
