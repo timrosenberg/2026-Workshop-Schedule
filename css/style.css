@@ -702,10 +702,12 @@ body.dark.page .footer-links a { color: var(--forest-lt); }
 body.page .footer-note { text-align: center; color: var(--text2); }
 body.page .cc-attribution {
   text-align: center; font-family: var(--font-ui);
-  font-size: 0.9rem; line-height: 1.2; max-width: 100%;
+  font-size: 0.8rem; line-height: 1.4; max-width: 100%;
   word-break: break-word; white-space: normal; display: block;
   overflow-wrap: break-word; padding: 0 1rem; box-sizing: border-box;
+  color: var(--text3);
 }
+.cc-icon { width: 16px; height: 16px; vertical-align: middle; margin-right: 2px; }
 
 body.page summary {
   font-size: 1.1rem; font-weight: 700; color: var(--text);
