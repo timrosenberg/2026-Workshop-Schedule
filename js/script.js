@@ -93,27 +93,27 @@ function closeEvent() {
 function refreshDisplayForCurrentTime() {
   if (!scheduleData || scheduleData.length === 0) return;
 
-  const openDetailsIds = new Set();
-  document.querySelectorAll('#schedule-container details.day[open]').forEach(detailsEl => {
-    if (detailsEl.id) openDetailsIds.add(detailsEl.id);
+  const openCardIds = new Set();
+  document.querySelectorAll('#schedule-container .day-card.open').forEach(card => {
+    if (card.id) openCardIds.add(card.id);
   });
 
   const currentTime = getCurrentTime();
 
   renderSchedule(scheduleData);
 
-  if (openDetailsIds.size > 0) {
-    openDetailsIds.forEach(id => {
+  if (openCardIds.size > 0) {
+    openCardIds.forEach(id => {
       const el = document.getElementById(id);
-      if (el) el.open = true;
+      if (el) el.classList.add('open');
     });
   } else {
     const year = currentTime.getFullYear();
     const month = String(currentTime.getMonth() + 1).padStart(2, '0');
     const dayNum = String(currentTime.getDate()).padStart(2, '0');
     const currentDateKey = `${year}-${month}-${dayNum}`;
-    const currentDayDetails = document.getElementById(currentDateKey);
-    if (currentDayDetails) currentDayDetails.open = true;
+    const currentDayCard = document.getElementById(currentDateKey);
+    if (currentDayCard) currentDayCard.classList.add('open');
   }
 
   updateNowNextFromHiddenData();
@@ -400,11 +400,8 @@ function addClickAndScroll(element, anchorId, activityDateKey) {
       e.preventDefault();
       const elToScroll = document.getElementById(anchorId);
       if (elToScroll) {
-        document.querySelectorAll('details.day').forEach(detailsEl => {
-          if (detailsEl.id === activityDateKey) {
-            if (!detailsEl.open) detailsEl.open = true;
-          }
-        });
+        const dayCard = document.getElementById(activityDateKey);
+        if (dayCard) dayCard.classList.add('open');
         setTimeout(() => {
             elToScroll.scrollIntoView({ behavior: 'smooth', block: 'center' });
             elToScroll.classList.add('blink-highlight');
