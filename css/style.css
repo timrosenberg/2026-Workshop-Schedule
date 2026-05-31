@@ -636,6 +636,8 @@ body.dark .c-icon { color: var(--forest-lt); }
 ================================ */
 body.page {
   font-family: var(--font-ui);
+  font-size: 0.9375rem;
+  line-height: 1.55;
   background: var(--bg);
   color: var(--text);
 }
@@ -653,7 +655,11 @@ body.dark.page header:not(.header) { background-color: var(--forest-deep); }
 
 body.page .main-container { max-width: 640px; margin: 0 auto; padding: 0 1.5rem; text-align: left; }
 body.page .content-inner { text-align: left; }
-body.page h1, body.page h2, body.page h3 { margin-top: 1rem; margin-bottom: 1rem; font-weight: 700; }
+
+body.page h1 { font-size: 1.35rem; font-weight: 600; letter-spacing: -0.01em; line-height: 1.25; margin-top: 0; margin-bottom: 0.5rem; }
+body.page h2 { font-size: 1rem; font-weight: 600; letter-spacing: 0; margin-top: 1.5rem; margin-bottom: 0.75rem; }
+body.page h3 { font-size: 0.9rem; font-weight: 600; margin-top: 1rem; margin-bottom: 0.5rem; }
+body.page p { font-size: 0.9rem; line-height: 1.55; margin-top: 0; margin-bottom: 0.75rem; }
 body.dark.page h3 { color: var(--forest-lt); }
 
 body.page .day {
@@ -756,12 +762,12 @@ body.page .content-inner.recordings-page { padding-bottom: 1rem; width: 100%; }
   padding: 1rem; margin-bottom: 1rem;
   box-shadow: var(--sh-sm); transition: background 0.2s, border-color 0.2s; display: block; width: 100%;
 }
-.faq-item summary { font-weight: 700; font-size: 1.1rem; cursor: pointer; color: var(--forest-mid); display: flex; align-items: center; }
+.faq-item summary { font-weight: 600; font-size: 0.9rem; cursor: pointer; color: var(--forest-mid); display: flex; align-items: center; }
 body.dark .faq-item summary { color: var(--forest-lt); }
 .faq-item summary::before { width: 0; height: 0; margin-right: 1rem; border-top: 8px solid transparent; border-bottom: 8px solid transparent; border-left: 11px solid var(--forest-mid); transition: transform 0.2s ease-in-out; flex-shrink: 0; }
 body.dark .faq-item summary::before { border-left-color: var(--forest-lt); }
 .faq-item[open] { background-color: var(--forest-pale); border-color: var(--forest-mid); }
-.faq-item p { margin-top: 0.5rem; font-size: 1rem; line-height: 1.6; color: var(--text2); }
+.faq-item p { margin-top: 0.5rem; font-size: 0.875rem; line-height: 1.55; color: var(--text2); }
 body.page .main-container.faq-block-display { display: block; }
 @media (max-width: 600px) { body.page .main-container { padding-left: 1rem; padding-right: 1rem; } }
 @media (max-width: 450px) { body.page h2 { font-size: 1.25rem; } }
