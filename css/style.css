@@ -635,10 +635,9 @@ body.dark .c-icon { color: var(--forest-lt); }
    — rooms, faq, faculty-list, etc.
 ================================ */
 body.page {
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: var(--font-ui);
   background-color: #f5f5f5;
   color: #333;
-  padding-bottom: 0;
 }
 
 body.page a { color: #2b644a; text-decoration: none; }
@@ -648,7 +647,7 @@ body.page a:hover, body.page a:focus { text-decoration: underline; }
 body.page ul { list-style-type: none; padding-left: 0; margin: 1rem 0; }
 body.page ul li { padding: 0.5rem 0; margin-left: 0; }
 
-body.page header {
+body.page header:not(.header) {
   position: relative; background-color: #2b644a; color: #fff;
   padding: 1.5rem; text-align: center; z-index: 999;
 }
@@ -679,7 +678,7 @@ body.page .main-title { font-size: clamp(1.8rem, 6vw, 2rem); margin: 0 auto; lin
 }
 
 body.dark.page { background-color: #182c25; color: rgb(232, 230, 227); }
-body.dark.page header { background-color: #2c4c3b; }
+body.dark.page header:not(.header) { background-color: #2c4c3b; }
 body.dark.page a { color: #68ac77; }
 body.dark.page h3 { color: #78aa7c; }
 body.dark.page time, body.dark.page li ul, body.dark.page summary { color: rgb(232, 230, 227); }
@@ -788,7 +787,7 @@ body.dark.page summary::before { border-left-color: rgb(232, 230, 227); }
 body.page details[open] summary::before { transform: rotate(90deg); }
 
 body.page h1, body.page h2, body.page h3 { margin-top: 1rem; margin-bottom: 1rem; font-weight: 700; text-align: left !important; }
-body.page header { text-align: left !important; }
+body.page header:not(.header) { text-align: left !important; }
 body.page .page-header { max-width: 600px; margin-left: auto; margin-right: auto; }
 body.page h1.page-title { text-align: left; }
 body.page main .main-title { text-align: left !important; margin: 0 !important; padding-left: 0 !important; padding-right: 0 !important; }

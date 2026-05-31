@@ -2,13 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Frequently Asked Questions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="description" content="Frequently asked questions for the 2026 Stetson Saxophone Workshop." />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#1B4035" />
+  <title>FAQ — Stetson Saxophone Workshop 2026</title>
   <link rel="stylesheet" href="/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/nav.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="assets/icons/icon-192.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icons/icon-180.png">
   <!-- ONESIGNAL -->
   <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
   <script>
@@ -25,156 +31,215 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-7CPFWK23N3');
 </script>
 
 <body class="page">
 
-    <header>
-    <div class="page-header">
-        <h1 class="page-title">Frequently Asked Questions</h1>
-         <nav class="breadcrumb">
-            <a href="index.html">← Back to Schedule</a>
-        </nav>
+<!-- Contact sheet -->
+<div class="overlay" id="overlay">
+  <div class="sheet">
+    <div class="sheet-handle"></div>
+    <div class="sheet-title">Contact</div>
+    <a href="sms:+14074940603" class="contact-item">
+      <span class="c-icon">
+        <svg class="icon icon-sm" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 9h8"/><path d="M8 13h6"/><path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"/></svg>
+      </span>
+      <span class="c-lbl">Text Dr. Rosenberg</span>
+    </a>
+    <a href="mailto:trosenberg@stetson.edu" class="contact-item">
+      <span class="c-icon">
+        <svg class="icon icon-sm" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"/><path d="M3 7l9 6l9 -6"/></svg>
+      </span>
+      <span class="c-lbl">Email Dr. Rosenberg</span>
+    </a>
+    <a href="tel:+14074940603" class="contact-item">
+      <span class="c-icon">
+        <svg class="icon icon-sm" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"/></svg>
+      </span>
+      <span class="c-lbl">Call Dr. Rosenberg</span>
+    </a>
+    <a href="https://instagram.com/stetsonsaxophoneworkshop" target="_blank" class="contact-item">
+      <span class="c-icon">
+        <svg class="icon icon-sm" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"/><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/><path d="M16.5 7.5l0 .01"/></svg>
+      </span>
+      <span class="c-lbl">Workshop Instagram</span>
+    </a>
+    <a href="https://www.facebook.com/stetsonsaxos" target="_blank" rel="noopener" class="contact-item">
+      <span class="c-icon">
+        <svg class="icon icon-sm" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"/></svg>
+      </span>
+      <span class="c-lbl">Stetson Saxos Facebook</span>
+    </a>
+    <a href="https://www.stetson.edu/other/visit/media/deland-campus-map.pdf" target="_blank" class="contact-item">
+      <span class="c-icon">
+        <svg class="icon icon-sm" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"/></svg>
+      </span>
+      <span class="c-lbl">Campus Map</span>
+    </a>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="wordmark">
+    <div class="wm-name">
+      <img src="assets/icons/saxophone.png" class="sax-icon" alt="">
+      Stetson Saxophone Workshop
     </div>
-    <!-- BUTTONS -->
-    <div class="header-buttons">
-        <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
-        <button id="manual-dark-toggle" class="dark-mode-toggle" title="Toggle dark mode">
-            <i class="fa-solid fa-circle-half-stroke"></i>
-        </button>
-    </div>
-    </header>
+  </div>
+  <nav class="hdr-nav">
+    <a href="/" class="hdr-nav-item">Schedule</a>
+    <a href="/rooms.html" class="hdr-nav-item">Rooms</a>
+    <a href="/faculty-list.html" class="hdr-nav-item">Faculty</a>
+    <a href="/recordings.html" class="hdr-nav-item">Recordings</a>
+    <a href="/faq.html" class="hdr-nav-item active">FAQ</a>
+  </nav>
+  <div class="hbtns">
+    <button class="hbtn" id="darkBtn" title="Toggle dark mode">
+      <svg id="darkIcon" class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454l0 .008"/></svg>
+    </button>
+    <button class="hbtn" id="contactBtn" title="Contact">
+      <svg class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"/></svg>
+    </button>
+  </div>
+</header>
 
-    <!-- CONTACT MENU -->
-    <div id="contact-menu">
-        <a href="sms:+14074940603">📱 Text Dr. Rosenberg</a>
-        <a href="mailto:you@example.com">📧 Email Dr. Rosenberg</a>
-        <a href="tel:+14074940603">📞 Call Dr. Rosenberg</a>
-        <a href="https://instagram.com/stetsonsaxophoneworkshop" target="_blank" style="display: flex; align-items: center;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="height: 20px; margin-right: 0.5rem;">Workshop IG
-        </a>
-        <a href="https://www.facebook.com/stetsonsaxos" target="_blank" rel="noopener">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="height: 20px; vertical-align: middle; margin-right: 0.5rem;">Stetson Saxos FB
-        </a>
-        <a href="https://www.stetson.edu/other/visit/media/deland-campus-map.pdf" target="_blank">🗺️ Stetson Campus Map</a>
-    </div>
+<!-- MAIN TEXT AREA -->
+<main class="main-container faq-block-display">
+  <div class="content-inner" style="padding: 1.5rem">
+    <section class="faq-section">
+      <h2>🗓️ Schedule & Activities</h2>
 
-    <!-- NAVIGATION MENU -->
-    <div id="nav-container"></div>
+      <details class="faq-item">
+        <summary>Where can I find the most up-to-date daily schedule?</summary>
+        <p>Easy peasy! The full schedule with times and locations for all activities is <a href="index.html">right here</a>. Bookmark it on your phone!</p>
+      </details>
 
-    <!-- MAIN TEXT AREA -->
-    <main class="main-container faq-block-display">
-    <div class="content-inner">
-        <section class="faq-section">
-        <h2>🗓️ Schedule & Activities</h2>
+      <details class="faq-item">
+        <summary>Do I really have to go to everything on the schedule?</summary>
+        <p>Yes, you're expected to be at all events like rehearsals, classes, and performances that are on the schedule. If something totally unexpected comes up, you need to be excused by Dr. Rosenberg.</p>
+      </details>
 
-            <details class="faq-item">
-                <summary>Where can I find the most up-to-date daily schedule?</summary>
-                <p>Easy peasy! The full schedule with times and locations for all activities is <a href="index.html">right here</a>. Bookmark it on your phone!</p>
-            </details>
+      <details class="faq-item">
+        <summary>When will I find out my chamber ensemble assignment?</summary>
+        <p>Your chamber ensemble assignment will be given to you at check-in; so, you probably already have it. If you are not sure what your chamber ensemble is, ask a faculty member.</p>
+      </details>
 
-            <details class="faq-item">
-                <summary>Do I really have to go to everything on the schedule?</summary>
-                <p>Yes, you're expected to be at all events like rehearsals, classes, and performances that are on the schedule. If something totally unexpected comes up, you need to be excused by Dr. Rosenberg.</p>
-            </details>
+      <details class="faq-item">
+        <summary>What if I have a question about where I'm supposed to be or what's next on the schedule?</summary>
+        <p>No problem! Remember, the schedule is <a href="index.html">right here</a>; so, you can always see what's next. But, if your phone dies or something, any of the Workshop faculty can tell you what's next or help you figure out where you need to be. Just ask!</p>
+      </details>
 
-            <details class="faq-item">
-                <summary>When will I find out my chamber ensemble assignment?</summary>
-                <p>Your chamber ensemble assignment will be given to you at check-in; so, you probably already have it. If you are not sure what your chamber ensemble is, ask a faculty member.</p>
-            </details>
+      <h2>🏫 Workshop Rules & Campus Life</h2>
 
-            <details class="faq-item">
-                <summary>What if I have a question about where I'm supposed to be or what's next on the schedule?</summary>
-                <p>No problem! Remember, the schedule is <a href="index.html">right here</a>; so, you can always see what's next. But, if your phone dies or something, any of the Workshop faculty can tell you what's next or help you figure out where you need to be. Just ask!</p>
-            </details>
+      <details class="faq-item">
+        <summary>Can I leave the Stetson campus to grab food or hang out with friends?</summary>
+        <p>🙅‍♂️ Nope! To make sure everyone is safe, students are not allowed to leave the Stetson campus during the workshop. This includes going out to eat, even with family or friends who might be nearby.</p>
+      </details>
 
-        <h2>🏫 Workshop Rules & Campus Life</h2>
+      <details class="faq-item">
+        <summary>What's the deal with using my phone or other electronic devices during workshop activities?</summary>
+        <p>During any rehearsals or concerts, please set your phone and other devices to "Do Not Disturb" or turn them completely off. You can totally use them in between scheduled activities, though!</p>
+      </details>
 
-            <details class="faq-item">
-                <summary>Can I leave the Stetson campus to grab food or hang out with friends?</summary>
-                <p>🙅‍♂️ Nope! To make sure everyone is safe, students are not allowed to leave the Stetson campus during the workshop. This includes going out to eat, even with family or friends who might be nearby.</p>
-            </details>
+      <details class="faq-item">
+        <summary>What are the rules about having friends in my dorm room?</summary>
+        <p>For everyone's comfort and safety, members of the opposite gender aren't allowed in each other's dorm rooms.</p>
+      </details>
 
-            <details class="faq-item">
-                <summary>What's the deal with using my phone or other electronic devices during workshop activities?</summary>
-                <p>During any rehearsals or concerts, please set your phone and other devices to "Do Not Disturb" or turn them completely off. You can totally use them in between scheduled activities, though!</p>
-            </details>
+      <details class="faq-item">
+        <summary>Uh oh, I think I lost my room key/FOB! What do I do?</summary>
+        <p>Okay, don't panic, but let a faculty member know ASAP. Just so you're aware, there's a $75 charge for a lost FOB (that's the electronic key) and a $75 charge for a lost regular dorm room key. But, we're going to try to help you find it before it comes to that.</p>
+      </details>
 
-            <details class="faq-item">
-                <summary>What are the rules about having friends in my dorm room?</summary>
-                <p>For everyone's comfort and safety, members of the opposite gender aren't allowed in each other's dorm rooms.</p>
-            </details>
+      <details class="faq-item">
+        <summary>What is something that would get me immediately kicked out?</summary>
+        <p>Things like smoking, posessing or consuming alcoholic beverages, any other kind of chemical abuse, posessing firearms, or posessing fireworks are a strict no-go and are not allowed under any circumstances. If this rule is broken, the student will be dismissed from the workshop right away, and it would be at the student's family's expense. Let's not do anything stupid and all focus on making amazing music and having a fun, safe week!</p>
+      </details>
 
-            <details class="faq-item">
-                <summary>Uh oh, I think I lost my room key/FOB! What do I do?</summary>
-                <p>Okay, don't panic, but let a faculty member know ASAP. Just so you're aware, there's a $75 charge for a lost FOB (that's the electronic key) and a $75 charge for a lost regular dorm room key. But, we're going to try to help you find it before it comes to that.</p>
-            </details>
+      <details class="faq-item">
+        <summary>What if I'm not feeling well or have a medical issue during the workshop?</summary>
+        <p>Please tell a faculty member immediately. If you can't tell us yourself, ask someone else to do it (roommate, friend, have a family member call us, etc.). You can text or call Dr. Rosenberg at <a href="sms:+14074940603">(407) 494-0603</a>. Serious medical emergencies will be handled through West Volusia Memorial Hospital here in DeLand. FYI, the staff is <strong>not allowed</strong> to administer any medication to students, even Tylenol/Advil, without directly speaking with your parent/guardian first. If you require anything more complex than that, we are going to send you to a real doctor. It's just safer that way.</p>
+      </details>
 
-            <details class="faq-item">
-                <summary>What is something that would get me immediately kicked out?</summary>
-                <p>Things like smoking, posessing or consuming alcoholic beverages, any other kind of chemical abuse, posessing firearms, or posessing fireworks are a strict no-go and are not allowed under any circumstances. If this rule is broken, the student will be dismissed from the workshop right away, and it would be at the student's family's expense. Let's not do anything stupid and all focus on making amazing music and having a fun, safe week!</p>
-            </details>
+      <h2>🎶 Music & Performances</h2>
 
-            <details class="faq-item">
-                <summary>What if I'm not feeling well or have a medical issue during the workshop?</summary>
-                <p>Please tell a faculty member immediately. If you can't tell us yourself, ask someone else to do it (roommate, friend, have a family member call us, etc.). You can text or call Dr. Rosenberg at <a href="sms:+14074940603">(407) 494-0603</a>. Serious medical emergencies will be handled through West Volusia Memorial Hospital here in DeLand. FYI, the staff is <strong>not allowed</strong> to administer any medication to students, even Tylenol/Advil, without directly speaking with your parent/guardian first. If you require anything more complex than that, we are going to send you to a real doctor. It's just safer that way.</p>
-            </details>
+      <details class="faq-item">
+        <summary>I auditioned for the Young Artist Honors Recital. How do I know if I'm in the final round, and what happens then?</summary>
+        <p>You would have been notified <em>before</em> the first day of the workshop if you moved on to the final round. (If you were not notified, you did not advance to the final round.) If you were selected, your final audition happens on the first day of the workshop, shortly after check-in.</p>
+      </details>
 
-        <h2>🎶 Music & Performances</h2>
+      <details class="faq-item">
+        <summary>Can family and/or friends attend the concerts?</summary>
+        <p>Yes! Family and friends are welcome and encouraged to attend the concerts on Thursday (Young Artist Honors Concert), Friday (Chamber Ensembles), and Saturday (Large Ensembles). The recitals on Monday, Tuesday, and Wednesday are exclusively for the Workshop students (that's 🫵 you!).</p>
+      </details>
 
-            <details class="faq-item">
-                <summary>I auditioned for the Young Artist Honors Recital. How do I know if I'm in the final round, and what happens then?</summary>
-                <p>You would have been notified <em>before</em> the first day of the workshop if you moved on to the final round. (If you were not notified, you did not advance to the final round.) If you were selected, your final audition happens on the first day of the workshop, shortly after check-in.</p>
-            </details>
+      <details class="faq-item">
+        <summary>I was assigned to play a saxophone I'm not used to (like baritone or soprano) in my ensemble. I am nervous.</summary>
+        <p>It's totally normal to feel uncomfortable on a new instrument; but, it is a great learning opportunity! The assignments are decided by the workshop faculty based on what the ensembles need to sound their best. Embrace the challenge! By the end of the week, you will be an expert on that instrument.</p>
+      </details>
 
-            <details class="faq-item">
-                <summary>Can family and/or friends attend the concerts?</summary>
-                <p>Yes! Family and friends are welcome and encouraged to attend the concerts on Thursday (Young Artist Honors Concert), Friday (Chamber Ensembles), and Saturday (Large Ensembles). The recitals on Monday, Tuesday, and Wednesday are exclusively for the Workshop students (that's 🫵 you!).</p>
-            </details>
+      <details class="faq-item">
+        <summary>What should I wear for the concerts?</summary>
+        <p>You'll want to have your dress clothes ready for the concerts. It doesn't have to be a school uniform or strictly all black, just something nice that you feel good performing in – and don't forget your dress shoes and socks!</p>
+      </details>
 
-            <details class="faq-item">
-                <summary>I was assigned to play a saxophone I'm not used to (like baritone or soprano) in my ensemble. I am nervous.</summary>
-                <p>It's totally normal to feel uncomfortable on a new instrument; but, it is a great learning opportunity! The  assignments are decided by the workshop faculty based on what the ensembles need to sound their best. Embrace the challenge! By the end of the week, you will be an expert on that instrument.</p>
-            </details>
+      <h2>💡 Helpful On-Site Information</h2>
 
-            <details class="faq-item">
-                <summary>What should I wear for the concerts?</summary>
-                <p>You'll want to have your dress clothes ready for the concerts. It doesn't have to be a school uniform or strictly all black, just something nice that you feel good performing in – and don't forget your dress shoes and socks!</p>
-            </details>
-        
-        <h2>💡 Helpful On-Site Information</h2>
-            
-            <details class="faq-item">
-                <summary>SOS! I ran out of reeds / my neck strap broke / I need some cork grease! Is there anywhere on campus to buy sax stuff?</summary>
-                <p>There will be a table set up during check-in with any last-minute supplies you might need. We also recieve generous donations from sponsors; so, we probably have what you need. Ask a faculty member and we will try to hook you up.</p>
-            </details>
+      <details class="faq-item">
+        <summary>SOS! I ran out of reeds / my neck strap broke / I need some cork grease! Is there anywhere on campus to buy sax stuff?</summary>
+        <p>There will be a table set up during check-in with any last-minute supplies you might need. We also recieve generous donations from sponsors; so, we probably have what you need. Ask a faculty member and we will try to hook you up.</p>
+      </details>
 
-            <details class="faq-item">
-                <summary>I forgot something else that I need for the week (deoderant, a wash cloth, soap, etc.). What do I do?</summary>
-                <p>We will have a staff member who can run some quick errands each night, if needed. Speak with a faculty member and we will try to arrange something for you.</p>
-            </details>
+      <details class="faq-item">
+        <summary>I forgot something else that I need for the week (deoderant, a wash cloth, soap, etc.). What do I do?</summary>
+        <p>We will have a staff member who can run some quick errands each night, if needed. Speak with a faculty member and we will try to arrange something for you.</p>
+      </details>
 
-            <details class="faq-item">
-                <summary>Can my family send me a care package or mail while I'm here?</summary>
-                <p>They sure can! Tell them to address it to: Your Name, Saxophone Workshop, Unit 8399, Stetson University, DeLand, FL 32724. Keep in mind that the campus mail system adds about a day of delivery time to everything. So, if it is later in the week, it might not arrive in time.</p>
-            </details>
+      <details class="faq-item">
+        <summary>Can my family send me a care package or mail while I'm here?</summary>
+        <p>They sure can! Tell them to address it to: Your Name, Saxophone Workshop, Unit 8399, Stetson University, DeLand, FL 32724. Keep in mind that the campus mail system adds about a day of delivery time to everything. So, if it is later in the week, it might not arrive in time.</p>
+      </details>
 
-            <details class="faq-item">
-                <summary>What can we do when we're hanging out in the dorm?</summary>
-                <p>The un-structured time in the dorm is for relaxation and enjoying each other's company. You can play card games (no gambling!), hand-held video games, or board games (if you bring them). Students often like to talk about the day, or catch up with each other about the past year. It's a great time to bond with other students and make new friends. If you're not feeling up to socializing, that's OK too! You can find a quiet place to read or relax. After a long day, you might be too tired for anything and just go to sleep! 😴</p>
-            </details>
+      <details class="faq-item">
+        <summary>What can we do when we're hanging out in the dorm?</summary>
+        <p>The un-structured time in the dorm is for relaxation and enjoying each other's company. You can play card games (no gambling!), hand-held video games, or board games (if you bring them). Students often like to talk about the day, or catch up with each other about the past year. It's a great time to bond with other students and make new friends. If you're not feeling up to socializing, that's OK too! You can find a quiet place to read or relax. After a long day, you might be too tired for anything and just go to sleep! 😴</p>
+      </details>
 
-        </section>
-    </div>
-    </main>
+    </section>
+  </div>
+</main>
 
-<!-- FOOTER -->  
+<!-- FOOTER -->
 <footer>
   <div id="footer-container"></div>
 </footer>
 
-<script src="/js/template-script.js" defer></script>
+<!-- BOTTOM NAV -->
+<nav class="bottom-nav">
+  <a href="/" class="nav-item">
+    <svg class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12"/><path d="M16 3v4"/><path d="M8 3v4"/><path d="M4 11h16"/><path d="M11 15h1"/><path d="M12 15v3"/></svg>
+    <span class="nav-lbl">Schedule</span>
+  </a>
+  <a href="/rooms.html" class="nav-item">
+    <svg class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 12v.01"/><path d="M3 21h18"/><path d="M6 21v-16a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v16"/></svg>
+    <span class="nav-lbl">Rooms</span>
+  </a>
+  <a href="/faculty-list.html" class="nav-item">
+    <svg class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"/><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"/></svg>
+    <span class="nav-lbl">Faculty</span>
+  </a>
+  <a href="/recordings.html" class="nav-item">
+    <svg class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M13 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M9 17v-13h10v13"/><path d="M9 8h10"/></svg>
+    <span class="nav-lbl">Recordings</span>
+  </a>
+  <a href="/faq.html" class="nav-item active">
+    <svg class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M12 16v.01"/><path d="M12 13a2 2 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483"/></svg>
+    <span class="nav-lbl">FAQ</span>
+  </a>
+</nav>
+
+<script src="/js/script.js" defer></script>
 </body>
 </html>
