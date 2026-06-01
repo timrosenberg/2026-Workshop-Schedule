@@ -36,6 +36,15 @@
 
 <body class="page">
 
+<!-- Roster sheet -->
+<div class="overlay" id="rosterOverlay">
+  <div class="sheet">
+    <div class="sheet-handle"></div>
+    <div id="rosterDetail"></div>
+    <button class="sheet-close" onclick="closeRoster()">Close</button>
+  </div>
+</div>
+
 <!-- Contact sheet -->
 <div class="overlay" id="overlay">
   <div class="sheet">
@@ -137,6 +146,13 @@
   </a>
 </nav>
 
+<script defer>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('rosterOverlay')?.addEventListener('click', e => {
+      if (e.target === e.currentTarget) closeRoster();
+    });
+  });
+</script>
 <script src="/js/script.js" defer></script>
 </body>
 </html>

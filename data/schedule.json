@@ -179,6 +179,7 @@
         "activity": "Fundamentals Class",
         "location": "Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
         "mapUrl": "",
+        "fundamentalsClass": true,
         "notes": [
           "Class is determined by instrument played in large ensemble."
         ]
@@ -298,6 +299,7 @@
         "activity": "Fundamentals Class",
         "location": "Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
         "mapUrl": "",
+        "fundamentalsClass": true,
         "notes": []
       },
       {
@@ -429,6 +431,7 @@
         "activity": "Fundamentals Class",
         "location": "Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
         "mapUrl": "",
+        "fundamentalsClass": true,
         "notes": []
       },
       {
@@ -561,6 +564,7 @@
         "activity": "Fundamentals Class",
         "location": "Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
         "mapUrl": "",
+        "fundamentalsClass": true,
         "notes": []
       },
       {

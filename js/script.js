@@ -3,7 +3,7 @@ let globalBannerData = {};
 
 const LARGE_ENSEMBLE_LOC = {
   symphonic: {location: 'Feasel Hall',   mapUrl: 'https://maps.app.goo.gl/5mDXBVoTABQhHF5L6'},
-  concert:   {location: 'Tinsley Hall',  mapUrl: ''}
+  concert:   {location: 'Tinsley Hall',  mapUrl: 'https://maps.app.goo.gl/wdAMPGnM3GRCCsnA8'}
 };
 
 const JAZZ_DATA = [
@@ -14,6 +14,72 @@ const JAZZ_DATA = [
   {num: 5, instructor: 'Murphy',     room: 'Presser 352'},
   {num: 6, instructor: 'Becker',     room: 'Presser 113'}
 ];
+
+const CHAMBER_ROSTERS = {
+  'amann-con':      {name: 'Amann',      type: 'Concert',   room: 'Presser 202',  students: []},
+  'guthrie-con':    {name: 'Guthrie',    type: 'Concert',   room: 'Tinsley Hall', students: []},
+  'hinote-con':     {name: 'Hinote',     type: 'Concert',   room: 'Presser 113',  students: []},
+  'kolodinsky-con': {name: 'Kolodinsky', type: 'Concert',   room: 'Presser 352',  students: []},
+  'murphy-con':     {name: 'Murphy',     type: 'Concert',   room: 'Presser 349',  students: []},
+  'whitt-con':      {name: 'Whitt',      type: 'Concert',   room: 'Presser 112',  students: []},
+  'amann-sym':      {name: 'Amann',      type: 'Symphonic', room: 'Presser 202',  students: []},
+  'becker-sym':     {name: 'Becker',     type: 'Symphonic', room: 'Presser 113',  students: []},
+  'murphy-sym':     {name: 'Murphy',     type: 'Symphonic', room: 'Lee Chapel',   students: []},
+  'pyburn-sym':     {name: 'Pyburn',     type: 'Symphonic', room: 'Presser 112',  students: []},
+  'rosenberg-sym':  {name: 'Rosenberg',  type: 'Symphonic', room: 'Presser 349',  students: []},
+  'wilson-sym':     {name: 'Wilson',     type: 'Symphonic', room: 'Feasel Hall',  students: []},
+  'zelenak-sym':    {name: 'Zelenak',    type: 'Symphonic', room: 'Presser 352',  students: []},
+};
+
+function showRoster(key) {
+  const data = CHAMBER_ROSTERS[key];
+  if (!data) return;
+  const overlay = document.getElementById('rosterOverlay');
+  const detail  = document.getElementById('rosterDetail');
+  if (!overlay || !detail) return;
+  let html = `<div class="event-hd">${data.name}</div>`;
+  html += `<div style="color:var(--text2);font-size:0.9em;margin-bottom:1rem">${data.type} Chamber · ${data.room}</div>`;
+  if (data.students.length) {
+    html += data.students.map(s => `<div class="event-note-line"><span>${s}</span></div>`).join('');
+  } else {
+    html += `<p style="color:var(--text2);font-style:italic;margin:0">Roster coming soon</p>`;
+  }
+  detail.innerHTML = html;
+  overlay.classList.add('show');
+}
+
+function closeRoster() {
+  document.getElementById('rosterOverlay')?.classList.remove('show');
+}
+
+const LARGE_ENSEMBLE_INFO = {
+  concert:   {name: 'Concert Saxophones',   location: 'Tinsley Hall (inside Presser Hall)', grade: 'Rising 7th–9th grade',   conductors: ['Mr. Guthrie', 'Mr. Kolodinsky']},
+  symphonic: {name: 'Symphonic Saxophones', location: 'Feasel Hall',                        grade: 'Rising 10th–12th grade', conductors: ['Dr. Wilson', 'Dr. Zelenak']}
+};
+
+function showLargeEnsemble(key) {
+  const data = LARGE_ENSEMBLE_INFO[key];
+  if (!data) return;
+  const overlay = document.getElementById('rosterOverlay');
+  const detail  = document.getElementById('rosterDetail');
+  if (!overlay || !detail) return;
+  let html = `<div class="event-hd">${data.name}</div>`;
+  html += `<div style="color:var(--text2);font-size:0.9em;margin-bottom:1rem">${data.location}</div>`;
+  html += `<p style="margin:0 0 0.35rem"><em>${data.grade}</em></p>`;
+  html += `<p style="margin:0">Conductors: ${data.conductors.join(', ')}</p>`;
+  detail.innerHTML = html;
+  overlay.classList.add('show');
+}
+
+const FUNDAMENTALS_DATA = {
+  soprano: {room: 'Presser 202',  instructor: 'Amann'},
+  alto:    {concert:   {room: 'Presser 113',  instructor: 'Becker'},
+            symphonic: {room: 'Presser 352',  instructor: 'Hinote'}},
+  tenor:   {concert:   {room: 'Presser 349',  instructor: 'Pyburn'},
+            symphonic: {room: 'Presser 112',  instructor: 'Kalina'}},
+  bari:    {concert:   {room: 'Tinsley Hall', instructor: 'Whitt'},
+            symphonic: {room: 'Feasel Hall',  instructor: 'Murphy'}}
+};
 
 const CHAMBER_DATA = {
   symphonic: [
@@ -111,7 +177,7 @@ function showEvent(act, rowEl) {
     if (act.mapUrl) locHTML += ` <a href="${act.mapUrl}" target="_blank" style="display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px">↗ Map</a>`;
     html += `<div class="event-meta-row"><span class="c-icon">${pinSVG}</span><span>${locHTML}</span></div>`;
   }
-  if (act.notes && act.notes.length && !(act.ensembleMap && localStorage.getItem('campEnsemble'))) {
+  if (act.notes && act.notes.length && !(act.ensembleMap && localStorage.getItem('campEnsemble')) && !(act.fundamentalsClass && localStorage.getItem('campInstrument'))) {
     html += `<div class="event-notes"><div class="event-notes-lbl">Notes</div>`;
     html += act.notes.map(n => `<div class="event-note-line"><span>${n}</span></div>`).join('');
     html += `</div>`;
@@ -122,6 +188,8 @@ function showEvent(act, rowEl) {
     html += renderEnsembleSelector(act.ensembleMap || act.ensemblePrompt);
   } else if (act.jazzClasses) {
     html += renderJazzSelector();
+  } else if (act.fundamentalsClass) {
+    html += renderFundamentalsSelector();
   } else if (act.detail) {
     html += `<div class="event-detail">${act.detail}</div>`;
   }
@@ -276,6 +344,10 @@ function getPersonalizedLocation(act) {
     const entry = JAZZ_DATA.find(j => String(j.num) === jazz);
     return entry ? entry.room : null;
   }
+  if (act.fundamentalsClass) {
+    const info = getFundamentalsInfo();
+    return info ? info.room : null;
+  }
   return null;
 }
 
@@ -308,7 +380,7 @@ function renderJazzSelector() {
 
   if (saved) {
     const entry = JAZZ_DATA.find(j => String(j.num) === saved);
-    return `<div class="event-detail"><p style='margin:0 0 0.25rem'>Jazz Class ${saved} — ${entry.room} (${entry.instructor})</p><button onclick='clearJazz()' style='${changeBtnStyle}'>Change</button></div>`;
+    return `<div class="event-detail"><p style='margin:0 0 0.25rem'>Jazz — ${entry.instructor} · ${entry.room}</p><button onclick='clearJazz()' style='${changeBtnStyle}'>Change</button></div>`;
   }
 
   let html = `<div class="event-detail"><p style='font-style:italic;color:var(--text2);margin:0 0 0.5rem'>Who is your jazz instructor?</p>`;
@@ -328,18 +400,76 @@ function clearJazz() {
   if (currentAct && selectedRow) showEvent(currentAct, selectedRow);
 }
 
+function getFundamentalsInfo() {
+  const instrument = localStorage.getItem('campInstrument');
+  if (!instrument) return null;
+  const data = FUNDAMENTALS_DATA[instrument];
+  if (!data) return null;
+  if (data.room) return data;
+  const ens = localStorage.getItem('campEnsemble');
+  return ens ? data[ens] : null;
+}
+
+function renderFundamentalsSelector() {
+  const instrument = localStorage.getItem('campInstrument');
+  const ens        = localStorage.getItem('campEnsemble');
+  const btnStyle        = "margin:2px;padding:5px 11px;background:var(--surface2);color:var(--text);border:1.5px solid var(--border);border-radius:var(--r-full);font-size:0.9em;cursor:pointer;font-family:inherit;font-weight:600";
+  const ensBtnStyle     = "margin:2px;padding:5px 11px;background:var(--surface2);color:var(--text);border:1.5px solid var(--border);border-radius:var(--r-full);font-size:0.85em;cursor:pointer;font-family:inherit";
+  const changeBtnStyle  = "background:none;border:none;color:var(--text3);font-size:0.8em;cursor:pointer;text-decoration:underline;padding:4px 0 0;display:block;font-family:inherit";
+  const LABELS = {soprano: 'Soprano', alto: 'Alto', tenor: 'Tenor', bari: 'Baritone'};
+
+  if (instrument) {
+    const info = getFundamentalsInfo();
+    if (info) {
+      return `<div class="event-detail"><p style='margin:0 0 0.25rem'>${LABELS[instrument]} — ${info.room} (${info.instructor})</p><button onclick='clearInstrument()' style='${changeBtnStyle}'>Change</button></div>`;
+    }
+    return `<div class="event-detail"><p style='margin:0 0 0.35rem;color:var(--text2);font-size:0.9em'>Your room depends on your ensemble — set it below.</p>` +
+      `<button onclick='selectEnsemble("symphonic")' style='${ensBtnStyle}'>Symphonic — 10th–12th</button> ` +
+      `<button onclick='selectEnsemble("concert")' style='${ensBtnStyle}'>Concert — 7th–9th</button>` +
+      `<button onclick='clearInstrument()' style='${changeBtnStyle}'>Change instrument</button></div>`;
+  }
+
+  let html = `<div class="event-detail"><p style='font-style:italic;color:var(--text2);margin:0 0 0.5rem'>What instrument do you play?</p>`;
+  Object.entries(LABELS).forEach(([key, label]) => {
+    html += `<button onclick='selectInstrument("${key}")' style='${btnStyle}'>${label}</button>`;
+  });
+  return html + '</div>';
+}
+
+function selectInstrument(instrument) {
+  localStorage.setItem('campInstrument', instrument);
+  if (currentAct && selectedRow) showEvent(currentAct, selectedRow);
+}
+
+function clearInstrument() {
+  localStorage.removeItem('campInstrument');
+  if (currentAct && selectedRow) showEvent(currentAct, selectedRow);
+}
+
+function getFundamentalsActivityName(act) {
+  if (!act.fundamentalsClass) return null;
+  const info = getFundamentalsInfo();
+  return info ? `Fundamentals — ${info.room}` : null;
+}
+
+function getFundamentalsPills(act) {
+  if (!act.fundamentalsClass) return null;
+  const info = getFundamentalsInfo();
+  return info ? [`Fundamentals — ${info.room} (${info.instructor})`] : null;
+}
+
 function getJazzActivityName(act) {
   const saved = localStorage.getItem('campJazz');
   if (!saved || !act.jazzClasses) return null;
   const entry = JAZZ_DATA.find(j => String(j.num) === saved);
-  return entry ? `Jazz Class ${saved} — ${entry.room}` : null;
+  return entry ? `Jazz — ${entry.instructor}` : null;
 }
 
 function getJazzPills(act) {
   const saved = localStorage.getItem('campJazz');
   if (!saved || !act.jazzClasses) return null;
   const entry = JAZZ_DATA.find(j => String(j.num) === saved);
-  return entry ? [`Jazz Class ${saved} — ${entry.room} (${entry.instructor})`] : null;
+  return entry ? [`Jazz — ${entry.instructor} (${entry.room})`] : null;
 }
 
 function refreshDisplayForCurrentTime() {
@@ -457,7 +587,7 @@ function renderSchedule(scheduleData, { animate = true } = {}) {
       li.innerHTML = `
         <div class="act-time">${timeDisplay}</div>
         <div class="act-body">
-          <div class="act-name">${getEnsembleActivityName(act) || getJazzActivityName(act) || act.activity}</div>
+          <div class="act-name">${getEnsembleActivityName(act) || getJazzActivityName(act) || getFundamentalsActivityName(act) || act.activity}</div>
           ${(() => { const loc = getPersonalizedLocation(act) || act.location; return loc ? `<div class="act-loc">${loc}</div>` : ''; })()}
         </div>`;
 
@@ -600,7 +730,7 @@ function updateNowNextFromHiddenData() {
     const nowPillsEl = document.getElementById('nowPills');
 
     if (nowNameEl && activityToDisplayAsNow && dayToDisplayAsNow) {
-        nowNameEl.textContent = getEnsembleActivityName(activityToDisplayAsNow) || getJazzActivityName(activityToDisplayAsNow) || activityToDisplayAsNow.activity;
+        nowNameEl.textContent = getEnsembleActivityName(activityToDisplayAsNow) || getJazzActivityName(activityToDisplayAsNow) || getFundamentalsActivityName(activityToDisplayAsNow) || activityToDisplayAsNow.activity;
 
         const { start, end } = parseActivityTimes(activityToDisplayAsNow.time, dayToDisplayAsNow.date);
         let metaParts = [];
@@ -609,7 +739,7 @@ function updateNowNextFromHiddenData() {
         if (nowMetaEl) nowMetaEl.innerHTML = metaParts.join('');
 
         if (nowPillsEl) {
-            const ensemblePills = getEnsemblePills(activityToDisplayAsNow) || getJazzPills(activityToDisplayAsNow);
+            const ensemblePills = getEnsemblePills(activityToDisplayAsNow) || getJazzPills(activityToDisplayAsNow) || getFundamentalsPills(activityToDisplayAsNow);
             if (ensemblePills) {
                 nowPillsEl.innerHTML = ensemblePills.map(n => `<span class="now-pill"><span>${n}</span></span>`).join('');
             } else if (activityToDisplayAsNow.notes && activityToDisplayAsNow.notes.length) {
@@ -632,7 +762,7 @@ function updateNowNextFromHiddenData() {
     const nextTimeEl = document.getElementById('nextTime');
 
     if (nextNameEl && activityToDisplayAsNext && dayToDisplayAsNext) {
-        nextNameEl.textContent = getEnsembleActivityName(activityToDisplayAsNext) || getJazzActivityName(activityToDisplayAsNext) || activityToDisplayAsNext.activity;
+        nextNameEl.textContent = getEnsembleActivityName(activityToDisplayAsNext) || getJazzActivityName(activityToDisplayAsNext) || getFundamentalsActivityName(activityToDisplayAsNext) || activityToDisplayAsNext.activity;
         const { start } = parseActivityTimes(activityToDisplayAsNext.time, dayToDisplayAsNext.date);
         if (nextTimeEl) nextTimeEl.textContent = start ? fmtTime(start) : activityToDisplayAsNext.time.split(/\s*-\s*/)[0].trim();
 
