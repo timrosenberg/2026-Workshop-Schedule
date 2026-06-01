@@ -1167,5 +1167,3 @@ function showNotifBanner() {
     overlay.classList.add('show');
   }, 2000);
 }
-
-showNotifBanner();
