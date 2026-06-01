@@ -1138,3 +1138,34 @@ const isInStandaloneMode = 'standalone' in window.navigator && window.navigator.
 if (isMobileDevice() && isIOS && !isInStandaloneMode) {
   showInstallBanner('ios');
 }
+
+// NOTIFICATION PERMISSION BANNER
+const NOTIF_BANNER_KEY = 'notif-banner-dismissed';
+
+function showNotifBanner() {
+  if (typeof Notification === 'undefined') return;
+  if (Notification.permission !== 'default') return;
+  if (localStorage.getItem(NOTIF_BANNER_KEY)) return;
+  // iOS requires the app to be installed as a PWA before push works
+  if (isIOS && !isInStandaloneMode) return;
+
+  setTimeout(() => {
+    const overlay = document.getElementById('notif-overlay');
+    if (!overlay) return;
+
+    document.getElementById('notif-allow').onclick = async () => {
+      overlay.classList.remove('show');
+      localStorage.setItem(NOTIF_BANNER_KEY, 'true');
+      if (window.OneSignal) await window.OneSignal.Notifications.requestPermission();
+    };
+
+    document.getElementById('notif-dismiss').onclick = () => {
+      overlay.classList.remove('show');
+      localStorage.setItem(NOTIF_BANNER_KEY, 'true');
+    };
+
+    overlay.classList.add('show');
+  }, 6000);
+}
+
+showNotifBanner();

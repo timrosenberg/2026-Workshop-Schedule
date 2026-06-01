@@ -699,6 +699,16 @@ body.dark #install-now { background: var(--forest-mid); }
 #install-dismiss { background: var(--surface2); color: var(--text2); }
 #install-dismiss:hover { background: var(--border); }
 
+/* NOTIFICATION PERMISSION BANNER */
+#notif-banner-body { margin-bottom: 14px; }
+#notif-banner-body p { margin: 0; line-height: 1.45; font-size: 0.9rem; color: var(--text2); text-align: center; }
+#notif-banner-buttons { display: flex; flex-direction: column; gap: 8px; }
+#notif-allow { background: var(--forest); color: #fff; }
+body.dark #notif-allow { background: var(--forest-mid); }
+#notif-allow:hover { opacity: 0.88; }
+#notif-dismiss { background: var(--surface2); color: var(--text2); }
+#notif-dismiss:hover { background: var(--border); }
+
 /* ================================
    SUPPORTING PAGES (body.page)
    — rooms, faq, faculty-list, etc.

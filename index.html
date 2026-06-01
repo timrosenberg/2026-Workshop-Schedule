@@ -20,7 +20,11 @@
   <script>
     window.OneSignalDeferred = window.OneSignalDeferred || [];
     OneSignalDeferred.push(async function(OneSignal) {
-      await OneSignal.init({ appId: "9e1ae8eb-4c86-4b27-b078-2d98c6190f76" });
+      await OneSignal.init({
+        appId: "9e1ae8eb-4c86-4b27-b078-2d98c6190f76",
+        notifyButton: { enable: false },
+        slidedown: { prompts: [] }
+      });
     });
   </script>
 </head>
@@ -189,6 +193,19 @@
     <p class="install-banner-title">Add to Home Screen</p>
     <div id="install-homescreen-text"><p id="install-text"></p></div>
     <div id="install-banner-buttons"><button id="install-dismiss">Not now</button></div>
+  </div>
+</div>
+
+<!-- NOTIFICATION PERMISSION BANNER -->
+<div id="notif-overlay" class="install-overlay">
+  <div class="install-banner">
+    <div class="install-handle"></div>
+    <p class="install-banner-title">Get Workshop Alerts</p>
+    <div id="notif-banner-body"><p>We'll send you notifications for schedule changes and important announcements during workshop week.</p></div>
+    <div id="notif-banner-buttons">
+      <button id="notif-allow">Turn on notifications</button>
+      <button id="notif-dismiss">Not now</button>
+    </div>
   </div>
 </div>
 
