@@ -1165,11 +1165,7 @@ function showNotifBanner() {
     };
 
     overlay.classList.add('show');
-  }, 2000);
+  }, 4000);
 }
 
-// Push to OneSignalDeferred here — script.js runs after the OneSignal SDK
-// (both deferred, document order), so OneSignal is already initialized when
-// this callback fires, guaranteeing the service worker is registered.
-window.OneSignalDeferred = window.OneSignalDeferred || [];
-window.OneSignalDeferred.push(function() { showNotifBanner(); });
+showNotifBanner();
