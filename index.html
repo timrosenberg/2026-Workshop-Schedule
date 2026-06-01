@@ -197,14 +197,19 @@
 </div>
 
 <!-- NOTIFICATION PERMISSION BANNER -->
-<div id="notif-overlay" class="install-overlay">
-  <div class="install-banner">
-    <div class="install-handle"></div>
-    <p class="install-banner-title">Get Workshop Alerts</p>
-    <div id="notif-banner-body"><p>We'll send you notifications for schedule changes and important announcements during workshop week.</p></div>
-    <div id="notif-banner-buttons">
-      <button id="notif-allow">Turn on notifications</button>
+<div id="notif-overlay">
+  <div id="notif-card">
+    <div class="notif-header">
+      <div class="notif-app-icon">
+        <img src="/assets/icons/icon-192.png" alt="">
+      </div>
+      <span class="notif-app-name">Stetson Sax Workshop</span>
+    </div>
+    <p class="notif-title">Get Workshop Alerts</p>
+    <p class="notif-body">We'll notify you about schedule changes and important announcements during workshop week.</p>
+    <div class="notif-actions">
       <button id="notif-dismiss">Not now</button>
+      <button id="notif-allow">Turn on</button>
     </div>
   </div>
 </div>
