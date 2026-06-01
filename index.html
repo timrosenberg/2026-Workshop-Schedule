@@ -25,10 +25,6 @@
         notifyButton: { enable: false },
         slidedown: { prompts: [] }
       });
-      // Show banner only after OneSignal is fully initialized and the
-      // service worker is registered — so requestPermission() can
-      // complete the full push subscription, not just the Notification API grant.
-      if (typeof showNotifBanner === 'function') showNotifBanner();
     });
   </script>
 </head>
