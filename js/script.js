@@ -1165,7 +1165,7 @@ function showNotifBanner() {
     };
 
     overlay.classList.add('show');
-  }, 6000);
+  }, 2000);
 }
 
 showNotifBanner();
