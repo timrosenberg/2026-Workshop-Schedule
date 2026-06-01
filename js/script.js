@@ -959,20 +959,20 @@ function showInstallBanner(type) {
   if (localStorage.getItem(INSTALL_BANNER_KEY)) return;
 
   setTimeout(() => {
-    const banner = document.getElementById('install-banner');
+    const overlay = document.getElementById('install-overlay');
     const textElement = document.getElementById('install-text');
     const buttonsContainer = document.getElementById('install-banner-buttons');
     const dismissButton = document.getElementById('install-dismiss');
 
-    if (!banner || !textElement || !buttonsContainer || !dismissButton) return;
+    if (!overlay || !textElement || !buttonsContainer || !dismissButton) return;
 
     const existingInstallButton = document.getElementById('install-now');
     if (existingInstallButton) existingInstallButton.remove();
 
     if (type === 'ios') {
-      textElement.textContent = '📲 To add this app to your home screen, tap the Share button and then "Add to Home Screen".';
+      textElement.textContent = 'Tap the Share button then "Add to Home Screen" to install this app.';
     } else if (type === 'android' && window.deferredPrompt) {
-      textElement.textContent = '📲 Install this app to your home screen for quicker access.';
+      textElement.textContent = 'Install this app to your home screen for quicker access.';
       const installButton = document.createElement('button');
       installButton.id = 'install-now';
       installButton.textContent = 'Install';
@@ -982,25 +982,22 @@ function showInstallBanner(type) {
         if (window.deferredPrompt) {
           window.deferredPrompt.prompt();
           window.deferredPrompt.userChoice.finally(() => {
-            banner.classList.remove('show');
-            setTimeout(() => { banner.style.display = 'none'; }, 400);
+            overlay.classList.remove('show');
             localStorage.setItem(INSTALL_BANNER_KEY, 'true');
             window.deferredPrompt = null;
           });
         }
       });
     } else if (type === 'android' && !window.deferredPrompt) {
-      textElement.textContent = '📲 For quick access, you can add this site to your home screen via your browser menu.';
+      textElement.textContent = 'For quick access, add this site to your home screen via your browser menu.';
     }
 
     dismissButton.onclick = () => {
-      banner.classList.remove('show');
-      setTimeout(() => { banner.style.display = 'none'; }, 400);
+      overlay.classList.remove('show');
       localStorage.setItem(INSTALL_BANNER_KEY, 'true');
     };
 
-    banner.style.display = 'block';
-    requestAnimationFrame(() => { banner.classList.add('show'); });
+    overlay.classList.add('show');
 
   }, INSTALL_BANNER_DELAY);
 }
