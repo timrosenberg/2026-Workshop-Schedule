@@ -1153,10 +1153,18 @@ function showNotifBanner() {
     const overlay = document.getElementById('notif-overlay');
     if (!overlay) return;
 
-    document.getElementById('notif-allow').onclick = async () => {
+    document.getElementById('notif-allow').onclick = () => {
       overlay.classList.remove('show');
       localStorage.setItem(NOTIF_BANNER_KEY, 'true');
-      if (window.OneSignal) await window.OneSignal.Notifications.requestPermission();
+      // Call native API directly — iOS Safari drops the user gesture context
+      // if requestPermission() is reached through async/await layers.
+      if (typeof Notification !== 'undefined') {
+        Notification.requestPermission().then(function(permission) {
+          if (permission === 'granted' && window.OneSignal) {
+            window.OneSignal.User.PushSubscription.optIn().catch(function() {});
+          }
+        });
+      }
     };
 
     document.getElementById('notif-dismiss').onclick = () => {
