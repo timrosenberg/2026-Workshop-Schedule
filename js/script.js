@@ -1156,15 +1156,9 @@ function showNotifBanner() {
     document.getElementById('notif-allow').onclick = () => {
       overlay.classList.remove('show');
       localStorage.setItem(NOTIF_BANNER_KEY, 'true');
-      // Call native API directly — iOS Safari drops the user gesture context
-      // if requestPermission() is reached through async/await layers.
-      if (typeof Notification !== 'undefined') {
-        Notification.requestPermission().then(function(permission) {
-          if (permission === 'granted' && window.OneSignal) {
-            window.OneSignal.User.PushSubscription.optIn().catch(function() {});
-          }
-        });
-      }
+      // Call without await — preserves iOS user gesture context while letting
+      // OneSignal handle the native dialog and service worker subscription.
+      if (window.OneSignal) window.OneSignal.Notifications.requestPermission();
     };
 
     document.getElementById('notif-dismiss').onclick = () => {
