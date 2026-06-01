@@ -734,7 +734,7 @@ body.dark #install-now { background: var(--forest-mid); }
   flex-shrink: 0;
   overflow: hidden;
 }
-.notif-app-icon img { width: 18px; height: 18px; filter: invert(1); }
+.notif-app-icon img { width: 18px; height: 18px; filter: invert(1); transform: scaleX(-1); }
 .notif-app-name {
   font-size: 0.72rem; font-weight: 600;
   color: var(--text3);
