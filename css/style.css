@@ -415,7 +415,7 @@ body.dark .act-row.current .act-time { color: var(--forest-lt); }
   font-size: 0.9rem; color: var(--text3); line-height: 1.35;
   display: flex; gap: 0.35em; align-items: flex-start;
 }
-.act-note::before { content: '·'; flex-shrink: 0; }
+.act-note::before { content: none; }
 .act-note.no-dot::before { content: none; }
 
 /* ================================
@@ -434,6 +434,11 @@ body.dark .act-row.current .act-time { color: var(--forest-lt); }
 .event-meta-row .c-icon { margin-top: 1px; }
 
 .event-notes { margin-top: 12px; border-top: 1px solid var(--border2); padding-top: 10px; }
+.event-detail { margin-top: 12px; border-top: 1px solid var(--border2); padding-top: 10px; }
+
+#lightbox { display:none; position:fixed; inset:0; z-index:1000; background:rgba(0,0,0,0.92); align-items:center; justify-content:center; cursor:zoom-out; }
+#lightbox.show { display:flex; }
+#lightbox img { max-width:95vw; max-height:92vh; object-fit:contain; border-radius:var(--r-md); box-shadow:var(--sh-md); }
 
 .event-notes-lbl {
   font-size: 0.65rem; font-weight: 600;
@@ -445,7 +450,7 @@ body.dark .act-row.current .act-time { color: var(--forest-lt); }
   font-size: 0.85rem; color: var(--text2); line-height: 1.4;
   display: flex; gap: 0.4em; align-items: flex-start; padding: 2px 0;
 }
-.event-note-line::before { content: '·'; flex-shrink: 0; color: var(--text3); }
+.event-note-line::before { content: none; }
 
 .sheet-close {
   display: block; width: 100%; margin-top: 14px; padding: 11px;

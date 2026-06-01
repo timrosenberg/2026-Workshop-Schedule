@@ -1,6 +1,40 @@
 let scheduleData = [];
 let globalBannerData = {};
 
+const LARGE_ENSEMBLE_LOC = {
+  symphonic: {location: 'Feasel Hall',   mapUrl: 'https://maps.app.goo.gl/5mDXBVoTABQhHF5L6'},
+  concert:   {location: 'Tinsley Hall',  mapUrl: ''}
+};
+
+const JAZZ_DATA = [
+  {num: 1, instructor: 'Wilson',     room: 'Tinsley Hall'},
+  {num: 2, instructor: 'Pyburn',     room: 'Presser 202'},
+  {num: 3, instructor: 'Amann',      room: 'Presser 112'},
+  {num: 4, instructor: 'Kolodinsky', room: 'Presser 349'},
+  {num: 5, instructor: 'Murphy',     room: 'Presser 352'},
+  {num: 6, instructor: 'Becker',     room: 'Presser 113'}
+];
+
+const CHAMBER_DATA = {
+  symphonic: [
+    {coach: 'Rosenberg', room: 'Presser 349'},
+    {coach: 'Wilson',    room: 'Feasel Hall'},
+    {coach: 'Zelenak',   room: 'Presser 352'},
+    {coach: 'Amann',     room: 'Presser 202'},
+    {coach: 'Pyburn',    room: 'Presser 112'},
+    {coach: 'Becker',    room: 'Presser 113'},
+    {coach: 'Murphy',    room: 'Lee Chapel'}
+  ],
+  concert: [
+    {coach: 'Kolodinsky', room: 'Presser 352'},
+    {coach: 'Amann',      room: 'Presser 202'},
+    {coach: 'Guthrie',    room: 'Tinsley Hall'},
+    {coach: 'Whitt',      room: 'Presser 112'},
+    {coach: 'Hinote',     room: 'Presser 113'},
+    {coach: 'Murphy',     room: 'Presser 349'}
+  ]
+};
+
 // Event detail sheet state
 let selectedRow = null;
 let currentAct   = null;
@@ -77,19 +111,40 @@ function showEvent(act, rowEl) {
     if (act.mapUrl) locHTML += ` <a href="${act.mapUrl}" target="_blank" style="display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px">↗ Map</a>`;
     html += `<div class="event-meta-row"><span class="c-icon">${pinSVG}</span><span>${locHTML}</span></div>`;
   }
-  if (act.notes && act.notes.length) {
+  if (act.notes && act.notes.length && !(act.ensembleMap && localStorage.getItem('campEnsemble'))) {
     html += `<div class="event-notes"><div class="event-notes-lbl">Notes</div>`;
     html += act.notes.map(n => `<div class="event-note-line"><span>${n}</span></div>`).join('');
     html += `</div>`;
   }
   if (act.groupMap) {
     html += renderGroupSelector(act.groupMap);
+  } else if (act.ensembleMap || act.ensemblePrompt) {
+    html += renderEnsembleSelector(act.ensembleMap || act.ensemblePrompt);
+  } else if (act.jazzClasses) {
+    html += renderJazzSelector();
   } else if (act.detail) {
     html += `<div class="event-detail">${act.detail}</div>`;
   }
 
   document.getElementById('eventDetail').innerHTML = html;
   document.getElementById('eventOverlay').classList.add('show');
+}
+
+function openLightbox(url) {
+  let lb = document.getElementById('lightbox');
+  if (!lb) {
+    lb = document.createElement('div');
+    lb.id = 'lightbox';
+    lb.innerHTML = '<img id="lightbox-img">';
+    lb.addEventListener('click', closeLightbox);
+    document.body.appendChild(lb);
+  }
+  document.getElementById('lightbox-img').src = url;
+  lb.classList.add('show');
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox')?.classList.remove('show');
 }
 
 function closeEvent() {
@@ -99,14 +154,14 @@ function closeEvent() {
 
 function renderGroupSelector(groupMap) {
   const saved = localStorage.getItem('campGroup');
-  const mapBtnStyle = "display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:6px";
+  const mapBtnStyle = "display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:6px;cursor:pointer";
   const grpBtnStyle = "margin:2px;padding:5px 11px;background:var(--surface2);color:var(--text);border:1.5px solid var(--border);border-radius:var(--r-full);font-size:0.9em;cursor:pointer;font-family:inherit;font-weight:600";
 
   if (saved) {
     const entry = groupMap.find(f => f.groups.includes(saved));
     const floorLabel = entry && entry.floor ? ` → ${entry.floor}` : '';
     const mapUrl = entry ? entry.mapUrl : groupMap[0].mapUrl;
-    const mapLink = mapUrl ? `<a href='${mapUrl}' target='_blank' style='${mapBtnStyle}'>↗ Map</a>` : '';
+    const mapLink = mapUrl ? `<a onclick='openLightbox("${mapUrl}")' style='${mapBtnStyle}'>↗ Map</a>` : '';
     return `<div class="event-detail"><p><strong>Your group: ${saved}</strong>${floorLabel}${mapLink}</p><button onclick='clearCampGroup()' style='background:none;border:none;color:var(--text3);font-size:0.8em;cursor:pointer;text-decoration:underline;padding:0;font-family:inherit'>Change group</button></div>`;
   }
 
@@ -115,6 +170,7 @@ function renderGroupSelector(groupMap) {
   groupMap.forEach(entry => {
     html += `<div style='margin-bottom:0.35rem'>`;
     if (multiFloor && entry.floor) html += `<span style='font-size:0.82em;color:var(--text2);margin-right:4px'>${entry.floor}:</span>`;
+    if (multiFloor && entry.mapUrl) html += `<a onclick='openLightbox("${entry.mapUrl}")' style='${mapBtnStyle};margin-left:0;margin-bottom:4px;display:inline-block'>↗ Map</a><br>`;
     entry.groups.forEach(g => {
       html += `<button onclick='selectCampGroup("${g}")' style='${grpBtnStyle}'>${g}</button>`;
     });
@@ -132,6 +188,158 @@ function selectCampGroup(group) {
 function clearCampGroup() {
   localStorage.removeItem('campGroup');
   if (currentAct && selectedRow) showEvent(currentAct, selectedRow);
+}
+
+function renderEnsembleSelector(ensembleMap) {
+  const ens   = localStorage.getItem('campEnsemble');
+  const coach = localStorage.getItem('campChamber');
+
+  const mapBtnStyle    = "display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:6px";
+  const ensBtnStyle    = "margin:2px;padding:5px 11px;background:var(--surface2);color:var(--text);border:1.5px solid var(--border);border-radius:var(--r-full);font-size:0.85em;cursor:pointer;font-family:inherit";
+  const coachBtnStyle  = "margin:2px;padding:5px 11px;background:var(--surface2);color:var(--text);border:1.5px solid var(--border);border-radius:var(--r-full);font-size:0.9em;cursor:pointer;font-family:inherit;font-weight:600";
+  const changeBtnStyle = "background:none;border:none;color:var(--text3);font-size:0.8em;cursor:pointer;text-decoration:underline;padding:4px 0 0;display:block;font-family:inherit";
+
+  let html = '<div class="event-detail">';
+
+  if (!ens) {
+    html += `<p style='font-style:italic;color:var(--text2);margin:0 0 0.5rem'>Which ensemble are you in?</p>`;
+    html += `<button onclick='selectEnsemble("symphonic")' style='${ensBtnStyle}'>Symphonic — 10th–12th</button> `;
+    html += `<button onclick='selectEnsemble("concert")' style='${ensBtnStyle}'>Concert — 7th–9th</button>`;
+    return html + '</div>';
+  }
+
+  const ensLabel     = ens === 'symphonic' ? 'Symphonic Saxophones' : 'Concert Saxophones';
+  const slotActivity = ensembleMap[ens];
+  const le           = LARGE_ENSEMBLE_LOC[ens];
+  const chamberList  = CHAMBER_DATA[ens];
+  const chamberEntry = coach ? chamberList.find(c => c.coach === coach) : null;
+
+  html += `<p style='margin:0 0 0.35rem'><strong>${ensLabel}</strong></p>`;
+
+  if (slotActivity === 'large') {
+    const mapLink = le.mapUrl ? `<a href='${le.mapUrl}' target='_blank' style='${mapBtnStyle}'>↗ Map</a>` : '';
+    html += `<p style='margin:0 0 0.5rem'>Large Ensemble — ${le.location}${mapLink}</p>`;
+  } else {
+    if (chamberEntry) {
+      html += `<p style='margin:0 0 0.5rem'>Chamber Ensemble — ${chamberEntry.room} (${coach})</p>`;
+    } else {
+      html += `<p style='margin:0 0 0.25rem;color:var(--text2);font-size:0.9em'>Chamber Ensemble — pick yours below</p>`;
+    }
+  }
+
+  if (!coach) {
+    html += `<p style='font-style:italic;color:var(--text2);margin:0 0 0.35rem;font-size:0.9em'>Which chamber ensemble are you in?</p>`;
+    chamberList.forEach(c => {
+      html += `<button onclick='selectChamber("${c.coach}")' style='${coachBtnStyle}'>${c.coach}</button>`;
+    });
+  } else {
+    if (slotActivity === 'large' && chamberEntry) {
+      html += `<p style='margin:0;color:var(--text2);font-size:0.85em'>Chamber: ${coach} — ${chamberEntry.room}</p>`;
+    }
+    html += `<button onclick='clearEnsemble()' style='${changeBtnStyle}'>Change</button>`;
+  }
+
+  return html + '</div>';
+}
+
+function selectEnsemble(ens) {
+  localStorage.setItem('campEnsemble', ens);
+  localStorage.removeItem('campChamber');
+  if (currentAct && selectedRow) showEvent(currentAct, selectedRow);
+}
+
+function selectChamber(coach) {
+  localStorage.setItem('campChamber', coach);
+  if (currentAct && selectedRow) showEvent(currentAct, selectedRow);
+}
+
+function clearEnsemble() {
+  localStorage.removeItem('campEnsemble');
+  localStorage.removeItem('campChamber');
+  if (currentAct && selectedRow) showEvent(currentAct, selectedRow);
+}
+
+function getPersonalizedLocation(act) {
+  const ens   = localStorage.getItem('campEnsemble');
+  const coach = localStorage.getItem('campChamber');
+  const jazz  = localStorage.getItem('campJazz');
+
+  if (act.ensembleMap && ens) {
+    const slotActivity = act.ensembleMap[ens];
+    if (slotActivity === 'large') return LARGE_ENSEMBLE_LOC[ens].location;
+    if (slotActivity === 'chamber' && coach) {
+      const entry = CHAMBER_DATA[ens].find(c => c.coach === coach);
+      return entry ? entry.room : null;
+    }
+  }
+  if (act.jazzClasses && jazz) {
+    const entry = JAZZ_DATA.find(j => String(j.num) === jazz);
+    return entry ? entry.room : null;
+  }
+  return null;
+}
+
+function getEnsembleActivityName(act) {
+  const ens = localStorage.getItem('campEnsemble');
+  if (!ens || !act.ensembleMap) return null;
+  const slotActivity = act.ensembleMap[ens];
+  const ensLabel = ens === 'symphonic' ? 'Symphonic' : 'Concert';
+  return slotActivity === 'large' ? `${ensLabel} Saxophone Ensemble` : `${ensLabel} Chamber Ensemble`;
+}
+
+function getEnsemblePills(act) {
+  const ens   = localStorage.getItem('campEnsemble');
+  const coach = localStorage.getItem('campChamber');
+  if (!ens || !act.ensembleMap) return null;
+  const slotActivity = act.ensembleMap[ens];
+  const le = LARGE_ENSEMBLE_LOC[ens];
+  if (slotActivity === 'large') return [`Large Ensemble — ${le.location}`];
+  if (coach) {
+    const entry = CHAMBER_DATA[ens].find(c => c.coach === coach);
+    return [entry ? `Chamber — ${entry.room} (${coach})` : 'Chamber Ensemble'];
+  }
+  return ['Chamber Ensemble'];
+}
+
+function renderJazzSelector() {
+  const saved = localStorage.getItem('campJazz');
+  const btnStyle    = "margin:2px;padding:5px 11px;background:var(--surface2);color:var(--text);border:1.5px solid var(--border);border-radius:var(--r-full);font-size:0.9em;cursor:pointer;font-family:inherit;font-weight:600";
+  const changeBtnStyle = "background:none;border:none;color:var(--text3);font-size:0.8em;cursor:pointer;text-decoration:underline;padding:4px 0 0;display:block;font-family:inherit";
+
+  if (saved) {
+    const entry = JAZZ_DATA.find(j => String(j.num) === saved);
+    return `<div class="event-detail"><p style='margin:0 0 0.25rem'>Jazz Class ${saved} — ${entry.room} (${entry.instructor})</p><button onclick='clearJazz()' style='${changeBtnStyle}'>Change</button></div>`;
+  }
+
+  let html = `<div class="event-detail"><p style='font-style:italic;color:var(--text2);margin:0 0 0.5rem'>Who is your jazz instructor?</p>`;
+  JAZZ_DATA.forEach(j => {
+    html += `<button onclick='selectJazz(${j.num})' style='${btnStyle}'>${j.instructor}</button>`;
+  });
+  return html + '</div>';
+}
+
+function selectJazz(num) {
+  localStorage.setItem('campJazz', String(num));
+  if (currentAct && selectedRow) showEvent(currentAct, selectedRow);
+}
+
+function clearJazz() {
+  localStorage.removeItem('campJazz');
+  if (currentAct && selectedRow) showEvent(currentAct, selectedRow);
+}
+
+function getJazzActivityName(act) {
+  const saved = localStorage.getItem('campJazz');
+  if (!saved || !act.jazzClasses) return null;
+  const entry = JAZZ_DATA.find(j => String(j.num) === saved);
+  return entry ? `Jazz Class ${saved} — ${entry.room}` : null;
+}
+
+function getJazzPills(act) {
+  const saved = localStorage.getItem('campJazz');
+  if (!saved || !act.jazzClasses) return null;
+  const entry = JAZZ_DATA.find(j => String(j.num) === saved);
+  return entry ? [`Jazz Class ${saved} — ${entry.room} (${entry.instructor})`] : null;
 }
 
 function refreshDisplayForCurrentTime() {
@@ -249,9 +457,8 @@ function renderSchedule(scheduleData, { animate = true } = {}) {
       li.innerHTML = `
         <div class="act-time">${timeDisplay}</div>
         <div class="act-body">
-          <div class="act-name">${act.activity}</div>
-          ${act.location ? `<div class="act-loc">${act.location}</div>` : ''}
-          ${act.notes && act.notes.length ? `<div class="act-notes">${act.notes.map(n => `<span class="act-note"><span>${n}</span></span>`).join('')}</div>` : ''}
+          <div class="act-name">${getEnsembleActivityName(act) || getJazzActivityName(act) || act.activity}</div>
+          ${(() => { const loc = getPersonalizedLocation(act) || act.location; return loc ? `<div class="act-loc">${loc}</div>` : ''; })()}
         </div>`;
 
       if (isCur) { nowActivity = act; nowActivityDay = day; nowRowEl = li; }
@@ -393,7 +600,7 @@ function updateNowNextFromHiddenData() {
     const nowPillsEl = document.getElementById('nowPills');
 
     if (nowNameEl && activityToDisplayAsNow && dayToDisplayAsNow) {
-        nowNameEl.textContent = activityToDisplayAsNow.activity;
+        nowNameEl.textContent = getEnsembleActivityName(activityToDisplayAsNow) || getJazzActivityName(activityToDisplayAsNow) || activityToDisplayAsNow.activity;
 
         const { start, end } = parseActivityTimes(activityToDisplayAsNow.time, dayToDisplayAsNow.date);
         let metaParts = [];
@@ -402,7 +609,10 @@ function updateNowNextFromHiddenData() {
         if (nowMetaEl) nowMetaEl.innerHTML = metaParts.join('');
 
         if (nowPillsEl) {
-            if (activityToDisplayAsNow.notes && activityToDisplayAsNow.notes.length) {
+            const ensemblePills = getEnsemblePills(activityToDisplayAsNow) || getJazzPills(activityToDisplayAsNow);
+            if (ensemblePills) {
+                nowPillsEl.innerHTML = ensemblePills.map(n => `<span class="now-pill"><span>${n}</span></span>`).join('');
+            } else if (activityToDisplayAsNow.notes && activityToDisplayAsNow.notes.length) {
                 nowPillsEl.innerHTML = activityToDisplayAsNow.notes.map(n =>
                     `<span class="now-pill"><span>${n}</span></span>`).join('');
             } else {
@@ -422,7 +632,7 @@ function updateNowNextFromHiddenData() {
     const nextTimeEl = document.getElementById('nextTime');
 
     if (nextNameEl && activityToDisplayAsNext && dayToDisplayAsNext) {
-        nextNameEl.textContent = activityToDisplayAsNext.activity;
+        nextNameEl.textContent = getEnsembleActivityName(activityToDisplayAsNext) || getJazzActivityName(activityToDisplayAsNext) || activityToDisplayAsNext.activity;
         const { start } = parseActivityTimes(activityToDisplayAsNext.time, dayToDisplayAsNext.date);
         if (nextTimeEl) nextTimeEl.textContent = start ? fmtTime(start) : activityToDisplayAsNext.time.split(/\s*-\s*/)[0].trim();
 
