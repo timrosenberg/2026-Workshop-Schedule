@@ -4,22 +4,32 @@
   },
   "banners": {
     "2026-06-22": [
-      { "time": "08:00", "message": "🚀 Today's theme: Launch Day! Wear something space-related — rockets, NASA gear, or a bright color visible from space.", "enabled": true, "version": "v1" }
+      { "time": "08:00", "message": "🚀 Today's theme: Launch Day! Wear something space-related — rockets, NASA gear, or a bright color visible from space.", "enabled": true, "version": "v1" },
+      { "time": "11:30", "message": "🎺 Bring your instrument when we head to lunch!", "enabled": true, "version": "v1" }
     ],
     "2026-06-23": [
-      { "time": "07:15", "message": "🌌 Today's theme: Deep Space! Dark colors — black, navy, deep purple. Bonus for stars or glow-in-the-dark.", "enabled": true, "version": "v1" }
+      { "time": "07:15", "message": "🌌 Today's theme: Deep Space! Dark colors — black, navy, deep purple. Bonus for stars or glow-in-the-dark.", "enabled": true, "version": "v1" },
+      { "time": "19:50", "message": "🎬 Movie Night after the recital — no food delivery, but there will be 🍿 snacks!", "enabled": true, "version": "v1" }
     ],
     "2026-06-24": [
-      { "time": "07:15", "message": "👽 Today's theme: First Contact! Wear an alien — E.T., Grogu, Stitch. No alien gear? Go green, silver, or metallic.", "enabled": true, "version": "v1" }
+      { "time": "07:15", "message": "👽 Today's theme: First Contact! Wear an alien — E.T., Grogu, Stitch. No alien gear? Go green, silver, or metallic.", "enabled": true, "version": "v1" },
+      { "time": "09:00", "message": "🎷 It's Melissa Aldana Day! Masterclass at 2:30 in Feasel Hall, concert at 7:15 in Tinsley Hall.", "enabled": true, "version": "v1" },
+      { "time": "19:00", "message": "🎶 Melissa Aldana concert starts at 7:15 — head to Tinsley Hall!", "enabled": true, "version": "v1" }
     ],
     "2026-06-25": [
-      { "time": "07:15", "message": "🐱 Today's theme: Purrs-day Thursday! Wear something cat — ears, tail, shirt, socks. Space cats welcome.", "enabled": true, "version": "v1" }
+      { "time": "07:15", "message": "🐱 Today's theme: Purrs-day Thursday! Wear something cat — ears, tail, shirt, socks. Space cats welcome.", "enabled": true, "version": "v1" },
+      { "time": "18:45", "message": "🎶 Young Artist Honors Recital at 7:00 in Lee Chapel.", "enabled": true, "version": "v1" }
     ],
     "2026-06-26": [
-      { "time": "07:15", "message": "🌊 Today's theme: Splashdown! Beach vibes — surf shirts, tropical prints, flip flops. No bathing suits.", "enabled": true, "version": "v1" }
+      { "time": "07:15", "message": "🌊 Today's theme: Splashdown! Beach vibes — surf shirts, tropical prints, flip flops. No bathing suits.", "enabled": true, "version": "v1" },
+      { "time": "09:25", "message": "🎶 Chamber Music Concert tonight at 7:15 in Lee Chapel.", "enabled": true, "version": "v1" },
+      { "time": "20:30", "message": "🧳 Time to start packing for move out tomorrow.", "enabled": true, "version": "v1" }
     ],
     "2026-06-27": [
-      { "time": "07:00", "message": "🎓 Today's theme: School Spirit Day! Wear your school colors or rep where you're from.", "enabled": true, "version": "v1" }
+      { "time": "07:00", "message": "🎓 Today's theme: School Spirit Day! Wear your school colors or rep where you're from.", "enabled": true, "version": "v1" },
+      { "time": "09:30", "message": "🎓 Saxophone Ensembles Concert at 11:30 in Lee Chapel!", "enabled": true, "version": "v1" },
+      { "time": "12:30", "message": "↩️ Return all borrowed instruments, music, and equipment in Tinsley Hall.", "enabled": true, "version": "v1" },
+      { "time": "12:45", "message": "👋 Thank you for a great week! See you next year!", "enabled": true, "version": "v1" }
     ]
   }
 }
