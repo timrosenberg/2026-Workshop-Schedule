@@ -3,6 +3,9 @@
     "text": ""
   },
   "banners": {
+    "2026-06-02": [
+      { "time": "00:00", "message": "Test banner: The banner system is working correctly.", "version": "v1" }
+    ],
     "2026-06-22": [],
     "2026-06-23": [],
     "2026-06-24": [],
