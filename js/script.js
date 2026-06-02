@@ -953,6 +953,38 @@ function updateDarkMode() {
   setDarkMode(block === 'night');
 }
 
+async function loadRooms() {
+  const container = document.getElementById('room-list-container');
+  if (!container) return;
+
+  const res = await fetch('/data/rooms.json');
+  const sections = await res.json();
+
+  container.innerHTML = sections.map(section => `
+    <div class="day-card open">
+      <button class="day-toggle" onclick="this.closest('.day-card').classList.toggle('open')">
+        <span class="chevron"></span>
+        <span class="day-hd"><span class="day-name">${section.section}</span></span>
+      </button>
+      <ul class="act-list">
+        ${section.items.map(item => {
+          const clickAttr = item.roster
+            ? ` style="cursor:pointer" onclick="showRoster('${item.roster}')"`
+            : item.ensemble
+            ? ` style="cursor:pointer" onclick="showLargeEnsemble('${item.ensemble}')"`
+            : '';
+          return `<li class="act-row"${clickAttr}>
+            <div class="act-body">
+              <div class="act-name">${item.name}</div>
+              <div class="act-loc">${item.loc}</div>
+            </div>
+          </li>`;
+        }).join('')}
+      </ul>
+    </div>
+  `).join('');
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
   const includePromises = Array.from(document.querySelectorAll("[data-include]")).map(async (el) => {
     const file = el.getAttribute("data-include");
@@ -981,6 +1013,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
 
   await Promise.all(includePromises);
+  await loadRooms();
+
+  updateDarkMode();
 
   // Supporting pages: contact dropdown + hamburger nav
   document.getElementById('menu-toggle')?.addEventListener('click', () => {

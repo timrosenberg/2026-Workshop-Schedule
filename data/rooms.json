@@ -1,0 +1,80 @@
+[
+  {
+    "section": "Concerts & Recitals",
+    "items": [
+      { "name": "Faculty Recital — Workshop Staff", "loc": "Lee Chapel · Monday, June 22" },
+      { "name": "Faculty Recital — Dr. Rosenberg", "loc": "Lee Chapel · Tuesday, June 23" },
+      { "name": "Guest Artist — Melissa Aldana", "loc": "Tinsley Hall (Presser 132) · Wednesday, June 24" },
+      { "name": "Young Artist Honors Recital", "loc": "Lee Chapel · Thursday, June 25" },
+      { "name": "Chamber Ensembles Concert", "loc": "Lee Chapel · Friday, June 26" },
+      { "name": "Saxophone Ensembles Concert", "loc": "Lee Chapel · Saturday, June 27" }
+    ]
+  },
+  {
+    "section": "Masterclasses",
+    "items": [
+      { "name": "Honors Recital Students with Dr. Rosenberg", "loc": "Lee Chapel · Tuesday, June 23" },
+      { "name": "Guest Artist — Melissa Aldana", "loc": "Feasel Hall · Wednesday, June 24" },
+      { "name": "Improv Masterclass with Mr. Devlin", "loc": "Feasel Hall · Thursday, June 25" }
+    ]
+  },
+  {
+    "section": "Special Events",
+    "items": [
+      { "name": "Yamaha Instrument Try-Out", "loc": "Tinsley Hall · Thursday, June 25" }
+    ]
+  },
+  {
+    "section": "Large Ensemble Rehearsals",
+    "items": [
+      { "name": "Concert Saxophones", "loc": "Tinsley Hall (inside Presser Hall)", "ensemble": "concert" },
+      { "name": "Symphonic Saxophones", "loc": "Feasel Hall", "ensemble": "symphonic" }
+    ]
+  },
+  {
+    "section": "Jazz Classes",
+    "items": [
+      { "name": "Amann", "loc": "Presser 112" },
+      { "name": "Becker", "loc": "Presser 113" },
+      { "name": "Kolodinsky", "loc": "Presser 349" },
+      { "name": "Murphy", "loc": "Presser 352" },
+      { "name": "Pyburn", "loc": "Presser 202" },
+      { "name": "Wilson", "loc": "Tinsley Hall" }
+    ]
+  },
+  {
+    "section": "Fundamentals Classes",
+    "items": [
+      { "name": "Concert & Symphonic Sopranos", "loc": "Presser 202 · Amann" },
+      { "name": "Concert Altos", "loc": "Presser 113 · Becker" },
+      { "name": "Symphonic Altos", "loc": "Presser 352 · Hinote" },
+      { "name": "Concert Tenors", "loc": "Presser 349 · Pyburn" },
+      { "name": "Symphonic Tenors", "loc": "Presser 112 · Kalina" },
+      { "name": "Concert Baris", "loc": "Tinsley Hall · Whitt" },
+      { "name": "Symphonic Baris", "loc": "Feasel Hall · Murphy" }
+    ]
+  },
+  {
+    "section": "Concert Chamber Ensembles",
+    "items": [
+      { "name": "Amann", "loc": "Presser 202", "roster": "amann-con" },
+      { "name": "Guthrie", "loc": "Tinsley Hall", "roster": "guthrie-con" },
+      { "name": "Hinote", "loc": "Presser 113", "roster": "hinote-con" },
+      { "name": "Kolodinsky", "loc": "Presser 352", "roster": "kolodinsky-con" },
+      { "name": "Murphy", "loc": "Presser 349", "roster": "murphy-con" },
+      { "name": "Whitt", "loc": "Presser 112", "roster": "whitt-con" }
+    ]
+  },
+  {
+    "section": "Symphonic Chamber Ensembles",
+    "items": [
+      { "name": "Amann", "loc": "Presser 202", "roster": "amann-sym" },
+      { "name": "Becker", "loc": "Presser 113", "roster": "becker-sym" },
+      { "name": "Murphy", "loc": "Lee Chapel", "roster": "murphy-sym" },
+      { "name": "Pyburn", "loc": "Presser 112", "roster": "pyburn-sym" },
+      { "name": "Rosenberg", "loc": "Presser 349", "roster": "rosenberg-sym" },
+      { "name": "Wilson", "loc": "Feasel Hall", "roster": "wilson-sym" },
+      { "name": "Zelenak", "loc": "Presser 352", "roster": "zelenak-sym" }
+    ]
+  }
+]
