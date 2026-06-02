@@ -3,14 +3,23 @@
     "text": ""
   },
   "banners": {
-    "2026-06-02": [
-      { "time": "00:00", "message": "Test banner: The banner system is working correctly.", "version": "v1" }
+    "2026-06-22": [
+      { "time": "08:00", "message": "🚀 Today's theme: Launch Day! Wear something space-related — rockets, NASA gear, or a bright color visible from space.", "enabled": true, "version": "v1" }
     ],
-    "2026-06-22": [],
-    "2026-06-23": [],
-    "2026-06-24": [],
-    "2026-06-25": [],
-    "2026-06-26": [],
-    "2026-06-27": []
+    "2026-06-23": [
+      { "time": "07:15", "message": "🌌 Today's theme: Deep Space! Dark colors — black, navy, deep purple. Bonus for stars or glow-in-the-dark.", "enabled": true, "version": "v1" }
+    ],
+    "2026-06-24": [
+      { "time": "07:15", "message": "👽 Today's theme: First Contact! Wear an alien — E.T., Grogu, Stitch. No alien gear? Go green, silver, or metallic.", "enabled": true, "version": "v1" }
+    ],
+    "2026-06-25": [
+      { "time": "07:15", "message": "🐱 Today's theme: Purrs-day Thursday! Wear something cat — ears, tail, shirt, socks. Space cats welcome.", "enabled": true, "version": "v1" }
+    ],
+    "2026-06-26": [
+      { "time": "07:15", "message": "🌊 Today's theme: Splashdown! Beach vibes — surf shirts, tropical prints, flip flops. No bathing suits.", "enabled": true, "version": "v1" }
+    ],
+    "2026-06-27": [
+      { "time": "07:00", "message": "🎓 Today's theme: School Spirit Day! Wear your school colors or rep where you're from.", "enabled": true, "version": "v1" }
+    ]
   }
 }
