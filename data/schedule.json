@@ -19,6 +19,9 @@
         "notes": [
           "Finalists will be notified via email with their audition time.",
           "Winners will be announced at the Opening Meeting."
+        ],
+        "assignments": [
+          {"person": "tim", "role": "task", "detail": "Adjudicate"}
         ]
       },
       {
@@ -66,7 +69,17 @@
           "Symphonic Saxophones (10th-12+ grade): Large Ensemble — Feasel Hall",
           "Concert Saxophones (7th-9th grade): Chamber Ensembles — Various Rooms (<a href=\"/rooms.html\">see guide</a>)"
         ],
-        "ensembleMap": {"symphonic": "large", "concert": "chamber"}
+        "ensembleMap": {"symphonic": "large", "concert": "chamber"},
+        "assignments": [
+          {"person": "chandler", "role": "conduct", "ensemble": "symphonic"},
+          {"person": "kristen",  "role": "conduct", "ensemble": "symphonic"},
+          {"person": "marc",     "role": "coach",   "room": "Presser 352",  "group": "Kolodinsky Concert Quartet"},
+          {"person": "steve",    "role": "coach",   "room": "Presser 202",  "group": "Amann Concert Quartet"},
+          {"person": "bill",     "role": "coach",   "room": "Tinsley Hall", "group": "Guthrie Concert Quartet"},
+          {"person": "sage",     "role": "coach",   "room": "Presser 112",  "group": "Whitt Concert Quartet"},
+          {"person": "david",    "role": "coach",   "room": "Presser 113",  "group": "Hinote Concert Quartet"},
+          {"person": "matt",     "role": "coach",   "room": "Presser 349",  "group": "Murphy Concert Quartet"}
+        ]
       },
       {
         "time": "3:15 - 5:15 PM",
@@ -77,7 +90,18 @@
           "Symphonic Saxophones: Chamber Ensembles — Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
           "Concert Saxophones: Large Ensemble — Tinsley Hall (inside Presser Hall)"
         ],
-        "ensembleMap": {"symphonic": "chamber", "concert": "large"}
+        "ensembleMap": {"symphonic": "chamber", "concert": "large"},
+        "assignments": [
+          {"person": "bill",     "role": "conduct", "ensemble": "concert"},
+          {"person": "marc",     "role": "conduct", "ensemble": "concert"},
+          {"person": "tim",      "role": "coach",   "room": "Presser 349",  "group": "Rosenberg Symphonic Quartet"},
+          {"person": "chandler", "role": "coach",   "room": "Feasel Hall",  "group": "Wilson Symphonic Quartet"},
+          {"person": "kristen",  "role": "coach",   "room": "Presser 352",  "group": "Zelenak Symphonic Quartet"},
+          {"person": "steve",    "role": "coach",   "room": "Presser 202",  "group": "Amann Symphonic Quartet"},
+          {"person": "sara",     "role": "coach",   "room": "Presser 112",  "group": "Pyburn Symphonic Quartet"},
+          {"person": "andrew",   "role": "coach",   "room": "Presser 113",  "group": "Becker Symphonic Quartet"},
+          {"person": "matt",     "role": "coach",   "room": "Lee Chapel",   "group": "Murphy Symphonic Quartet"}
+        ]
       },
       {
         "time": "5:20 - 6:20 PM",
@@ -85,7 +109,15 @@
         "location": "Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
         "mapUrl": "",
         "notes": [],
-        "jazzClasses": true
+        "jazzClasses": true,
+        "assignments": [
+          {"person": "chandler", "role": "teach", "room": "Tinsley Hall", "detail": "Jazz Class 1"},
+          {"person": "sara",     "role": "teach", "room": "Presser 202",  "detail": "Jazz Class 2"},
+          {"person": "steve",    "role": "teach", "room": "Presser 112",  "detail": "Jazz Class 3"},
+          {"person": "marc",     "role": "teach", "room": "Presser 349",  "detail": "Jazz Class 4"},
+          {"person": "matt",     "role": "teach", "room": "Presser 352",  "detail": "Jazz Class 5"},
+          {"person": "andrew",   "role": "teach", "room": "Presser 113",  "detail": "Jazz Class 6"}
+        ]
       },
       {
         "time": "6:25 PM",
@@ -182,6 +214,15 @@
         "fundamentalsClass": true,
         "notes": [
           "Class is determined by instrument played in large ensemble."
+        ],
+        "assignments": [
+          {"person": "steve",  "role": "teach", "room": "Presser 202",  "detail": "Soprano Fundamentals"},
+          {"person": "andrew", "role": "teach", "room": "Presser 113",  "detail": "Alto Fundamentals (Concert)"},
+          {"person": "david",  "role": "teach", "room": "Presser 352",  "detail": "Alto Fundamentals (Symphonic)"},
+          {"person": "sara",   "role": "teach", "room": "Presser 349",  "detail": "Tenor Fundamentals (Concert)"},
+          {"person": "kate",   "role": "teach", "room": "Presser 112",  "detail": "Tenor Fundamentals (Symphonic)"},
+          {"person": "sage",   "role": "teach", "room": "Tinsley Hall", "detail": "Bari Fundamentals (Concert)"},
+          {"person": "matt",   "role": "teach", "room": "Feasel Hall",  "detail": "Bari Fundamentals (Symphonic)"}
         ]
       },
       {
@@ -193,7 +234,17 @@
           "Symphonic Saxophones (10th-12+ grade): Large Ensemble — Feasel Hall",
           "Concert Saxophones (7th-9th grade): Chamber Ensembles — Various Rooms (<a href=\"/rooms.html\">see guide</a>)"
         ],
-        "ensembleMap": {"symphonic": "large", "concert": "chamber"}
+        "ensembleMap": {"symphonic": "large", "concert": "chamber"},
+        "assignments": [
+          {"person": "chandler", "role": "conduct", "ensemble": "symphonic"},
+          {"person": "kristen",  "role": "conduct", "ensemble": "symphonic"},
+          {"person": "marc",     "role": "coach",   "room": "Presser 352",  "group": "Kolodinsky Concert Quartet"},
+          {"person": "steve",    "role": "coach",   "room": "Presser 202",  "group": "Amann Concert Quartet"},
+          {"person": "bill",     "role": "coach",   "room": "Tinsley Hall", "group": "Guthrie Concert Quartet"},
+          {"person": "sage",     "role": "coach",   "room": "Presser 112",  "group": "Whitt Concert Quartet"},
+          {"person": "david",    "role": "coach",   "room": "Presser 113",  "group": "Hinote Concert Quartet"},
+          {"person": "matt",     "role": "coach",   "room": "Presser 349",  "group": "Murphy Concert Quartet"}
+        ]
       },
       {
         "time": "11:50 AM - 12:20 PM",
@@ -218,7 +269,18 @@
           "Symphonic Saxophones: Chamber Ensembles — Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
           "Concert Saxophones: Large Ensemble — Tinsley Hall (inside Presser Hall)"
         ],
-        "ensembleMap": {"symphonic": "chamber", "concert": "large"}
+        "ensembleMap": {"symphonic": "chamber", "concert": "large"},
+        "assignments": [
+          {"person": "bill",     "role": "conduct", "ensemble": "concert"},
+          {"person": "marc",     "role": "conduct", "ensemble": "concert"},
+          {"person": "tim",      "role": "coach",   "room": "Presser 349",  "group": "Rosenberg Symphonic Quartet"},
+          {"person": "chandler", "role": "coach",   "room": "Feasel Hall",  "group": "Wilson Symphonic Quartet"},
+          {"person": "kristen",  "role": "coach",   "room": "Presser 352",  "group": "Zelenak Symphonic Quartet"},
+          {"person": "steve",    "role": "coach",   "room": "Presser 202",  "group": "Amann Symphonic Quartet"},
+          {"person": "sara",     "role": "coach",   "room": "Presser 112",  "group": "Pyburn Symphonic Quartet"},
+          {"person": "andrew",   "role": "coach",   "room": "Presser 113",  "group": "Becker Symphonic Quartet"},
+          {"person": "matt",     "role": "coach",   "room": "Lee Chapel",   "group": "Murphy Symphonic Quartet"}
+        ]
       },
       {
         "time": "4:20 - 5:20 PM",
@@ -226,7 +288,15 @@
         "location": "Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
         "mapUrl": "",
         "notes": [],
-        "jazzClasses": true
+        "jazzClasses": true,
+        "assignments": [
+          {"person": "chandler", "role": "teach", "room": "Tinsley Hall", "detail": "Jazz Class 1"},
+          {"person": "sara",     "role": "teach", "room": "Presser 202",  "detail": "Jazz Class 2"},
+          {"person": "steve",    "role": "teach", "room": "Presser 112",  "detail": "Jazz Class 3"},
+          {"person": "marc",     "role": "teach", "room": "Presser 349",  "detail": "Jazz Class 4"},
+          {"person": "matt",     "role": "teach", "room": "Presser 352",  "detail": "Jazz Class 5"},
+          {"person": "andrew",   "role": "teach", "room": "Presser 113",  "detail": "Jazz Class 6"}
+        ]
       },
       {
         "time": "5:25 - 6:25 PM",
@@ -247,7 +317,10 @@
         "activity": "Faculty Recital: Tim Rosenberg",
         "location": "Lee Chapel",
         "mapUrl": "https://maps.app.goo.gl/Dvm3E7u6dcQk4WHg7",
-        "notes": []
+        "notes": [],
+        "assignments": [
+          {"person": "tim", "role": "task", "detail": "Performing"}
+        ]
       },
       {
         "time": "7:55 - 9:33 PM",
@@ -300,7 +373,16 @@
         "location": "Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
         "mapUrl": "",
         "fundamentalsClass": true,
-        "notes": []
+        "notes": [],
+        "assignments": [
+          {"person": "steve",  "role": "teach", "room": "Presser 202",  "detail": "Soprano Fundamentals"},
+          {"person": "andrew", "role": "teach", "room": "Presser 113",  "detail": "Alto Fundamentals (Concert)"},
+          {"person": "david",  "role": "teach", "room": "Presser 352",  "detail": "Alto Fundamentals (Symphonic)"},
+          {"person": "sara",   "role": "teach", "room": "Presser 349",  "detail": "Tenor Fundamentals (Concert)"},
+          {"person": "kate",   "role": "teach", "room": "Presser 112",  "detail": "Tenor Fundamentals (Symphonic)"},
+          {"person": "sage",   "role": "teach", "room": "Tinsley Hall", "detail": "Bari Fundamentals (Concert)"},
+          {"person": "matt",   "role": "teach", "room": "Feasel Hall",  "detail": "Bari Fundamentals (Symphonic)"}
+        ]
       },
       {
         "time": "9:45 - 11:45 AM",
@@ -310,7 +392,17 @@
         "notes": [
           "See <a href=\"/rooms.html\">room guide</a> for locations."
         ],
-        "ensembleMap": {"symphonic": "large", "concert": "chamber"}
+        "ensembleMap": {"symphonic": "large", "concert": "chamber"},
+        "assignments": [
+          {"person": "chandler", "role": "conduct", "ensemble": "symphonic"},
+          {"person": "kristen",  "role": "conduct", "ensemble": "symphonic"},
+          {"person": "marc",     "role": "coach",   "room": "Presser 352",  "group": "Kolodinsky Concert Quartet"},
+          {"person": "steve",    "role": "coach",   "room": "Presser 202",  "group": "Amann Concert Quartet"},
+          {"person": "bill",     "role": "coach",   "room": "Tinsley Hall", "group": "Guthrie Concert Quartet"},
+          {"person": "sage",     "role": "coach",   "room": "Presser 112",  "group": "Whitt Concert Quartet"},
+          {"person": "david",    "role": "coach",   "room": "Presser 113",  "group": "Hinote Concert Quartet"},
+          {"person": "matt",     "role": "coach",   "room": "Presser 349",  "group": "Murphy Concert Quartet"}
+        ]
       },
       {
         "time": "11:50 AM - 12:20 PM",
@@ -327,7 +419,18 @@
         "notes": [
           "See <a href=\"/rooms.html\">room guide</a> for locations."
         ],
-        "ensembleMap": {"symphonic": "chamber", "concert": "large"}
+        "ensembleMap": {"symphonic": "chamber", "concert": "large"},
+        "assignments": [
+          {"person": "bill",     "role": "conduct", "ensemble": "concert"},
+          {"person": "marc",     "role": "conduct", "ensemble": "concert"},
+          {"person": "tim",      "role": "coach",   "room": "Presser 349",  "group": "Rosenberg Symphonic Quartet"},
+          {"person": "chandler", "role": "coach",   "room": "Feasel Hall",  "group": "Wilson Symphonic Quartet"},
+          {"person": "kristen",  "role": "coach",   "room": "Presser 352",  "group": "Zelenak Symphonic Quartet"},
+          {"person": "steve",    "role": "coach",   "room": "Presser 202",  "group": "Amann Symphonic Quartet"},
+          {"person": "sara",     "role": "coach",   "room": "Presser 112",  "group": "Pyburn Symphonic Quartet"},
+          {"person": "andrew",   "role": "coach",   "room": "Presser 113",  "group": "Becker Symphonic Quartet"},
+          {"person": "matt",     "role": "coach",   "room": "Lee Chapel",   "group": "Murphy Symphonic Quartet"}
+        ]
       },
       {
         "time": "2:30 - 3:30 PM",
@@ -342,7 +445,15 @@
         "location": "Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
         "mapUrl": "",
         "notes": [],
-        "jazzClasses": true
+        "jazzClasses": true,
+        "assignments": [
+          {"person": "chandler", "role": "teach", "room": "Tinsley Hall", "detail": "Jazz Class 1"},
+          {"person": "sara",     "role": "teach", "room": "Presser 202",  "detail": "Jazz Class 2"},
+          {"person": "steve",    "role": "teach", "room": "Presser 112",  "detail": "Jazz Class 3"},
+          {"person": "marc",     "role": "teach", "room": "Presser 349",  "detail": "Jazz Class 4"},
+          {"person": "matt",     "role": "teach", "room": "Presser 352",  "detail": "Jazz Class 5"},
+          {"person": "andrew",   "role": "teach", "room": "Presser 113",  "detail": "Jazz Class 6"}
+        ]
       },
       {
         "time": "4:55 - 6:25 PM",
@@ -432,7 +543,16 @@
         "location": "Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
         "mapUrl": "",
         "fundamentalsClass": true,
-        "notes": []
+        "notes": [],
+        "assignments": [
+          {"person": "steve",  "role": "teach", "room": "Presser 202",  "detail": "Soprano Fundamentals"},
+          {"person": "andrew", "role": "teach", "room": "Presser 113",  "detail": "Alto Fundamentals (Concert)"},
+          {"person": "david",  "role": "teach", "room": "Presser 352",  "detail": "Alto Fundamentals (Symphonic)"},
+          {"person": "sara",   "role": "teach", "room": "Presser 349",  "detail": "Tenor Fundamentals (Concert)"},
+          {"person": "kate",   "role": "teach", "room": "Presser 112",  "detail": "Tenor Fundamentals (Symphonic)"},
+          {"person": "sage",   "role": "teach", "room": "Tinsley Hall", "detail": "Bari Fundamentals (Concert)"},
+          {"person": "matt",   "role": "teach", "room": "Feasel Hall",  "detail": "Bari Fundamentals (Symphonic)"}
+        ]
       },
       {
         "time": "9:45 - 11:45 AM",
@@ -442,7 +562,17 @@
         "notes": [
           "See <a href=\"/rooms.html\">room guide</a> for locations."
         ],
-        "ensembleMap": {"symphonic": "large", "concert": "chamber"}
+        "ensembleMap": {"symphonic": "large", "concert": "chamber"},
+        "assignments": [
+          {"person": "chandler", "role": "conduct", "ensemble": "symphonic"},
+          {"person": "kristen",  "role": "conduct", "ensemble": "symphonic"},
+          {"person": "marc",     "role": "coach",   "room": "Presser 352",  "group": "Kolodinsky Concert Quartet"},
+          {"person": "steve",    "role": "coach",   "room": "Presser 202",  "group": "Amann Concert Quartet"},
+          {"person": "bill",     "role": "coach",   "room": "Tinsley Hall", "group": "Guthrie Concert Quartet"},
+          {"person": "sage",     "role": "coach",   "room": "Presser 112",  "group": "Whitt Concert Quartet"},
+          {"person": "david",    "role": "coach",   "room": "Presser 113",  "group": "Hinote Concert Quartet"},
+          {"person": "matt",     "role": "coach",   "room": "Presser 349",  "group": "Murphy Concert Quartet"}
+        ]
       },
       {
         "time": "11:50 AM - 12:20 PM",
@@ -475,7 +605,18 @@
         "notes": [
           "See <a href=\"/rooms.html\">room guide</a> for locations."
         ],
-        "ensembleMap": {"symphonic": "chamber", "concert": "large"}
+        "ensembleMap": {"symphonic": "chamber", "concert": "large"},
+        "assignments": [
+          {"person": "bill",     "role": "conduct", "ensemble": "concert"},
+          {"person": "marc",     "role": "conduct", "ensemble": "concert"},
+          {"person": "tim",      "role": "coach",   "room": "Presser 349",  "group": "Rosenberg Symphonic Quartet"},
+          {"person": "chandler", "role": "coach",   "room": "Feasel Hall",  "group": "Wilson Symphonic Quartet"},
+          {"person": "kristen",  "role": "coach",   "room": "Presser 352",  "group": "Zelenak Symphonic Quartet"},
+          {"person": "steve",    "role": "coach",   "room": "Presser 202",  "group": "Amann Symphonic Quartet"},
+          {"person": "sara",     "role": "coach",   "room": "Presser 112",  "group": "Pyburn Symphonic Quartet"},
+          {"person": "andrew",   "role": "coach",   "room": "Presser 113",  "group": "Becker Symphonic Quartet"},
+          {"person": "matt",     "role": "coach",   "room": "Lee Chapel",   "group": "Murphy Symphonic Quartet"}
+        ]
       },
       {
         "time": "4:30 - 5:30 PM",
@@ -485,7 +626,15 @@
         "notes": [
           "Change into your camp shirt after class for the group photo."
         ],
-        "jazzClasses": true
+        "jazzClasses": true,
+        "assignments": [
+          {"person": "chandler", "role": "teach", "room": "Tinsley Hall", "detail": "Jazz Class 1"},
+          {"person": "sara",     "role": "teach", "room": "Presser 202",  "detail": "Jazz Class 2"},
+          {"person": "steve",    "role": "teach", "room": "Presser 112",  "detail": "Jazz Class 3"},
+          {"person": "marc",     "role": "teach", "room": "Presser 349",  "detail": "Jazz Class 4"},
+          {"person": "matt",     "role": "teach", "room": "Presser 352",  "detail": "Jazz Class 5"},
+          {"person": "andrew",   "role": "teach", "room": "Presser 113",  "detail": "Jazz Class 6"}
+        ]
       },
       {
         "time": "5:40 - 5:50 PM",
@@ -565,7 +714,16 @@
         "location": "Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
         "mapUrl": "",
         "fundamentalsClass": true,
-        "notes": []
+        "notes": [],
+        "assignments": [
+          {"person": "steve",  "role": "teach", "room": "Presser 202",  "detail": "Soprano Fundamentals"},
+          {"person": "andrew", "role": "teach", "room": "Presser 113",  "detail": "Alto Fundamentals (Concert)"},
+          {"person": "david",  "role": "teach", "room": "Presser 352",  "detail": "Alto Fundamentals (Symphonic)"},
+          {"person": "sara",   "role": "teach", "room": "Presser 349",  "detail": "Tenor Fundamentals (Concert)"},
+          {"person": "kate",   "role": "teach", "room": "Presser 112",  "detail": "Tenor Fundamentals (Symphonic)"},
+          {"person": "sage",   "role": "teach", "room": "Tinsley Hall", "detail": "Bari Fundamentals (Concert)"},
+          {"person": "matt",   "role": "teach", "room": "Feasel Hall",  "detail": "Bari Fundamentals (Symphonic)"}
+        ]
       },
       {
         "time": "9:45 - 11:45 AM",
@@ -575,7 +733,17 @@
         "notes": [
           "See <a href=\"/rooms.html\">room guide</a> for locations."
         ],
-        "ensembleMap": {"symphonic": "large", "concert": "chamber"}
+        "ensembleMap": {"symphonic": "large", "concert": "chamber"},
+        "assignments": [
+          {"person": "chandler", "role": "conduct", "ensemble": "symphonic"},
+          {"person": "kristen",  "role": "conduct", "ensemble": "symphonic"},
+          {"person": "marc",     "role": "coach",   "room": "Presser 352",  "group": "Kolodinsky Concert Quartet"},
+          {"person": "steve",    "role": "coach",   "room": "Presser 202",  "group": "Amann Concert Quartet"},
+          {"person": "bill",     "role": "coach",   "room": "Tinsley Hall", "group": "Guthrie Concert Quartet"},
+          {"person": "sage",     "role": "coach",   "room": "Presser 112",  "group": "Whitt Concert Quartet"},
+          {"person": "david",    "role": "coach",   "room": "Presser 113",  "group": "Hinote Concert Quartet"},
+          {"person": "matt",     "role": "coach",   "room": "Presser 349",  "group": "Murphy Concert Quartet"}
+        ]
       },
       {
         "time": "11:50 AM - 12:20 PM",
@@ -592,7 +760,18 @@
         "notes": [
           "See <a href=\"/rooms.html\">room guide</a> for locations."
         ],
-        "ensembleMap": {"symphonic": "chamber", "concert": "large"}
+        "ensembleMap": {"symphonic": "chamber", "concert": "large"},
+        "assignments": [
+          {"person": "bill",     "role": "conduct", "ensemble": "concert"},
+          {"person": "marc",     "role": "conduct", "ensemble": "concert"},
+          {"person": "tim",      "role": "coach",   "room": "Presser 349",  "group": "Rosenberg Symphonic Quartet"},
+          {"person": "chandler", "role": "coach",   "room": "Feasel Hall",  "group": "Wilson Symphonic Quartet"},
+          {"person": "kristen",  "role": "coach",   "room": "Presser 352",  "group": "Zelenak Symphonic Quartet"},
+          {"person": "steve",    "role": "coach",   "room": "Presser 202",  "group": "Amann Symphonic Quartet"},
+          {"person": "sara",     "role": "coach",   "room": "Presser 112",  "group": "Pyburn Symphonic Quartet"},
+          {"person": "andrew",   "role": "coach",   "room": "Presser 113",  "group": "Becker Symphonic Quartet"},
+          {"person": "matt",     "role": "coach",   "room": "Lee Chapel",   "group": "Murphy Symphonic Quartet"}
+        ]
       },
       {
         "time": "2:30 - 3:30 PM",
@@ -600,7 +779,15 @@
         "location": "Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
         "mapUrl": "",
         "notes": [],
-        "jazzClasses": true
+        "jazzClasses": true,
+        "assignments": [
+          {"person": "chandler", "role": "teach", "room": "Tinsley Hall", "detail": "Jazz Class 1"},
+          {"person": "sara",     "role": "teach", "room": "Presser 202",  "detail": "Jazz Class 2"},
+          {"person": "steve",    "role": "teach", "room": "Presser 112",  "detail": "Jazz Class 3"},
+          {"person": "marc",     "role": "teach", "room": "Presser 349",  "detail": "Jazz Class 4"},
+          {"person": "matt",     "role": "teach", "room": "Presser 352",  "detail": "Jazz Class 5"},
+          {"person": "andrew",   "role": "teach", "room": "Presser 113",  "detail": "Jazz Class 6"}
+        ]
       },
       {
         "time": "3:35 - 5:45 PM",
@@ -686,6 +873,13 @@
         "mapUrl": "",
         "notes": [
           "See <a href=\"/rooms.html\">room guide</a> for locations."
+        ],
+        "assignments": [
+          {"person": "chandler", "role": "conduct", "ensemble": "symphonic"},
+          {"person": "kristen",  "role": "conduct", "ensemble": "symphonic"},
+          {"person": "bill",     "role": "conduct", "ensemble": "concert"},
+          {"person": "marc",     "role": "conduct", "ensemble": "concert"},
+          {"person": "tim",      "role": "task",    "detail": "Camp Theme"}
         ]
       },
       {
@@ -722,7 +916,14 @@
         "activity": "Saxophone Ensembles Concert",
         "location": "Lee Chapel",
         "mapUrl": "https://maps.app.goo.gl/Dvm3E7u6dcQk4WHg7",
-        "notes": []
+        "notes": [],
+        "assignments": [
+          {"person": "chandler", "role": "conduct", "ensemble": "symphonic"},
+          {"person": "kristen",  "role": "conduct", "ensemble": "symphonic"},
+          {"person": "bill",     "role": "conduct", "ensemble": "concert"},
+          {"person": "marc",     "role": "conduct", "ensemble": "concert"},
+          {"person": "tim",      "role": "task",    "detail": "Camp Theme"}
+        ]
       },
       {
         "time": "12:30 - 1:30 PM",

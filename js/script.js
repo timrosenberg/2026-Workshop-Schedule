@@ -510,9 +510,7 @@ async function loadSchedule() {
   if (!container) return;
 
   const pageTypeMeta = document.querySelector('meta[name="page-type"]');
-  const schedulePath = (pageTypeMeta && pageTypeMeta.content === 'faculty')
-    ? '/data/faculty-schedule.json'
-    : '/data/schedule.json';
+  const schedulePath = '/data/schedule.json';
 
   try {
     const res = await fetch(schedulePath);
@@ -570,7 +568,9 @@ function renderSchedule(scheduleData, { animate = true } = {}) {
     const ul = document.createElement('ul');
     ul.className = 'act-list';
 
+    const isFacultyPage = document.querySelector('meta[name="page-type"]')?.content === 'faculty';
     day.activities.forEach((act, i) => {
+      if (act.audience === 'faculty' && !isFacultyPage) return;
       const isCur = isToday && i === curIdx;
       let isPast = false;
       if (isToday && !isCur) {

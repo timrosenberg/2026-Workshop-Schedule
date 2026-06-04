@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="page-type" content="faculty" />
+  <meta name="theme-color" content="#404040" />
+  <title>My Schedule – Saxophone Workshop 2026</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="manifest" href="faculty.webmanifest">
+  <link rel="apple-touch-icon" href="/assets/icons/faculty-icon-180.png">
+  <style>
+    /* Gray palette — overrides green for staff version */
+    :root {
+      --forest:      #404040;
+      --forest-deep: #252525;
+      --forest-mid:  #5A5A5A;
+      --forest-lt:   #888888;
+      --forest-pale: #E4E4E4;
+    }
+    body.dark { --forest-pale: #202020; }
+
+    .tag-today { background: var(--forest-pale); color: var(--forest-mid); }
+    body.dark .tag-today { background: #202020; color: #909090; }
+
+    /* Breadcrumb strip */
+    .personal-nav {
+      display: flex;
+      gap: 1rem;
+      padding: 0.55rem 16px;
+      font-size: 0.85em;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+      position: sticky;
+      top: 48px;
+      z-index: 90;
+    }
+    .personal-nav a { color: var(--text2); text-decoration: none; }
+    .personal-nav a:hover { color: var(--text); text-decoration: underline; }
+
+    /* Personal assignment row highlight */
+    .act-row.personal-assignment {
+      border-left: 3px solid #2d6a4f;
+      background: rgba(43,100,74,0.08);
+      padding-left: 11px;
+    }
+    body.dark .act-row.personal-assignment {
+      border-left-color: #4d9469;
+      background: rgba(77,148,105,0.10);
+    }
+    .assignment-detail {
+      font-size: 0.88em;
+      color: #2d6a4f;
+      font-weight: 600;
+      margin-top: 3px;
+    }
+    body.dark .assignment-detail { color: #6fcf97; }
+
+    .act-row .act-body { position: relative; }
+    .assign-star {
+      position: absolute;
+      left: -23px;
+      top: 0;
+      height: 1.38rem;
+      display: flex;
+      align-items: center;
+      color: #2d6a4f;
+      font-size: 0.75rem;
+    }
+    body.dark .assign-star { color: #6fcf97; }
+
+    .error-state { padding: 2rem 1.5rem; color: var(--text2); }
+    .error-state p { margin: 0 0 0.75rem; }
+    .error-state a { color: var(--forest-mid); }
+
+  </style>
+</head>
+<body>
+
+<div class="app">
+
+  <header class="header">
+    <div class="wordmark">
+      <div class="wm-name" id="page-title">My Schedule</div>
+    </div>
+    <div class="hbtns">
+      <button class="hbtn" id="darkBtn" title="Toggle dark mode"></button>
+    </div>
+  </header>
+
+  <div class="personal-nav">
+    <a href="/">← Public Schedule</a>
+  </div>
+
+  <main class="main">
+
+    <div class="now-next">
+      <div class="now-pane" id="nowPane">
+        <div class="now-label">
+          <div class="pulse-dot"></div>
+          <span class="now-lbl-txt">Now</span>
+        </div>
+        <div class="now-name" id="nowName">Loading…</div>
+        <div class="now-meta" id="nowMeta"></div>
+        <div class="now-pills" id="nowPills"></div>
+      </div>
+      <div class="next-pane" id="nextPane">
+        <span class="next-lbl">Next:</span>
+        <span class="next-name" id="nextName">—</span>
+        <span class="next-time" id="nextTime"></span>
+        <svg class="icon icon-sm" style="color:var(--text3);flex-shrink:0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6"/></svg>
+      </div>
+    </div>
+
+    <div id="schedule-container"></div>
+
+  </main>
+
+  <nav class="bottom-nav">
+    <a href="#" class="nav-item active">
+      <svg class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12"/><path d="M16 3v4"/><path d="M8 3v4"/><path d="M4 11h16"/><path d="M11 15h1"/><path d="M12 15v3"/></svg>
+      <span class="nav-lbl">My Schedule</span>
+    </a>
+    <a href="/" class="nav-item">
+      <svg class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"/><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"/></svg>
+      <span class="nav-lbl">Students</span>
+    </a>
+  </nav>
+
+</div>
+
+<script src="schedule.js" defer></script>
+</body>
+</html>
