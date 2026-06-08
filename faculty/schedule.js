@@ -346,8 +346,7 @@ async function init() {
 
       let html = `<div class="act-time">${timeStart}</div>`;
       html += `<div class="act-body">`;
-      if (myAssignment) html += `<span class="assign-star">★</span>`;
-      html += `<div class="act-name">${act.activity}</div>`;
+      html += `<div class="act-name">${myAssignment ? '<span class="assign-star">★</span> ' : ''}${act.activity}</div>`;
       if (act.location) html += `<div class="act-loc">${act.location}</div>`;
       if (myAssignment) {
         const detail = formatAssignment(myAssignment);
