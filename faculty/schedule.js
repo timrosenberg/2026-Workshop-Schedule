@@ -10,6 +10,7 @@ const DISPLAY_NAMES = {
   'andrew':   'Andrew Becker',
   'bill':     'Bill Guthrie',
   'david':    'David Hinote',
+  'kaia':     'Kaia Leavitt',
   'michelle': 'Michelle Lugo',
   'matt':     'Matt Murphy',
   'sara':     'Sara Pyburn',
@@ -118,6 +119,12 @@ function formatAssignment(asgn) {
       return `Conducting: ${asgn.ensemble === 'symphonic' ? 'Symphonic' : 'Concert'} Saxophones`;
     case 'monitor':
       return `Monitor: ${asgn.detail}`;
+    case 'nightwatch':
+      return "Night's Watch";
+    case 'floormgr':
+      return 'Floor Monitor';
+    case 'ranger':
+      return 'Ranger (off campus)';
     case 'task':
     case 'duty':
       return asgn.detail || '';
