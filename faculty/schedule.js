@@ -140,6 +140,34 @@ let _selectedRow = null;
 const _clockSVG = `<svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"/><path d="M12 7v5l3 3"/></svg>`;
 const _pinSVG   = `<svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"/></svg>`;
 
+function _transitMapUrl(groupLetter, act) {
+  const haystack = (act.location || '') + (act.activity || '');
+  if (/presser/i.test(haystack)) return '/assets/images/music-rally.png';
+  return ['A','B','C','D'].includes((groupLetter || '').toUpperCase())
+    ? '/assets/images/hatter-floor-1-rally.png'
+    : '/assets/images/hatter-floor-2-rally.png';
+}
+
+function _floorNumber(asgn, act) {
+  if (asgn.role === 'nightwatch') return 1;
+  const fmList = (act.assignments || []).filter(a => a.role === 'floormgr');
+  const idx = fmList.findIndex(a => a.person === asgn.person);
+  return idx + 2;
+}
+
+function openStaffMap(url) {
+  let lb = document.getElementById('lightbox');
+  if (!lb) {
+    lb = document.createElement('div');
+    lb.id = 'lightbox';
+    lb.innerHTML = '<img id="lightbox-img">';
+    lb.addEventListener('click', () => lb.classList.remove('show'));
+    document.body.appendChild(lb);
+  }
+  document.getElementById('lightbox-img').src = url;
+  lb.classList.add('show');
+}
+
 function showStaffEvent(act, myAssignment, rowEl) {
   if (_selectedRow) _selectedRow.classList.remove('selected');
   _selectedRow = rowEl;
@@ -152,10 +180,45 @@ function showStaffEvent(act, myAssignment, rowEl) {
   }
 
   if (myAssignment) {
-    const detail = formatAssignment(myAssignment);
-    if (detail) {
+    const role = myAssignment.role;
+
+    // Room as prominent pin row for coaching and teaching
+    if ((role === 'coach' || role === 'teach') && myAssignment.room) {
+      html += `<div class="event-meta-row"><span class="c-icon">${_pinSVG}</span><strong>${myAssignment.room}</strong></div>`;
+    }
+
+    // Duty label and body
+    const isTransit = role === 'duty' && /Transit Group ([A-H])/i.test(myAssignment.detail || '');
+    const isFloor   = role === 'floormgr' || role === 'nightwatch';
+
+    // Build duty text — for coach/teach, omit the room since it's shown above
+    let dutyText = '';
+    if (role === 'coach') {
+      dutyText = `Coaching: ${myAssignment.group}`;
+    } else if (role === 'teach') {
+      dutyText = `Teaching: ${myAssignment.detail || myAssignment.group}`;
+    } else {
+      dutyText = formatAssignment(myAssignment);
+    }
+
+    if (dutyText || isTransit) {
       html += `<div class="event-notes"><div class="event-notes-lbl">Your duty</div>`;
-      html += `<div class="event-note-line"><span>${detail}</span></div>`;
+      if (dutyText) html += `<div class="event-note-line"><span>${dutyText}</span></div>`;
+
+      if (isTransit) {
+        const groupLetter = (myAssignment.detail.match(/Group ([A-H])/i) || [])[1] || '';
+        const mapUrl = _transitMapUrl(groupLetter, act);
+        if (mapUrl) {
+          const btnStyle = "display:inline-block;padding:3px 11px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);font-size:0.85em;cursor:pointer;border:none;font-family:inherit;margin-top:6px";
+          html += `<div class="event-note-line"><button onclick="openStaffMap('${mapUrl}')" style="${btnStyle}">↗ Rally point map</button></div>`;
+        }
+      }
+
+      if (isFloor) {
+        const floor = _floorNumber(myAssignment, act);
+        html += `<div class="event-note-line" style="margin-top:8px;color:var(--text2);font-size:0.9em"><span>At lights out: send "Floor ${floor} Clear" in the staff channel.</span></div>`;
+      }
+
       html += `</div>`;
     }
   }
