@@ -120,7 +120,7 @@ function formatAssignment(asgn) {
     case 'monitor':
       return `Monitor: ${asgn.detail}`;
     case 'nightwatch':
-      return "Night's Watch";
+      return "⚑ Night's Watch";
     case 'floormgr':
       return 'Floor Monitor';
     case 'ranger':
