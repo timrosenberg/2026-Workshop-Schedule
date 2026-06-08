@@ -342,7 +342,8 @@ async function init() {
       const li = document.createElement('li');
       li.className = 'act-row' + (myAssignment ? ' personal-assignment' : '');
 
-      const timeStart = act.time.split(/\s*[-–]\s*/)[0].trim();
+      const _ts = act.time.split(/\s*[-–]\s*/)[0].trim();
+      const timeStart = /AM|PM/i.test(_ts) ? _ts : (m => m ? _ts + ' ' + m[0].toUpperCase() : _ts)(act.time.match(/AM|PM/i));
 
       let html = `<div class="act-time">${timeStart}</div>`;
       html += `<div class="act-body">`;
