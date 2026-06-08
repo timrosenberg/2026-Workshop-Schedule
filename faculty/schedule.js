@@ -188,8 +188,9 @@ function showStaffEvent(act, myAssignment, rowEl) {
     }
 
     // Duty label and body
-    const isTransit = role === 'duty' && /Transit Group ([A-H])/i.test(myAssignment.detail || '');
-    const isFloor   = role === 'floormgr' || role === 'nightwatch';
+    const isTransit      = role === 'duty' && /Transit Group ([A-H])/i.test(myAssignment.detail || '');
+    const isFloor        = role === 'floormgr' || role === 'nightwatch';
+    const isPresserFloor = role === 'monitor' && /Presser Floor (\d)/i.test(myAssignment.detail || '');
 
     // Build duty text — for coach/teach, omit the room since it's shown above
     let dutyText = '';
@@ -204,6 +205,11 @@ function showStaffEvent(act, myAssignment, rowEl) {
     if (dutyText || isTransit) {
       html += `<div class="event-notes"><div class="event-notes-lbl">Your duty</div>`;
       if (dutyText) html += `<div class="event-note-line"><span>${dutyText}</span></div>`;
+
+      if (isPresserFloor) {
+        const floorNum = (myAssignment.detail.match(/(\d)/) || [])[1] || '';
+        html += `<div class="event-note-line" style="margin-top:8px;color:var(--text2);font-size:0.9em"><span>At the end of your shift: send "Floor ${floorNum} Clear" in the staff channel.</span></div>`;
+      }
 
       if (isTransit) {
         const groupLetter = (myAssignment.detail.match(/Group ([A-H])/i) || [])[1] || '';
