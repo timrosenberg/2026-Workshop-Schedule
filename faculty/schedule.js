@@ -133,6 +133,42 @@ function formatAssignment(asgn) {
   }
 }
 
+// --- Event overlay ---
+
+let _selectedRow = null;
+
+const _clockSVG = `<svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"/><path d="M12 7v5l3 3"/></svg>`;
+const _pinSVG   = `<svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"/></svg>`;
+
+function showStaffEvent(act, myAssignment, rowEl) {
+  if (_selectedRow) _selectedRow.classList.remove('selected');
+  _selectedRow = rowEl;
+  if (rowEl) rowEl.classList.add('selected');
+
+  let html = `<div class="event-hd">${act.activity}</div>`;
+  html += `<div class="event-meta-row"><span class="c-icon">${_clockSVG}</span><span>${act.time}</span></div>`;
+  if (act.location) {
+    html += `<div class="event-meta-row"><span class="c-icon">${_pinSVG}</span><span>${act.location}</span></div>`;
+  }
+
+  if (myAssignment) {
+    const detail = formatAssignment(myAssignment);
+    if (detail) {
+      html += `<div class="event-notes"><div class="event-notes-lbl">Your duty</div>`;
+      html += `<div class="event-note-line"><span>${detail}</span></div>`;
+      html += `</div>`;
+    }
+  }
+
+  document.getElementById('eventDetail').innerHTML = html;
+  document.getElementById('eventOverlay').classList.add('show');
+}
+
+function closeStaffEvent() {
+  if (_selectedRow) { _selectedRow.classList.remove('selected'); _selectedRow = null; }
+  document.getElementById('eventOverlay')?.classList.remove('show');
+}
+
 // --- Time helpers ---
 
 let _scheduleData = null;
@@ -264,6 +300,11 @@ async function init() {
     if (_activeDayEl) _activeDayEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 
+  document.getElementById('eventClose')?.addEventListener('click', closeStaffEvent);
+  document.getElementById('eventOverlay')?.addEventListener('click', e => {
+    if (e.target === e.currentTarget) closeStaffEvent();
+  });
+
   const container = document.getElementById('schedule-container');
 
   try {
@@ -355,6 +396,7 @@ async function init() {
       }
       html += `</div>`;
       li.innerHTML = html;
+      li.addEventListener('click', () => showStaffEvent(act, myAssignment || null, li));
       ul.appendChild(li);
     });
 
