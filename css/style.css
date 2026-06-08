@@ -40,6 +40,8 @@
   --clr-iup:     #8B0000;
   --clr-fsu:     #782F40;
   --clr-ucf:     #b89010;
+  --clr-gvsu:    #003B5C;
+  --clr-umkc:    #002F6C;
 }
 
 body.dark {
@@ -64,6 +66,8 @@ body.dark {
   --clr-iup:     #e06060;
   --clr-fsu:     #d47a88;
   --clr-ucf:     #e8c040;
+  --clr-gvsu:    #5599cc;
+  --clr-umkc:    #7788dd;
 }
 
 /* ================================
