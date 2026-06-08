@@ -397,7 +397,7 @@ body.dark .act-row.selected {
 .act-time {
   font-family: var(--font-ui); font-size: 0.9rem;
   color: var(--text3); flex-shrink: 0;
-  width: 4rem; padding-top: 1px; line-height: 1.4;
+  width: 5rem; padding-top: 1px; line-height: 1.4;
 }
 .act-row.current .act-time { color: var(--forest-mid); }
 body.dark .act-row.current .act-time { color: var(--forest-lt); }
