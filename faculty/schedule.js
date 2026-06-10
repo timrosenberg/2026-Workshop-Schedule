@@ -352,7 +352,7 @@ function updateNowNext() {
     if (nowMetaEl) {
       const { start, end } = parseActTime(nowItem.act.time, nowItem.day.date);
       const parts = [];
-      if (nowItem.act.location) parts.push(`<span>${nowItem.act.location}</span><span class="now-sep">·</span>`);
+      if (nowItem.act.location) parts.push(`<span>${nowItem.act.location.replace(/<a href="\/rooms\.html"[^>]*>.*?<\/a>/g, '').trim()}</span><span class="now-sep">·</span>`);
       if (start) parts.push(`<span>${fmtT(start)}${end ? ' – ' + fmtT(end) : ''}</span>`);
       nowMetaEl.innerHTML = parts.join('');
     }
