@@ -1076,6 +1076,11 @@ async function loadRooms() {
     </div>
   `;
   }).join('');
+
+  if (window.location.hash) {
+    const target = document.querySelector(window.location.hash);
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
