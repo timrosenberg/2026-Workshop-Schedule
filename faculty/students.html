@@ -243,31 +243,11 @@
     <div class="student-grid" id="studentGrid"></div>
   </main>
 
-  <nav class="bottom-nav">
-    <a href="schedule.html" class="nav-item">
-      <svg class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12"/><path d="M16 3v4"/><path d="M8 3v4"/><path d="M4 11h16"/><path d="M11 15h1"/><path d="M12 15v3"/></svg>
-      <span class="nav-lbl">My Schedule</span>
-    </a>
-    <a href="rooms.html" class="nav-item">
-      <svg class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 12v.01"/><path d="M3 21h18"/><path d="M6 21v-16a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v16"/></svg>
-      <span class="nav-lbl">Rooms</span>
-    </a>
-    <a href="students.html" class="nav-item active">
-      <svg class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"/><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"/></svg>
-      <span class="nav-lbl">Students</span>
-    </a>
-  </nav>
 
 </div>
 
+<script src="nav.js"></script>
 <script>
-  // ── Restore My Schedule link ──
-  const savedSlug = localStorage.getItem('faculty-slug');
-  if (savedSlug) {
-    const schedLink = document.querySelector('.bottom-nav a[href="schedule.html"]');
-    if (schedLink) schedLink.href = `schedule.html?name=${encodeURIComponent(savedSlug)}`;
-  }
-
   // ── Dark mode (shared pref with schedule.html) ──
   const sunSVG  = `<svg class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"/><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"/></svg>`;
   const moonSVG = `<svg class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454l0 .008"/></svg>`;
