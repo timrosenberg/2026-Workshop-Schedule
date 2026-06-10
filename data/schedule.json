@@ -2080,14 +2080,14 @@
         "time": "5:40 - 5:50 PM",
         "activity": "\ud83d\udcf8 Workshop Photo",
         "location": "Sampson Hall steps (<a href=\"https://maps.app.goo.gl/xjX7xrKMzvb5211VA\">map</a>)",
-        "mapUrl": "",
+        "mapUrl": "https://maps.app.goo.gl/xjX7xrKMzvb5211VA",
         "notes": []
       },
       {
         "time": "6:00 - 6:45 PM",
         "activity": "\ud83c\udf55 Dinner: Pizza Party",
         "location": "Palm Court (<a href=\"https://maps.app.goo.gl/onJmxu1JX1MWwk4k8\">map</a>)",
-        "mapUrl": "",
+        "mapUrl": "https://maps.app.goo.gl/onJmxu1JX1MWwk4k8",
         "notes": [
           "Rain location: Tinsley Hall."
         ],

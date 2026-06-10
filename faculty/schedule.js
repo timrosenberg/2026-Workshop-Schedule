@@ -187,7 +187,10 @@ function showStaffEvent(act, myAssignment, rowEl) {
   let html = `<div class="event-hd">${act.activity}</div>`;
   html += `<div class="event-meta-row"><span class="c-icon">${_clockSVG}</span><span>${act.time}</span></div>`;
   if (act.location) {
-    html += `<div class="event-meta-row"><span class="c-icon">${_pinSVG}</span><span>${act.location}</span></div>`;
+    const mapPill = act.mapUrl
+      ? ` <a href="${act.mapUrl}" target="_blank" style="display:inline-block;padding:2px 10px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);font-size:0.82em;text-decoration:none;margin-left:6px">↗ Map</a>`
+      : '';
+    html += `<div class="event-meta-row"><span class="c-icon">${_pinSVG}</span><span>${act.location}${mapPill}</span></div>`;
   }
 
   if (myAssignment) {
