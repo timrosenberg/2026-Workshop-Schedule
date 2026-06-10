@@ -140,7 +140,18 @@ let _selectedRow = null;
 const _clockSVG = `<svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"/><path d="M12 7v5l3 3"/></svg>`;
 const _pinSVG   = `<svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"/></svg>`;
 
-function _transitMapUrl(groupLetter, act) {
+const WALKING_GROUP_STUDENTS = {
+  A: ['Benjamin Krayter','Oliver Esquivel Novek','Ian Stack-Thomas','Ethan Boniello','Connor Reed','Carley Moore','Cooper Katz','Sophia Kazi','Roberto "Jett" Ruiz','Jimmy Kim','Alexandra Lang'],
+  B: ['Maximillian Threatt','Maci Fetherolf','Brendon Gandy','Ariel Meyer','Isabella Scheffing','Ethan Rodriguez','Thomas Willadsen','Skylar Mathson','Kai Miyazato','Thaddeus Rodziewicz','Joshua Baker','John Michalak'],
+  C: ['Riley Bredesen','Giray Selman','Addison Talley','Sarah Meyer','Dominic Novero','Lucas Lively','Jonathan Nevarez','Aidan Lane','Caitlyn Shaffer','Rashad Barrett','Enzo Ward','Alexys Rodea-Carbajal'],
+  D: ['Ian Monreal','Caeden Rojas','Anthony Barron','Sophia Scarpinato','Jeramiah Clark','Kalil Alejandro Ortiz Rivera','Hannah OLeary','Ava Foltak','Mason Miller','Charlie Battaglia','Justus Peyton'],
+  E: ['Mia Castillo','Evey Heilmann','Ella Barajas','Alexander Incardona','Landon Layton','Jonathan Passales','Alyssa De León','Kelis Turner','Graham Vincent','Garrett Spiers','Linken Walker'],
+  F: ['Maci Walser','Caleb Kizewski','Isaac Leslie','Jonna Jacob','Ian Cintron','Rachel Mosquera','Finn Carriere','Jada Bartley','Adrian Font','Samuel Campen','Lucas Peliwo','Luca Gorgone'],
+  G: ['Hope Fuentes','Elliot Magley','Derek Mundrean','Nathan Renninger','Raylen Watts','Croix Bello','Angelina Yu','Oluwabunmi Oni','Miles Springer','Hailey Megargee','Juan Argotte','Isaac Sadik'],
+  H: ['Elliot Webster','Griffin Tucker','Jack Vincent','Owen Plotkin','Lucas Johnson','Dominic Byrd','Kevin Jiang','Abigail Cuevas','Ethan Koesler','Maddelyn Mirino','Valencia Jaco','Devyn Novotny'],
+};
+
+function _walkingGroupMapUrl(groupLetter, act) {
   const haystack = (act.location || '') + (act.activity || '');
   if (/presser/i.test(haystack)) return '/assets/images/music-rally.png';
   return ['A','B','C','D'].includes((groupLetter || '').toUpperCase())
@@ -188,7 +199,7 @@ function showStaffEvent(act, myAssignment, rowEl) {
     }
 
     // Duty label and body
-    const isTransit      = role === 'duty' && /Transit Group ([A-H])/i.test(myAssignment.detail || '');
+    const isTransit      = role === 'duty' && /Walking Group ([A-H])/i.test(myAssignment.detail || '');
     const isFloor        = role === 'floormgr' || role === 'nightwatch';
     const isPresserFloor = role === 'monitor' && /Presser Floor (\d)/i.test(myAssignment.detail || '');
 
@@ -212,11 +223,16 @@ function showStaffEvent(act, myAssignment, rowEl) {
       }
 
       if (isTransit) {
-        const groupLetter = (myAssignment.detail.match(/Group ([A-H])/i) || [])[1] || '';
-        const mapUrl = _transitMapUrl(groupLetter, act);
+        const groupLetter = ((myAssignment.detail.match(/Group ([A-H])/i) || [])[1] || '').toUpperCase();
+        const mapUrl = _walkingGroupMapUrl(groupLetter, act);
         if (mapUrl) {
           const btnStyle = "display:inline-block;padding:3px 11px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);font-size:0.85em;cursor:pointer;border:none;font-family:inherit;margin-top:6px";
           html += `<div class="event-note-line"><button onclick="openStaffMap('${mapUrl}')" style="${btnStyle}">↗ Rally point map</button></div>`;
+        }
+        const students = WALKING_GROUP_STUDENTS[groupLetter] || [];
+        if (students.length) {
+          html += `<div class="event-note-line" style="margin-top:10px"><span style="font-size:0.8em;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:var(--text3)">Your students</span></div>`;
+          html += students.map(n => `<div class="event-note-line"><span>${n}</span></div>`).join('');
         }
       }
 

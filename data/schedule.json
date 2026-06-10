@@ -1,7 +1,7 @@
 [
   {
     "date": "2026-06-22",
-    "themeTitle": "🚀 Launch Day",
+    "themeTitle": "\ud83d\ude80 Launch Day",
     "themeDescription": "Wear something space-mission related: rockets, space shuttle, satellites, telescopes, NASA or Kennedy Space Center gear. No space gear? Wear a bright color that could be seen from space.",
     "activities": [
       {
@@ -11,20 +11,76 @@
         "mapUrl": "",
         "notes": [],
         "assignments": [
-          {"person": "tim",      "role": "duty", "detail": "Check in students; hear YA auditions"},
-          {"person": "bill",     "role": "duty", "detail": "Check in students; resolve dorm issues"},
-          {"person": "marc",     "role": "duty", "detail": "Assign loaner instruments & mouthpieces"},
-          {"person": "steve",    "role": "duty", "detail": "Assign loaner instruments & mouthpieces"},
-          {"person": "michelle", "role": "duty", "detail": "Hand out shirts, folders, name tags"},
-          {"person": "sage",     "role": "duty", "detail": "Hand out shirts, folders, name tags"},
-          {"person": "sara",     "role": "duty", "detail": "Assign lockers"},
-          {"person": "matt",     "role": "duty", "detail": "Assign lockers"},
-          {"person": "andrew",   "role": "duty", "detail": "2nd floor: help families find rooms"},
-          {"person": "david",    "role": "duty", "detail": "3rd floor: help families find rooms"},
-          {"person": "kristen",  "role": "duty", "detail": "1st floor: help families find rooms"},
-          {"person": "kate",     "role": "duty", "detail": "Floating"},
-          {"person": "chandler", "role": "duty", "detail": "Floating"},
-          {"person": "kaia",     "role": "duty", "detail": "Floating"}
+          {
+            "person": "tim",
+            "role": "duty",
+            "detail": "Check in students; hear YA auditions"
+          },
+          {
+            "person": "bill",
+            "role": "duty",
+            "detail": "Check in students; resolve dorm issues"
+          },
+          {
+            "person": "marc",
+            "role": "duty",
+            "detail": "Assign loaner instruments & mouthpieces"
+          },
+          {
+            "person": "steve",
+            "role": "duty",
+            "detail": "Assign loaner instruments & mouthpieces"
+          },
+          {
+            "person": "michelle",
+            "role": "duty",
+            "detail": "Hand out shirts, folders, name tags"
+          },
+          {
+            "person": "sage",
+            "role": "duty",
+            "detail": "Hand out shirts, folders, name tags"
+          },
+          {
+            "person": "sara",
+            "role": "duty",
+            "detail": "Assign lockers"
+          },
+          {
+            "person": "matt",
+            "role": "duty",
+            "detail": "Assign lockers"
+          },
+          {
+            "person": "andrew",
+            "role": "duty",
+            "detail": "2nd floor: help families find rooms"
+          },
+          {
+            "person": "david",
+            "role": "duty",
+            "detail": "3rd floor: help families find rooms"
+          },
+          {
+            "person": "kristen",
+            "role": "duty",
+            "detail": "1st floor: help families find rooms"
+          },
+          {
+            "person": "kate",
+            "role": "duty",
+            "detail": "Floating"
+          },
+          {
+            "person": "chandler",
+            "role": "duty",
+            "detail": "Floating"
+          },
+          {
+            "person": "kaia",
+            "role": "duty",
+            "detail": "Floating"
+          }
         ]
       },
       {
@@ -37,7 +93,11 @@
           "Winners will be announced at the Opening Meeting."
         ],
         "assignments": [
-          {"person": "tim", "role": "task", "detail": "Adjudicate"}
+          {
+            "person": "tim",
+            "role": "task",
+            "detail": "Adjudicate"
+          }
         ]
       },
       {
@@ -47,18 +107,80 @@
         "mapUrl": "",
         "notes": [],
         "groupMap": [
-          {"floor": "Floor 1", "groups": ["A","B","C","D"], "mapUrl": "/assets/images/hatter-floor-1-rally.png"},
-          {"floor": "Floor 2", "groups": ["E","F","G","H"], "mapUrl": "/assets/images/hatter-floor-2-rally.png"}
+          {
+            "floor": "Floor 1",
+            "groups": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "mapUrl": "/assets/images/hatter-floor-1-rally.png",
+            "rallyPoints": {
+              "A": "Floor 1 \u2014 W Study Room",
+              "B": "Floor 1 \u2014 Laundry Room",
+              "C": "Floor 1 \u2014 Lobby, NW (near windows)",
+              "D": "Floor 1 \u2014 Lobby, SE (near desk)"
+            }
+          },
+          {
+            "floor": "Floor 2",
+            "groups": [
+              "E",
+              "F",
+              "G",
+              "H"
+            ],
+            "mapUrl": "/assets/images/hatter-floor-2-rally.png",
+            "rallyPoints": {
+              "E": "Floor 2 \u2014 W Study Room",
+              "F": "Floor 2 \u2014 Laundry Room",
+              "G": "Floor 2 \u2014 Lobby, NW",
+              "H": "Floor 2 \u2014 Lobby, SE"
+            }
+          }
         ],
         "assignments": [
-          {"person": "andrew", "role": "duty", "detail": "Transit Group A"},
-          {"person": "matt",   "role": "duty", "detail": "Transit Group B"},
-          {"person": "kaia",   "role": "duty", "detail": "Transit Group C"},
-          {"person": "david",  "role": "duty", "detail": "Transit Group D"},
-          {"person": "sara",   "role": "duty", "detail": "Transit Group E"},
-          {"person": "sage",   "role": "duty", "detail": "Transit Group F"},
-          {"person": "steve",  "role": "duty", "detail": "Transit Group G"},
-          {"person": "kate",   "role": "duty", "detail": "Transit Group H"}
+          {
+            "person": "andrew",
+            "role": "duty",
+            "detail": "Walking Group A"
+          },
+          {
+            "person": "matt",
+            "role": "duty",
+            "detail": "Walking Group B"
+          },
+          {
+            "person": "kaia",
+            "role": "duty",
+            "detail": "Walking Group C"
+          },
+          {
+            "person": "david",
+            "role": "duty",
+            "detail": "Walking Group D"
+          },
+          {
+            "person": "sara",
+            "role": "duty",
+            "detail": "Walking Group E"
+          },
+          {
+            "person": "sage",
+            "role": "duty",
+            "detail": "Walking Group F"
+          },
+          {
+            "person": "steve",
+            "role": "duty",
+            "detail": "Walking Group G"
+          },
+          {
+            "person": "kate",
+            "role": "duty",
+            "detail": "Walking Group H"
+          }
         ]
       },
       {
@@ -70,7 +192,7 @@
       },
       {
         "time": "11:45 AM - 12:15 PM",
-        "activity": "🥪 Lunch",
+        "activity": "\ud83e\udd6a Lunch",
         "location": "Carlton Union Building (CUB)",
         "mapUrl": "https://maps.app.goo.gl/wdAMPGnM3GRCCsnA8",
         "notes": []
@@ -84,7 +206,10 @@
           "Feasel Hall is <em>inside</em> McMahan Hall. Through the doors and to the left.",
           "Bring your instrument for your next activity. If you are borrowing an instrument from the Workshop, you will pick it up after the meeting."
         ],
-        "ensemblePrompt": {"symphonic": "large", "concert": "chamber"}
+        "ensemblePrompt": {
+          "symphonic": "large",
+          "concert": "chamber"
+        }
       },
       {
         "time": "1:10 - 3:10 PM",
@@ -92,22 +217,75 @@
         "location": "",
         "mapUrl": "",
         "notes": [
-          "Symphonic Saxophones (10th-12+ grade): Large Ensemble — Feasel Hall",
-          "Concert Saxophones (7th-9th grade): Chamber Ensembles — Various Rooms (<a href=\"/rooms.html\">see guide</a>)"
+          "Symphonic Saxophones (10th-12+ grade): Large Ensemble \u2014 Feasel Hall",
+          "Concert Saxophones (7th-9th grade): Chamber Ensembles \u2014 Various Rooms (<a href=\"/rooms.html\">see guide</a>)"
         ],
-        "ensembleMap": {"symphonic": "large", "concert": "chamber"},
+        "ensembleMap": {
+          "symphonic": "large",
+          "concert": "chamber"
+        },
         "assignments": [
-          {"person": "chandler", "role": "conduct", "ensemble": "symphonic"},
-          {"person": "kristen",  "role": "conduct", "ensemble": "symphonic"},
-          {"person": "marc",     "role": "coach",   "room": "Presser 352",  "group": "Kolodinsky Concert Quartet"},
-          {"person": "steve",    "role": "coach",   "room": "Presser 202",  "group": "Amann Concert Quartet"},
-          {"person": "bill",     "role": "coach",   "room": "Tinsley Hall", "group": "Guthrie Concert Quartet"},
-          {"person": "sage",     "role": "coach",   "room": "Presser 112",  "group": "Whitt Concert Quartet"},
-          {"person": "david",    "role": "coach",   "room": "Presser 113",  "group": "Hinote Concert Quartet"},
-          {"person": "matt",     "role": "coach",   "room": "Presser 349",  "group": "Murphy Concert Quartet"},
-          {"person": "michelle", "role": "monitor", "detail": "Presser Floor 1"},
-          {"person": "kaia",     "role": "monitor", "detail": "Presser Floor 2"},
-          {"person": "kate",     "role": "monitor", "detail": "Presser Floor 3"}
+          {
+            "person": "chandler",
+            "role": "conduct",
+            "ensemble": "symphonic"
+          },
+          {
+            "person": "kristen",
+            "role": "conduct",
+            "ensemble": "symphonic"
+          },
+          {
+            "person": "marc",
+            "role": "coach",
+            "room": "Presser 352",
+            "group": "Kolodinsky Concert Quartet"
+          },
+          {
+            "person": "steve",
+            "role": "coach",
+            "room": "Presser 202",
+            "group": "Amann Concert Quartet"
+          },
+          {
+            "person": "bill",
+            "role": "coach",
+            "room": "Tinsley Hall",
+            "group": "Guthrie Concert Quartet"
+          },
+          {
+            "person": "sage",
+            "role": "coach",
+            "room": "Presser 112",
+            "group": "Whitt Concert Quartet"
+          },
+          {
+            "person": "david",
+            "role": "coach",
+            "room": "Presser 113",
+            "group": "Hinote Concert Quartet"
+          },
+          {
+            "person": "matt",
+            "role": "coach",
+            "room": "Presser 349",
+            "group": "Murphy Concert Quartet"
+          },
+          {
+            "person": "michelle",
+            "role": "monitor",
+            "detail": "Presser Floor 1"
+          },
+          {
+            "person": "kaia",
+            "role": "monitor",
+            "detail": "Presser Floor 2"
+          },
+          {
+            "person": "kate",
+            "role": "monitor",
+            "detail": "Presser Floor 3"
+          }
         ]
       },
       {
@@ -116,23 +294,87 @@
         "location": "",
         "mapUrl": "",
         "notes": [
-          "Symphonic Saxophones: Chamber Ensembles — Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
-          "Concert Saxophones: Large Ensemble — Tinsley Hall (inside Presser Hall)"
+          "Symphonic Saxophones: Chamber Ensembles \u2014 Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
+          "Concert Saxophones: Large Ensemble \u2014 Tinsley Hall (inside Presser Hall)"
         ],
-        "ensembleMap": {"symphonic": "chamber", "concert": "large"},
+        "ensembleMap": {
+          "symphonic": "chamber",
+          "concert": "large"
+        },
         "assignments": [
-          {"person": "bill",     "role": "conduct", "ensemble": "concert"},
-          {"person": "marc",     "role": "conduct", "ensemble": "concert"},
-          {"person": "tim",      "role": "coach",   "room": "Presser 349",  "group": "Rosenberg Symphonic Quartet"},
-          {"person": "chandler", "role": "coach",   "room": "Feasel Hall",  "group": "Wilson Symphonic Quartet"},
-          {"person": "kristen",  "role": "coach",   "room": "Presser 352",  "group": "Zelenak Symphonic Quartet"},
-          {"person": "steve",    "role": "coach",   "room": "Presser 202",  "group": "Amann Symphonic Quartet"},
-          {"person": "sara",     "role": "coach",   "room": "Presser 112",  "group": "Pyburn Symphonic Quartet"},
-          {"person": "andrew",   "role": "coach",   "room": "Presser 113",  "group": "Becker Symphonic Quartet"},
-          {"person": "matt",     "role": "coach",   "room": "Lee Chapel",   "group": "Murphy Symphonic Quartet"},
-          {"person": "michelle", "role": "monitor", "detail": "Presser Floor 1"},
-          {"person": "sage",     "role": "monitor", "detail": "Presser Floor 2"},
-          {"person": "david",    "role": "monitor", "detail": "Presser Floor 3"}
+          {
+            "person": "bill",
+            "role": "conduct",
+            "ensemble": "concert"
+          },
+          {
+            "person": "marc",
+            "role": "conduct",
+            "ensemble": "concert"
+          },
+          {
+            "person": "tim",
+            "role": "coach",
+            "room": "Presser 349",
+            "group": "Rosenberg Symphonic Quartet"
+          },
+          {
+            "person": "chandler",
+            "role": "coach",
+            "room": "Feasel Hall",
+            "group": "Wilson Symphonic Quartet"
+          },
+          {
+            "person": "kristen",
+            "role": "coach",
+            "room": "Presser 352",
+            "group": "Zelenak Symphonic Quartet"
+          },
+          {
+            "person": "steve",
+            "role": "coach",
+            "room": "Presser 128",
+            "group": "Amann Symphonic Quartet"
+          },
+          {
+            "person": "sara",
+            "role": "coach",
+            "room": "Presser 112",
+            "group": "Pyburn Symphonic Quartet"
+          },
+          {
+            "person": "andrew",
+            "role": "coach",
+            "room": "Presser 113",
+            "group": "Becker Symphonic Quartet"
+          },
+          {
+            "person": "matt",
+            "role": "coach",
+            "room": "Lee Chapel",
+            "group": "Murphy Symphonic Quartet"
+          },
+          {
+            "person": "kate",
+            "role": "coach",
+            "room": "Presser 202",
+            "group": "Kalina Symphonic Quartet"
+          },
+          {
+            "person": "michelle",
+            "role": "monitor",
+            "detail": "Presser Floor 1"
+          },
+          {
+            "person": "sage",
+            "role": "monitor",
+            "detail": "Presser Floor 2"
+          },
+          {
+            "person": "david",
+            "role": "monitor",
+            "detail": "Presser Floor 3"
+          }
         ]
       },
       {
@@ -143,15 +385,57 @@
         "notes": [],
         "jazzClasses": true,
         "assignments": [
-          {"person": "chandler", "role": "teach", "room": "Tinsley Hall", "detail": "Jazz Class 1"},
-          {"person": "sara",     "role": "teach", "room": "Presser 202",  "detail": "Jazz Class 2"},
-          {"person": "steve",    "role": "teach", "room": "Presser 112",  "detail": "Jazz Class 3"},
-          {"person": "marc",     "role": "teach", "room": "Presser 349",  "detail": "Jazz Class 4"},
-          {"person": "matt",     "role": "teach", "room": "Presser 352",  "detail": "Jazz Class 5"},
-          {"person": "andrew",   "role": "teach", "room": "Presser 113",  "detail": "Jazz Class 6"},
-          {"person": "michelle", "role": "monitor", "detail": "Presser Floor 1"},
-          {"person": "sage",     "role": "monitor", "detail": "Presser Floor 2"},
-          {"person": "kate",     "role": "monitor", "detail": "Presser Floor 3"}
+          {
+            "person": "chandler",
+            "role": "teach",
+            "room": "Tinsley Hall",
+            "detail": "Jazz Class 1"
+          },
+          {
+            "person": "sara",
+            "role": "teach",
+            "room": "Presser 202",
+            "detail": "Jazz Class 2"
+          },
+          {
+            "person": "steve",
+            "role": "teach",
+            "room": "Presser 112",
+            "detail": "Jazz Class 3"
+          },
+          {
+            "person": "marc",
+            "role": "teach",
+            "room": "Presser 349",
+            "detail": "Jazz Class 4"
+          },
+          {
+            "person": "matt",
+            "role": "teach",
+            "room": "Presser 352",
+            "detail": "Jazz Class 5"
+          },
+          {
+            "person": "andrew",
+            "role": "teach",
+            "room": "Presser 113",
+            "detail": "Jazz Class 6"
+          },
+          {
+            "person": "michelle",
+            "role": "monitor",
+            "detail": "Presser Floor 1"
+          },
+          {
+            "person": "sage",
+            "role": "monitor",
+            "detail": "Presser Floor 2"
+          },
+          {
+            "person": "kate",
+            "role": "monitor",
+            "detail": "Presser Floor 3"
+          }
         ]
       },
       {
@@ -161,12 +445,35 @@
         "mapUrl": "",
         "notes": [],
         "groupMap": [
-          {"floor": "", "groups": ["A","B","C","D","E","F","G","H"], "mapUrl": "/assets/images/music-rally.png"}
+          {
+            "floor": "",
+            "groups": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H"
+            ],
+            "mapUrl": "/assets/images/music-rally.png",
+            "rallyPoints": {
+              "A": "Bike rack, W side of courtyard",
+              "B": "Door entrance to Elizabeth Hall green room",
+              "C": "Tables outside Presser Hall",
+              "D": "Path along W side of Sampson Hall",
+              "E": "Cello Sculpture",
+              "F": "Top of stairs, stage door entrance to Lee Chapel",
+              "G": "Bottom of stairs, stage door entrance to Lee Chapel",
+              "H": "Tables at corner of Sampson Hall"
+            }
+          }
         ]
       },
       {
         "time": "6:30 - 7:00 PM",
-        "activity": "🍽️ Dinner",
+        "activity": "\ud83c\udf7d\ufe0f Dinner",
         "location": "CUB",
         "mapUrl": "https://maps.app.goo.gl/wdAMPGnM3GRCCsnA8",
         "notes": []
@@ -206,59 +513,152 @@
           "Students will meet with the counselor staff to discuss the rules and procedures for the rest of the week."
         ],
         "assignments": [
-          {"person": "michelle", "role": "duty", "detail": "Floor Meeting Leader — Floor 1"},
-          {"person": "matt",     "role": "duty", "detail": "Floor Meeting Leader — Floor 2"},
-          {"person": "steve",    "role": "duty", "detail": "Floor Meeting Leader — Floor 3"}
+          {
+            "person": "michelle",
+            "role": "duty",
+            "detail": "Floor Meeting Leader \u2014 Floor 1"
+          },
+          {
+            "person": "matt",
+            "role": "duty",
+            "detail": "Floor Meeting Leader \u2014 Floor 2"
+          },
+          {
+            "person": "steve",
+            "role": "duty",
+            "detail": "Floor Meeting Leader \u2014 Floor 3"
+          }
         ]
       },
       {
         "time": "10:00 PM",
-        "activity": "🛌 Lights Out",
+        "activity": "\ud83d\udecc Lights Out",
         "location": "Hatter Hall",
         "mapUrl": "",
         "notes": [],
         "assignments": [
-          {"person": "matt",  "role": "nightwatch"},
-          {"person": "sara",  "role": "floormgr"},
-          {"person": "david", "role": "floormgr"},
-          {"person": "kate",  "role": "ranger"},
-          {"person": "sage",  "role": "ranger"}
+          {
+            "person": "matt",
+            "role": "nightwatch"
+          },
+          {
+            "person": "sara",
+            "role": "floormgr"
+          },
+          {
+            "person": "david",
+            "role": "floormgr"
+          },
+          {
+            "person": "kate",
+            "role": "ranger"
+          },
+          {
+            "person": "sage",
+            "role": "ranger"
+          }
         ]
       }
     ]
   },
   {
     "date": "2026-06-23",
-    "themeTitle": "🌌 Deep Space",
+    "themeTitle": "\ud83c\udf0c Deep Space",
     "themeDescription": "Dress like the night sky. Dark colors: black, navy, deep purple, midnight blue. Bonus points for anything with stars, planets, or glow-in-the-dark.",
     "activities": [
       {
         "time": "7:15 AM",
-        "activity": "⏰ Wake up; prepare for the day.",
+        "activity": "\u23f0 Wake up; prepare for the day.",
         "location": "",
         "mapUrl": "",
         "notes": []
       },
       {
         "time": "8:15 AM",
-        "activity": "Students meet counselors in designated location",
+        "activity": "Meet at Hatter Hall rally points",
         "location": "Hatter Hall",
         "mapUrl": "",
         "notes": [],
         "assignments": [
-          {"person": "andrew", "role": "duty", "detail": "Transit Group A"},
-          {"person": "matt",   "role": "duty", "detail": "Transit Group B"},
-          {"person": "kaia",   "role": "duty", "detail": "Transit Group C"},
-          {"person": "david",  "role": "duty", "detail": "Transit Group D"},
-          {"person": "sara",   "role": "duty", "detail": "Transit Group E"},
-          {"person": "sage",   "role": "duty", "detail": "Transit Group F"},
-          {"person": "steve",  "role": "duty", "detail": "Transit Group G"},
-          {"person": "kate",   "role": "duty", "detail": "Transit Group H"}
+          {
+            "person": "andrew",
+            "role": "duty",
+            "detail": "Walking Group A"
+          },
+          {
+            "person": "matt",
+            "role": "duty",
+            "detail": "Walking Group B"
+          },
+          {
+            "person": "kaia",
+            "role": "duty",
+            "detail": "Walking Group C"
+          },
+          {
+            "person": "david",
+            "role": "duty",
+            "detail": "Walking Group D"
+          },
+          {
+            "person": "sara",
+            "role": "duty",
+            "detail": "Walking Group E"
+          },
+          {
+            "person": "sage",
+            "role": "duty",
+            "detail": "Walking Group F"
+          },
+          {
+            "person": "steve",
+            "role": "duty",
+            "detail": "Walking Group G"
+          },
+          {
+            "person": "kate",
+            "role": "duty",
+            "detail": "Walking Group H"
+          }
+        ],
+        "groupMap": [
+          {
+            "floor": "Floor 1",
+            "groups": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "mapUrl": "/assets/images/hatter-floor-1-rally.png",
+            "rallyPoints": {
+              "A": "Floor 1 \u2014 W Study Room",
+              "B": "Floor 1 \u2014 Laundry Room",
+              "C": "Floor 1 \u2014 Lobby, NW (near windows)",
+              "D": "Floor 1 \u2014 Lobby, SE (near desk)"
+            }
+          },
+          {
+            "floor": "Floor 2",
+            "groups": [
+              "E",
+              "F",
+              "G",
+              "H"
+            ],
+            "mapUrl": "/assets/images/hatter-floor-2-rally.png",
+            "rallyPoints": {
+              "E": "Floor 2 \u2014 W Study Room",
+              "F": "Floor 2 \u2014 Laundry Room",
+              "G": "Floor 2 \u2014 Lobby, NW",
+              "H": "Floor 2 \u2014 Lobby, SE"
+            }
+          }
         ]
       },
       {
         "time": "8:30 - 9:00 AM",
-        "activity": "🥞 Breakfast",
+        "activity": "\ud83e\udd5e Breakfast",
         "location": "CUB",
         "mapUrl": "",
         "notes": []
@@ -273,13 +673,48 @@
           "Class is determined by instrument played in large ensemble."
         ],
         "assignments": [
-          {"person": "steve",  "role": "teach", "room": "Presser 202",  "detail": "Soprano Fundamentals"},
-          {"person": "andrew", "role": "teach", "room": "Presser 113",  "detail": "Alto Fundamentals (Concert)"},
-          {"person": "david",  "role": "teach", "room": "Presser 352",  "detail": "Alto Fundamentals (Symphonic)"},
-          {"person": "sara",   "role": "teach", "room": "Presser 349",  "detail": "Tenor Fundamentals (Concert)"},
-          {"person": "kate",   "role": "teach", "room": "Presser 112",  "detail": "Tenor Fundamentals (Symphonic)"},
-          {"person": "sage",   "role": "teach", "room": "Tinsley Hall", "detail": "Bari Fundamentals (Concert)"},
-          {"person": "matt",   "role": "teach", "room": "Feasel Hall",  "detail": "Bari Fundamentals (Symphonic)"}
+          {
+            "person": "steve",
+            "role": "teach",
+            "room": "Presser 202",
+            "detail": "Soprano Fundamentals"
+          },
+          {
+            "person": "andrew",
+            "role": "teach",
+            "room": "Presser 113",
+            "detail": "Alto Fundamentals (Concert)"
+          },
+          {
+            "person": "david",
+            "role": "teach",
+            "room": "Presser 352",
+            "detail": "Alto Fundamentals (Symphonic)"
+          },
+          {
+            "person": "sara",
+            "role": "teach",
+            "room": "Presser 349",
+            "detail": "Tenor Fundamentals (Concert)"
+          },
+          {
+            "person": "kate",
+            "role": "teach",
+            "room": "Presser 112",
+            "detail": "Tenor Fundamentals (Symphonic)"
+          },
+          {
+            "person": "sage",
+            "role": "teach",
+            "room": "Tinsley Hall",
+            "detail": "Bari Fundamentals (Concert)"
+          },
+          {
+            "person": "matt",
+            "role": "teach",
+            "room": "Feasel Hall",
+            "detail": "Bari Fundamentals (Symphonic)"
+          }
         ]
       },
       {
@@ -288,27 +723,80 @@
         "location": "",
         "mapUrl": "",
         "notes": [
-          "Symphonic Saxophones (10th-12+ grade): Large Ensemble — Feasel Hall",
-          "Concert Saxophones (7th-9th grade): Chamber Ensembles — Various Rooms (<a href=\"/rooms.html\">see guide</a>)"
+          "Symphonic Saxophones (10th-12+ grade): Large Ensemble \u2014 Feasel Hall",
+          "Concert Saxophones (7th-9th grade): Chamber Ensembles \u2014 Various Rooms (<a href=\"/rooms.html\">see guide</a>)"
         ],
-        "ensembleMap": {"symphonic": "large", "concert": "chamber"},
+        "ensembleMap": {
+          "symphonic": "large",
+          "concert": "chamber"
+        },
         "assignments": [
-          {"person": "chandler", "role": "conduct", "ensemble": "symphonic"},
-          {"person": "kristen",  "role": "conduct", "ensemble": "symphonic"},
-          {"person": "marc",     "role": "coach",   "room": "Presser 352",  "group": "Kolodinsky Concert Quartet"},
-          {"person": "steve",    "role": "coach",   "room": "Presser 202",  "group": "Amann Concert Quartet"},
-          {"person": "bill",     "role": "coach",   "room": "Tinsley Hall", "group": "Guthrie Concert Quartet"},
-          {"person": "sage",     "role": "coach",   "room": "Presser 112",  "group": "Whitt Concert Quartet"},
-          {"person": "david",    "role": "coach",   "room": "Presser 113",  "group": "Hinote Concert Quartet"},
-          {"person": "matt",     "role": "coach",   "room": "Presser 349",  "group": "Murphy Concert Quartet"},
-          {"person": "michelle", "role": "monitor", "detail": "Presser Floor 1"},
-          {"person": "kaia",     "role": "monitor", "detail": "Presser Floor 2"},
-          {"person": "kate",     "role": "monitor", "detail": "Presser Floor 3"}
+          {
+            "person": "chandler",
+            "role": "conduct",
+            "ensemble": "symphonic"
+          },
+          {
+            "person": "kristen",
+            "role": "conduct",
+            "ensemble": "symphonic"
+          },
+          {
+            "person": "marc",
+            "role": "coach",
+            "room": "Presser 352",
+            "group": "Kolodinsky Concert Quartet"
+          },
+          {
+            "person": "steve",
+            "role": "coach",
+            "room": "Presser 202",
+            "group": "Amann Concert Quartet"
+          },
+          {
+            "person": "bill",
+            "role": "coach",
+            "room": "Tinsley Hall",
+            "group": "Guthrie Concert Quartet"
+          },
+          {
+            "person": "sage",
+            "role": "coach",
+            "room": "Presser 112",
+            "group": "Whitt Concert Quartet"
+          },
+          {
+            "person": "david",
+            "role": "coach",
+            "room": "Presser 113",
+            "group": "Hinote Concert Quartet"
+          },
+          {
+            "person": "matt",
+            "role": "coach",
+            "room": "Presser 349",
+            "group": "Murphy Concert Quartet"
+          },
+          {
+            "person": "michelle",
+            "role": "monitor",
+            "detail": "Presser Floor 1"
+          },
+          {
+            "person": "kaia",
+            "role": "monitor",
+            "detail": "Presser Floor 2"
+          },
+          {
+            "person": "kate",
+            "role": "monitor",
+            "detail": "Presser Floor 3"
+          }
         ]
       },
       {
         "time": "11:50 AM - 12:20 PM",
-        "activity": "🥪 Lunch",
+        "activity": "\ud83e\udd6a Lunch",
         "location": "CUB",
         "mapUrl": "",
         "notes": []
@@ -320,18 +808,66 @@
         "mapUrl": "https://maps.app.goo.gl/Dvm3E7u6dcQk4WHg7",
         "notes": [],
         "assignments": [
-          {"person": "marc",     "role": "duty", "detail": "Escape Room Set-Up"},
-          {"person": "bill",     "role": "duty", "detail": "Escape Room Set-Up"},
-          {"person": "kristen",  "role": "duty", "detail": "Escape Room Set-Up"},
-          {"person": "chandler", "role": "duty", "detail": "Escape Room Set-Up"},
-          {"person": "steve",    "role": "duty", "detail": "Escape Room Set-Up"},
-          {"person": "sara",     "role": "duty", "detail": "Escape Room Set-Up"},
-          {"person": "matt",     "role": "duty", "detail": "Escape Room Set-Up"},
-          {"person": "andrew",   "role": "duty", "detail": "Escape Room Set-Up"},
-          {"person": "david",    "role": "duty", "detail": "Escape Room Set-Up"},
-          {"person": "sage",     "role": "duty", "detail": "Escape Room Set-Up"},
-          {"person": "kate",     "role": "duty", "detail": "Escape Room Set-Up"},
-          {"person": "kaia",     "role": "duty", "detail": "Escape Room Set-Up"}
+          {
+            "person": "marc",
+            "role": "duty",
+            "detail": "Escape Room Set-Up"
+          },
+          {
+            "person": "bill",
+            "role": "duty",
+            "detail": "Escape Room Set-Up"
+          },
+          {
+            "person": "kristen",
+            "role": "duty",
+            "detail": "Escape Room Set-Up"
+          },
+          {
+            "person": "chandler",
+            "role": "duty",
+            "detail": "Escape Room Set-Up"
+          },
+          {
+            "person": "steve",
+            "role": "duty",
+            "detail": "Escape Room Set-Up"
+          },
+          {
+            "person": "sara",
+            "role": "duty",
+            "detail": "Escape Room Set-Up"
+          },
+          {
+            "person": "matt",
+            "role": "duty",
+            "detail": "Escape Room Set-Up"
+          },
+          {
+            "person": "andrew",
+            "role": "duty",
+            "detail": "Escape Room Set-Up"
+          },
+          {
+            "person": "david",
+            "role": "duty",
+            "detail": "Escape Room Set-Up"
+          },
+          {
+            "person": "sage",
+            "role": "duty",
+            "detail": "Escape Room Set-Up"
+          },
+          {
+            "person": "kate",
+            "role": "duty",
+            "detail": "Escape Room Set-Up"
+          },
+          {
+            "person": "kaia",
+            "role": "duty",
+            "detail": "Escape Room Set-Up"
+          }
         ]
       },
       {
@@ -340,23 +876,87 @@
         "location": "",
         "mapUrl": "",
         "notes": [
-          "Symphonic Saxophones: Chamber Ensembles — Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
-          "Concert Saxophones: Large Ensemble — Tinsley Hall (inside Presser Hall)"
+          "Symphonic Saxophones: Chamber Ensembles \u2014 Various Rooms (<a href=\"/rooms.html\">see guide</a>)",
+          "Concert Saxophones: Large Ensemble \u2014 Tinsley Hall (inside Presser Hall)"
         ],
-        "ensembleMap": {"symphonic": "chamber", "concert": "large"},
+        "ensembleMap": {
+          "symphonic": "chamber",
+          "concert": "large"
+        },
         "assignments": [
-          {"person": "bill",     "role": "conduct", "ensemble": "concert"},
-          {"person": "marc",     "role": "conduct", "ensemble": "concert"},
-          {"person": "tim",      "role": "coach",   "room": "Presser 349",  "group": "Rosenberg Symphonic Quartet"},
-          {"person": "chandler", "role": "coach",   "room": "Feasel Hall",  "group": "Wilson Symphonic Quartet"},
-          {"person": "kristen",  "role": "coach",   "room": "Presser 352",  "group": "Zelenak Symphonic Quartet"},
-          {"person": "steve",    "role": "coach",   "room": "Presser 202",  "group": "Amann Symphonic Quartet"},
-          {"person": "sara",     "role": "coach",   "room": "Presser 112",  "group": "Pyburn Symphonic Quartet"},
-          {"person": "andrew",   "role": "coach",   "room": "Presser 113",  "group": "Becker Symphonic Quartet"},
-          {"person": "matt",     "role": "coach",   "room": "Lee Chapel",   "group": "Murphy Symphonic Quartet"},
-          {"person": "michelle", "role": "monitor", "detail": "Presser Floor 1"},
-          {"person": "sage",     "role": "monitor", "detail": "Presser Floor 2"},
-          {"person": "david",    "role": "monitor", "detail": "Presser Floor 3"}
+          {
+            "person": "bill",
+            "role": "conduct",
+            "ensemble": "concert"
+          },
+          {
+            "person": "marc",
+            "role": "conduct",
+            "ensemble": "concert"
+          },
+          {
+            "person": "tim",
+            "role": "coach",
+            "room": "Presser 349",
+            "group": "Rosenberg Symphonic Quartet"
+          },
+          {
+            "person": "chandler",
+            "role": "coach",
+            "room": "Feasel Hall",
+            "group": "Wilson Symphonic Quartet"
+          },
+          {
+            "person": "kristen",
+            "role": "coach",
+            "room": "Presser 352",
+            "group": "Zelenak Symphonic Quartet"
+          },
+          {
+            "person": "steve",
+            "role": "coach",
+            "room": "Presser 128",
+            "group": "Amann Symphonic Quartet"
+          },
+          {
+            "person": "sara",
+            "role": "coach",
+            "room": "Presser 112",
+            "group": "Pyburn Symphonic Quartet"
+          },
+          {
+            "person": "andrew",
+            "role": "coach",
+            "room": "Presser 113",
+            "group": "Becker Symphonic Quartet"
+          },
+          {
+            "person": "matt",
+            "role": "coach",
+            "room": "Lee Chapel",
+            "group": "Murphy Symphonic Quartet"
+          },
+          {
+            "person": "kate",
+            "role": "coach",
+            "room": "Presser 202",
+            "group": "Kalina Symphonic Quartet"
+          },
+          {
+            "person": "michelle",
+            "role": "monitor",
+            "detail": "Presser Floor 1"
+          },
+          {
+            "person": "sage",
+            "role": "monitor",
+            "detail": "Presser Floor 2"
+          },
+          {
+            "person": "david",
+            "role": "monitor",
+            "detail": "Presser Floor 3"
+          }
         ]
       },
       {
@@ -367,27 +967,69 @@
         "notes": [],
         "jazzClasses": true,
         "assignments": [
-          {"person": "chandler", "role": "teach", "room": "Tinsley Hall", "detail": "Jazz Class 1"},
-          {"person": "sara",     "role": "teach", "room": "Presser 202",  "detail": "Jazz Class 2"},
-          {"person": "steve",    "role": "teach", "room": "Presser 112",  "detail": "Jazz Class 3"},
-          {"person": "marc",     "role": "teach", "room": "Presser 349",  "detail": "Jazz Class 4"},
-          {"person": "matt",     "role": "teach", "room": "Presser 352",  "detail": "Jazz Class 5"},
-          {"person": "andrew",   "role": "teach", "room": "Presser 113",  "detail": "Jazz Class 6"},
-          {"person": "michelle", "role": "monitor", "detail": "Presser Floor 1"},
-          {"person": "sage",     "role": "monitor", "detail": "Presser Floor 2"},
-          {"person": "kate",     "role": "monitor", "detail": "Presser Floor 3"}
+          {
+            "person": "chandler",
+            "role": "teach",
+            "room": "Tinsley Hall",
+            "detail": "Jazz Class 1"
+          },
+          {
+            "person": "sara",
+            "role": "teach",
+            "room": "Presser 202",
+            "detail": "Jazz Class 2"
+          },
+          {
+            "person": "steve",
+            "role": "teach",
+            "room": "Presser 112",
+            "detail": "Jazz Class 3"
+          },
+          {
+            "person": "marc",
+            "role": "teach",
+            "room": "Presser 349",
+            "detail": "Jazz Class 4"
+          },
+          {
+            "person": "matt",
+            "role": "teach",
+            "room": "Presser 352",
+            "detail": "Jazz Class 5"
+          },
+          {
+            "person": "andrew",
+            "role": "teach",
+            "room": "Presser 113",
+            "detail": "Jazz Class 6"
+          },
+          {
+            "person": "michelle",
+            "role": "monitor",
+            "detail": "Presser Floor 1"
+          },
+          {
+            "person": "sage",
+            "role": "monitor",
+            "detail": "Presser Floor 2"
+          },
+          {
+            "person": "kate",
+            "role": "monitor",
+            "detail": "Presser Floor 3"
+          }
         ]
       },
       {
         "time": "5:25 - 6:25 PM",
-        "activity": "🚀 Escape Room: Deep Space",
+        "activity": "\ud83d\ude80 Escape Room: Deep Space",
         "location": "Various Rooms",
         "mapUrl": "",
         "notes": []
       },
       {
         "time": "6:30 - 7:00 PM",
-        "activity": "🍽️ Dinner",
+        "activity": "\ud83c\udf7d\ufe0f Dinner",
         "location": "CUB",
         "mapUrl": "",
         "notes": []
@@ -399,69 +1041,156 @@
         "mapUrl": "https://maps.app.goo.gl/Dvm3E7u6dcQk4WHg7",
         "notes": [],
         "assignments": [
-          {"person": "tim", "role": "task", "detail": "Performing"}
+          {
+            "person": "tim",
+            "role": "task",
+            "detail": "Performing"
+          }
         ]
       },
       {
         "time": "7:55 - 9:33 PM",
-        "activity": "📽️ Movie Night",
+        "activity": "\ud83d\udcfd\ufe0f Movie Night",
         "location": "Lynn Business Center (LBC) Auditorium",
         "mapUrl": "https://maps.app.goo.gl/EWgwrXaMnaUfqTv66",
         "notes": [
           "Students will travel to LBC together.",
-          "No food delivery. There will be 🍿 snacks."
+          "No food delivery. There will be \ud83c\udf7f snacks."
         ],
         "assignments": [
-          {"person": "tim",   "role": "duty", "detail": "Movie Night Set-Up"},
-          {"person": "david", "role": "duty", "detail": "Movie Night Set-Up"}
+          {
+            "person": "tim",
+            "role": "duty",
+            "detail": "Movie Night Set-Up"
+          },
+          {
+            "person": "david",
+            "role": "duty",
+            "detail": "Movie Night Set-Up"
+          }
         ]
       },
       {
         "time": "10:00 PM",
-        "activity": "🛌 Lights Out",
+        "activity": "\ud83d\udecc Lights Out",
         "location": "Hatter Hall",
         "mapUrl": "",
         "notes": [],
         "assignments": [
-          {"person": "kate",   "role": "nightwatch"},
-          {"person": "andrew", "role": "floormgr"},
-          {"person": "sage",   "role": "floormgr"}
+          {
+            "person": "kate",
+            "role": "nightwatch"
+          },
+          {
+            "person": "andrew",
+            "role": "floormgr"
+          },
+          {
+            "person": "sage",
+            "role": "floormgr"
+          }
         ]
       }
     ]
   },
   {
     "date": "2026-06-24",
-    "themeTitle": "👽 First Contact",
+    "themeTitle": "\ud83d\udc7d First Contact",
     "themeDescription": "We are not alone. Wear something with an alien on it: E.T., Grogu, Groot, Stitch, or any others. No alien merch? Dress in green, silver, or metallic and blend right in.",
     "activities": [
       {
         "time": "7:15 AM",
-        "activity": "⏰ Wake up; prepare for the day.",
+        "activity": "\u23f0 Wake up; prepare for the day.",
         "location": "",
         "mapUrl": "",
         "notes": []
       },
       {
         "time": "8:15 AM",
-        "activity": "Students meet counselors in designated location",
+        "activity": "Meet at Hatter Hall rally points",
         "location": "Hatter Hall",
         "mapUrl": "",
         "notes": [],
         "assignments": [
-          {"person": "andrew", "role": "duty", "detail": "Transit Group A"},
-          {"person": "matt",   "role": "duty", "detail": "Transit Group B"},
-          {"person": "kaia",   "role": "duty", "detail": "Transit Group C"},
-          {"person": "david",  "role": "duty", "detail": "Transit Group D"},
-          {"person": "sara",   "role": "duty", "detail": "Transit Group E"},
-          {"person": "sage",   "role": "duty", "detail": "Transit Group F"},
-          {"person": "steve",  "role": "duty", "detail": "Transit Group G"},
-          {"person": "kate",   "role": "duty", "detail": "Transit Group H"}
+          {
+            "person": "andrew",
+            "role": "duty",
+            "detail": "Walking Group A"
+          },
+          {
+            "person": "matt",
+            "role": "duty",
+            "detail": "Walking Group B"
+          },
+          {
+            "person": "kaia",
+            "role": "duty",
+            "detail": "Walking Group C"
+          },
+          {
+            "person": "david",
+            "role": "duty",
+            "detail": "Walking Group D"
+          },
+          {
+            "person": "sara",
+            "role": "duty",
+            "detail": "Walking Group E"
+          },
+          {
+            "person": "sage",
+            "role": "duty",
+            "detail": "Walking Group F"
+          },
+          {
+            "person": "steve",
+            "role": "duty",
+            "detail": "Walking Group G"
+          },
+          {
+            "person": "kate",
+            "role": "duty",
+            "detail": "Walking Group H"
+          }
+        ],
+        "groupMap": [
+          {
+            "floor": "Floor 1",
+            "groups": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "mapUrl": "/assets/images/hatter-floor-1-rally.png",
+            "rallyPoints": {
+              "A": "Floor 1 \u2014 W Study Room",
+              "B": "Floor 1 \u2014 Laundry Room",
+              "C": "Floor 1 \u2014 Lobby, NW (near windows)",
+              "D": "Floor 1 \u2014 Lobby, SE (near desk)"
+            }
+          },
+          {
+            "floor": "Floor 2",
+            "groups": [
+              "E",
+              "F",
+              "G",
+              "H"
+            ],
+            "mapUrl": "/assets/images/hatter-floor-2-rally.png",
+            "rallyPoints": {
+              "E": "Floor 2 \u2014 W Study Room",
+              "F": "Floor 2 \u2014 Laundry Room",
+              "G": "Floor 2 \u2014 Lobby, NW",
+              "H": "Floor 2 \u2014 Lobby, SE"
+            }
+          }
         ]
       },
       {
         "time": "8:30 - 9:00 AM",
-        "activity": "🥞 Breakfast",
+        "activity": "\ud83e\udd5e Breakfast",
         "location": "CUB",
         "mapUrl": "",
         "notes": []
@@ -474,13 +1203,48 @@
         "fundamentalsClass": true,
         "notes": [],
         "assignments": [
-          {"person": "steve",  "role": "teach", "room": "Presser 202",  "detail": "Soprano Fundamentals"},
-          {"person": "andrew", "role": "teach", "room": "Presser 113",  "detail": "Alto Fundamentals (Concert)"},
-          {"person": "david",  "role": "teach", "room": "Presser 352",  "detail": "Alto Fundamentals (Symphonic)"},
-          {"person": "sara",   "role": "teach", "room": "Presser 349",  "detail": "Tenor Fundamentals (Concert)"},
-          {"person": "kate",   "role": "teach", "room": "Presser 112",  "detail": "Tenor Fundamentals (Symphonic)"},
-          {"person": "sage",   "role": "teach", "room": "Tinsley Hall", "detail": "Bari Fundamentals (Concert)"},
-          {"person": "matt",   "role": "teach", "room": "Feasel Hall",  "detail": "Bari Fundamentals (Symphonic)"}
+          {
+            "person": "steve",
+            "role": "teach",
+            "room": "Presser 202",
+            "detail": "Soprano Fundamentals"
+          },
+          {
+            "person": "andrew",
+            "role": "teach",
+            "room": "Presser 113",
+            "detail": "Alto Fundamentals (Concert)"
+          },
+          {
+            "person": "david",
+            "role": "teach",
+            "room": "Presser 352",
+            "detail": "Alto Fundamentals (Symphonic)"
+          },
+          {
+            "person": "sara",
+            "role": "teach",
+            "room": "Presser 349",
+            "detail": "Tenor Fundamentals (Concert)"
+          },
+          {
+            "person": "kate",
+            "role": "teach",
+            "room": "Presser 112",
+            "detail": "Tenor Fundamentals (Symphonic)"
+          },
+          {
+            "person": "sage",
+            "role": "teach",
+            "room": "Tinsley Hall",
+            "detail": "Bari Fundamentals (Concert)"
+          },
+          {
+            "person": "matt",
+            "role": "teach",
+            "room": "Feasel Hall",
+            "detail": "Bari Fundamentals (Symphonic)"
+          }
         ]
       },
       {
@@ -491,24 +1255,77 @@
         "notes": [
           "See <a href=\"/rooms.html\">room guide</a> for locations."
         ],
-        "ensembleMap": {"symphonic": "large", "concert": "chamber"},
+        "ensembleMap": {
+          "symphonic": "large",
+          "concert": "chamber"
+        },
         "assignments": [
-          {"person": "chandler", "role": "conduct", "ensemble": "symphonic"},
-          {"person": "kristen",  "role": "conduct", "ensemble": "symphonic"},
-          {"person": "marc",     "role": "coach",   "room": "Presser 352",  "group": "Kolodinsky Concert Quartet"},
-          {"person": "steve",    "role": "coach",   "room": "Presser 202",  "group": "Amann Concert Quartet"},
-          {"person": "bill",     "role": "coach",   "room": "Tinsley Hall", "group": "Guthrie Concert Quartet"},
-          {"person": "sage",     "role": "coach",   "room": "Presser 112",  "group": "Whitt Concert Quartet"},
-          {"person": "david",    "role": "coach",   "room": "Presser 113",  "group": "Hinote Concert Quartet"},
-          {"person": "matt",     "role": "coach",   "room": "Presser 349",  "group": "Murphy Concert Quartet"},
-          {"person": "michelle", "role": "monitor", "detail": "Presser Floor 1"},
-          {"person": "kaia",     "role": "monitor", "detail": "Presser Floor 2"},
-          {"person": "kate",     "role": "monitor", "detail": "Presser Floor 3"}
+          {
+            "person": "chandler",
+            "role": "conduct",
+            "ensemble": "symphonic"
+          },
+          {
+            "person": "kristen",
+            "role": "conduct",
+            "ensemble": "symphonic"
+          },
+          {
+            "person": "marc",
+            "role": "coach",
+            "room": "Presser 352",
+            "group": "Kolodinsky Concert Quartet"
+          },
+          {
+            "person": "steve",
+            "role": "coach",
+            "room": "Presser 202",
+            "group": "Amann Concert Quartet"
+          },
+          {
+            "person": "bill",
+            "role": "coach",
+            "room": "Tinsley Hall",
+            "group": "Guthrie Concert Quartet"
+          },
+          {
+            "person": "sage",
+            "role": "coach",
+            "room": "Presser 112",
+            "group": "Whitt Concert Quartet"
+          },
+          {
+            "person": "david",
+            "role": "coach",
+            "room": "Presser 113",
+            "group": "Hinote Concert Quartet"
+          },
+          {
+            "person": "matt",
+            "role": "coach",
+            "room": "Presser 349",
+            "group": "Murphy Concert Quartet"
+          },
+          {
+            "person": "michelle",
+            "role": "monitor",
+            "detail": "Presser Floor 1"
+          },
+          {
+            "person": "kaia",
+            "role": "monitor",
+            "detail": "Presser Floor 2"
+          },
+          {
+            "person": "kate",
+            "role": "monitor",
+            "detail": "Presser Floor 3"
+          }
         ]
       },
       {
         "time": "11:50 AM - 12:20 PM",
-        "activity": "🥪 Lunch",
+        "activity": "\ud83e\udd6a Lunch",
         "location": "CUB",
         "mapUrl": "",
         "notes": []
@@ -521,20 +1338,84 @@
         "notes": [
           "See <a href=\"/rooms.html\">room guide</a> for locations."
         ],
-        "ensembleMap": {"symphonic": "chamber", "concert": "large"},
+        "ensembleMap": {
+          "symphonic": "chamber",
+          "concert": "large"
+        },
         "assignments": [
-          {"person": "bill",     "role": "conduct", "ensemble": "concert"},
-          {"person": "marc",     "role": "conduct", "ensemble": "concert"},
-          {"person": "tim",      "role": "coach",   "room": "Presser 349",  "group": "Rosenberg Symphonic Quartet"},
-          {"person": "chandler", "role": "coach",   "room": "Feasel Hall",  "group": "Wilson Symphonic Quartet"},
-          {"person": "kristen",  "role": "coach",   "room": "Presser 352",  "group": "Zelenak Symphonic Quartet"},
-          {"person": "steve",    "role": "coach",   "room": "Presser 202",  "group": "Amann Symphonic Quartet"},
-          {"person": "sara",     "role": "coach",   "room": "Presser 112",  "group": "Pyburn Symphonic Quartet"},
-          {"person": "andrew",   "role": "coach",   "room": "Presser 113",  "group": "Becker Symphonic Quartet"},
-          {"person": "matt",     "role": "coach",   "room": "Lee Chapel",   "group": "Murphy Symphonic Quartet"},
-          {"person": "michelle", "role": "monitor", "detail": "Presser Floor 1"},
-          {"person": "sage",     "role": "monitor", "detail": "Presser Floor 2"},
-          {"person": "david",    "role": "monitor", "detail": "Presser Floor 3"}
+          {
+            "person": "bill",
+            "role": "conduct",
+            "ensemble": "concert"
+          },
+          {
+            "person": "marc",
+            "role": "conduct",
+            "ensemble": "concert"
+          },
+          {
+            "person": "tim",
+            "role": "coach",
+            "room": "Presser 349",
+            "group": "Rosenberg Symphonic Quartet"
+          },
+          {
+            "person": "chandler",
+            "role": "coach",
+            "room": "Feasel Hall",
+            "group": "Wilson Symphonic Quartet"
+          },
+          {
+            "person": "kristen",
+            "role": "coach",
+            "room": "Presser 352",
+            "group": "Zelenak Symphonic Quartet"
+          },
+          {
+            "person": "steve",
+            "role": "coach",
+            "room": "Presser 128",
+            "group": "Amann Symphonic Quartet"
+          },
+          {
+            "person": "sara",
+            "role": "coach",
+            "room": "Presser 112",
+            "group": "Pyburn Symphonic Quartet"
+          },
+          {
+            "person": "andrew",
+            "role": "coach",
+            "room": "Presser 113",
+            "group": "Becker Symphonic Quartet"
+          },
+          {
+            "person": "matt",
+            "role": "coach",
+            "room": "Lee Chapel",
+            "group": "Murphy Symphonic Quartet"
+          },
+          {
+            "person": "kate",
+            "role": "coach",
+            "room": "Presser 202",
+            "group": "Kalina Symphonic Quartet"
+          },
+          {
+            "person": "michelle",
+            "role": "monitor",
+            "detail": "Presser Floor 1"
+          },
+          {
+            "person": "sage",
+            "role": "monitor",
+            "detail": "Presser Floor 2"
+          },
+          {
+            "person": "david",
+            "role": "monitor",
+            "detail": "Presser Floor 3"
+          }
         ]
       },
       {
@@ -544,18 +1425,66 @@
         "mapUrl": "https://maps.app.goo.gl/5mDXBVoTABQhHF5L6",
         "notes": [],
         "assignments": [
-          {"person": "marc",     "role": "duty", "detail": "Tour d'Cosmos Set-Up"},
-          {"person": "bill",     "role": "duty", "detail": "Tour d'Cosmos Set-Up"},
-          {"person": "kristen",  "role": "duty", "detail": "Tour d'Cosmos Set-Up"},
-          {"person": "chandler", "role": "duty", "detail": "Tour d'Cosmos Set-Up"},
-          {"person": "steve",    "role": "duty", "detail": "Tour d'Cosmos Set-Up"},
-          {"person": "sara",     "role": "duty", "detail": "Tour d'Cosmos Set-Up"},
-          {"person": "matt",     "role": "duty", "detail": "Tour d'Cosmos Set-Up"},
-          {"person": "andrew",   "role": "duty", "detail": "Tour d'Cosmos Set-Up"},
-          {"person": "david",    "role": "duty", "detail": "Tour d'Cosmos Set-Up"},
-          {"person": "sage",     "role": "duty", "detail": "Tour d'Cosmos Set-Up"},
-          {"person": "kate",     "role": "duty", "detail": "Tour d'Cosmos Set-Up"},
-          {"person": "kaia",     "role": "duty", "detail": "Tour d'Cosmos Set-Up"}
+          {
+            "person": "marc",
+            "role": "duty",
+            "detail": "Tour d'Cosmos Set-Up"
+          },
+          {
+            "person": "bill",
+            "role": "duty",
+            "detail": "Tour d'Cosmos Set-Up"
+          },
+          {
+            "person": "kristen",
+            "role": "duty",
+            "detail": "Tour d'Cosmos Set-Up"
+          },
+          {
+            "person": "chandler",
+            "role": "duty",
+            "detail": "Tour d'Cosmos Set-Up"
+          },
+          {
+            "person": "steve",
+            "role": "duty",
+            "detail": "Tour d'Cosmos Set-Up"
+          },
+          {
+            "person": "sara",
+            "role": "duty",
+            "detail": "Tour d'Cosmos Set-Up"
+          },
+          {
+            "person": "matt",
+            "role": "duty",
+            "detail": "Tour d'Cosmos Set-Up"
+          },
+          {
+            "person": "andrew",
+            "role": "duty",
+            "detail": "Tour d'Cosmos Set-Up"
+          },
+          {
+            "person": "david",
+            "role": "duty",
+            "detail": "Tour d'Cosmos Set-Up"
+          },
+          {
+            "person": "sage",
+            "role": "duty",
+            "detail": "Tour d'Cosmos Set-Up"
+          },
+          {
+            "person": "kate",
+            "role": "duty",
+            "detail": "Tour d'Cosmos Set-Up"
+          },
+          {
+            "person": "kaia",
+            "role": "duty",
+            "detail": "Tour d'Cosmos Set-Up"
+          }
         ]
       },
       {
@@ -566,30 +1495,72 @@
         "notes": [],
         "jazzClasses": true,
         "assignments": [
-          {"person": "chandler", "role": "teach", "room": "Tinsley Hall", "detail": "Jazz Class 1"},
-          {"person": "sara",     "role": "teach", "room": "Presser 202",  "detail": "Jazz Class 2"},
-          {"person": "steve",    "role": "teach", "room": "Presser 112",  "detail": "Jazz Class 3"},
-          {"person": "marc",     "role": "teach", "room": "Presser 349",  "detail": "Jazz Class 4"},
-          {"person": "matt",     "role": "teach", "room": "Presser 352",  "detail": "Jazz Class 5"},
-          {"person": "andrew",   "role": "teach", "room": "Presser 113",  "detail": "Jazz Class 6"},
-          {"person": "michelle", "role": "monitor", "detail": "Presser Floor 1"},
-          {"person": "sage",     "role": "monitor", "detail": "Presser Floor 2"},
-          {"person": "kate",     "role": "monitor", "detail": "Presser Floor 3"}
+          {
+            "person": "chandler",
+            "role": "teach",
+            "room": "Tinsley Hall",
+            "detail": "Jazz Class 1"
+          },
+          {
+            "person": "sara",
+            "role": "teach",
+            "room": "Presser 202",
+            "detail": "Jazz Class 2"
+          },
+          {
+            "person": "steve",
+            "role": "teach",
+            "room": "Presser 112",
+            "detail": "Jazz Class 3"
+          },
+          {
+            "person": "marc",
+            "role": "teach",
+            "room": "Presser 349",
+            "detail": "Jazz Class 4"
+          },
+          {
+            "person": "matt",
+            "role": "teach",
+            "room": "Presser 352",
+            "detail": "Jazz Class 5"
+          },
+          {
+            "person": "andrew",
+            "role": "teach",
+            "room": "Presser 113",
+            "detail": "Jazz Class 6"
+          },
+          {
+            "person": "michelle",
+            "role": "monitor",
+            "detail": "Presser Floor 1"
+          },
+          {
+            "person": "sage",
+            "role": "monitor",
+            "detail": "Presser Floor 2"
+          },
+          {
+            "person": "kate",
+            "role": "monitor",
+            "detail": "Presser Floor 3"
+          }
         ]
       },
       {
         "time": "4:55 - 6:25 PM",
-        "activity": "🏆 Tour d'Cosmos Competitions",
+        "activity": "\ud83c\udfc6 Tour d'Cosmos Competitions",
         "location": "School of Music",
         "mapUrl": "",
         "notes": [
-          "Tour d'Cosmos Skills Challenge — skill stations around School of Music",
-          "Tour d'Cosmos Trivia Challenge — knowledge game, one room"
+          "Tour d'Cosmos Skills Challenge \u2014 skill stations around School of Music",
+          "Tour d'Cosmos Trivia Challenge \u2014 knowledge game, one room"
         ]
       },
       {
         "time": "6:30 - 7:00 PM",
-        "activity": "🍽️ Dinner",
+        "activity": "\ud83c\udf7d\ufe0f Dinner",
         "location": "CUB",
         "mapUrl": "",
         "notes": []
@@ -626,52 +1597,133 @@
       },
       {
         "time": "10:00 PM",
-        "activity": "🛌 Lights Out",
+        "activity": "\ud83d\udecc Lights Out",
         "location": "Hatter Hall",
         "mapUrl": "",
         "notes": [],
         "assignments": [
-          {"person": "kaia",   "role": "nightwatch"},
-          {"person": "sage",   "role": "floormgr"},
-          {"person": "matt",   "role": "floormgr"},
-          {"person": "andrew", "role": "ranger"},
-          {"person": "david",  "role": "ranger"}
+          {
+            "person": "kaia",
+            "role": "nightwatch"
+          },
+          {
+            "person": "sage",
+            "role": "floormgr"
+          },
+          {
+            "person": "matt",
+            "role": "floormgr"
+          },
+          {
+            "person": "andrew",
+            "role": "ranger"
+          },
+          {
+            "person": "david",
+            "role": "ranger"
+          }
         ]
       }
     ]
   },
   {
     "date": "2026-06-25",
-    "themeTitle": "🐱 Purrs-day Thursday",
+    "themeTitle": "\ud83d\udc31 Purrs-day Thursday",
     "themeDescription": "Wear something cat: ears, a tail, a cat shirt, cat socks. Any cat counts. Space cats welcome.",
     "activities": [
       {
         "time": "7:15 AM",
-        "activity": "⏰ Wake up; prepare for the day.",
+        "activity": "\u23f0 Wake up; prepare for the day.",
         "location": "",
         "mapUrl": "",
         "notes": []
       },
       {
         "time": "8:15 AM",
-        "activity": "Students meet counselors in designated location",
+        "activity": "Meet at Hatter Hall rally points",
         "location": "Hatter Hall",
         "mapUrl": "",
         "notes": [],
         "assignments": [
-          {"person": "andrew", "role": "duty", "detail": "Transit Group A"},
-          {"person": "matt",   "role": "duty", "detail": "Transit Group B"},
-          {"person": "kaia",   "role": "duty", "detail": "Transit Group C"},
-          {"person": "david",  "role": "duty", "detail": "Transit Group D"},
-          {"person": "sara",   "role": "duty", "detail": "Transit Group E"},
-          {"person": "sage",   "role": "duty", "detail": "Transit Group F"},
-          {"person": "steve",  "role": "duty", "detail": "Transit Group G"},
-          {"person": "kate",   "role": "duty", "detail": "Transit Group H"}
+          {
+            "person": "andrew",
+            "role": "duty",
+            "detail": "Walking Group A"
+          },
+          {
+            "person": "matt",
+            "role": "duty",
+            "detail": "Walking Group B"
+          },
+          {
+            "person": "kaia",
+            "role": "duty",
+            "detail": "Walking Group C"
+          },
+          {
+            "person": "david",
+            "role": "duty",
+            "detail": "Walking Group D"
+          },
+          {
+            "person": "sara",
+            "role": "duty",
+            "detail": "Walking Group E"
+          },
+          {
+            "person": "sage",
+            "role": "duty",
+            "detail": "Walking Group F"
+          },
+          {
+            "person": "steve",
+            "role": "duty",
+            "detail": "Walking Group G"
+          },
+          {
+            "person": "kate",
+            "role": "duty",
+            "detail": "Walking Group H"
+          }
+        ],
+        "groupMap": [
+          {
+            "floor": "Floor 1",
+            "groups": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "mapUrl": "/assets/images/hatter-floor-1-rally.png",
+            "rallyPoints": {
+              "A": "Floor 1 \u2014 W Study Room",
+              "B": "Floor 1 \u2014 Laundry Room",
+              "C": "Floor 1 \u2014 Lobby, NW (near windows)",
+              "D": "Floor 1 \u2014 Lobby, SE (near desk)"
+            }
+          },
+          {
+            "floor": "Floor 2",
+            "groups": [
+              "E",
+              "F",
+              "G",
+              "H"
+            ],
+            "mapUrl": "/assets/images/hatter-floor-2-rally.png",
+            "rallyPoints": {
+              "E": "Floor 2 \u2014 W Study Room",
+              "F": "Floor 2 \u2014 Laundry Room",
+              "G": "Floor 2 \u2014 Lobby, NW",
+              "H": "Floor 2 \u2014 Lobby, SE"
+            }
+          }
         ]
       },
       {
         "time": "8:30 - 9:00 AM",
-        "activity": "🥞 Breakfast",
+        "activity": "\ud83e\udd5e Breakfast",
         "location": "CUB",
         "mapUrl": "",
         "notes": []
@@ -684,13 +1736,48 @@
         "fundamentalsClass": true,
         "notes": [],
         "assignments": [
-          {"person": "steve",  "role": "teach", "room": "Presser 202",  "detail": "Soprano Fundamentals"},
-          {"person": "andrew", "role": "teach", "room": "Presser 113",  "detail": "Alto Fundamentals (Concert)"},
-          {"person": "david",  "role": "teach", "room": "Presser 352",  "detail": "Alto Fundamentals (Symphonic)"},
-          {"person": "sara",   "role": "teach", "room": "Presser 349",  "detail": "Tenor Fundamentals (Concert)"},
-          {"person": "kate",   "role": "teach", "room": "Presser 112",  "detail": "Tenor Fundamentals (Symphonic)"},
-          {"person": "sage",   "role": "teach", "room": "Tinsley Hall", "detail": "Bari Fundamentals (Concert)"},
-          {"person": "matt",   "role": "teach", "room": "Feasel Hall",  "detail": "Bari Fundamentals (Symphonic)"}
+          {
+            "person": "steve",
+            "role": "teach",
+            "room": "Presser 202",
+            "detail": "Soprano Fundamentals"
+          },
+          {
+            "person": "andrew",
+            "role": "teach",
+            "room": "Presser 113",
+            "detail": "Alto Fundamentals (Concert)"
+          },
+          {
+            "person": "david",
+            "role": "teach",
+            "room": "Presser 352",
+            "detail": "Alto Fundamentals (Symphonic)"
+          },
+          {
+            "person": "sara",
+            "role": "teach",
+            "room": "Presser 349",
+            "detail": "Tenor Fundamentals (Concert)"
+          },
+          {
+            "person": "kate",
+            "role": "teach",
+            "room": "Presser 112",
+            "detail": "Tenor Fundamentals (Symphonic)"
+          },
+          {
+            "person": "sage",
+            "role": "teach",
+            "room": "Tinsley Hall",
+            "detail": "Bari Fundamentals (Concert)"
+          },
+          {
+            "person": "matt",
+            "role": "teach",
+            "room": "Feasel Hall",
+            "detail": "Bari Fundamentals (Symphonic)"
+          }
         ]
       },
       {
@@ -701,24 +1788,77 @@
         "notes": [
           "See <a href=\"/rooms.html\">room guide</a> for locations."
         ],
-        "ensembleMap": {"symphonic": "large", "concert": "chamber"},
+        "ensembleMap": {
+          "symphonic": "large",
+          "concert": "chamber"
+        },
         "assignments": [
-          {"person": "chandler", "role": "conduct", "ensemble": "symphonic"},
-          {"person": "kristen",  "role": "conduct", "ensemble": "symphonic"},
-          {"person": "marc",     "role": "coach",   "room": "Presser 352",  "group": "Kolodinsky Concert Quartet"},
-          {"person": "steve",    "role": "coach",   "room": "Presser 202",  "group": "Amann Concert Quartet"},
-          {"person": "bill",     "role": "coach",   "room": "Tinsley Hall", "group": "Guthrie Concert Quartet"},
-          {"person": "sage",     "role": "coach",   "room": "Presser 112",  "group": "Whitt Concert Quartet"},
-          {"person": "david",    "role": "coach",   "room": "Presser 113",  "group": "Hinote Concert Quartet"},
-          {"person": "matt",     "role": "coach",   "room": "Presser 349",  "group": "Murphy Concert Quartet"},
-          {"person": "michelle", "role": "monitor", "detail": "Presser Floor 1"},
-          {"person": "kaia",     "role": "monitor", "detail": "Presser Floor 2"},
-          {"person": "kate",     "role": "monitor", "detail": "Presser Floor 3"}
+          {
+            "person": "chandler",
+            "role": "conduct",
+            "ensemble": "symphonic"
+          },
+          {
+            "person": "kristen",
+            "role": "conduct",
+            "ensemble": "symphonic"
+          },
+          {
+            "person": "marc",
+            "role": "coach",
+            "room": "Presser 352",
+            "group": "Kolodinsky Concert Quartet"
+          },
+          {
+            "person": "steve",
+            "role": "coach",
+            "room": "Presser 202",
+            "group": "Amann Concert Quartet"
+          },
+          {
+            "person": "bill",
+            "role": "coach",
+            "room": "Tinsley Hall",
+            "group": "Guthrie Concert Quartet"
+          },
+          {
+            "person": "sage",
+            "role": "coach",
+            "room": "Presser 112",
+            "group": "Whitt Concert Quartet"
+          },
+          {
+            "person": "david",
+            "role": "coach",
+            "room": "Presser 113",
+            "group": "Hinote Concert Quartet"
+          },
+          {
+            "person": "matt",
+            "role": "coach",
+            "room": "Presser 349",
+            "group": "Murphy Concert Quartet"
+          },
+          {
+            "person": "michelle",
+            "role": "monitor",
+            "detail": "Presser Floor 1"
+          },
+          {
+            "person": "kaia",
+            "role": "monitor",
+            "detail": "Presser Floor 2"
+          },
+          {
+            "person": "kate",
+            "role": "monitor",
+            "detail": "Presser Floor 3"
+          }
         ]
       },
       {
         "time": "11:50 AM - 12:20 PM",
-        "activity": "🥪 Lunch",
+        "activity": "\ud83e\udd6a Lunch",
         "location": "CUB",
         "mapUrl": "",
         "notes": []
@@ -729,17 +1869,29 @@
         "location": "Feasel Hall",
         "mapUrl": "https://maps.app.goo.gl/5mDXBVoTABQhHF5L6",
         "notes": [
-          "Yamaha Instrument Try-Out also available in Tinsley Hall (inside Presser Hall) — groups rotate every 15 min."
+          "Yamaha Instrument Try-Out also available in Tinsley Hall (inside Presser Hall) \u2014 groups rotate every 15 min."
         ],
         "assignments": [
-          {"person": "sage",  "role": "duty", "detail": "Yamaha Instrument Try-Out — Tinsley Hall"},
-          {"person": "david", "role": "duty", "detail": "Yamaha Instrument Try-Out — Tinsley Hall"},
-          {"person": "steve", "role": "duty", "detail": "Yamaha Instrument Try-Out — Tinsley Hall"}
+          {
+            "person": "sage",
+            "role": "duty",
+            "detail": "Yamaha Instrument Try-Out \u2014 Tinsley Hall"
+          },
+          {
+            "person": "david",
+            "role": "duty",
+            "detail": "Yamaha Instrument Try-Out \u2014 Tinsley Hall"
+          },
+          {
+            "person": "steve",
+            "role": "duty",
+            "detail": "Yamaha Instrument Try-Out \u2014 Tinsley Hall"
+          }
         ]
       },
       {
         "time": "2:00 - 2:30 PM",
-        "activity": "Survey Says… Game",
+        "activity": "Survey Says\u2026 Game",
         "location": "Feasel Hall",
         "mapUrl": "https://maps.app.goo.gl/5mDXBVoTABQhHF5L6",
         "notes": []
@@ -752,20 +1904,84 @@
         "notes": [
           "See <a href=\"/rooms.html\">room guide</a> for locations."
         ],
-        "ensembleMap": {"symphonic": "chamber", "concert": "large"},
+        "ensembleMap": {
+          "symphonic": "chamber",
+          "concert": "large"
+        },
         "assignments": [
-          {"person": "bill",     "role": "conduct", "ensemble": "concert"},
-          {"person": "marc",     "role": "conduct", "ensemble": "concert"},
-          {"person": "tim",      "role": "coach",   "room": "Presser 349",  "group": "Rosenberg Symphonic Quartet"},
-          {"person": "chandler", "role": "coach",   "room": "Feasel Hall",  "group": "Wilson Symphonic Quartet"},
-          {"person": "kristen",  "role": "coach",   "room": "Presser 352",  "group": "Zelenak Symphonic Quartet"},
-          {"person": "steve",    "role": "coach",   "room": "Presser 202",  "group": "Amann Symphonic Quartet"},
-          {"person": "sara",     "role": "coach",   "room": "Presser 112",  "group": "Pyburn Symphonic Quartet"},
-          {"person": "andrew",   "role": "coach",   "room": "Presser 113",  "group": "Becker Symphonic Quartet"},
-          {"person": "matt",     "role": "coach",   "room": "Lee Chapel",   "group": "Murphy Symphonic Quartet"},
-          {"person": "michelle", "role": "monitor", "detail": "Presser Floor 1"},
-          {"person": "sage",     "role": "monitor", "detail": "Presser Floor 2"},
-          {"person": "david",    "role": "monitor", "detail": "Presser Floor 3"}
+          {
+            "person": "bill",
+            "role": "conduct",
+            "ensemble": "concert"
+          },
+          {
+            "person": "marc",
+            "role": "conduct",
+            "ensemble": "concert"
+          },
+          {
+            "person": "tim",
+            "role": "coach",
+            "room": "Presser 349",
+            "group": "Rosenberg Symphonic Quartet"
+          },
+          {
+            "person": "chandler",
+            "role": "coach",
+            "room": "Feasel Hall",
+            "group": "Wilson Symphonic Quartet"
+          },
+          {
+            "person": "kristen",
+            "role": "coach",
+            "room": "Presser 352",
+            "group": "Zelenak Symphonic Quartet"
+          },
+          {
+            "person": "steve",
+            "role": "coach",
+            "room": "Presser 128",
+            "group": "Amann Symphonic Quartet"
+          },
+          {
+            "person": "sara",
+            "role": "coach",
+            "room": "Presser 112",
+            "group": "Pyburn Symphonic Quartet"
+          },
+          {
+            "person": "andrew",
+            "role": "coach",
+            "room": "Presser 113",
+            "group": "Becker Symphonic Quartet"
+          },
+          {
+            "person": "matt",
+            "role": "coach",
+            "room": "Lee Chapel",
+            "group": "Murphy Symphonic Quartet"
+          },
+          {
+            "person": "kate",
+            "role": "coach",
+            "room": "Presser 202",
+            "group": "Kalina Symphonic Quartet"
+          },
+          {
+            "person": "michelle",
+            "role": "monitor",
+            "detail": "Presser Floor 1"
+          },
+          {
+            "person": "sage",
+            "role": "monitor",
+            "detail": "Presser Floor 2"
+          },
+          {
+            "person": "david",
+            "role": "monitor",
+            "detail": "Presser Floor 3"
+          }
         ]
       },
       {
@@ -778,37 +1994,95 @@
         ],
         "jazzClasses": true,
         "assignments": [
-          {"person": "chandler", "role": "teach", "room": "Tinsley Hall", "detail": "Jazz Class 1"},
-          {"person": "sara",     "role": "teach", "room": "Presser 202",  "detail": "Jazz Class 2"},
-          {"person": "steve",    "role": "teach", "room": "Presser 112",  "detail": "Jazz Class 3"},
-          {"person": "marc",     "role": "teach", "room": "Presser 349",  "detail": "Jazz Class 4"},
-          {"person": "matt",     "role": "teach", "room": "Presser 352",  "detail": "Jazz Class 5"},
-          {"person": "andrew",   "role": "teach", "room": "Presser 113",  "detail": "Jazz Class 6"},
-          {"person": "michelle", "role": "monitor", "detail": "Presser Floor 1"},
-          {"person": "sage",     "role": "monitor", "detail": "Presser Floor 2"},
-          {"person": "kate",     "role": "monitor", "detail": "Presser Floor 3"}
+          {
+            "person": "chandler",
+            "role": "teach",
+            "room": "Tinsley Hall",
+            "detail": "Jazz Class 1"
+          },
+          {
+            "person": "sara",
+            "role": "teach",
+            "room": "Presser 202",
+            "detail": "Jazz Class 2"
+          },
+          {
+            "person": "steve",
+            "role": "teach",
+            "room": "Presser 112",
+            "detail": "Jazz Class 3"
+          },
+          {
+            "person": "marc",
+            "role": "teach",
+            "room": "Presser 349",
+            "detail": "Jazz Class 4"
+          },
+          {
+            "person": "matt",
+            "role": "teach",
+            "room": "Presser 352",
+            "detail": "Jazz Class 5"
+          },
+          {
+            "person": "andrew",
+            "role": "teach",
+            "room": "Presser 113",
+            "detail": "Jazz Class 6"
+          },
+          {
+            "person": "michelle",
+            "role": "monitor",
+            "detail": "Presser Floor 1"
+          },
+          {
+            "person": "sage",
+            "role": "monitor",
+            "detail": "Presser Floor 2"
+          },
+          {
+            "person": "kate",
+            "role": "monitor",
+            "detail": "Presser Floor 3"
+          }
         ]
       },
       {
         "time": "5:40 - 5:50 PM",
-        "activity": "📸 Workshop Photo",
+        "activity": "\ud83d\udcf8 Workshop Photo",
         "location": "Sampson Hall steps (<a href=\"https://maps.app.goo.gl/xjX7xrKMzvb5211VA\">map</a>)",
         "mapUrl": "",
         "notes": []
       },
       {
         "time": "6:00 - 6:45 PM",
-        "activity": "🍕 Dinner: Pizza Party",
+        "activity": "\ud83c\udf55 Dinner: Pizza Party",
         "location": "Palm Court (<a href=\"https://maps.app.goo.gl/onJmxu1JX1MWwk4k8\">map</a>)",
         "mapUrl": "",
         "notes": [
           "Rain location: Tinsley Hall."
         ],
         "assignments": [
-          {"person": "tim",     "role": "duty", "detail": "Pizza Party Set-Up"},
-          {"person": "bill",    "role": "duty", "detail": "Pizza Party Set-Up"},
-          {"person": "kristen", "role": "duty", "detail": "Pizza Party Set-Up"},
-          {"person": "david",   "role": "duty", "detail": "Pizza Party Set-Up"}
+          {
+            "person": "tim",
+            "role": "duty",
+            "detail": "Pizza Party Set-Up"
+          },
+          {
+            "person": "bill",
+            "role": "duty",
+            "detail": "Pizza Party Set-Up"
+          },
+          {
+            "person": "kristen",
+            "role": "duty",
+            "detail": "Pizza Party Set-Up"
+          },
+          {
+            "person": "david",
+            "role": "duty",
+            "detail": "Pizza Party Set-Up"
+          }
         ]
       },
       {
@@ -834,52 +2108,133 @@
       },
       {
         "time": "10:00 PM",
-        "activity": "🛌 Lights Out",
+        "activity": "\ud83d\udecc Lights Out",
         "location": "Hatter Hall",
         "mapUrl": "",
         "notes": [],
         "assignments": [
-          {"person": "david",  "role": "nightwatch"},
-          {"person": "sara",   "role": "floormgr"},
-          {"person": "andrew", "role": "floormgr"},
-          {"person": "kaia",   "role": "ranger"},
-          {"person": "matt",   "role": "ranger"}
+          {
+            "person": "david",
+            "role": "nightwatch"
+          },
+          {
+            "person": "sara",
+            "role": "floormgr"
+          },
+          {
+            "person": "andrew",
+            "role": "floormgr"
+          },
+          {
+            "person": "kaia",
+            "role": "ranger"
+          },
+          {
+            "person": "matt",
+            "role": "ranger"
+          }
         ]
       }
     ]
   },
   {
     "date": "2026-06-26",
-    "themeTitle": "🌊 Splashdown!",
+    "themeTitle": "\ud83c\udf0a Splashdown!",
     "themeDescription": "You made it back. Wear your best beach-vibe outfit: surf shirts, tropical prints, flip flops. No bathing suits. Or, go with the colors of the ocean: deep blue, sky blue, teal, or turquoise.",
     "activities": [
       {
         "time": "7:15 AM",
-        "activity": "⏰ Wake up; prepare for the day.",
+        "activity": "\u23f0 Wake up; prepare for the day.",
         "location": "",
         "mapUrl": "",
         "notes": []
       },
       {
         "time": "8:15 AM",
-        "activity": "Students meet counselors in designated location",
+        "activity": "Meet at Hatter Hall rally points",
         "location": "Hatter Hall",
         "mapUrl": "",
         "notes": [],
         "assignments": [
-          {"person": "andrew", "role": "duty", "detail": "Transit Group A"},
-          {"person": "matt",   "role": "duty", "detail": "Transit Group B"},
-          {"person": "kaia",   "role": "duty", "detail": "Transit Group C"},
-          {"person": "david",  "role": "duty", "detail": "Transit Group D"},
-          {"person": "sara",   "role": "duty", "detail": "Transit Group E"},
-          {"person": "sage",   "role": "duty", "detail": "Transit Group F"},
-          {"person": "steve",  "role": "duty", "detail": "Transit Group G"},
-          {"person": "kate",   "role": "duty", "detail": "Transit Group H"}
+          {
+            "person": "andrew",
+            "role": "duty",
+            "detail": "Walking Group A"
+          },
+          {
+            "person": "matt",
+            "role": "duty",
+            "detail": "Walking Group B"
+          },
+          {
+            "person": "kaia",
+            "role": "duty",
+            "detail": "Walking Group C"
+          },
+          {
+            "person": "david",
+            "role": "duty",
+            "detail": "Walking Group D"
+          },
+          {
+            "person": "sara",
+            "role": "duty",
+            "detail": "Walking Group E"
+          },
+          {
+            "person": "sage",
+            "role": "duty",
+            "detail": "Walking Group F"
+          },
+          {
+            "person": "steve",
+            "role": "duty",
+            "detail": "Walking Group G"
+          },
+          {
+            "person": "kate",
+            "role": "duty",
+            "detail": "Walking Group H"
+          }
+        ],
+        "groupMap": [
+          {
+            "floor": "Floor 1",
+            "groups": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "mapUrl": "/assets/images/hatter-floor-1-rally.png",
+            "rallyPoints": {
+              "A": "Floor 1 \u2014 W Study Room",
+              "B": "Floor 1 \u2014 Laundry Room",
+              "C": "Floor 1 \u2014 Lobby, NW (near windows)",
+              "D": "Floor 1 \u2014 Lobby, SE (near desk)"
+            }
+          },
+          {
+            "floor": "Floor 2",
+            "groups": [
+              "E",
+              "F",
+              "G",
+              "H"
+            ],
+            "mapUrl": "/assets/images/hatter-floor-2-rally.png",
+            "rallyPoints": {
+              "E": "Floor 2 \u2014 W Study Room",
+              "F": "Floor 2 \u2014 Laundry Room",
+              "G": "Floor 2 \u2014 Lobby, NW",
+              "H": "Floor 2 \u2014 Lobby, SE"
+            }
+          }
         ]
       },
       {
         "time": "8:30 - 9:00 AM",
-        "activity": "🥞 Breakfast",
+        "activity": "\ud83e\udd5e Breakfast",
         "location": "CUB",
         "mapUrl": "",
         "notes": []
@@ -892,13 +2247,48 @@
         "fundamentalsClass": true,
         "notes": [],
         "assignments": [
-          {"person": "steve",  "role": "teach", "room": "Presser 202",  "detail": "Soprano Fundamentals"},
-          {"person": "andrew", "role": "teach", "room": "Presser 113",  "detail": "Alto Fundamentals (Concert)"},
-          {"person": "david",  "role": "teach", "room": "Presser 352",  "detail": "Alto Fundamentals (Symphonic)"},
-          {"person": "sara",   "role": "teach", "room": "Presser 349",  "detail": "Tenor Fundamentals (Concert)"},
-          {"person": "kate",   "role": "teach", "room": "Presser 112",  "detail": "Tenor Fundamentals (Symphonic)"},
-          {"person": "sage",   "role": "teach", "room": "Tinsley Hall", "detail": "Bari Fundamentals (Concert)"},
-          {"person": "matt",   "role": "teach", "room": "Feasel Hall",  "detail": "Bari Fundamentals (Symphonic)"}
+          {
+            "person": "steve",
+            "role": "teach",
+            "room": "Presser 202",
+            "detail": "Soprano Fundamentals"
+          },
+          {
+            "person": "andrew",
+            "role": "teach",
+            "room": "Presser 113",
+            "detail": "Alto Fundamentals (Concert)"
+          },
+          {
+            "person": "david",
+            "role": "teach",
+            "room": "Presser 352",
+            "detail": "Alto Fundamentals (Symphonic)"
+          },
+          {
+            "person": "sara",
+            "role": "teach",
+            "room": "Presser 349",
+            "detail": "Tenor Fundamentals (Concert)"
+          },
+          {
+            "person": "kate",
+            "role": "teach",
+            "room": "Presser 112",
+            "detail": "Tenor Fundamentals (Symphonic)"
+          },
+          {
+            "person": "sage",
+            "role": "teach",
+            "room": "Tinsley Hall",
+            "detail": "Bari Fundamentals (Concert)"
+          },
+          {
+            "person": "matt",
+            "role": "teach",
+            "room": "Feasel Hall",
+            "detail": "Bari Fundamentals (Symphonic)"
+          }
         ]
       },
       {
@@ -909,24 +2299,77 @@
         "notes": [
           "See <a href=\"/rooms.html\">room guide</a> for locations."
         ],
-        "ensembleMap": {"symphonic": "large", "concert": "chamber"},
+        "ensembleMap": {
+          "symphonic": "large",
+          "concert": "chamber"
+        },
         "assignments": [
-          {"person": "chandler", "role": "conduct", "ensemble": "symphonic"},
-          {"person": "kristen",  "role": "conduct", "ensemble": "symphonic"},
-          {"person": "marc",     "role": "coach",   "room": "Presser 352",  "group": "Kolodinsky Concert Quartet"},
-          {"person": "steve",    "role": "coach",   "room": "Presser 202",  "group": "Amann Concert Quartet"},
-          {"person": "bill",     "role": "coach",   "room": "Tinsley Hall", "group": "Guthrie Concert Quartet"},
-          {"person": "sage",     "role": "coach",   "room": "Presser 112",  "group": "Whitt Concert Quartet"},
-          {"person": "david",    "role": "coach",   "room": "Presser 113",  "group": "Hinote Concert Quartet"},
-          {"person": "matt",     "role": "coach",   "room": "Presser 349",  "group": "Murphy Concert Quartet"},
-          {"person": "michelle", "role": "monitor", "detail": "Presser Floor 1"},
-          {"person": "kaia",     "role": "monitor", "detail": "Presser Floor 2"},
-          {"person": "kate",     "role": "monitor", "detail": "Presser Floor 3"}
+          {
+            "person": "chandler",
+            "role": "conduct",
+            "ensemble": "symphonic"
+          },
+          {
+            "person": "kristen",
+            "role": "conduct",
+            "ensemble": "symphonic"
+          },
+          {
+            "person": "marc",
+            "role": "coach",
+            "room": "Presser 352",
+            "group": "Kolodinsky Concert Quartet"
+          },
+          {
+            "person": "steve",
+            "role": "coach",
+            "room": "Presser 202",
+            "group": "Amann Concert Quartet"
+          },
+          {
+            "person": "bill",
+            "role": "coach",
+            "room": "Tinsley Hall",
+            "group": "Guthrie Concert Quartet"
+          },
+          {
+            "person": "sage",
+            "role": "coach",
+            "room": "Presser 112",
+            "group": "Whitt Concert Quartet"
+          },
+          {
+            "person": "david",
+            "role": "coach",
+            "room": "Presser 113",
+            "group": "Hinote Concert Quartet"
+          },
+          {
+            "person": "matt",
+            "role": "coach",
+            "room": "Presser 349",
+            "group": "Murphy Concert Quartet"
+          },
+          {
+            "person": "michelle",
+            "role": "monitor",
+            "detail": "Presser Floor 1"
+          },
+          {
+            "person": "kaia",
+            "role": "monitor",
+            "detail": "Presser Floor 2"
+          },
+          {
+            "person": "kate",
+            "role": "monitor",
+            "detail": "Presser Floor 3"
+          }
         ]
       },
       {
         "time": "11:50 AM - 12:20 PM",
-        "activity": "🥪 Lunch",
+        "activity": "\ud83e\udd6a Lunch",
         "location": "CUB",
         "mapUrl": "",
         "notes": []
@@ -939,20 +2382,84 @@
         "notes": [
           "See <a href=\"/rooms.html\">room guide</a> for locations."
         ],
-        "ensembleMap": {"symphonic": "chamber", "concert": "large"},
+        "ensembleMap": {
+          "symphonic": "chamber",
+          "concert": "large"
+        },
         "assignments": [
-          {"person": "bill",     "role": "conduct", "ensemble": "concert"},
-          {"person": "marc",     "role": "conduct", "ensemble": "concert"},
-          {"person": "tim",      "role": "coach",   "room": "Presser 349",  "group": "Rosenberg Symphonic Quartet"},
-          {"person": "chandler", "role": "coach",   "room": "Feasel Hall",  "group": "Wilson Symphonic Quartet"},
-          {"person": "kristen",  "role": "coach",   "room": "Presser 352",  "group": "Zelenak Symphonic Quartet"},
-          {"person": "steve",    "role": "coach",   "room": "Presser 202",  "group": "Amann Symphonic Quartet"},
-          {"person": "sara",     "role": "coach",   "room": "Presser 112",  "group": "Pyburn Symphonic Quartet"},
-          {"person": "andrew",   "role": "coach",   "room": "Presser 113",  "group": "Becker Symphonic Quartet"},
-          {"person": "matt",     "role": "coach",   "room": "Lee Chapel",   "group": "Murphy Symphonic Quartet"},
-          {"person": "michelle", "role": "monitor", "detail": "Presser Floor 1"},
-          {"person": "sage",     "role": "monitor", "detail": "Presser Floor 2"},
-          {"person": "david",    "role": "monitor", "detail": "Presser Floor 3"}
+          {
+            "person": "bill",
+            "role": "conduct",
+            "ensemble": "concert"
+          },
+          {
+            "person": "marc",
+            "role": "conduct",
+            "ensemble": "concert"
+          },
+          {
+            "person": "tim",
+            "role": "coach",
+            "room": "Presser 349",
+            "group": "Rosenberg Symphonic Quartet"
+          },
+          {
+            "person": "chandler",
+            "role": "coach",
+            "room": "Feasel Hall",
+            "group": "Wilson Symphonic Quartet"
+          },
+          {
+            "person": "kristen",
+            "role": "coach",
+            "room": "Presser 352",
+            "group": "Zelenak Symphonic Quartet"
+          },
+          {
+            "person": "steve",
+            "role": "coach",
+            "room": "Presser 128",
+            "group": "Amann Symphonic Quartet"
+          },
+          {
+            "person": "sara",
+            "role": "coach",
+            "room": "Presser 112",
+            "group": "Pyburn Symphonic Quartet"
+          },
+          {
+            "person": "andrew",
+            "role": "coach",
+            "room": "Presser 113",
+            "group": "Becker Symphonic Quartet"
+          },
+          {
+            "person": "matt",
+            "role": "coach",
+            "room": "Lee Chapel",
+            "group": "Murphy Symphonic Quartet"
+          },
+          {
+            "person": "kate",
+            "role": "coach",
+            "room": "Presser 202",
+            "group": "Kalina Symphonic Quartet"
+          },
+          {
+            "person": "michelle",
+            "role": "monitor",
+            "detail": "Presser Floor 1"
+          },
+          {
+            "person": "sage",
+            "role": "monitor",
+            "detail": "Presser Floor 2"
+          },
+          {
+            "person": "david",
+            "role": "monitor",
+            "detail": "Presser Floor 3"
+          }
         ]
       },
       {
@@ -963,15 +2470,57 @@
         "notes": [],
         "jazzClasses": true,
         "assignments": [
-          {"person": "chandler", "role": "teach", "room": "Tinsley Hall", "detail": "Jazz Class 1"},
-          {"person": "sara",     "role": "teach", "room": "Presser 202",  "detail": "Jazz Class 2"},
-          {"person": "steve",    "role": "teach", "room": "Presser 112",  "detail": "Jazz Class 3"},
-          {"person": "marc",     "role": "teach", "room": "Presser 349",  "detail": "Jazz Class 4"},
-          {"person": "matt",     "role": "teach", "room": "Presser 352",  "detail": "Jazz Class 5"},
-          {"person": "andrew",   "role": "teach", "room": "Presser 113",  "detail": "Jazz Class 6"},
-          {"person": "michelle", "role": "monitor", "detail": "Presser Floor 1"},
-          {"person": "sage",     "role": "monitor", "detail": "Presser Floor 2"},
-          {"person": "kate",     "role": "monitor", "detail": "Presser Floor 3"}
+          {
+            "person": "chandler",
+            "role": "teach",
+            "room": "Tinsley Hall",
+            "detail": "Jazz Class 1"
+          },
+          {
+            "person": "sara",
+            "role": "teach",
+            "room": "Presser 202",
+            "detail": "Jazz Class 2"
+          },
+          {
+            "person": "steve",
+            "role": "teach",
+            "room": "Presser 112",
+            "detail": "Jazz Class 3"
+          },
+          {
+            "person": "marc",
+            "role": "teach",
+            "room": "Presser 349",
+            "detail": "Jazz Class 4"
+          },
+          {
+            "person": "matt",
+            "role": "teach",
+            "room": "Presser 352",
+            "detail": "Jazz Class 5"
+          },
+          {
+            "person": "andrew",
+            "role": "teach",
+            "room": "Presser 113",
+            "detail": "Jazz Class 6"
+          },
+          {
+            "person": "michelle",
+            "role": "monitor",
+            "detail": "Presser Floor 1"
+          },
+          {
+            "person": "sage",
+            "role": "monitor",
+            "detail": "Presser Floor 2"
+          },
+          {
+            "person": "kate",
+            "role": "monitor",
+            "detail": "Presser Floor 3"
+          }
         ]
       },
       {
@@ -984,18 +2533,66 @@
           "Chamber groups will run through their piece(s)."
         ],
         "assignments": [
-          {"person": "marc",     "role": "duty", "detail": "Dress Rehearsal Staff"},
-          {"person": "bill",     "role": "duty", "detail": "Dress Rehearsal Staff"},
-          {"person": "steve",    "role": "duty", "detail": "Dress Rehearsal Staff"},
-          {"person": "michelle", "role": "duty", "detail": "Dress Rehearsal Staff"},
-          {"person": "matt",     "role": "duty", "detail": "Dress Rehearsal Staff"},
-          {"person": "sara",     "role": "duty", "detail": "Dress Rehearsal Staff"},
-          {"person": "david",    "role": "duty", "detail": "Dress Rehearsal Staff"},
-          {"person": "kristen",  "role": "duty", "detail": "Dress Rehearsal Staff"},
-          {"person": "chandler", "role": "duty", "detail": "Dress Rehearsal Staff"},
-          {"person": "sage",     "role": "duty", "detail": "Dress Rehearsal Staff"},
-          {"person": "kate",     "role": "duty", "detail": "Dress Rehearsal Staff"},
-          {"person": "kaia",     "role": "duty", "detail": "Dress Rehearsal Staff"}
+          {
+            "person": "marc",
+            "role": "duty",
+            "detail": "Dress Rehearsal Staff"
+          },
+          {
+            "person": "bill",
+            "role": "duty",
+            "detail": "Dress Rehearsal Staff"
+          },
+          {
+            "person": "steve",
+            "role": "duty",
+            "detail": "Dress Rehearsal Staff"
+          },
+          {
+            "person": "michelle",
+            "role": "duty",
+            "detail": "Dress Rehearsal Staff"
+          },
+          {
+            "person": "matt",
+            "role": "duty",
+            "detail": "Dress Rehearsal Staff"
+          },
+          {
+            "person": "sara",
+            "role": "duty",
+            "detail": "Dress Rehearsal Staff"
+          },
+          {
+            "person": "david",
+            "role": "duty",
+            "detail": "Dress Rehearsal Staff"
+          },
+          {
+            "person": "kristen",
+            "role": "duty",
+            "detail": "Dress Rehearsal Staff"
+          },
+          {
+            "person": "chandler",
+            "role": "duty",
+            "detail": "Dress Rehearsal Staff"
+          },
+          {
+            "person": "sage",
+            "role": "duty",
+            "detail": "Dress Rehearsal Staff"
+          },
+          {
+            "person": "kate",
+            "role": "duty",
+            "detail": "Dress Rehearsal Staff"
+          },
+          {
+            "person": "kaia",
+            "role": "duty",
+            "detail": "Dress Rehearsal Staff"
+          }
         ]
       },
       {
@@ -1007,7 +2604,7 @@
       },
       {
         "time": "6:30 - 7:00 PM",
-        "activity": "🍽️ Dinner",
+        "activity": "\ud83c\udf7d\ufe0f Dinner",
         "location": "CUB",
         "mapUrl": "",
         "notes": []
@@ -1032,51 +2629,129 @@
       },
       {
         "time": "10:00 PM",
-        "activity": "🛌 Lights Out",
+        "activity": "\ud83d\udecc Lights Out",
         "location": "Hatter Hall",
         "mapUrl": "",
         "notes": [],
         "assignments": [
-          {"person": "sage",  "role": "nightwatch"},
-          {"person": "matt",  "role": "floormgr"},
-          {"person": "kate",  "role": "floormgr"},
-          {"person": "sara",  "role": "ranger"}
+          {
+            "person": "sage",
+            "role": "nightwatch"
+          },
+          {
+            "person": "matt",
+            "role": "floormgr"
+          },
+          {
+            "person": "kate",
+            "role": "floormgr"
+          },
+          {
+            "person": "sara",
+            "role": "ranger"
+          }
         ]
       }
     ]
   },
   {
     "date": "2026-06-27",
-    "themeTitle": "🎓 School Spirit Day",
+    "themeTitle": "\ud83c\udf93 School Spirit Day",
     "themeDescription": "Wear your school colors or anything that shows off where you're from.",
     "activities": [
       {
         "time": "7:00 AM",
-        "activity": "⏰ Early wake up; students complete packing for move out.",
+        "activity": "\u23f0 Early wake up; students complete packing for move out.",
         "location": "Hatter Hall",
         "mapUrl": "",
         "notes": []
       },
       {
         "time": "7:15 AM",
-        "activity": "Students meet counselors in designated location",
+        "activity": "Meet at Hatter Hall rally points",
         "location": "Hatter Hall",
         "mapUrl": "",
         "notes": [],
         "assignments": [
-          {"person": "andrew",  "role": "duty", "detail": "Transit Group A"},
-          {"person": "matt",    "role": "duty", "detail": "Transit Group B"},
-          {"person": "kaia",    "role": "duty", "detail": "Transit Group C"},
-          {"person": "david",   "role": "duty", "detail": "Transit Group D"},
-          {"person": "sara",    "role": "duty", "detail": "Transit Group E"},
-          {"person": "sage",    "role": "duty", "detail": "Transit Group F"},
-          {"person": "steve",   "role": "duty", "detail": "Transit Group G"},
-          {"person": "kristen", "role": "duty", "detail": "Transit Group H (Kate departed)"}
+          {
+            "person": "andrew",
+            "role": "duty",
+            "detail": "Walking Group A"
+          },
+          {
+            "person": "matt",
+            "role": "duty",
+            "detail": "Walking Group B"
+          },
+          {
+            "person": "kaia",
+            "role": "duty",
+            "detail": "Walking Group C"
+          },
+          {
+            "person": "david",
+            "role": "duty",
+            "detail": "Walking Group D"
+          },
+          {
+            "person": "sara",
+            "role": "duty",
+            "detail": "Walking Group E"
+          },
+          {
+            "person": "sage",
+            "role": "duty",
+            "detail": "Walking Group F"
+          },
+          {
+            "person": "steve",
+            "role": "duty",
+            "detail": "Walking Group G"
+          },
+          {
+            "person": "kristen",
+            "role": "duty",
+            "detail": "Walking Group H (Kate departed)"
+          }
+        ],
+        "groupMap": [
+          {
+            "floor": "Floor 1",
+            "groups": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "mapUrl": "/assets/images/hatter-floor-1-rally.png",
+            "rallyPoints": {
+              "A": "Floor 1 \u2014 W Study Room",
+              "B": "Floor 1 \u2014 Laundry Room",
+              "C": "Floor 1 \u2014 Lobby, NW (near windows)",
+              "D": "Floor 1 \u2014 Lobby, SE (near desk)"
+            }
+          },
+          {
+            "floor": "Floor 2",
+            "groups": [
+              "E",
+              "F",
+              "G",
+              "H"
+            ],
+            "mapUrl": "/assets/images/hatter-floor-2-rally.png",
+            "rallyPoints": {
+              "E": "Floor 2 \u2014 W Study Room",
+              "F": "Floor 2 \u2014 Laundry Room",
+              "G": "Floor 2 \u2014 Lobby, NW",
+              "H": "Floor 2 \u2014 Lobby, SE"
+            }
+          }
         ]
       },
       {
         "time": "7:30 - 8:00 AM",
-        "activity": "🥞 Breakfast",
+        "activity": "\ud83e\udd5e Breakfast",
         "location": "CUB",
         "mapUrl": "",
         "notes": []
@@ -1090,14 +2765,46 @@
           "See <a href=\"/rooms.html\">room guide</a> for locations."
         ],
         "assignments": [
-          {"person": "chandler", "role": "conduct", "ensemble": "symphonic"},
-          {"person": "kristen",  "role": "conduct", "ensemble": "symphonic"},
-          {"person": "bill",     "role": "conduct", "ensemble": "concert"},
-          {"person": "marc",     "role": "conduct", "ensemble": "concert"},
-          {"person": "tim",      "role": "task",    "detail": "Camp Theme"},
-          {"person": "steve",    "role": "duty",    "detail": "Final Concert Set-Up (set-up only)"},
-          {"person": "david",    "role": "duty",    "detail": "Final Concert Set-Up (set-up only)"},
-          {"person": "andrew",   "role": "duty",    "detail": "Final Concert Set-Up"}
+          {
+            "person": "chandler",
+            "role": "conduct",
+            "ensemble": "symphonic"
+          },
+          {
+            "person": "kristen",
+            "role": "conduct",
+            "ensemble": "symphonic"
+          },
+          {
+            "person": "bill",
+            "role": "conduct",
+            "ensemble": "concert"
+          },
+          {
+            "person": "marc",
+            "role": "conduct",
+            "ensemble": "concert"
+          },
+          {
+            "person": "tim",
+            "role": "task",
+            "detail": "Camp Theme"
+          },
+          {
+            "person": "steve",
+            "role": "duty",
+            "detail": "Final Concert Set-Up (set-up only)"
+          },
+          {
+            "person": "david",
+            "role": "duty",
+            "detail": "Final Concert Set-Up (set-up only)"
+          },
+          {
+            "person": "andrew",
+            "role": "duty",
+            "detail": "Final Concert Set-Up"
+          }
         ]
       },
       {
@@ -1114,7 +2821,7 @@
       {
         "time": "10:45 - 11:00 AM",
         "activity": "Gather; escorted walk to Lee Chapel",
-        "location": "Hatter Hall → Lee Chapel",
+        "location": "Hatter Hall \u2192 Lee Chapel",
         "mapUrl": "",
         "notes": [
           "Parents will go to Lee Chapel separately."
@@ -1136,11 +2843,31 @@
         "mapUrl": "https://maps.app.goo.gl/Dvm3E7u6dcQk4WHg7",
         "notes": [],
         "assignments": [
-          {"person": "chandler", "role": "conduct", "ensemble": "symphonic"},
-          {"person": "kristen",  "role": "conduct", "ensemble": "symphonic"},
-          {"person": "bill",     "role": "conduct", "ensemble": "concert"},
-          {"person": "marc",     "role": "conduct", "ensemble": "concert"},
-          {"person": "tim",      "role": "task",    "detail": "Camp Theme"}
+          {
+            "person": "chandler",
+            "role": "conduct",
+            "ensemble": "symphonic"
+          },
+          {
+            "person": "kristen",
+            "role": "conduct",
+            "ensemble": "symphonic"
+          },
+          {
+            "person": "bill",
+            "role": "conduct",
+            "ensemble": "concert"
+          },
+          {
+            "person": "marc",
+            "role": "conduct",
+            "ensemble": "concert"
+          },
+          {
+            "person": "tim",
+            "role": "task",
+            "detail": "Camp Theme"
+          }
         ]
       },
       {
@@ -1152,9 +2879,21 @@
           "Tinsley Hall is <em>inside</em> Presser Hall."
         ],
         "assignments": [
-          {"person": "steve", "role": "duty", "detail": "Equipment Return"},
-          {"person": "marc",  "role": "duty", "detail": "Equipment Return"},
-          {"person": "david", "role": "duty", "detail": "Equipment Return"}
+          {
+            "person": "steve",
+            "role": "duty",
+            "detail": "Equipment Return"
+          },
+          {
+            "person": "marc",
+            "role": "duty",
+            "detail": "Equipment Return"
+          },
+          {
+            "person": "david",
+            "role": "duty",
+            "detail": "Equipment Return"
+          }
         ]
       },
       {
@@ -1166,11 +2905,31 @@
           "Students meet family at Hatter Hall."
         ],
         "assignments": [
-          {"person": "michelle", "role": "duty", "detail": "Dorm Check-Out"},
-          {"person": "sara",     "role": "duty", "detail": "Dorm Check-Out"},
-          {"person": "matt",     "role": "duty", "detail": "Dorm Check-Out"},
-          {"person": "sage",     "role": "duty", "detail": "Dorm Check-Out"},
-          {"person": "kaia",     "role": "duty", "detail": "Dorm Check-Out"}
+          {
+            "person": "michelle",
+            "role": "duty",
+            "detail": "Dorm Check-Out"
+          },
+          {
+            "person": "sara",
+            "role": "duty",
+            "detail": "Dorm Check-Out"
+          },
+          {
+            "person": "matt",
+            "role": "duty",
+            "detail": "Dorm Check-Out"
+          },
+          {
+            "person": "sage",
+            "role": "duty",
+            "detail": "Dorm Check-Out"
+          },
+          {
+            "person": "kaia",
+            "role": "duty",
+            "detail": "Dorm Check-Out"
+          }
         ]
       }
     ]
