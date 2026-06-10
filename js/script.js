@@ -1081,7 +1081,8 @@ async function loadRooms() {
     const target = document.querySelector(window.location.hash);
     if (target) {
       const headerEl = document.querySelector('header');
-      const offset = (headerEl ? headerEl.offsetHeight : 48) + 12;
+      const navEl = document.querySelector('.personal-nav');
+      const offset = (headerEl ? headerEl.offsetHeight : 48) + (navEl ? navEl.offsetHeight : 0) + 12;
       const top = target.getBoundingClientRect().top + window.scrollY - offset;
       window.scrollTo({ top, behavior: 'smooth' });
     }
