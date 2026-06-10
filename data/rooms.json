@@ -72,5 +72,35 @@
       { "name": "Rosenberg", "loc": "Presser 112", "roster": "rosenberg-sym" },
       { "name": "Williamson", "loc": "Presser 352", "roster": "williamson-sym" }
     ]
+  },
+  {
+    "section": "Escape Room",
+    "items": [
+      { "name": "Presser 112", "loc": "Presser Hall" },
+      { "name": "Presser 113", "loc": "Presser Hall" },
+      { "name": "Presser 120", "loc": "Presser Hall" },
+      { "name": "Presser 128", "loc": "Presser Hall" },
+      { "name": "Presser 202", "loc": "Presser Hall" },
+      { "name": "Presser 349", "loc": "Presser Hall" },
+      { "name": "Presser 352", "loc": "Presser Hall" },
+      { "name": "Tinsley Hall", "loc": "Tinsley Hall" },
+      { "name": "Hollis Atrium", "loc": "Hollis Hall" },
+      { "name": "Feasel Hall", "loc": "Feasel Hall" }
+    ]
+  },
+  {
+    "section": "Tour d'Cosmos",
+    "items": [
+      { "name": "Station 1 — Sight-Reading", "loc": "Presser 112" },
+      { "name": "Station 2 — Scales", "loc": "Presser 113" },
+      { "name": "Station 3 — Altissimo", "loc": "Tinsley Hall" },
+      { "name": "Station 4 — Ear Training", "loc": "Presser 349" },
+      { "name": "Station 5 — Trills", "loc": "Faculty Lounge (Presser)" },
+      { "name": "Station 6 — Articulation", "loc": "Presser 202" },
+      { "name": "Station 7 — Transposition", "loc": "Presser 352" },
+      { "name": "Station 8 — Rhythm Reading", "loc": "Presser 120" },
+      { "name": "Command Center", "loc": "Hollis Atrium" },
+      { "name": "Trivia — Kahoot", "loc": "Feasel Hall" }
+    ]
   }
 ]

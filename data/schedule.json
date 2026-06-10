@@ -1025,7 +1025,21 @@
         "activity": "\ud83d\ude80 Escape Room: Deep Space",
         "location": "Various Rooms",
         "mapUrl": "",
-        "notes": []
+        "notes": [],
+        "assignments": [
+          { "person": "marc",     "role": "duty", "detail": "Room Supervisor \u2014 Presser 112" },
+          { "person": "bill",     "role": "duty", "detail": "Room Supervisor \u2014 Presser 113" },
+          { "person": "david",    "role": "duty", "detail": "Room Supervisor \u2014 Presser 120" },
+          { "person": "kaia",     "role": "duty", "detail": "Room Supervisor \u2014 Presser 128" },
+          { "person": "sage",     "role": "duty", "detail": "Room Supervisor \u2014 Presser 202" },
+          { "person": "kate",     "role": "duty", "detail": "Room Supervisor \u2014 Presser 349" },
+          { "person": "steve",    "role": "duty", "detail": "Room Supervisor \u2014 Presser 352" },
+          { "person": "sara",     "role": "duty", "detail": "Room Supervisor \u2014 Tinsley Hall" },
+          { "person": "matt",     "role": "duty", "detail": "Room Supervisor \u2014 Hollis Atrium" },
+          { "person": "andrew",   "role": "duty", "detail": "Room Supervisor \u2014 Feasel Hall" },
+          { "person": "kristen",  "role": "duty", "detail": "Walk-through Verification" },
+          { "person": "chandler", "role": "duty", "detail": "Walk-through Verification" }
+        ]
       },
       {
         "time": "6:30 - 7:00 PM",
@@ -1556,6 +1570,21 @@
         "notes": [
           "Tour d'Cosmos Skills Challenge \u2014 skill stations around School of Music",
           "Tour d'Cosmos Trivia Challenge \u2014 knowledge game, one room"
+        ],
+        "assignments": [
+          { "person": "marc",     "role": "duty", "detail": "Station 1 \u2014 Sight-Reading (Presser 112)" },
+          { "person": "steve",    "role": "duty", "detail": "Station 2 \u2014 Scales (Presser 113)" },
+          { "person": "david",    "role": "duty", "detail": "Station 3 \u2014 Altissimo (Tinsley Hall)" },
+          { "person": "andrew",   "role": "duty", "detail": "Station 4 \u2014 Ear Training (Presser 349)" },
+          { "person": "kristen",  "role": "duty", "detail": "Station 5 \u2014 Trills (Faculty Lounge)" },
+          { "person": "sara",     "role": "duty", "detail": "Station 6 \u2014 Articulation (Presser 202)" },
+          { "person": "matt",     "role": "duty", "detail": "Station 7 \u2014 Transposition (Presser 352)" },
+          { "person": "kate",     "role": "duty", "detail": "Station 8 \u2014 Rhythm Reading (Presser 120)" },
+          { "person": "bill",     "role": "duty", "detail": "Command Center (Hollis Atrium)" },
+          { "person": "chandler", "role": "duty", "detail": "Kahoot Host \u2014 Feasel Hall" },
+          { "person": "sage",     "role": "duty", "detail": "Organizing students & distributing scorecards" },
+          { "person": "kaia",     "role": "duty", "detail": "Organizing students & distributing scorecards" },
+          { "person": "michelle", "role": "duty", "detail": "Organizing students & distributing scorecards" }
         ]
       },
       {
