@@ -353,7 +353,7 @@ function updateNowNext() {
     if (nowMetaEl) {
       const { start, end } = parseActTime(nowItem.act.time, nowItem.day.date);
       const parts = [];
-      if (nowItem.act.location) parts.push(`<span>${nowItem.act.location.replace(/<a href="\/rooms\.html"[^>]*>.*?<\/a>/g, '').trim()}</span><span class="now-sep">·</span>`);
+      if (nowItem.act.location) parts.push(`<span>${nowItem.act.location.replace(/<a href="\/rooms\.html[^"]*"[^>]*>.*?<\/a>/g, '').trim()}</span><span class="now-sep">·</span>`);
       if (start) parts.push(`<span>${fmtT(start)}${end ? ' – ' + fmtT(end) : ''}</span>`);
       nowMetaEl.innerHTML = parts.join('');
     }
@@ -489,7 +489,7 @@ async function init() {
       let html = `<div class="act-time">${timeStart}</div>`;
       html += `<div class="act-body">`;
       html += `<div class="act-name">${myAssignment ? '<span class="assign-star">★</span> ' : ''}${act.activity}</div>`;
-      if (act.location) html += `<div class="act-loc">${act.location.replace(/<a href="\/rooms\.html"[^>]*>.*?<\/a>/g, '').trim()}</div>`;
+      if (act.location) html += `<div class="act-loc">${act.location.replace(/<a href="\/rooms\.html[^"]*"[^>]*>.*?<\/a>/g, '').trim()}</div>`;
       if (myAssignment) {
         const detail = formatAssignment(myAssignment);
         if (detail) html += `<div class="assignment-detail">${detail}</div>`;
