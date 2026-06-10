@@ -1,7 +1,7 @@
 let scheduleData = [];
 let globalBannerData = {};
 
-const _stripGuide = s => s ? s.replace(/<a href="\/rooms\.html"[^>]*>.*?<\/a>/g, '').trim() : s;
+const _stripGuide = s => s ? s.replace(/<a href="\/rooms\.html[^"]*"[^>]*>.*?<\/a>/g, '').trim() : s;
 
 const LARGE_ENSEMBLE_LOC = {
   symphonic: {location: 'Feasel Hall',   mapUrl: 'https://maps.app.goo.gl/5mDXBVoTABQhHF5L6'},
@@ -1050,8 +1050,10 @@ async function loadRooms() {
   const res = await fetch('/data/rooms.json');
   const sections = await res.json();
 
-  container.innerHTML = sections.map(section => `
-    <div class="day-card open">
+  container.innerHTML = sections.map(section => {
+    const sectionId = section.section.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    return `
+    <div class="day-card open" id="${sectionId}">
       <button class="day-toggle" onclick="this.closest('.day-card').classList.toggle('open')">
         <span class="chevron"></span>
         <span class="day-hd"><span class="day-name">${section.section}</span></span>
@@ -1072,7 +1074,8 @@ async function loadRooms() {
         }).join('')}
       </ul>
     </div>
-  `).join('');
+  `;
+  }).join('');
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
