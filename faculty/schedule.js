@@ -190,7 +190,8 @@ function showStaffEvent(act, myAssignment, rowEl) {
     const mapPill = act.mapUrl
       ? ` <a href="${act.mapUrl}" target="_blank" style="display:inline-block;padding:2px 10px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);font-size:0.82em;text-decoration:none;margin-left:6px">↗ Map</a>`
       : '';
-    html += `<div class="event-meta-row"><span class="c-icon">${_pinSVG}</span><span>${act.location}${mapPill}</span></div>`;
+    const locWithStaffGuide = act.location.replace(/href="\/rooms\.html"/g, 'href="/faculty/rooms.html"');
+    html += `<div class="event-meta-row"><span class="c-icon">${_pinSVG}</span><span>${locWithStaffGuide}${mapPill}</span></div>`;
   }
 
   if (myAssignment) {
