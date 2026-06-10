@@ -78,6 +78,14 @@
 
 </div>
 
+<script>
+  const _slug = localStorage.getItem('faculty-slug');
+  if (_slug) {
+    document.querySelectorAll('a[href="schedule.html"]').forEach(a => {
+      a.href = `schedule.html?name=${encodeURIComponent(_slug)}`;
+    });
+  }
+</script>
 <script src="/js/script.js" defer></script>
 </body>
 </html>
