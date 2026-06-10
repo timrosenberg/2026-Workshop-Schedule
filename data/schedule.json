@@ -469,6 +469,48 @@
               "H": "Tables at corner of Sampson Hall"
             }
           }
+        ],
+        "assignments": [
+          {
+            "person": "andrew",
+            "role": "duty",
+            "detail": "Walking Group A"
+          },
+          {
+            "person": "matt",
+            "role": "duty",
+            "detail": "Walking Group B"
+          },
+          {
+            "person": "kaia",
+            "role": "duty",
+            "detail": "Walking Group C"
+          },
+          {
+            "person": "david",
+            "role": "duty",
+            "detail": "Walking Group D"
+          },
+          {
+            "person": "sara",
+            "role": "duty",
+            "detail": "Walking Group E"
+          },
+          {
+            "person": "sage",
+            "role": "duty",
+            "detail": "Walking Group F"
+          },
+          {
+            "person": "steve",
+            "role": "duty",
+            "detail": "Walking Group G"
+          },
+          {
+            "person": "kate",
+            "role": "duty",
+            "detail": "Walking Group H"
+          }
         ]
       },
       {
