@@ -2,56 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Room Guide – Faculty</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="page-type" content="faculty" />
+  <meta name="theme-color" content="#404040" />
+  <title>Room Guide – Saxophone Workshop 2026</title>
   <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/faculty.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-  <meta name="theme-color" content="#555555" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="manifest" href="faculty.webmanifest">
+  <link rel="apple-touch-icon" href="/assets/icons/faculty-icon-180.png">
+  <style>
+    :root {
+      --forest:      #404040;
+      --forest-deep: #252525;
+      --forest-mid:  #5A5A5A;
+      --forest-lt:   #888888;
+      --forest-pale: #E4E4E4;
+    }
+    body.dark { --forest-pale: #202020; }
+
+    .personal-nav {
+      display: flex;
+      gap: 1rem;
+      padding: 0.55rem 16px;
+      font-size: 0.85em;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+      position: sticky;
+      top: 48px;
+      z-index: 90;
+    }
+    .personal-nav a { color: var(--text2); text-decoration: none; }
+    .personal-nav a:hover { color: var(--text); text-decoration: underline; }
+  </style>
 </head>
+<body>
 
-<body class="page">
-<header class="main-header">
-  <div class="page-header">
-    <h1 class="page-title">Room Guide</h1>
-    <nav class="breadcrumb"><a href="index.html">← Back to Dashboard</a></nav>
-  </div>
+<div class="app">
 
-  <div class="header-buttons">
-    <button id="menu-toggle" title="Menu">☰</button>
-    <button id="manual-dark-toggle" class="dark-mode-toggle" title="Toggle dark mode">
-      <i class="fa-solid fa-circle-half-stroke"></i>
-    </button>
-  </div>
-</header>
-
-<!-- CONTACT MENU -->
-    <div id="contact-menu">
-        <a href="sms:+14074940603">📱 Text Dr. Rosenberg</a>
-        <a href="mailto:you@example.com">📧 Email Dr. Rosenberg</a>
-        <a href="tel:+14074940603">📞 Call Dr. Rosenberg</a>
-        <a href="https://instagram.com/stetsonsaxophoneworkshop" target="_blank" style="display: flex; align-items: center;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="height: 20px; margin-right: 0.5rem;">Workshop IG
-        </a>
-        <a href="https://www.facebook.com/stetsonsaxos" target="_blank" rel="noopener">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="height: 20px; vertical-align: middle; margin-right: 0.5rem;">Stetson Saxos FB
-        </a>
-        <a href="https://www.stetson.edu/other/visit/media/deland-campus-map.pdf" target="_blank">🗺️ Stetson Campus Map</a>
+  <header class="header">
+    <div class="wordmark">
+      <div class="wm-name">Room Guide</div>
     </div>
+    <div class="hbtns">
+      <button class="hbtn" id="darkBtn" title="Toggle dark mode"></button>
+    </div>
+  </header>
 
-  <!-- NAV and CONTACT -->
-  <div data-include="/includes/nav-faculty.html"></div>
+  <div class="personal-nav">
+    <a href="schedule.html">← My Schedule</a>
+    <a href="index.html">Dashboard</a>
+  </div>
 
-  <!-- MAIN -->
-  <main class="main-container">
-    <div data-include="/includes/room-list.html"></div>
+  <main class="main">
+    <div id="room-list-container" class="sched" style="padding: 0.5rem 0 2rem;"></div>
   </main>
 
-  <footer>
-    <div id="footer-container"></div>
-  </footer>
+  <nav class="bottom-nav">
+    <a href="schedule.html" class="nav-item">
+      <svg class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12"/><path d="M16 3v4"/><path d="M8 3v4"/><path d="M4 11h16"/><path d="M11 15h1"/><path d="M12 15v3"/></svg>
+      <span class="nav-lbl">My Schedule</span>
+    </a>
+    <a href="rooms.html" class="nav-item active">
+      <svg class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 12v.01"/><path d="M3 21h18"/><path d="M6 21v-16a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v16"/></svg>
+      <span class="nav-lbl">Rooms</span>
+    </a>
+    <a href="students.html" class="nav-item">
+      <svg class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"/><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"/></svg>
+      <span class="nav-lbl">Students</span>
+    </a>
+  </nav>
 
-  <script src="/js/script.js" defer></script>
+</div>
+
+<script src="/js/script.js" defer></script>
 </body>
 </html>
