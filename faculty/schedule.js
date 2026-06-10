@@ -395,16 +395,23 @@ async function init() {
 
   // Validate slug
   if (!slug || !allPersons.has(slug)) {
-    const validList = [...allPersons].sort().join(', ');
     const msg = slug ? `No schedule found for "<strong>${slug}</strong>".` : 'No name provided.';
+    const links = [...allPersons].sort().map(s => {
+      const label = DISPLAY_NAMES[s] || s.charAt(0).toUpperCase() + s.slice(1);
+      return `<a href="schedule.html?name=${encodeURIComponent(s)}" style="display:block;padding:10px 0;border-bottom:1px solid var(--border);color:var(--text)">${label}</a>`;
+    }).join('');
     container.innerHTML = `
       <div class="error-state">
         <p>${msg}</p>
-        <p>Valid names: ${validList}</p>
-        <p><a href="/faculty/">← Back to Faculty Dashboard</a></p>
+        <p style="margin-bottom:0.25rem;font-size:0.85em;color:var(--text2)">Select your name:</p>
+        ${links}
+        <p style="margin-top:1rem"><a href="/faculty/">← Back to Faculty Dashboard</a></p>
       </div>`;
     return;
   }
+
+  // Remember this slug so other faculty pages can link back here
+  localStorage.setItem('faculty-slug', slug);
 
   // Update page title and header
   document.title = `${displayName}'s Schedule – Saxophone Workshop 2026`;

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="page-type" content="faculty" />
+  <meta name="theme-color" content="#404040" />
+  <title>Student Roster – Saxophone Workshop 2026</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="manifest" href="faculty.webmanifest">
+  <link rel="apple-touch-icon" href="/assets/icons/faculty-icon-180.png">
+  <style>
+    /* Gray palette — overrides green for staff version */
+    :root {
+      --forest:      #404040;
+      --forest-deep: #252525;
+      --forest-mid:  #5A5A5A;
+      --forest-lt:   #888888;
+      --forest-pale: #E4E4E4;
+    }
+    body.dark { --forest-pale: #202020; }
+
+    /* ── Controls bar ── */
+    .roster-controls {
+      padding: 10px 14px 8px;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 48px;
+      z-index: 90;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .roster-search {
+      width: 100%;
+      padding: 8px 12px;
+      font-size: 0.92rem;
+      font-family: var(--font-ui);
+      border: 1px solid var(--border);
+      border-radius: var(--r-md);
+      background: var(--bg);
+      color: var(--text);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .roster-search:focus { border-color: var(--forest-mid); }
+    .filter-row {
+      display: flex;
+      gap: 6px;
+    }
+    .filter-btn {
+      flex: 1;
+      padding: 5px 8px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      font-family: var(--font-ui);
+      border-radius: var(--r-full);
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text2);
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+    }
+    .filter-btn.active {
+      background: var(--forest);
+      color: #fff;
+      border-color: var(--forest);
+    }
+
+    /* ── Count ── */
+    .roster-count {
+      padding: 6px 14px 2px;
+      font-size: 0.75rem;
+      color: var(--text3);
+    }
+
+    /* ── Grid ── */
+    .student-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 10px;
+      padding: 8px 12px 80px;
+    }
+
+    /* ── Card ── */
+    .student-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--r-md);
+      overflow: hidden;
+      box-shadow: var(--sh-sm);
+    }
+
+    .card-head {
+      padding: 11px 13px 9px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .card-name {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.2;
+    }
+    .card-meta {
+      font-size: 0.76rem;
+      color: var(--text3);
+      margin-top: 3px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px 6px;
+      align-items: center;
+    }
+    .badge-first {
+      font-size: 0.65rem;
+      font-weight: 700;
+      padding: 1px 5px;
+      border-radius: 3px;
+      background: var(--forest-pale);
+      color: var(--forest-mid);
+      letter-spacing: 0.03em;
+    }
+    .badge-ya {
+      font-size: 0.65rem;
+      font-weight: 600;
+      padding: 1px 5px;
+      border-radius: 3px;
+      background: var(--surface2);
+      color: var(--text2);
+    }
+    .badge-ensemble {
+      font-size: 0.68rem;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: var(--r-full);
+      white-space: nowrap;
+      flex-shrink: 0;
+      letter-spacing: 0.04em;
+    }
+    /* Concert = blue tint, Symphonic = green tint — readable in both themes */
+    .badge-concert  { background: #ddeaf7; color: #1e5085; }
+    .badge-symphonic { background: #d6ede2; color: #1a5235; }
+    body.dark .badge-concert  { background: #152438; color: #7ab5e8; }
+    body.dark .badge-symphonic { background: #112519; color: #72c491; }
+
+    /* ── Divider ── */
+    .card-divider {
+      height: 1px;
+      background: var(--border2);
+      margin: 0 13px;
+    }
+
+    /* ── Card body rows ── */
+    .card-body {
+      padding: 8px 13px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .card-row {
+      display: flex;
+      gap: 6px;
+      font-size: 0.82rem;
+      line-height: 1.35;
+    }
+    .card-lbl {
+      flex-shrink: 0;
+      min-width: 5rem;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text3);
+      padding-top: 1px;
+    }
+    .card-val { color: var(--text2); flex: 1; }
+    .card-val.tbd { color: var(--text3); font-style: italic; }
+
+    /* ── Dietary strip ── */
+    .dietary-strip {
+      display: flex;
+      gap: 6px;
+      align-items: flex-start;
+      margin: 2px 13px 10px;
+      padding: 7px 10px;
+      background: var(--gold-pale);
+      border: 1px solid rgba(181,121,30,0.25);
+      border-radius: var(--r-sm);
+      font-size: 0.79rem;
+      color: #7a5200;
+      line-height: 1.35;
+    }
+    body.dark .dietary-strip {
+      background: #1e1500;
+      border-color: rgba(181,121,30,0.2);
+      color: #c89030;
+    }
+
+    /* ── Empty / error state ── */
+    .no-results {
+      grid-column: 1/-1;
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--text3);
+      font-size: 0.88rem;
+    }
+  </style>
+</head>
+
+<body>
+<div class="app">
+
+  <header class="header">
+    <div class="wordmark">
+      <div class="wm-name">Student Roster</div>
+    </div>
+    <div class="hbtns">
+      <button class="hbtn" id="darkBtn" title="Toggle dark mode"></button>
+    </div>
+  </header>
+
+  <div class="roster-controls">
+    <input class="roster-search" type="search" id="searchInput"
+           placeholder="Search by name or school…" autocomplete="off" />
+    <div class="filter-row">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="concert">Concert</button>
+      <button class="filter-btn" data-filter="symphonic">Symphonic</button>
+    </div>
+  </div>
+
+  <div class="roster-count" id="rosterCount"></div>
+
+  <main class="main" style="padding:0">
+    <div class="student-grid" id="studentGrid"></div>
+  </main>
+
+  <nav class="bottom-nav">
+    <a href="schedule.html" class="nav-item">
+      <svg class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12"/><path d="M16 3v4"/><path d="M8 3v4"/><path d="M4 11h16"/><path d="M11 15h1"/><path d="M12 15v3"/></svg>
+      <span class="nav-lbl">My Schedule</span>
+    </a>
+    <a href="students.html" class="nav-item active">
+      <svg class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"/><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"/></svg>
+      <span class="nav-lbl">Students</span>
+    </a>
+  </nav>
+
+</div>
+
+<script>
+  // ── Restore My Schedule link ──
+  const savedSlug = localStorage.getItem('faculty-slug');
+  if (savedSlug) {
+    const schedLink = document.querySelector('.bottom-nav a[href="schedule.html"]');
+    if (schedLink) schedLink.href = `schedule.html?name=${encodeURIComponent(savedSlug)}`;
+  }
+
+  // ── Dark mode (shared pref with schedule.html) ──
+  const sunSVG  = `<svg class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"/><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"/></svg>`;
+  const moonSVG = `<svg class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454l0 .008"/></svg>`;
+
+  function isNight() {
+    const h = new Date().getHours();
+    return h >= 20 || h < 7;
+  }
+  function setDark(isDark) {
+    document.body.classList.toggle('dark', isDark);
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.content = isDark ? '#252525' : '#404040';
+    const btn = document.getElementById('darkBtn');
+    if (btn) btn.innerHTML = isDark ? sunSVG : moonSVG;
+  }
+  function initDark() {
+    const pref = localStorage.getItem('dark-mode-preference');
+    setDark(pref === 'dark' || (pref !== 'light' && isNight()));
+  }
+  document.getElementById('darkBtn').addEventListener('click', () => {
+    const isDark = document.body.classList.contains('dark');
+    localStorage.setItem('dark-mode-preference', isDark ? 'light' : 'dark');
+    setDark(!isDark);
+  });
+  initDark();
+
+  // ── Roster ──
+  let allStudents = [];
+  let activeFilter = 'all';
+
+  function shortSax(s) {
+    return (s || '').replace(/\bSaxophone\b/gi, 'Sax');
+  }
+
+  function renderCard(s) {
+    const ensLabel = s.ensemble === 'concert' ? 'Concert' : 'Symphonic';
+    const ensClass = s.ensemble === 'concert' ? 'badge-concert' : 'badge-symphonic';
+
+    const bringing = shortSax(s.bringing || '');
+    const primary  = shortSax(s.primary  || '');
+    const instrLine = bringing && bringing !== primary
+      ? `${primary} · brings ${bringing}`
+      : primary || '—';
+
+    const chamberVal = s.chamberCoach
+      ? `${s.chamberCoach}${s.chamberInstrument ? ' · ' + shortSax(s.chamberInstrument) : ''}`
+      : null;
+
+    const badges = [
+      s.firstTime  ? `<span class="badge-first">1st Year</span>` : '',
+      s.yaAudition ? `<span class="badge-ya">YA Audition</span>` : '',
+    ].filter(Boolean).join('');
+
+    const dietary = s.dietary
+      ? `<div class="dietary-strip">⚠️ ${s.dietary}</div>`
+      : '';
+
+    return `
+<div class="student-card">
+  <div class="card-head">
+    <div>
+      <div class="card-name">${s.first} ${s.last}</div>
+      <div class="card-meta">
+        <span>${s.grade}</span><span>·</span><span>${s.school}</span>
+        ${badges}
+      </div>
+    </div>
+    <span class="badge-ensemble ${ensClass}">${ensLabel}</span>
+  </div>
+  <div class="card-divider"></div>
+  <div class="card-body">
+    <div class="card-row">
+      <span class="card-lbl">Instrument</span>
+      <span class="card-val">${instrLine}</span>
+    </div>
+    <div class="card-row">
+      <span class="card-lbl">Chamber</span>
+      <span class="card-val${chamberVal ? '' : ' tbd'}">${chamberVal || 'TBD'}</span>
+    </div>
+    <div class="card-row">
+      <span class="card-lbl">Jazz</span>
+      <span class="card-val${s.jazzClass ? '' : ' tbd'}">${s.jazzClass || 'TBD'}</span>
+    </div>
+  </div>
+  ${dietary}
+</div>`;
+  }
+
+  function applyFilters() {
+    const query = document.getElementById('searchInput').value.toLowerCase().trim();
+    const base = allStudents.filter(s =>
+      activeFilter === 'all' || s.ensemble === activeFilter
+    );
+    const shown = query
+      ? base.filter(s => `${s.first} ${s.last} ${s.school}`.toLowerCase().includes(query))
+      : base;
+
+    document.getElementById('studentGrid').innerHTML = shown.length
+      ? shown.map(renderCard).join('')
+      : '<div class="no-results">No students match.</div>';
+
+    document.getElementById('rosterCount').textContent =
+      query ? `${shown.length} of ${base.length} students` : `${base.length} students`;
+  }
+
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeFilter = btn.dataset.filter;
+      applyFilters();
+    });
+  });
+
+  document.getElementById('searchInput').addEventListener('input', applyFilters);
+
+  fetch('/data/students.json')
+    .then(r => r.json())
+    .then(data => { allStudents = data; applyFilters(); })
+    .catch(() => {
+      document.getElementById('studentGrid').innerHTML =
+        '<div class="no-results">Could not load roster.</div>';
+    });
+</script>
+</body>
+</html>
