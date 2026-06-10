@@ -1,6 +1,8 @@
 let scheduleData = [];
 let globalBannerData = {};
 
+const _stripGuide = s => s ? s.replace(/<a href="\/rooms\.html"[^>]*>.*?<\/a>/g, '').trim() : s;
+
 const LARGE_ENSEMBLE_LOC = {
   symphonic: {location: 'Feasel Hall',   mapUrl: 'https://maps.app.goo.gl/5mDXBVoTABQhHF5L6'},
   concert:   {location: 'Tinsley Hall',  mapUrl: 'https://maps.app.goo.gl/wdAMPGnM3GRCCsnA8'}
@@ -22,8 +24,10 @@ const CHAMBER_ROSTERS = {
   'kolodinsky-con': {name: 'Kolodinsky', type: 'Concert',   room: 'Presser 352',  students: []},
   'murphy-con':     {name: 'Murphy',     type: 'Concert',   room: 'Presser 349',  students: []},
   'whitt-con':      {name: 'Whitt',      type: 'Concert',   room: 'Presser 112',  students: []},
-  'amann-sym':      {name: 'Amann',      type: 'Symphonic', room: 'Presser 202',  students: []},
+  'amann-sym':      {name: 'Amann',      type: 'Symphonic', room: 'Presser 128 (Boyd Jones\'s Studio)', students: []},
   'becker-sym':     {name: 'Becker',     type: 'Symphonic', room: 'Presser 113',  students: []},
+  'kalina-sym':     {name: 'Kalina',     type: 'Symphonic', room: 'Presser 202',  students: []},
+  'leavitt-sym':    {name: 'Leavitt',    type: 'Symphonic', room: 'Feasel Hall',  students: []},
   'murphy-sym':     {name: 'Murphy',     type: 'Symphonic', room: 'Lee Chapel',   students: []},
   'pyburn-sym':     {name: 'Pyburn',     type: 'Symphonic', room: 'Presser 112',  students: []},
   'rosenberg-sym':  {name: 'Rosenberg',  type: 'Symphonic', room: 'Presser 349',  students: []},
@@ -83,21 +87,23 @@ const FUNDAMENTALS_DATA = {
 
 const CHAMBER_DATA = {
   symphonic: [
+    {coach: 'Amann',     room: 'Presser 128 (Boyd Jones\'s Studio)'},
+    {coach: 'Becker',    room: 'Presser 113'},
+    {coach: 'Kalina',    room: 'Presser 202'},
+    {coach: 'Leavitt',   room: 'Feasel Hall'},
+    {coach: 'Murphy',    room: 'Lee Chapel'},
+    {coach: 'Pyburn',    room: 'Presser 112'},
     {coach: 'Rosenberg', room: 'Presser 349'},
     {coach: 'Wilson',    room: 'Feasel Hall'},
-    {coach: 'Zelenak',   room: 'Presser 352'},
-    {coach: 'Amann',     room: 'Presser 202'},
-    {coach: 'Pyburn',    room: 'Presser 112'},
-    {coach: 'Becker',    room: 'Presser 113'},
-    {coach: 'Murphy',    room: 'Lee Chapel'}
+    {coach: 'Zelenak',   room: 'Presser 352'}
   ],
   concert: [
-    {coach: 'Kolodinsky', room: 'Presser 352'},
     {coach: 'Amann',      room: 'Presser 202'},
     {coach: 'Guthrie',    room: 'Tinsley Hall'},
-    {coach: 'Whitt',      room: 'Presser 112'},
     {coach: 'Hinote',     room: 'Presser 113'},
-    {coach: 'Murphy',     room: 'Presser 349'}
+    {coach: 'Kolodinsky', room: 'Presser 352'},
+    {coach: 'Murphy',     room: 'Presser 349'},
+    {coach: 'Whitt',      room: 'Presser 112'}
   ]
 };
 
@@ -173,14 +179,47 @@ function showEvent(act, rowEl) {
   let html = `<div class="event-hd">${act.activity}</div>`;
   html += `<div class="event-meta-row"><span class="c-icon">${clockSVG}</span><span>${act.time}</span></div>`;
   if (act.location) {
-    let locHTML = act.location;
-    if (act.mapUrl) locHTML += ` <a href="${act.mapUrl}" target="_blank" style="display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px">↗ Map</a>`;
+    const pillStyle = `display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px`;
+    let locHTML = act.location.replace(/<a\s[^>]*href="([^"]+)"[^>]*>map<\/a>/gi,
+      `<a href="$1" target="_blank" style="${pillStyle}">↗ Map</a>`);
+    if (act.mapUrl) locHTML += ` <a href="${act.mapUrl}" target="_blank" style="${pillStyle}">↗ Map</a>`;
     html += `<div class="event-meta-row"><span class="c-icon">${pinSVG}</span><span>${locHTML}</span></div>`;
   }
   if (act.notes && act.notes.length && !(act.ensembleMap && localStorage.getItem('campEnsemble')) && !(act.fundamentalsClass && localStorage.getItem('campInstrument'))) {
     html += `<div class="event-notes"><div class="event-notes-lbl">Notes</div>`;
     html += act.notes.map(n => `<div class="event-note-line"><span>${n}</span></div>`).join('');
     html += `</div>`;
+  }
+  const mealMatch = /\b(breakfast|lunch|dinner)\b/i.exec(act.activity || '');
+  if (mealMatch) {
+    const meal = mealMatch[1].toLowerCase();
+    const dayOfWeek = act._date ? new Date(act._date + 'T12:00:00').getDay() : -1;
+    const isMonday = dayOfWeek === 1;
+    const isThursday = dayOfWeek === 4;
+    const isFriday = dayOfWeek === 5;
+    let rallyLines;
+    if (meal === 'breakfast') {
+      rallyLines = [`After breakfast, meet at rally points outside the CUB.`];
+    } else if (isThursday) {
+      rallyLines = [];
+    } else if (meal === 'lunch' && isMonday) {
+      rallyLines = [`After lunch, meet at rally points outside the CUB.`];
+    } else if (isMonday) {
+      rallyLines = [`After dinner, meet at rally points outside the CUB.`];
+    } else {
+      const beforeLoc = isFriday ? 'Hatter' : 'Presser';
+      rallyLines = [`Before ${meal}, meet at rally points outside ${beforeLoc}.`, `After ${meal}, meet at rally points outside the CUB.`];
+    }
+    if (rallyLines.length) {
+      html += `<div class="event-notes" style="margin-top:0.6rem"><div class="event-notes-lbl">Rally Points</div>${rallyLines.map(l => `<div class="event-note-line"><span>${l}</span></div>`).join('')}</div>`;
+    }
+  }
+  const actName = act.activity || '';
+  if (/Chamber Music Dress Rehearsal/i.test(actName) || /Chamber Music Concert/i.test(actName) || /^Dress Rehearsals$/i.test(actName)) {
+    const rallyNote = /Chamber Music Concert/i.test(actName)
+      ? 'After the concert, meet at rally points outside Presser.'
+      : 'After dress rehearsal, meet at rally points outside Presser.';
+    html += `<div class="event-notes" style="margin-top:0.6rem"><div class="event-notes-lbl">Rally Points</div><div class="event-note-line"><span>${rallyNote}</span></div></div>`;
   }
   if (act.groupMap) {
     html += renderGroupSelector(act.groupMap);
@@ -227,7 +266,8 @@ function renderGroupSelector(groupMap) {
 
   if (saved) {
     const entry = groupMap.find(f => f.groups.includes(saved));
-    const floorLabel = entry && entry.floor ? ` → ${entry.floor}` : '';
+    const rallyText = entry?.rallyPoints?.[saved];
+    const floorLabel = rallyText ? ` — ${rallyText}` : (entry?.floor ? ` → ${entry.floor}` : '');
     const mapUrl = entry ? entry.mapUrl : groupMap[0].mapUrl;
     const mapLink = mapUrl ? `<a onclick='openLightbox("${mapUrl}")' style='${mapBtnStyle}'>↗ Map</a>` : '';
     return `<div class="event-detail"><p><strong>Your group: ${saved}</strong>${floorLabel}${mapLink}</p><button onclick='clearCampGroup()' style='background:none;border:none;color:var(--text3);font-size:0.8em;cursor:pointer;text-decoration:underline;padding:0;font-family:inherit'>Change group</button></div>`;
@@ -251,11 +291,51 @@ function renderGroupSelector(groupMap) {
 function selectCampGroup(group) {
   localStorage.setItem('campGroup', group);
   if (currentAct && selectedRow) showEvent(currentAct, selectedRow);
+  initRallyCard();
 }
 
 function clearCampGroup() {
   localStorage.removeItem('campGroup');
   if (currentAct && selectedRow) showEvent(currentAct, selectedRow);
+  initRallyCard();
+}
+
+async function initRallyCard() {
+  const card = document.getElementById('rally-card');
+  if (!card) return;
+
+  const saved = localStorage.getItem('campGroup');
+  const now = getCurrentTime();
+  const todayStr = now.getFullYear() + '-' +
+    String(now.getMonth() + 1).padStart(2, '0') + '-' +
+    String(now.getDate()).padStart(2, '0');
+
+  let data;
+  try {
+    const res = await fetch('/data/schedule.json');
+    data = await res.json();
+  } catch (e) {
+    return;
+  }
+
+  const todayData = data.find(d => d.date === todayStr);
+
+  const nextRally = todayData?.activities.find(act => {
+    if (!act.groupMap) return false;
+    const { start } = parseActivityTimes(act.time, todayData.date);
+    return start && start >= now;
+  });
+
+  if (!nextRally) {
+    card.innerHTML = '';
+    return;
+  }
+
+  const { start } = parseActivityTimes(nextRally.time, todayData.date);
+  const timeLabel = start ? fmtTime(start) : nextRally.time.split(/\s*-\s*/)[0].trim();
+  const headerStyle = 'font-size:0.82em;color:var(--text2);margin-bottom:0.25rem';
+
+  card.innerHTML = `<div style="margin-bottom:1rem;padding:0.75rem 1rem;background:var(--surface2);border-radius:var(--r);border:1px solid var(--border)"><div style="${headerStyle}">${timeLabel} — ${nextRally.activity}</div>${renderGroupSelector(nextRally.groupMap)}</div>`;
 }
 
 function renderEnsembleSelector(ensembleMap) {
@@ -271,8 +351,8 @@ function renderEnsembleSelector(ensembleMap) {
 
   if (!ens) {
     html += `<p style='font-style:italic;color:var(--text2);margin:0 0 0.5rem'>Which ensemble are you in?</p>`;
-    html += `<button onclick='selectEnsemble("symphonic")' style='${ensBtnStyle}'>Symphonic — 10th–12th</button> `;
-    html += `<button onclick='selectEnsemble("concert")' style='${ensBtnStyle}'>Concert — 7th–9th</button>`;
+    html += `<button onclick='selectEnsemble("concert")' style='${ensBtnStyle}'>Concert — 7th–9th</button> `;
+    html += `<button onclick='selectEnsemble("symphonic")' style='${ensBtnStyle}'>Symphonic — 10th–12th</button>`;
     return html + '</div>';
   }
 
@@ -331,6 +411,14 @@ function getPersonalizedLocation(act) {
   const ens   = localStorage.getItem('campEnsemble');
   const coach = localStorage.getItem('campChamber');
   const jazz  = localStorage.getItem('campJazz');
+
+  if (act.groupMap) {
+    const saved = localStorage.getItem('campGroup');
+    if (saved) {
+      const entry = act.groupMap.find(f => f.groups.includes(saved));
+      if (entry?.rallyPoints?.[saved]) return entry.rallyPoints[saved];
+    }
+  }
 
   if (act.ensembleMap && ens) {
     const slotActivity = act.ensembleMap[ens];
@@ -424,8 +512,8 @@ function renderFundamentalsSelector() {
       return `<div class="event-detail"><p style='margin:0 0 0.25rem'>${LABELS[instrument]} — ${info.room} (${info.instructor})</p><button onclick='clearInstrument()' style='${changeBtnStyle}'>Change</button></div>`;
     }
     return `<div class="event-detail"><p style='margin:0 0 0.35rem;color:var(--text2);font-size:0.9em'>Your room depends on your ensemble — set it below.</p>` +
-      `<button onclick='selectEnsemble("symphonic")' style='${ensBtnStyle}'>Symphonic — 10th–12th</button> ` +
-      `<button onclick='selectEnsemble("concert")' style='${ensBtnStyle}'>Concert — 7th–9th</button>` +
+      `<button onclick='selectEnsemble("concert")' style='${ensBtnStyle}'>Concert — 7th–9th</button> ` +
+      `<button onclick='selectEnsemble("symphonic")' style='${ensBtnStyle}'>Symphonic — 10th–12th</button>` +
       `<button onclick='clearInstrument()' style='${changeBtnStyle}'>Change instrument</button></div>`;
   }
 
@@ -570,6 +658,7 @@ function renderSchedule(scheduleData, { animate = true } = {}) {
 
     const isFacultyPage = document.querySelector('meta[name="page-type"]')?.content === 'faculty';
     day.activities.forEach((act, i) => {
+      act._date = day.date;
       if (act.audience === 'faculty' && !isFacultyPage) return;
       const isCur = isToday && i === curIdx;
       let isPast = false;
@@ -588,7 +677,7 @@ function renderSchedule(scheduleData, { animate = true } = {}) {
         <div class="act-time">${timeDisplay}</div>
         <div class="act-body">
           <div class="act-name">${getEnsembleActivityName(act) || getJazzActivityName(act) || getFundamentalsActivityName(act) || act.activity}</div>
-          ${(() => { const loc = getPersonalizedLocation(act) || act.location; return loc ? `<div class="act-loc">${loc}</div>` : ''; })()}
+          ${(() => { const loc = _stripGuide(getPersonalizedLocation(act) || act.location); return loc ? `<div class="act-loc">${loc}</div>` : ''; })()}
         </div>`;
 
       if (isCur) { nowActivity = act; nowActivityDay = day; nowRowEl = li; }
@@ -734,7 +823,8 @@ function updateNowNextFromHiddenData() {
 
         const { start, end } = parseActivityTimes(activityToDisplayAsNow.time, dayToDisplayAsNow.date);
         let metaParts = [];
-        if (activityToDisplayAsNow.location) metaParts.push(`<span>${activityToDisplayAsNow.location}</span><span class="now-sep">·</span>`);
+        const nowLoc = _stripGuide(getPersonalizedLocation(activityToDisplayAsNow) || activityToDisplayAsNow.location);
+        if (nowLoc) metaParts.push(`<span>${nowLoc}</span><span class="now-sep">·</span>`);
         if (start) metaParts.push(`<span>${fmtTime(start)}${end ? ' – ' + fmtTime(end) : ''}</span>`);
         if (nowMetaEl) nowMetaEl.innerHTML = metaParts.join('');
 
@@ -744,7 +834,7 @@ function updateNowNextFromHiddenData() {
                 nowPillsEl.innerHTML = ensemblePills.map(n => `<span class="now-pill"><span>${n}</span></span>`).join('');
             } else if (activityToDisplayAsNow.notes && activityToDisplayAsNow.notes.length) {
                 nowPillsEl.innerHTML = activityToDisplayAsNow.notes.map(n =>
-                    `<span class="now-pill"><span>${n}</span></span>`).join('');
+                    `<span class="now-pill"><span>${_stripGuide(n)}</span></span>`).join('');
             } else {
                 nowPillsEl.innerHTML = '';
             }
@@ -1013,6 +1103,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
 
   await Promise.all(includePromises);
+  initRallyCard();
   await loadRooms();
 
   updateDarkMode();
