@@ -488,7 +488,7 @@ async function init() {
       let html = `<div class="act-time">${timeStart}</div>`;
       html += `<div class="act-body">`;
       html += `<div class="act-name">${myAssignment ? '<span class="assign-star">★</span> ' : ''}${act.activity}</div>`;
-      if (act.location) html += `<div class="act-loc">${act.location}</div>`;
+      if (act.location) html += `<div class="act-loc">${act.location.replace(/<a href="\/rooms\.html"[^>]*>.*?<\/a>/g, '').trim()}</div>`;
       if (myAssignment) {
         const detail = formatAssignment(myAssignment);
         if (detail) html += `<div class="assignment-detail">${detail}</div>`;
