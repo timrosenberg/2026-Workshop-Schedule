@@ -229,7 +229,11 @@ function showStaffEvent(act, myAssignment, rowEl) {
           const btnStyle = "display:inline-block;padding:3px 11px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);font-size:0.85em;cursor:pointer;border:none;font-family:inherit;margin-top:6px";
           html += `<div class="event-note-line"><button onclick="openStaffMap('${mapUrl}')" style="${btnStyle}">↗ Rally point map</button></div>`;
         }
-        const students = WALKING_GROUP_STUDENTS[groupLetter] || [];
+        const students = (WALKING_GROUP_STUDENTS[groupLetter] || [])
+          .slice().sort((a, b) => {
+            const lastName = n => n.trim().split(/\s+/).slice(-1)[0].toLowerCase();
+            return lastName(a).localeCompare(lastName(b));
+          });
         if (students.length) {
           html += `<div class="event-note-line" style="margin-top:10px"><span style="font-size:0.8em;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:var(--text3)">Your students</span></div>`;
           html += students.map(n => `<div class="event-note-line"><span>${n}</span></div>`).join('');
