@@ -1,0 +1,15 @@
+{
+  "name": "2026-workshop-schedule",
+  "private": true,
+  "scripts": {
+    "lint": "eslint js/",
+    "lint:fix": "eslint js/ --fix",
+    "format": "prettier --write js/ css/ *.html faculty/*.html includes/*.html",
+    "format:check": "prettier --check js/ css/ *.html faculty/*.html includes/*.html"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "globals": "^15.0.0",
+    "prettier": "^3.0.0"
+  }
+}
