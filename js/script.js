@@ -1296,9 +1296,11 @@ function showNotifBanner() {
     document.getElementById('notif-allow').onclick = () => {
       overlay.classList.remove('show');
       localStorage.setItem(NOTIF_BANNER_KEY, 'true');
-      // Call without await — preserves iOS user gesture context while letting
-      // OneSignal handle the native dialog and service worker subscription.
-      if (window.OneSignal) window.OneSignal.Notifications.requestPermission();
+      window.OneSignalDeferred = window.OneSignalDeferred || [];
+      window.OneSignalDeferred.push(async function(OneSignal) {
+        await OneSignal.init({ appId: '9e1ae8eb-4c86-4b27-b078-2d98c6190f76', notifyButton: { enable: false } });
+        OneSignal.Notifications.requestPermission();
+      });
     };
 
     document.getElementById('notif-dismiss').onclick = () => {
