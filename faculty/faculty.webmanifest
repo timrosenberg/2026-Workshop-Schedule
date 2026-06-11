@@ -1,7 +1,7 @@
 {
   "name": "Saxophone Workshop (Faculty)",
   "short_name": "Sax Faculty",
-  "start_url": "./",
+  "start_url": "./schedule.html?name=rosenberg",
   "scope": "/faculty/",
   "display": "standalone",
   "background_color": "#ffffff",
