@@ -15,14 +15,9 @@
   <link rel="manifest" href="faculty.webmanifest">
   <link rel="apple-touch-icon" href="/assets/icons/faculty-icon-180.png">
   <style>
-    body::before {
-      content: '';
-      display: block;
-      height: 50vh;
-      margin-top: -50vh;
-      background-color: #404040;
-    }
-    body.dark::before { background-color: #0C1C12; }
+    body { background: #404040; }
+    body.dark { background: #0C1C12; }
+    .app { background: var(--bg); min-height: 100vh; }
     /* Gray palette — overrides green for staff version */
     :root {
       --forest:      #404040;
