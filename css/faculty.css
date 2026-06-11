@@ -1,4 +1,12 @@
 /* === BASE STYLES === */
+html {
+  background-color: #404040;
+}
+
+@media (prefers-color-scheme: dark) {
+  html { background-color: #333333; }
+}
+
 body {
   background-color: #e0e0e0;
   color: #222; /* Default text color */
