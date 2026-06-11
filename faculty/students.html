@@ -15,16 +15,12 @@
   <link rel="manifest" href="faculty.webmanifest">
   <link rel="apple-touch-icon" href="/assets/icons/faculty-icon-180.png">
   <style>
-    html { background-color: #404040; }
-    html:has(body.dark) { background-color: #0C1C12; }
     body::before {
       content: '';
-      position: fixed;
-      top: -50vh;
-      left: 0; right: 0;
+      display: block;
       height: 50vh;
+      margin-top: -50vh;
       background-color: #404040;
-      z-index: 999;
     }
     body.dark::before { background-color: #0C1C12; }
     /* Gray palette — overrides green for staff version */
