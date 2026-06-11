@@ -23,7 +23,9 @@
       await OneSignal.init({
         appId: "9e1ae8eb-4c86-4b27-b078-2d98c6190f76",
         notifyButton: { enable: false },
-        slidedown: { prompts: [] }
+        promptOptions: {
+          slidedown: { enabled: false, autoPrompt: false }
+        }
       });
     });
   </script>
