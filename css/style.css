@@ -78,12 +78,14 @@ html { font-size: 16px; -webkit-text-size-adjust: 100%; }
 
 body {
   font-family: var(--font-ui);
-  background: var(--bg);
+  background: var(--forest);
   color: var(--text);
   min-height: 100svh;
   padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px));
   transition: background 0.3s, color 0.3s;
 }
+body.dark { background: var(--forest-deep); }
+.app { background: var(--bg); min-height: 100svh; }
 
 a { color: inherit; text-decoration: none; }
 button { font-family: var(--font-ui); border: none; background: none; cursor: pointer; }
@@ -778,9 +780,11 @@ body.page {
   font-family: var(--font-ui);
   font-size: 1.0625rem;
   line-height: 1.55;
-  background: var(--bg);
+  background: var(--forest);
   color: var(--text);
 }
+body.dark.page { background: var(--forest-deep); }
+body.page .main-container { background: var(--bg); min-height: 100svh; }
 
 body.page a { color: var(--forest-mid); text-decoration: none; }
 body.page a:visited { color: var(--forest-lt); }
