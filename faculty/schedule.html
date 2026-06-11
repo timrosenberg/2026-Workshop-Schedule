@@ -15,6 +15,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="manifest" href="faculty.webmanifest">
   <link rel="apple-touch-icon" href="/assets/icons/faculty-icon-180.png">
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+  <script>
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(async function(OneSignal) {
+      await OneSignal.init({
+        appId: "9e1ae8eb-4c86-4b27-b078-2d98c6190f76",
+        notifyButton: { enable: false },
+        promptOptions: { slidedown: { enabled: false, autoPrompt: false } }
+      });
+    });
+  </script>
   <style>
     body { background: #404040; }
     body.dark { background: #0C1C12; }
@@ -138,5 +149,49 @@
 
 <script src="nav.js"></script>
 <script src="schedule.js" defer></script>
+
+<!-- NOTIFICATION PERMISSION BANNER -->
+<div id="notif-overlay">
+  <div id="notif-card">
+    <div class="notif-header">
+      <div class="notif-app-icon">
+        <img src="/assets/icons/saxophone.png" alt="">
+      </div>
+      <span class="notif-app-name">Stetson Sax Workshop</span>
+    </div>
+    <p class="notif-title">Get Workshop Alerts</p>
+    <p class="notif-body">We'll notify you about schedule changes and important announcements during workshop week.</p>
+    <div class="notif-actions">
+      <button id="notif-dismiss">Not now</button>
+      <button id="notif-allow">Turn on</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const _isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
+  const _isStandalone = 'standalone' in window.navigator && window.navigator.standalone;
+  const NOTIF_KEY = 'notif-banner-dismissed';
+
+  if (typeof Notification !== 'undefined' &&
+      Notification.permission === 'default' &&
+      !localStorage.getItem(NOTIF_KEY) &&
+      (!_isIOS || _isStandalone)) {
+    setTimeout(() => {
+      const overlay = document.getElementById('notif-overlay');
+      if (!overlay) return;
+      document.getElementById('notif-allow').onclick = () => {
+        overlay.classList.remove('show');
+        localStorage.setItem(NOTIF_KEY, 'true');
+        if (window.OneSignal) window.OneSignal.Notifications.requestPermission();
+      };
+      document.getElementById('notif-dismiss').onclick = () => {
+        overlay.classList.remove('show');
+        localStorage.setItem(NOTIF_KEY, 'true');
+      };
+      overlay.classList.add('show');
+    }, 4000);
+  }
+</script>
 </body>
 </html>
