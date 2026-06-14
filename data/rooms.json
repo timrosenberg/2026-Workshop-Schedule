@@ -41,10 +41,10 @@
     "section": "Fundamentals Classes",
     "items": [
       { "name": "Concert & Symphonic Sopranos", "loc": "Presser 113" },
-      { "name": "Concert Altos", "loc": "Presser 112" },
+      { "name": "Concert Altos", "loc": "Presser 113" },
       { "name": "Symphonic Altos", "loc": "Presser 352" },
       { "name": "Concert Tenors", "loc": "Elizabeth Hall" },
-      { "name": "Symphonic Tenors", "loc": "Presser 113" },
+      { "name": "Symphonic Tenors", "loc": "Presser 112" },
       { "name": "Concert Baritones", "loc": "Lee Chapel" },
       { "name": "Symphonic Baritones", "loc": "Feasel Hall" }
     ]
