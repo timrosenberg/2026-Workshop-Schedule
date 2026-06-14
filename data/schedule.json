@@ -544,7 +544,7 @@
         ]
       },
       {
-        "time": "8:00 - 9:00 PM",
+        "time": "8:00 - 8:45 PM",
         "activity": "Practice Time or Relax in Dorm",
         "location": "Presser or Hatter Hall",
         "mapUrl": "",
@@ -552,6 +552,13 @@
           "Students may stay in Presser to practice or go to Hatter Hall to relax.",
           "Students will be escorted to Hatter Hall in a group."
         ]
+      },
+      {
+        "time": "8:45 PM",
+        "activity": "Walk to Hatter Hall",
+        "location": "Presser Hall → Hatter Hall",
+        "mapUrl": "",
+        "notes": []
       },
       {
         "time": "9:00 - 9:15 PM",
