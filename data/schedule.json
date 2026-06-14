@@ -1618,6 +1618,16 @@
             "person": "david",
             "role": "duty",
             "detail": "Station Walk-through Verification"
+          },
+          {
+            "person": "bill",
+            "role": "duty",
+            "detail": "Station Walk-through Verification (after Tinsley setup)"
+          },
+          {
+            "person": "kaia",
+            "role": "duty",
+            "detail": "Station Walk-through Verification (after Tinsley setup)"
           }
         ]
       },
