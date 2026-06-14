@@ -2260,6 +2260,26 @@
             "person": "kate",
             "role": "monitor",
             "detail": "Presser Floor 3"
+          },
+          {
+            "person": "tim",
+            "role": "duty",
+            "detail": "Pizza Party Set-Up"
+          },
+          {
+            "person": "bill",
+            "role": "duty",
+            "detail": "Pizza Party Set-Up"
+          },
+          {
+            "person": "kristen",
+            "role": "duty",
+            "detail": "Pizza Party Set-Up"
+          },
+          {
+            "person": "david",
+            "role": "duty",
+            "detail": "Pizza Party Set-Up"
           }
         ]
       },
@@ -2280,24 +2300,19 @@
         ],
         "assignments": [
           {
-            "person": "tim",
-            "role": "duty",
-            "detail": "Pizza Party Set-Up"
-          },
-          {
             "person": "bill",
             "role": "duty",
-            "detail": "Pizza Party Set-Up"
+            "detail": "Food distribution"
           },
           {
-            "person": "kristen",
+            "person": "michelle",
             "role": "duty",
-            "detail": "Pizza Party Set-Up"
+            "detail": "Food distribution"
           },
           {
-            "person": "david",
+            "person": "chandler",
             "role": "duty",
-            "detail": "Pizza Party Set-Up"
+            "detail": "Food distribution"
           }
         ]
       },
