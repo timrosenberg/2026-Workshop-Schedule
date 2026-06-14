@@ -1557,7 +1557,7 @@
           {
             "person": "bill",
             "role": "duty",
-            "detail": "Tour d'Cosmos Set-Up"
+            "detail": "Tinsley Concert Set-Up (Aldana), then Command Center Set-Up (Hollis Atrium)"
           },
           {
             "person": "kristen",
@@ -1607,12 +1607,7 @@
           {
             "person": "kaia",
             "role": "duty",
-            "detail": "Tour d'Cosmos Set-Up"
-          },
-          {
-            "person": "bill",
-            "role": "duty",
-            "detail": "Station Walk-through Verification"
+            "detail": "Tinsley Concert Set-Up (Aldana)"
           },
           {
             "person": "kristen",
@@ -1621,11 +1616,6 @@
           },
           {
             "person": "david",
-            "role": "duty",
-            "detail": "Station Walk-through Verification"
-          },
-          {
-            "person": "kaia",
             "role": "duty",
             "detail": "Station Walk-through Verification"
           }
