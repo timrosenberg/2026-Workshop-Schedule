@@ -32,4 +32,13 @@
 
   const app = document.querySelector('.app');
   if (app) app.appendChild(nav);
+
+  const hdrNav = document.createElement('nav');
+  hdrNav.className = 'hdr-nav';
+  hdrNav.innerHTML = items.map(item =>
+    `<a href="${item.href}" class="hdr-nav-item${item.active ? ' active' : ''}">${item.label}</a>`
+  ).join('');
+
+  const hbtns = document.querySelector('.header .hbtns');
+  if (hbtns) hbtns.parentElement.insertBefore(hdrNav, hbtns);
 })();
