@@ -42,6 +42,11 @@ DIETARY_NORMALIZED = {
 }
 
 
+def fix_name(s):
+    """Title-case a name only if it arrived as all-caps or all-lowercase."""
+    return s.title() if (s == s.upper() or s == s.lower()) else s
+
+
 def parse_grade(s):
     m = re.search(r'\d+', s or '')
     return int(m.group()) if m else 0
@@ -72,8 +77,8 @@ def load_slate(path):
     students = {}
     with open_csv(path) as f:
         for row in csv.DictReader(f):
-            first = row.get('First', '').strip()
-            last  = row.get('Last', '').strip()
+            first = fix_name(row.get('First', '').strip())
+            last  = fix_name(row.get('Last', '').strip())
             if not first or not last:
                 continue
             grade_str = row.get('Grade as of Fall 2026', '').strip()
