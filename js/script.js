@@ -26,7 +26,7 @@ const CHAMBER_ROSTERS = {
   'whitt-con':      {name: 'Whitt',      type: 'Concert',   room: 'Presser 112',  students: []},
   'amann-sym':      {name: 'Amann',      type: 'Symphonic', room: 'Presser 128 (Boyd Jones\'s Studio)', students: []},
   'becker-sym':     {name: 'Becker',     type: 'Symphonic', room: 'Presser 113',  students: []},
-  'kalina-sym':     {name: 'Kalina',     type: 'Symphonic', room: 'Presser 202',  students: []},
+  'kalina-sym':     {name: 'Chevalier',  type: 'Symphonic', room: 'Presser 202',  students: []},
   'leavitt-sym':    {name: 'Leavitt',    type: 'Symphonic', room: 'Feasel Hall',  students: []},
   'murphy-sym':     {name: 'Murphy',     type: 'Symphonic', room: 'Lee Chapel',   students: []},
   'pyburn-sym':     {name: 'Pyburn',     type: 'Symphonic', room: 'Presser 112',  students: []},
@@ -80,7 +80,7 @@ const FUNDAMENTALS_DATA = {
   alto:    {concert:   {room: 'Presser 113',  instructor: 'Becker'},
             symphonic: {room: 'Presser 352',  instructor: 'Hinote'}},
   tenor:   {concert:   {room: 'Presser 349',  instructor: 'Pyburn'},
-            symphonic: {room: 'Presser 112',  instructor: 'Kalina'}},
+            symphonic: {room: 'Presser 112',  instructor: 'Chevalier'}},
   bari:    {concert:   {room: 'Tinsley Hall', instructor: 'Whitt'},
             symphonic: {room: 'Feasel Hall',  instructor: 'Murphy'}}
 };
@@ -89,7 +89,7 @@ const CHAMBER_DATA = {
   symphonic: [
     {coach: 'Amann',     room: 'Presser 128 (Boyd Jones\'s Studio)'},
     {coach: 'Becker',    room: 'Presser 113'},
-    {coach: 'Kalina',    room: 'Presser 202'},
+    {coach: 'Chevalier', room: 'Presser 202'},
     {coach: 'Leavitt',   room: 'Feasel Hall'},
     {coach: 'Murphy',    room: 'Lee Chapel'},
     {coach: 'Pyburn',    room: 'Presser 112'},

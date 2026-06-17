@@ -69,7 +69,7 @@
       { "name": "Pyburn", "loc": "Presser 112", "roster": "pyburn-sym" },
       { "name": "Becker", "loc": "Presser 113", "roster": "becker-sym" },
       { "name": "Murphy", "loc": "Lee Chapel", "roster": "murphy-sym" },
-      { "name": "Kalina", "loc": "Presser 202", "roster": "kalina-sym" },
+      { "name": "Chevalier", "loc": "Presser 202", "roster": "kalina-sym" },
       { "name": "Leavitt", "loc": "Feasel Hall", "roster": "leavitt-sym" }
     ]
   },

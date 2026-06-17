@@ -18,7 +18,7 @@ const DISPLAY_NAMES = {
   'marc':     'Marc Kolodinsky',
   'kristen':  'Kristen Zelenak',
   'chandler': 'Chandler Wilson',
-  'kate':     'Kate Kalina'
+  'kate':     'Kate Chevalier'
 };
 
 const CAMP_START = '2026-06-22';
