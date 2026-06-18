@@ -91,7 +91,7 @@
   },
   {
     "first": "Mendel",
-    "last": "Beats",
+    "last": "BEATS",
     "grade": "11th",
     "school": "East River High School",
     "primary": "Baritone Saxophone",
@@ -211,7 +211,7 @@
   },
   {
     "first": "Finn",
-    "last": "Carriere",
+    "last": "CARRIERE",
     "grade": "9th",
     "school": "Seminole High School",
     "primary": "Baritone Saxophone",
@@ -237,6 +237,21 @@
     "jazzClass": "",
     "yaAudition": true,
     "firstTime": false,
+    "dietary": null
+  },
+  {
+    "first": "Bay",
+    "last": "Cox",
+    "grade": "8th",
+    "school": "Rock Lake Middle School",
+    "primary": "Alto Saxophone",
+    "bringing": "Alto Saxophone",
+    "ensemble": "concert",
+    "chamberCoach": "",
+    "chamberInstrument": "",
+    "jazzClass": "",
+    "yaAudition": false,
+    "firstTime": true,
     "dietary": null
   },
   {
@@ -298,6 +313,21 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null
+  },
+  {
+    "first": "Yannic",
+    "last": "Elizee",
+    "grade": "12th",
+    "school": "Good Hope Country Day School",
+    "primary": "Alto Saxophone",
+    "bringing": "Alto Saxophone",
+    "ensemble": "symphonic",
+    "chamberCoach": "",
+    "chamberInstrument": "",
+    "jazzClass": "",
+    "yaAudition": false,
+    "firstTime": true,
+    "dietary": "limited cheese"
   },
   {
     "first": "Oliver",
@@ -433,6 +463,21 @@
     "yaAudition": false,
     "firstTime": true,
     "dietary": ""
+  },
+  {
+    "first": "Lily",
+    "last": "Goltz",
+    "grade": "8th",
+    "school": "Bak Middle School of the Arts",
+    "primary": "Tenor Saxophone",
+    "bringing": "Alto Saxophone, Tenor Saxophone",
+    "ensemble": "concert",
+    "chamberCoach": "",
+    "chamberInstrument": "",
+    "jazzClass": "",
+    "yaAudition": true,
+    "firstTime": true,
+    "dietary": null
   },
   {
     "first": "Zoey",
@@ -577,21 +622,6 @@
     "primary": "Tenor Saxophone",
     "bringing": "Tenor Saxophone",
     "ensemble": "symphonic",
-    "chamberCoach": "",
-    "chamberInstrument": "",
-    "jazzClass": "",
-    "yaAudition": true,
-    "firstTime": true,
-    "dietary": ""
-  },
-  {
-    "first": "Avery",
-    "last": "Jonas",
-    "grade": "9th",
-    "school": "Santa Fe High School",
-    "primary": "Alto Saxophone",
-    "bringing": "Alto Saxophone",
-    "ensemble": "concert",
     "chamberCoach": "",
     "chamberInstrument": "",
     "jazzClass": "",
@@ -1170,19 +1200,19 @@
     "dietary": null
   },
   {
-    "first": "Ethan",
-    "last": "Rodriguez",
+    "first": "Roberto Jett",
+    "last": "Ruiz",
     "grade": "10th",
-    "school": "East River High School",
-    "primary": "Alto Saxophone",
-    "bringing": "Soprano Saxophone, Alto Saxophone",
+    "school": "Timber Creek High School",
+    "primary": "Baritone Saxophone",
+    "bringing": "Soprano Saxophone, Baritone Saxophone",
     "ensemble": "symphonic",
     "chamberCoach": "",
     "chamberInstrument": "",
     "jazzClass": "",
     "yaAudition": true,
     "firstTime": false,
-    "dietary": "No peanuts, no tree nuts"
+    "dietary": null
   },
   {
     "first": "Isaac",
@@ -1212,6 +1242,21 @@
     "jazzClass": "",
     "yaAudition": true,
     "firstTime": true,
+    "dietary": null
+  },
+  {
+    "first": "Sophia",
+    "last": "Scarpinato",
+    "grade": "10th",
+    "school": "Oviedo High School",
+    "primary": "Tenor Saxophone",
+    "bringing": "Tenor Saxophone",
+    "ensemble": "symphonic",
+    "chamberCoach": "",
+    "chamberInstrument": "",
+    "jazzClass": "",
+    "yaAudition": false,
+    "firstTime": false,
     "dietary": null
   },
   {
