@@ -332,7 +332,7 @@
     </div>
     <div class="card-row">
       <span class="card-lbl">Room</span>
-      <span class="card-val${s.room ? '' : ' tbd'}">${s.room ? 'Hatter ' + s.room : 'TBD'}</span>
+      <span class="card-val${s.room ? '' : ' tbd'}">${s.room || 'TBD'}</span>
     </div>
     <div class="card-row">
       <span class="card-lbl">Chamber</span>
