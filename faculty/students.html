@@ -331,6 +331,10 @@
       <span class="card-val">${instrLine}</span>
     </div>
     <div class="card-row">
+      <span class="card-lbl">Room</span>
+      <span class="card-val${s.room ? '' : ' tbd'}">${s.room ? 'Hatter ' + s.room : 'TBD'}</span>
+    </div>
+    <div class="card-row">
       <span class="card-lbl">Chamber</span>
       <span class="card-val${chamberVal ? '' : ' tbd'}">${chamberVal || 'TBD'}</span>
     </div>
@@ -349,7 +353,7 @@
       activeFilter === 'all' || s.ensemble === activeFilter
     );
     const shown = query
-      ? base.filter(s => `${s.first} ${s.last} ${s.school}`.toLowerCase().includes(query))
+      ? base.filter(s => `${s.first} ${s.last} ${s.school} ${s.room || ''}`.toLowerCase().includes(query))
       : base;
 
     document.getElementById('studentGrid').innerHTML = shown.length
