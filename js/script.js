@@ -1279,6 +1279,18 @@ if (isMobileDevice() && isIOS && !isInStandaloneMode) {
   showInstallBanner('ios');
 }
 
+// ONESIGNAL — init immediately with all auto-prompts suppressed
+window.OneSignalDeferred = window.OneSignalDeferred || [];
+window.OneSignalDeferred.push(async function(OneSignal) {
+  await OneSignal.init({
+    appId: '9e1ae8eb-4c86-4b27-b078-2d98c6190f76',
+    autoPrompt: false,
+    autoRegister: false,
+    notifyButton: { enable: false },
+    promptOptions: { slidedown: { prompts: [] } }
+  });
+});
+
 // NOTIFICATION PERMISSION BANNER
 const NOTIF_BANNER_KEY = 'notif-banner-dismissed';
 
@@ -1286,7 +1298,6 @@ function showNotifBanner() {
   if (typeof Notification === 'undefined') return;
   if (Notification.permission !== 'default') return;
   if (localStorage.getItem(NOTIF_BANNER_KEY)) return;
-  // iOS requires the app to be installed as a PWA before push works
   if (isIOS && !isInStandaloneMode) return;
 
   setTimeout(() => {
@@ -1296,9 +1307,7 @@ function showNotifBanner() {
     document.getElementById('notif-allow').onclick = () => {
       overlay.classList.remove('show');
       localStorage.setItem(NOTIF_BANNER_KEY, 'true');
-      window.OneSignalDeferred = window.OneSignalDeferred || [];
       window.OneSignalDeferred.push(async function(OneSignal) {
-        await OneSignal.init({ appId: '9e1ae8eb-4c86-4b27-b078-2d98c6190f76', notifyButton: { enable: false } });
         OneSignal.Notifications.requestPermission();
       });
     };
