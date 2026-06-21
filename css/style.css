@@ -915,3 +915,48 @@ body.page .content-inner.recordings-page { padding-bottom: 1rem; width: 100%; }
 body.page .main-container.faq-block-display { display: block; }
 @media (max-width: 600px) { body.page .main-container { padding-left: 1rem; padding-right: 1rem; } }
 @media (max-width: 450px) { body.page h2 { font-size: 1.25rem; } }
+
+/* ================================
+   STUDENT PAGES — DESKTOP (≥ 960px)
+================================ */
+@media (min-width: 960px) {
+  body.page .main-container {
+    max-width: 1060px;
+    padding: 0 32px;
+  }
+
+  body.page #room-list-container,
+  body.page #faculty-list-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: start;
+  }
+
+  .faq-section {
+    max-width: 900px;
+    columns: 2;
+    column-gap: 1.5rem;
+  }
+  .faq-section h2 {
+    column-span: all;
+  }
+  .faq-item {
+    break-inside: avoid;
+  }
+
+  body.page .content-inner.recordings-page {
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 1280px) {
+  body.page .main-container {
+    max-width: 1200px;
+    padding: 0 48px;
+  }
+
+  body.page #room-list-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
