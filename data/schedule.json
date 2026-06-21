@@ -1161,6 +1161,7 @@
         "location": "Lee Chapel",
         "mapUrl": "https://maps.app.goo.gl/Dvm3E7u6dcQk4WHg7",
         "notes": [],
+        "detail": "<div style='margin-top:0.5rem'><div class='event-notes-lbl'>Program</div><div style='margin-top:0.4rem;line-height:1.6'><em>SETI</em> (2012) by Michel Lysight<br><em>O Vos</em> (2000) by Liz Johnson<br><span style='color:var(--text2);font-size:0.85em;padding-left:1rem'>Steve Amann, Chandler Wilson, alto saxophones</span><br><em>Lux Stellarum (Meditations after Hildegard)</em> (2024) by Kirk O'Riordan<br><em>Imbrium</em> (2019) by Gemma Peacocke<br><em>The Vast Unknowable</em> (2018) by Joanne Metcalf</div></div>",
         "assignments": [
           {
             "person": "tim",
