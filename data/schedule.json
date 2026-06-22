@@ -535,6 +535,7 @@
         "notes": [
           "Lee Chapel is <em>inside</em> Elizabeth Hall."
         ],
+        "detail": "<div style='margin-top:0.5rem'><div class='event-notes-lbl'>Program</div><div style='margin-top:0.4rem;line-height:1.6'><strong>Castorea Quartet</strong><br><span style='padding-left:1rem'>Mario Galaxy</span><br><br><strong>M120 Project</strong><br><span style='padding-left:1rem'>Ryūkyūan Fantasy · Yasuhide Itō</span><br><span style='padding-left:1rem'>Schoolyard Suite, III. Hide and Seek · Gary Lindsay</span><br><br><strong>Faculty Ensemble</strong><br><span style='padding-left:1rem'>Ecco l'aurora con l'aurata fronte · Giovanni Gabrieli</span><br><span style='padding-left:1rem'>Corcovado (Quiet Nights of Quiet Stars) · Antonio Carlos Jobim</span><br><span style='padding-left:1rem'>Suite from <em>Dune</em> · Hans Zimmer</span><br><span style='padding-left:1rem'><em>Saxes in Space</em> · Steve Amann</span></div></div>",
         "assignments": [
           {
             "person": "michelle",
