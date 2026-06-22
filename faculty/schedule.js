@@ -140,6 +140,17 @@ let _selectedRow = null;
 const _clockSVG = `<svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"/><path d="M12 7v5l3 3"/></svg>`;
 const _pinSVG   = `<svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"/></svg>`;
 
+const WALKING_GROUP_RALLY = {
+  A: { hatter: 'Floor 1 — W Study Room',              hatterMap: '/assets/images/hatter-floor-1-rally.png', presser: 'Bike rack, W side of courtyard',                       presserMap: '/assets/images/music-rally.png' },
+  B: { hatter: 'Floor 1 — Laundry Room',               hatterMap: '/assets/images/hatter-floor-1-rally.png', presser: 'Door entrance to Elizabeth Hall green room',            presserMap: '/assets/images/music-rally.png' },
+  C: { hatter: 'Floor 1 — Lobby, NW (near windows)',   hatterMap: '/assets/images/hatter-floor-1-rally.png', presser: 'Tables outside Presser Hall',                          presserMap: '/assets/images/music-rally.png' },
+  D: { hatter: 'Floor 1 — Lobby, SE (near desk)',      hatterMap: '/assets/images/hatter-floor-1-rally.png', presser: 'Path along W side of Sampson Hall',                    presserMap: '/assets/images/music-rally.png' },
+  E: { hatter: 'Floor 2 — W Study Room',               hatterMap: '/assets/images/hatter-floor-2-rally.png', presser: 'Cello Sculpture',                                      presserMap: '/assets/images/music-rally.png' },
+  F: { hatter: 'Floor 2 — Laundry Room',               hatterMap: '/assets/images/hatter-floor-2-rally.png', presser: 'Top of stairs, stage door entrance to Lee Chapel',     presserMap: '/assets/images/music-rally.png' },
+  G: { hatter: 'Floor 2 — Lobby, NW',                  hatterMap: '/assets/images/hatter-floor-2-rally.png', presser: 'Bottom of stairs, stage door entrance to Lee Chapel',  presserMap: '/assets/images/music-rally.png' },
+  H: { hatter: 'Floor 2 — Lobby, SE',                  hatterMap: '/assets/images/hatter-floor-2-rally.png', presser: 'Tables at corner of Sampson Hall',                     presserMap: '/assets/images/music-rally.png' },
+};
+
 const WALKING_GROUP_STUDENTS = {
   A: ['Miro Arquines','Logan Wannos','Zoey Greenstein','Lily Goltz','Brandon Peaks','Michelle Zamora','Kyle Howard','Valent Loeffel','Jimmy Kim','Andy Mondello','Addison Talley','Sarah Meyer'],
   B: ['Croix Bello','Dominic Anodide','Samuel Kisseloff','Finn Carriere','Eladia Marcial','Maci Walser','Matthew Iannotti','David Parks','Michael Budd','Ian Monreal','Morgan Jeanty','Mason Miller'],
@@ -151,13 +162,7 @@ const WALKING_GROUP_STUDENTS = {
   H: ['Sebastian Sadr','Pavel Gailans','Joshua Baker','Mykhailo Hirka','Gabriel Skoretz','Lincoln Hrajnoha-Cordero','Roberto Jett Ruiz','Jake Mirza','Elliot Webster','John Michalak','Connor Reed','Evey Heilmann'],
 };
 
-function _walkingGroupMapUrl(groupLetter, act) {
-  const haystack = (act.location || '') + (act.activity || '');
-  if (/presser/i.test(haystack)) return '/assets/images/music-rally.png';
-  return ['A','B','C','D'].includes((groupLetter || '').toUpperCase())
-    ? '/assets/images/hatter-floor-1-rally.png'
-    : '/assets/images/hatter-floor-2-rally.png';
-}
+
 
 function _floorNumber(asgn, act) {
   if (asgn.role === 'nightwatch') return 1;
@@ -228,10 +233,13 @@ function showStaffEvent(act, myAssignment, rowEl) {
 
       if (isTransit) {
         const groupLetter = ((myAssignment.detail.match(/Group ([A-H])/i) || [])[1] || '').toUpperCase();
-        const mapUrl = _walkingGroupMapUrl(groupLetter, act);
-        if (mapUrl) {
-          const btnStyle = "display:inline-block;padding:3px 11px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);font-size:0.85em;cursor:pointer;border:none;font-family:inherit;margin-top:6px";
-          html += `<div class="event-note-line"><button onclick="openStaffMap('${mapUrl}')" style="${btnStyle}">↗ Rally point map</button></div>`;
+        const rally = WALKING_GROUP_RALLY[groupLetter];
+        if (rally) {
+          const mapBtn = "display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);font-size:0.8em;cursor:pointer;border:none;font-family:inherit;text-decoration:none";
+          const isPresser = /presser/i.test((act.location || '') + (act.activity || ''));
+          const loc = isPresser ? rally.presser : rally.hatter;
+          const mapUrl = isPresser ? rally.presserMap : rally.hatterMap;
+          html += `<div class="event-note-line" style="margin-top:8px"><span><strong>Rally point:</strong> ${loc} <button onclick="openStaffMap('${mapUrl}')" style="${mapBtn}">↗ Map</button></span></div>`;
         }
         const students = (WALKING_GROUP_STUDENTS[groupLetter] || [])
           .slice().sort((a, b) => {
