@@ -56,7 +56,8 @@
       { "name": "Guthrie", "loc": "Tinsley Hall", "roster": "guthrie-con" },
       { "name": "Whitt", "loc": "Presser 112", "roster": "whitt-con" },
       { "name": "Hinote", "loc": "Presser 113", "roster": "hinote-con" },
-      { "name": "Murphy", "loc": "Presser 349", "roster": "murphy-con" }
+      { "name": "Murphy", "loc": "Presser 349", "roster": "murphy-con" },
+      { "name": "Rosenberg", "loc": "Presser 349", "roster": "rosenberg-con" }
     ]
   },
   {
