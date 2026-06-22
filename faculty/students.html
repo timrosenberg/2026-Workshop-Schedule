@@ -342,6 +342,10 @@
       <span class="card-lbl">Jazz</span>
       <span class="card-val${s.jazzClass ? '' : ' tbd'}">${s.jazzClass || 'TBD'}</span>
     </div>
+    <div class="card-row">
+      <span class="card-lbl">Walking Group</span>
+      <span class="card-val${s.walkingGroup ? '' : ' tbd'}">${s.walkingGroup || 'TBD'}</span>
+    </div>
   </div>
   ${dietary}
 </div>`;
@@ -353,7 +357,7 @@
       activeFilter === 'all' || s.ensemble === activeFilter
     );
     const shown = query
-      ? base.filter(s => `${s.first} ${s.last} ${s.school} ${s.room || ''}`.toLowerCase().includes(query))
+      ? base.filter(s => `${s.first} ${s.last} ${s.school} ${s.room || ''} ${s.walkingGroup || ''}`.toLowerCase().includes(query))
       : base;
 
     document.getElementById('studentGrid').innerHTML = shown.length

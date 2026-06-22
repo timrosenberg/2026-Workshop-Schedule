@@ -141,14 +141,14 @@ const _clockSVG = `<svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" str
 const _pinSVG   = `<svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"/></svg>`;
 
 const WALKING_GROUP_STUDENTS = {
-  A: ['Benjamin Krayter','Oliver Esquivel Novek','Ian Stack-Thomas','Ethan Boniello','Connor Reed','Carley Moore','Cooper Katz','Sophia Kazi','Roberto "Jett" Ruiz','Jimmy Kim','Alexandra Lang'],
-  B: ['Maximillian Threatt','Maci Fetherolf','Brendon Gandy','Ariel Meyer','Isabella Scheffing','Ethan Rodriguez','Thomas Willadsen','Skylar Mathson','Kai Miyazato','Thaddeus Rodziewicz','Joshua Baker','John Michalak'],
-  C: ['Riley Bredesen','Giray Selman','Addison Talley','Sarah Meyer','Dominic Novero','Lucas Lively','Jonathan Nevarez','Aidan Lane','Caitlyn Shaffer','Rashad Barrett','Enzo Ward','Alexys Rodea-Carbajal'],
-  D: ['Ian Monreal','Caeden Rojas','Anthony Barron','Sophia Scarpinato','Jeramiah Clark','Kalil Alejandro Ortiz Rivera','Hannah OLeary','Ava Foltak','Mason Miller','Charlie Battaglia','Justus Peyton'],
-  E: ['Mia Castillo','Evey Heilmann','Ella Barajas','Alexander Incardona','Landon Layton','Jonathan Passales','Alyssa De León','Kelis Turner','Graham Vincent','Garrett Spiers','Linken Walker'],
-  F: ['Maci Walser','Caleb Kizewski','Isaac Leslie','Jonna Jacob','Ian Cintron','Rachel Mosquera','Finn Carriere','Jada Bartley','Adrian Font','Samuel Campen','Lucas Peliwo','Luca Gorgone'],
-  G: ['Hope Fuentes','Elliot Magley','Derek Mundrean','Nathan Renninger','Raylen Watts','Croix Bello','Angelina Yu','Oluwabunmi Oni','Miles Springer','Hailey Megargee','Juan Argotte','Isaac Sadik'],
-  H: ['Elliot Webster','Griffin Tucker','Jack Vincent','Owen Plotkin','Lucas Johnson','Dominic Byrd','Kevin Jiang','Abigail Cuevas','Ethan Koesler','Maddelyn Mirino','Valencia Jaco','Devyn Novotny'],
+  A: ['Miro Arquines','Logan Wannos','Zoey Greenstein','Lily Goltz','Brandon Peaks','Michelle Zamora','Kyle Howard','Valent Loeffel','Jimmy Kim','Andy Mondello','Addison Talley','Sarah Meyer'],
+  B: ['Croix Bello','Dominic Anodide','Samuel Kisseloff','Finn Carriere','Eladia Marcial','Maci Walser','Matthew Iannotti','David Parks','Michael Budd','Ian Monreal','Morgan Jeanty','Mason Miller'],
+  C: ['Judah Huffman','Amir Brown','Skylar Mathson','Alyssa De Leon','Ariel Meyer','Rashad Barrett','Samuel Campen','Liam Stiles','Diego Abreu','Jonathan Nevarez','Alexandra Lang','Dominic Novero'],
+  D: ['Simon Lacks','Ethan Dias','Jewlz Mcdannell','Maci Fetherolf','Carter Niehoff','Ben Krayter','Isaac Sadik','Isabella Scheffing','Mendel Beats','Oliver Esquivel Novek','Juan Argotte Romero','Anthony Yanevich'],
+  E: ['Isaac Mosher','Kingston Falco','Nathan Renninger','Ava Foltak','Justus Peyton','Kadyn Davis','Caleb Kizewski','Sophia Kazi','Adam Bey','Jacob Palmer','Liam Blevins','Adrian Font'],
+  F: ['Elle Murdock','Perla L. Figure','Miles Springer','Hudson Hackett','Jax Reid','Zoey Dombroski','Ethan Martin','Devyn Novotny','Lucas Lively','Kai Miyazato','Dominic Byrd','Yannic Elizee'],
+  G: ['Adam Raij','Suzanne Galinski','Bay Cox','Oliver Wood','Derek Hsu','Penelope Roark','Austin Farah','Sophia Scarpinato','Linken Walker','Lawrence Mello','Audrey Mikayla Mathson','Mia Castillo'],
+  H: ['Sebastian Sadr','Pavel Gailans','Joshua Baker','Mykhailo Hirka','Gabriel Skoretz','Lincoln Hrajnoha-Cordero','Roberto Jett Ruiz','Jake Mirza','Elliot Webster','John Michalak','Connor Reed','Evey Heilmann'],
 };
 
 function _walkingGroupMapUrl(groupLetter, act) {

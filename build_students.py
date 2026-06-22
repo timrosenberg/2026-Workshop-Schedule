@@ -122,6 +122,26 @@ def apply_results(students, path):
     return students
 
 
+WALKING_GROUPS = {
+    'A': ['Miro Arquines','Logan Wannos','Zoey Greenstein','Lily Goltz','Brandon Peaks','Michelle Zamora','Kyle Howard','Valent Loeffel','Jimmy Kim','Andy Mondello','Addison Talley','Sarah Meyer'],
+    'B': ['Croix Bello','Dominic Anodide','Samuel Kisseloff','Finn Carriere','Eladia Marcial','Maci Walser','Matthew Iannotti','David Parks','Michael Budd','Ian Monreal','Morgan Jeanty','Mason Miller'],
+    'C': ['Judah Huffman','Amir Brown','Skylar Mathson','Alyssa De Leon','Ariel Meyer','Rashad Barrett','Samuel Campen','Liam Stiles','Diego Abreu','Jonathan Nevarez','Alexandra Lang','Dominic Novero'],
+    'D': ['Simon Lacks','Ethan Dias','Jewlz Mcdannell','Maci Fetherolf','Carter Niehoff','Ben Krayter','Isaac Sadik','Isabella Scheffing','Mendel Beats','Oliver Esquivel Novek','Juan Argotte Romero','Anthony Yanevich'],
+    'E': ['Isaac Mosher','Kingston Falco','Nathan Renninger','Ava Foltak','Justus Peyton','Kadyn Davis','Caleb Kizewski','Sophia Kazi','Adam Bey','Jacob Palmer','Liam Blevins','Adrian Font'],
+    'F': ['Elle Murdock','Perla L. Figure','Miles Springer','Hudson Hackett','Jax Reid','Zoey Dombroski','Ethan Martin','Devyn Novotny','Lucas Lively','Kai Miyazato','Dominic Byrd','Yannic Elizee'],
+    'G': ['Adam Raij','Suzanne Galinski','Bay Cox','Oliver Wood','Derek Hsu','Penelope Roark','Austin Farah','Sophia Scarpinato','Linken Walker','Lawrence Mello','Audrey Mikayla Mathson','Mia Castillo'],
+    'H': ['Sebastian Sadr','Pavel Gailans','Joshua Baker','Mykhailo Hirka','Gabriel Skoretz','Lincoln Hrajnoha-Cordero','Roberto Jett Ruiz','Jake Mirza','Elliot Webster','John Michalak','Connor Reed','Evey Heilmann'],
+}
+
+_WALKING_LOOKUP = {n.lower(): g for g, names in WALKING_GROUPS.items() for n in names}
+
+
+def apply_walking_groups(students):
+    for rec in students.values():
+        full = f"{rec['first']} {rec['last']}".lower()
+        rec['walkingGroup'] = _WALKING_LOOKUP.get(full)
+
+
 def main():
     if len(sys.argv) < 2:
         print(__doc__, file=sys.stderr)
@@ -131,6 +151,8 @@ def main():
 
     if len(sys.argv) >= 3:
         apply_results(students, sys.argv[2])
+
+    apply_walking_groups(students)
 
     output = sorted(students.values(), key=lambda s: (s['last'].lower(), s['first'].lower()))
     print(json.dumps(output, indent=2, ensure_ascii=False))

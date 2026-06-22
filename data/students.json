@@ -13,7 +13,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1308-A"
+    "room": "1308-A",
+    "walkingGroup": "C"
   },
   {
     "first": "Dominic",
@@ -29,7 +30,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": "",
-    "room": "1212-B"
+    "room": "1212-B",
+    "walkingGroup": "B"
   },
   {
     "first": "Juan",
@@ -45,7 +47,8 @@
     "yaAudition": true,
     "firstTime": false,
     "dietary": null,
-    "room": "1316-A"
+    "room": "1316-A",
+    "walkingGroup": "D"
   },
   {
     "first": "Miro",
@@ -61,7 +64,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1207-A"
+    "room": "1207-A",
+    "walkingGroup": "A"
   },
   {
     "first": "Joshua",
@@ -77,7 +81,8 @@
     "yaAudition": false,
     "firstTime": false,
     "dietary": "No peanuts",
-    "room": "1206-B"
+    "room": "1206-B",
+    "walkingGroup": "H"
   },
   {
     "first": "Rashad",
@@ -93,7 +98,8 @@
     "yaAudition": true,
     "firstTime": false,
     "dietary": null,
-    "room": "1306-A"
+    "room": "1306-A",
+    "walkingGroup": "C"
   },
   {
     "first": "Mendel",
@@ -109,7 +115,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1312-B"
+    "room": "1312-B",
+    "walkingGroup": "D"
   },
   {
     "first": "Croix",
@@ -125,7 +132,8 @@
     "yaAudition": true,
     "firstTime": false,
     "dietary": null,
-    "room": "1206-A"
+    "room": "1206-A",
+    "walkingGroup": "B"
   },
   {
     "first": "Adam",
@@ -141,7 +149,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": "No gluten (celiac)",
-    "room": "1310-A"
+    "room": "1310-A",
+    "walkingGroup": "E"
   },
   {
     "first": "Liam",
@@ -157,7 +166,8 @@
     "yaAudition": false,
     "firstTime": false,
     "dietary": null,
-    "room": "1318-B"
+    "room": "1318-B",
+    "walkingGroup": "E"
   },
   {
     "first": "Amir",
@@ -173,7 +183,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": "No pork",
-    "room": "1210-A"
+    "room": "1210-A",
+    "walkingGroup": "C"
   },
   {
     "first": "Michael",
@@ -189,7 +200,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": "",
-    "room": "1307-B"
+    "room": "1307-B",
+    "walkingGroup": "B"
   },
   {
     "first": "Dominic",
@@ -205,7 +217,8 @@
     "yaAudition": true,
     "firstTime": false,
     "dietary": null,
-    "room": "1320-B"
+    "room": "1320-B",
+    "walkingGroup": "F"
   },
   {
     "first": "Samuel",
@@ -221,7 +234,8 @@
     "yaAudition": true,
     "firstTime": false,
     "dietary": null,
-    "room": "1315-B"
+    "room": "1315-B",
+    "walkingGroup": "C"
   },
   {
     "first": "Finn",
@@ -237,7 +251,8 @@
     "yaAudition": false,
     "firstTime": false,
     "dietary": null,
-    "room": "1220-A"
+    "room": "1220-A",
+    "walkingGroup": "B"
   },
   {
     "first": "Mia",
@@ -253,7 +268,8 @@
     "yaAudition": true,
     "firstTime": false,
     "dietary": null,
-    "room": "1118-A"
+    "room": "1118-A",
+    "walkingGroup": "G"
   },
   {
     "first": "Bay",
@@ -269,7 +285,8 @@
     "yaAudition": false,
     "firstTime": true,
     "dietary": null,
-    "room": "1215-A"
+    "room": "1215-A",
+    "walkingGroup": "G"
   },
   {
     "first": "Kadyn",
@@ -285,7 +302,8 @@
     "yaAudition": false,
     "firstTime": false,
     "dietary": null,
-    "room": "1105-A"
+    "room": "1105-A",
+    "walkingGroup": "E"
   },
   {
     "first": "Alyssa",
@@ -301,7 +319,8 @@
     "yaAudition": true,
     "firstTime": false,
     "dietary": null,
-    "room": "1109-B"
+    "room": "1109-B",
+    "walkingGroup": "C"
   },
   {
     "first": "Ethan",
@@ -317,7 +336,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1211-A"
+    "room": "1211-A",
+    "walkingGroup": "D"
   },
   {
     "first": "Zoey",
@@ -333,7 +353,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1116-A"
+    "room": "1116-A",
+    "walkingGroup": "F"
   },
   {
     "first": "Yannic",
@@ -349,7 +370,8 @@
     "yaAudition": false,
     "firstTime": true,
     "dietary": "limited cheese",
-    "room": "1321-B"
+    "room": "1321-B",
+    "walkingGroup": "F"
   },
   {
     "first": "Oliver",
@@ -365,7 +387,8 @@
     "yaAudition": true,
     "firstTime": false,
     "dietary": null,
-    "room": "1310-B"
+    "room": "1310-B",
+    "walkingGroup": "D"
   },
   {
     "first": "Kingston",
@@ -381,7 +404,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1212-A"
+    "room": "1212-A",
+    "walkingGroup": "E"
   },
   {
     "first": "Austin",
@@ -397,7 +421,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1302-A"
+    "room": "1302-A",
+    "walkingGroup": "G"
   },
   {
     "first": "Maci",
@@ -413,7 +438,8 @@
     "yaAudition": false,
     "firstTime": false,
     "dietary": null,
-    "room": "1102-A"
+    "room": "1102-A",
+    "walkingGroup": "D"
   },
   {
     "first": "Perla L.",
@@ -429,7 +455,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1108-B"
+    "room": "1108-B",
+    "walkingGroup": "F"
   },
   {
     "first": "Ava",
@@ -445,7 +472,8 @@
     "yaAudition": true,
     "firstTime": false,
     "dietary": null,
-    "room": "1104-B"
+    "room": "1104-B",
+    "walkingGroup": "E"
   },
   {
     "first": "Adrian",
@@ -461,7 +489,8 @@
     "yaAudition": false,
     "firstTime": false,
     "dietary": null,
-    "room": "1318-A"
+    "room": "1318-A",
+    "walkingGroup": "E"
   },
   {
     "first": "Pavel",
@@ -477,7 +506,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1211-B"
+    "room": "1211-B",
+    "walkingGroup": "H"
   },
   {
     "first": "Suzanne",
@@ -493,7 +523,8 @@
     "yaAudition": false,
     "firstTime": true,
     "dietary": "",
-    "room": "1107-B"
+    "room": "1107-B",
+    "walkingGroup": "G"
   },
   {
     "first": "Lily",
@@ -509,7 +540,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1109-A"
+    "room": "1109-A",
+    "walkingGroup": "A"
   },
   {
     "first": "Zoey",
@@ -525,7 +557,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1108-A"
+    "room": "1108-A",
+    "walkingGroup": "A"
   },
   {
     "first": "Hudson",
@@ -541,7 +574,8 @@
     "yaAudition": false,
     "firstTime": true,
     "dietary": null,
-    "room": "1218-B"
+    "room": "1218-B",
+    "walkingGroup": "F"
   },
   {
     "first": "Evey",
@@ -557,7 +591,8 @@
     "yaAudition": false,
     "firstTime": false,
     "dietary": null,
-    "room": "1112-B"
+    "room": "1112-B",
+    "walkingGroup": "H"
   },
   {
     "first": "Mykhailo",
@@ -573,7 +608,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": "",
-    "room": "1220-B"
+    "room": "1220-B",
+    "walkingGroup": "H"
   },
   {
     "first": "Kyle",
@@ -589,7 +625,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1303-A"
+    "room": "1303-A",
+    "walkingGroup": "A"
   },
   {
     "first": "Lincoln",
@@ -605,7 +642,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1308-B"
+    "room": "1308-B",
+    "walkingGroup": "H"
   },
   {
     "first": "Derek",
@@ -621,7 +659,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": "No peanuts",
-    "room": "1218-A"
+    "room": "1218-A",
+    "walkingGroup": "G"
   },
   {
     "first": "Judah",
@@ -637,7 +676,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1203-A"
+    "room": "1203-A",
+    "walkingGroup": "C"
   },
   {
     "first": "Matthew",
@@ -653,7 +693,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1306-B"
+    "room": "1306-B",
+    "walkingGroup": "B"
   },
   {
     "first": "Morgan",
@@ -669,7 +710,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": "",
-    "room": "1105-B"
+    "room": "1105-B",
+    "walkingGroup": "B"
   },
   {
     "first": "Sophia",
@@ -685,7 +727,8 @@
     "yaAudition": true,
     "firstTime": false,
     "dietary": "No dairy",
-    "room": "1110-B"
+    "room": "1110-B",
+    "walkingGroup": "E"
   },
   {
     "first": "Jimmy",
@@ -701,7 +744,8 @@
     "yaAudition": true,
     "firstTime": false,
     "dietary": null,
-    "room": "1222-B"
+    "room": "1222-B",
+    "walkingGroup": "A"
   },
   {
     "first": "Samuel",
@@ -717,7 +761,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1210-B"
+    "room": "1210-B",
+    "walkingGroup": "B"
   },
   {
     "first": "Caleb",
@@ -733,7 +778,8 @@
     "yaAudition": true,
     "firstTime": false,
     "dietary": null,
-    "room": "1302-B"
+    "room": "1302-B",
+    "walkingGroup": "E"
   },
   {
     "first": "Ben",
@@ -749,7 +795,8 @@
     "yaAudition": false,
     "firstTime": false,
     "dietary": null,
-    "room": "1305-B"
+    "room": "1305-B",
+    "walkingGroup": "D"
   },
   {
     "first": "Simon",
@@ -765,7 +812,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": "No cheese (preference)",
-    "room": "1205-B"
+    "room": "1205-B",
+    "walkingGroup": "D"
   },
   {
     "first": "Alexandra",
@@ -781,7 +829,8 @@
     "yaAudition": true,
     "firstTime": false,
     "dietary": "No peanuts, no almonds",
-    "room": "1111-A"
+    "room": "1111-A",
+    "walkingGroup": "C"
   },
   {
     "first": "Lucas",
@@ -797,7 +846,8 @@
     "yaAudition": true,
     "firstTime": false,
     "dietary": null,
-    "room": "1313-B"
+    "room": "1313-B",
+    "walkingGroup": "F"
   },
   {
     "first": "Valent",
@@ -813,7 +863,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1303-B"
+    "room": "1303-B",
+    "walkingGroup": "A"
   },
   {
     "first": "Eladia",
@@ -829,7 +880,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1102-B"
+    "room": "1102-B",
+    "walkingGroup": "B"
   },
   {
     "first": "Ethan",
@@ -845,7 +897,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1316-B"
+    "room": "1316-B",
+    "walkingGroup": "F"
   },
   {
     "first": "Audrey Mikayla",
@@ -861,7 +914,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1101-B"
+    "room": "1101-B",
+    "walkingGroup": "G"
   },
   {
     "first": "Skylar",
@@ -877,7 +931,8 @@
     "yaAudition": true,
     "firstTime": false,
     "dietary": null,
-    "room": "1101-A"
+    "room": "1101-A",
+    "walkingGroup": "C"
   },
   {
     "first": "Jewlz",
@@ -893,7 +948,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1215-B"
+    "room": "1215-B",
+    "walkingGroup": "D"
   },
   {
     "first": "Lawrence",
@@ -909,7 +965,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": "No coconut",
-    "room": "1312-A"
+    "room": "1312-A",
+    "walkingGroup": "G"
   },
   {
     "first": "Ariel",
@@ -925,7 +982,8 @@
     "yaAudition": false,
     "firstTime": false,
     "dietary": "No shellfish, no pork, no mixing meat and dairy",
-    "room": "1103-A"
+    "room": "1103-A",
+    "walkingGroup": "C"
   },
   {
     "first": "Sarah",
@@ -941,7 +999,8 @@
     "yaAudition": true,
     "firstTime": false,
     "dietary": "No shellfish, no pork, no mixing meat and dairy",
-    "room": "1104-A"
+    "room": "1104-A",
+    "walkingGroup": "A"
   },
   {
     "first": "John",
@@ -957,7 +1016,8 @@
     "yaAudition": true,
     "firstTime": false,
     "dietary": null,
-    "room": "1309-B"
+    "room": "1309-B",
+    "walkingGroup": "H"
   },
   {
     "first": "Mason",
@@ -973,7 +1033,8 @@
     "yaAudition": true,
     "firstTime": false,
     "dietary": null,
-    "room": "1321-A"
+    "room": "1321-A",
+    "walkingGroup": "B"
   },
   {
     "first": "Jake",
@@ -989,7 +1050,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": "No pork",
-    "room": "1307-A"
+    "room": "1307-A",
+    "walkingGroup": "H"
   },
   {
     "first": "Kai",
@@ -1005,7 +1067,8 @@
     "yaAudition": true,
     "firstTime": false,
     "dietary": null,
-    "room": "1313-A"
+    "room": "1313-A",
+    "walkingGroup": "F"
   },
   {
     "first": "Andy",
@@ -1021,7 +1084,8 @@
     "yaAudition": false,
     "firstTime": true,
     "dietary": null,
-    "room": "1311-A"
+    "room": "1311-A",
+    "walkingGroup": "A"
   },
   {
     "first": "Ian",
@@ -1037,7 +1101,8 @@
     "yaAudition": true,
     "firstTime": false,
     "dietary": null,
-    "room": "1222-A"
+    "room": "1222-A",
+    "walkingGroup": "B"
   },
   {
     "first": "Isaac",
@@ -1053,7 +1118,8 @@
     "yaAudition": false,
     "firstTime": true,
     "dietary": "",
-    "room": "1204-A"
+    "room": "1204-A",
+    "walkingGroup": "E"
   },
   {
     "first": "Elle",
@@ -1069,7 +1135,8 @@
     "yaAudition": false,
     "firstTime": true,
     "dietary": "",
-    "room": "1107-A"
+    "room": "1107-A",
+    "walkingGroup": "F"
   },
   {
     "first": "Jonathan",
@@ -1085,7 +1152,8 @@
     "yaAudition": false,
     "firstTime": false,
     "dietary": null,
-    "room": "1309-A"
+    "room": "1309-A",
+    "walkingGroup": "C"
   },
   {
     "first": "Carter",
@@ -1101,7 +1169,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1213-A"
+    "room": "1213-A",
+    "walkingGroup": "D"
   },
   {
     "first": "Dominic",
@@ -1117,7 +1186,8 @@
     "yaAudition": false,
     "firstTime": false,
     "dietary": null,
-    "room": "1320-A"
+    "room": "1320-A",
+    "walkingGroup": "C"
   },
   {
     "first": "Devyn",
@@ -1133,7 +1203,8 @@
     "yaAudition": true,
     "firstTime": false,
     "dietary": null,
-    "room": "1111-B"
+    "room": "1111-B",
+    "walkingGroup": "F"
   },
   {
     "first": "Jacob",
@@ -1149,7 +1220,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": "",
-    "room": "1311-B"
+    "room": "1311-B",
+    "walkingGroup": "E"
   },
   {
     "first": "David",
@@ -1165,7 +1237,8 @@
     "yaAudition": false,
     "firstTime": true,
     "dietary": null,
-    "room": "1304-A"
+    "room": "1304-A",
+    "walkingGroup": "B"
   },
   {
     "first": "Brandon",
@@ -1181,7 +1254,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": "",
-    "room": "1216-A"
+    "room": "1216-A",
+    "walkingGroup": "A"
   },
   {
     "first": "Justus",
@@ -1197,7 +1271,8 @@
     "yaAudition": true,
     "firstTime": false,
     "dietary": null,
-    "room": "1213-B"
+    "room": "1213-B",
+    "walkingGroup": "E"
   },
   {
     "first": "Adam",
@@ -1213,7 +1288,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1205-A"
+    "room": "1205-A",
+    "walkingGroup": "G"
   },
   {
     "first": "Connor",
@@ -1229,7 +1305,8 @@
     "yaAudition": true,
     "firstTime": false,
     "dietary": "Limited dairy",
-    "room": "1221-B"
+    "room": "1221-B",
+    "walkingGroup": "H"
   },
   {
     "first": "Jax",
@@ -1245,7 +1322,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1216-B"
+    "room": "1216-B",
+    "walkingGroup": "F"
   },
   {
     "first": "Nathan",
@@ -1261,7 +1339,8 @@
     "yaAudition": true,
     "firstTime": false,
     "dietary": null,
-    "room": "1208-A"
+    "room": "1208-A",
+    "walkingGroup": "E"
   },
   {
     "first": "Penelope",
@@ -1277,7 +1356,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1106-A"
+    "room": "1106-A",
+    "walkingGroup": "G"
   },
   {
     "first": "Roberto Jett",
@@ -1293,7 +1373,8 @@
     "yaAudition": true,
     "firstTime": false,
     "dietary": null,
-    "room": "1315-A"
+    "room": "1315-A",
+    "walkingGroup": "H"
   },
   {
     "first": "Isaac",
@@ -1309,7 +1390,8 @@
     "yaAudition": true,
     "firstTime": false,
     "dietary": null,
-    "room": "1208-B"
+    "room": "1208-B",
+    "walkingGroup": "D"
   },
   {
     "first": "Sebastian",
@@ -1325,7 +1407,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1203-B"
+    "room": "1203-B",
+    "walkingGroup": "H"
   },
   {
     "first": "Sophia",
@@ -1341,7 +1424,8 @@
     "yaAudition": false,
     "firstTime": false,
     "dietary": null,
-    "room": "1110-A"
+    "room": "1110-A",
+    "walkingGroup": "G"
   },
   {
     "first": "Isabella",
@@ -1357,7 +1441,8 @@
     "yaAudition": false,
     "firstTime": false,
     "dietary": null,
-    "room": "1103-B"
+    "room": "1103-B",
+    "walkingGroup": "D"
   },
   {
     "first": "Gabriel",
@@ -1373,7 +1458,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1207-B"
+    "room": "1207-B",
+    "walkingGroup": "H"
   },
   {
     "first": "Miles",
@@ -1389,7 +1475,8 @@
     "yaAudition": true,
     "firstTime": false,
     "dietary": null,
-    "room": "1209-A"
+    "room": "1209-A",
+    "walkingGroup": "F"
   },
   {
     "first": "Liam",
@@ -1405,7 +1492,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1304-B"
+    "room": "1304-B",
+    "walkingGroup": "C"
   },
   {
     "first": "Addison",
@@ -1421,7 +1509,8 @@
     "yaAudition": false,
     "firstTime": false,
     "dietary": "",
-    "room": "1112-A"
+    "room": "1112-A",
+    "walkingGroup": "A"
   },
   {
     "first": "Linken",
@@ -1437,7 +1526,8 @@
     "yaAudition": true,
     "firstTime": false,
     "dietary": null,
-    "room": "1305-A"
+    "room": "1305-A",
+    "walkingGroup": "G"
   },
   {
     "first": "Maci",
@@ -1453,7 +1543,8 @@
     "yaAudition": false,
     "firstTime": false,
     "dietary": null,
-    "room": "1116-B"
+    "room": "1116-B",
+    "walkingGroup": "B"
   },
   {
     "first": "Logan",
@@ -1469,7 +1560,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1204-B"
+    "room": "1204-B",
+    "walkingGroup": "A"
   },
   {
     "first": "Elliot",
@@ -1485,7 +1577,8 @@
     "yaAudition": true,
     "firstTime": false,
     "dietary": "",
-    "room": "1221-A"
+    "room": "1221-A",
+    "walkingGroup": "H"
   },
   {
     "first": "Oliver",
@@ -1501,7 +1594,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1209-B"
+    "room": "1209-B",
+    "walkingGroup": "G"
   },
   {
     "first": "Anthony",
@@ -1517,7 +1611,8 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": "No gluten (celiac)",
-    "room": "1319-A"
+    "room": "1319-A",
+    "walkingGroup": "D"
   },
   {
     "first": "Michelle",
@@ -1533,6 +1628,7 @@
     "yaAudition": true,
     "firstTime": true,
     "dietary": null,
-    "room": "1106-B"
+    "room": "1106-B",
+    "walkingGroup": "A"
   }
 ]
