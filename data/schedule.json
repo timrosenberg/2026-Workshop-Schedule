@@ -865,7 +865,10 @@
         "activity": "Masterclass: Honors Recital Students",
         "location": "Lee Chapel",
         "mapUrl": "https://maps.app.goo.gl/Dvm3E7u6dcQk4WHg7",
-        "notes": ["Dr. Rosenberg will coach the Honors Recitalists in a masterclass. Program TBA.", "All students attend."],
+        "notes": [
+          "Dr. Rosenberg will coach the Honors Recitalists in a masterclass. Program TBA.",
+          "All students attend."
+        ],
         "assignments": [
           {
             "person": "marc",
@@ -1097,7 +1100,7 @@
             "detail": "Room Supervisor — Presser 113"
           },
           {
-            "person": "david",
+            "person": "matt",
             "role": "duty",
             "detail": "Room Supervisor — Presser 120"
           },
@@ -1110,6 +1113,11 @@
             "person": "sage",
             "role": "duty",
             "detail": "Room Supervisor — Presser 202"
+          },
+          {
+            "person": "david",
+            "role": "duty",
+            "detail": "Room Supervisor — Presser 204A"
           },
           {
             "person": "kate",
@@ -1127,14 +1135,9 @@
             "detail": "Room Supervisor — Tinsley Hall"
           },
           {
-            "person": "matt",
-            "role": "duty",
-            "detail": "Room Supervisor — Hollis Atrium"
-          },
-          {
             "person": "andrew",
             "role": "duty",
-            "detail": "Room Supervisor — Feasel Hall"
+            "detail": "Room Supervisor — Faculty Lounge (210)"
           },
           {
             "person": "kristen",
@@ -1146,7 +1149,8 @@
             "role": "duty",
             "detail": "Walk-through Verification"
           }
-        ]
+        ],
+        "escapeRoomLookup": true
       },
       {
         "time": "6:30 - 7:00 PM",

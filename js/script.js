@@ -18,21 +18,22 @@ const JAZZ_DATA = [
 ];
 
 const CHAMBER_ROSTERS = {
-  'amann-con':      {name: 'Amann',      type: 'Concert',   room: 'Presser 202',  students: []},
-  'guthrie-con':    {name: 'Guthrie',    type: 'Concert',   room: 'Tinsley Hall', students: []},
-  'hinote-con':     {name: 'Hinote',     type: 'Concert',   room: 'Presser 113',  students: []},
-  'kolodinsky-con': {name: 'Kolodinsky', type: 'Concert',   room: 'Presser 352',  students: []},
-  'murphy-con':     {name: 'Murphy',     type: 'Concert',   room: 'Presser 349',  students: []},
-  'whitt-con':      {name: 'Whitt',      type: 'Concert',   room: 'Presser 112',  students: []},
-  'amann-sym':      {name: 'Amann',      type: 'Symphonic', room: 'Presser 128 (Boyd Jones\'s Studio)', students: []},
-  'becker-sym':     {name: 'Becker',     type: 'Symphonic', room: 'Presser 113',  students: []},
-  'kalina-sym':     {name: 'Chevalier',  type: 'Symphonic', room: 'Presser 202',  students: []},
-  'leavitt-sym':    {name: 'Leavitt',    type: 'Symphonic', room: 'Feasel Hall',  students: []},
-  'murphy-sym':     {name: 'Murphy',     type: 'Symphonic', room: 'Lee Chapel',   students: []},
-  'pyburn-sym':     {name: 'Pyburn',     type: 'Symphonic', room: 'Presser 112',  students: []},
-  'rosenberg-sym':  {name: 'Rosenberg',  type: 'Symphonic', room: 'Presser 349',  students: []},
-  'wilson-sym':     {name: 'Wilson',     type: 'Symphonic', room: 'Feasel Hall',  students: []},
-  'zelenak-sym':    {name: 'Zelenak',    type: 'Symphonic', room: 'Presser 352',  students: []},
+  'amann-con':      {name: 'Amann',      type: 'Concert',   room: 'Presser 202',  students: ['Lily Goltz (Tenor)', 'Jewlz Mcdannell (Baritone)', 'Oliver Wood (Alto)', 'Michelle Zamora (Soprano)']},
+  'guthrie-con':    {name: 'Guthrie',    type: 'Concert',   room: 'Tinsley Hall', students: ['Croix Bello (Tenor)', 'Bay Cox (Alto)', 'Alyssa De Leon (Alto)', 'Pavel Gailans (Alto)', 'Suzanne Galinski (Alto)', 'Mykhailo Hirka (Alto)', 'Samuel Kisseloff (Alto)', 'Isaac Mosher (Alto)', 'Adam Raij (Baritone)', 'Sebastian Sadr (Alto)', 'Gabriel Skoretz (Alto)', 'Miles Springer (Alto)', 'Maci Walser (Alto)', 'Logan Wannos (Alto)']},
+  'hinote-con':     {name: 'Hinote',     type: 'Concert',   room: 'Presser 113',  students: ['Dominic Anodide (Soprano)', 'Finn Carriere (Baritone)', 'Zoey Greenstein (Alto)', 'Judah Huffman (Tenor)']},
+  'kolodinsky-con': {name: 'Kolodinsky', type: 'Concert',   room: 'Presser 352',  students: ['Miro Arquines (Alto)', 'Joshua Baker (Alto)', 'Amir Brown (Tenor)', 'Ethan Dias (Baritone)', 'Maci Fetherolf (Tenor)', 'Perla L. Figure (Alto)', 'Eladia Marcial (Alto)', 'Elle Murdock (Tenor)', 'Carter Niehoff (Alto)', 'Brandon Peaks (Alto)', 'Justus Peyton (Tenor)', 'Jax Reid (Alto)']},
+  'murphy-con':     {name: 'Murphy',     type: 'Concert',   room: 'Presser 349',  students: ['Ava Foltak (Tenor)', 'Hudson Hackett (Baritone)', 'Ariel Meyer (Soprano)', 'Nathan Renninger (Alto)']},
+  'rosenberg-con':  {name: 'Rosenberg',  type: 'Concert',   room: 'Presser 349',  students: ['Derek Hsu (Alto)']},
+  'whitt-con':      {name: 'Whitt',      type: 'Concert',   room: 'Presser 112',  students: ['Kingston Falco (Baritone)', 'Simon Lacks (Tenor)', 'Skylar Mathson (Alto)', 'Penelope Roark (Soprano)']},
+  'amann-sym':      {name: 'Amann',      type: 'Symphonic', room: 'Presser 128 (Boyd Jones\'s Studio)', students: ['Dominic Byrd (Alto)', 'Kai Miyazato (Soprano)', 'Roberto Jett Ruiz (Baritone)', 'Elliot Webster (Tenor)']},
+  'becker-sym':     {name: 'Becker',     type: 'Symphonic', room: 'Presser 113',  students: ['Zoey Dombroski (Baritone)', 'Austin Farah (Tenor)', 'Matthew Iannotti (Soprano)', 'Ben Krayter (Baritone)', 'Alexandra Lang (Soprano)', 'Ethan Martin (Alto)', 'Andy Mondello (Tenor)', 'Dominic Novero (Alto)', 'Liam Stiles (Alto)', 'Addison Talley (Alto)']},
+  'kalina-sym':     {name: 'Chevalier',  type: 'Symphonic', room: 'Presser 202',  students: ['Rashad Barrett (Alto)', 'Yannic Elizee (Alto)', 'Kyle Howard (Tenor)', 'Jake Mirza (Alto)', 'Devyn Novotny (Baritone)', 'Jacob Palmer (Alto)', 'David Parks (Alto)', 'Isaac Sadik (Soprano)', 'Sophia Scarpinato (Tenor)', 'Linken Walker (Baritone)']},
+  'leavitt-sym':    {name: 'Leavitt',    type: 'Symphonic', room: 'Feasel Hall',  students: ['Diego Abreu (Alto)', 'Mendel Beats (Baritone)', 'Michael Budd (Soprano)', 'Kadyn Davis (Tenor)', 'Lincoln Hrajnoha-Cordero (Tenor)', 'Morgan Jeanty (Tenor)', 'Sophia Kazi (Alto)', 'Valent Loeffel (Baritone)', 'Lawrence Mello (Alto)', 'Isabella Scheffing (Soprano)']},
+  'murphy-sym':     {name: 'Murphy',     type: 'Symphonic', room: 'Lee Chapel',   students: ['Adam Bey (Alto)', 'Caleb Kizewski (Baritone)', 'Audrey Mikayla Mathson (Tenor)', 'Jonathan Nevarez (Soprano)']},
+  'pyburn-sym':     {name: 'Pyburn',     type: 'Symphonic', room: 'Presser 112',  students: ['Samuel Campen (Soprano)', 'Evey Heilmann (Tenor)', 'Lucas Lively (Baritone)', 'Anthony Yanevich (Alto)']},
+  'rosenberg-sym':  {name: 'Rosenberg',  type: 'Symphonic', room: 'Presser 349',  students: ['Oliver Esquivel Novek (Soprano)', 'Mason Miller (Tenor)', 'Connor Reed (Baritone)']},
+  'wilson-sym':     {name: 'Wilson',     type: 'Symphonic', room: 'Feasel Hall',  students: ['Liam Blevins (Baritone)', 'Mia Castillo (Alto)', 'Adrian Font (Soprano)', 'Sarah Meyer (Tenor)']},
+  'zelenak-sym':    {name: 'Zelenak',    type: 'Symphonic', room: 'Presser 352',  students: ['Juan Argotte Romero (Tenor)', 'Jimmy Kim (Soprano)', 'John Michalak (Alto)', 'Ian Monreal (Baritone)']},
 };
 
 function showRoster(key) {
@@ -84,6 +85,48 @@ const FUNDAMENTALS_DATA = {
   bari:    {concert:   {room: 'Tinsley Hall', instructor: 'Whitt'},
             symphonic: {room: 'Feasel Hall',  instructor: 'Murphy'}}
 };
+
+const ESCAPE_ROOM_TEAMS = {
+  'Presser 112':          ['Adam Raij','Suzanne Galinski','Penelope Roark','Finn Carriere','Derek Hsu','Kadyn Davis','Austin Farah','Ethan Martin','Jake Mirza','Andy Mondello','Lucas Lively'],
+  'Presser 113':          ['Croix Bello','Perla L. Figure','Dominic Anodide','Ava Foltak','Hudson Hackett','Sophia Scarpinato','Elliot Webster','Isaac Sadik','Matthew Iannotti','Ben Krayter','Michael Budd'],
+  'Presser 120':          ['Elle Murdock','Amir Brown','Maci Walser','Sophia Kazi','Caleb Kizewski','Juan Argotte Romero'],
+  'Presser 128':          ['Judah Huffman','Lily Goltz','Gabriel Skoretz','Isabella Scheffing','Connor Reed','Mason Miller'],
+  'Presser 202':          ['Isaac Mosher','Oliver Wood','Alyssa De Leon','Justus Peyton','Devyn Novotny','Rashad Barrett','Jimmy Kim','Adam Bey','John Michalak','Ian Monreal','Audrey Mikayla Mathson'],
+  'Presser 204A':         ['Bay Cox','Pavel Gailans','Ariel Meyer','Jax Reid','Zoey Dombroski','Samuel Campen','Jonathan Nevarez','Oliver Esquivel Novek','Liam Blevins','Anthony Yanevich','Evey Heilmann'],
+  'Presser 349':          ['Miro Arquines','Ethan Dias','Kingston Falco','Eladia Marcial','Brandon Peaks','David Parks','Linken Walker','Addison Talley','Kai Miyazato','Jacob Palmer'],
+  'Presser 352':          ['Sebastian Sadr','Miles Springer','Maci Fetherolf','Carter Niehoff','Mykhailo Hirka','Kyle Howard','Valent Loeffel','Alexandra Lang','Diego Abreu','Mendel Beats'],
+  'Tinsley Hall':         ['Simon Lacks','Samuel Kisseloff','Zoey Greenstein','Michelle Zamora','Joshua Baker','Roberto Jett Ruiz','Lawrence Mello','Dominic Byrd','Mia Castillo','Yannic Elizee'],
+  'Faculty Lounge (210)': ['Logan Wannos','Skylar Mathson','Jewlz Mcdannell','Nathan Renninger','Lincoln Hrajnoha-Cordero','Liam Stiles','Morgan Jeanty','Dominic Novero','Sarah Meyer','Adrian Font']
+};
+
+function renderEscapeRoomLookup() {
+  const inputStyle = 'width:100%;padding:8px 12px;border:1.5px solid var(--border);border-radius:var(--r);font-size:1em;background:var(--surface2);color:var(--text);font-family:inherit;box-sizing:border-box';
+  let html = '<div class="event-detail">';
+  html += '<p style="font-style:italic;color:var(--text2);margin:0 0 0.5rem">Type your last name to find your room.</p>';
+  html += `<input type="text" id="escape-search" placeholder="Last name…" style="${inputStyle}" oninput="filterEscapeRoom(this.value)">`;
+  html += '<div id="escape-result"></div></div>';
+  return html;
+}
+
+function filterEscapeRoom(query) {
+  const el = document.getElementById('escape-result');
+  if (!el) return;
+  const q = query.trim().toLowerCase();
+  if (q.length < 2) { el.innerHTML = ''; return; }
+  const matches = [];
+  for (const [room, students] of Object.entries(ESCAPE_ROOM_TEAMS)) {
+    for (const name of students) {
+      if (name.toLowerCase().includes(q)) matches.push({name, room});
+    }
+  }
+  if (!matches.length) {
+    el.innerHTML = '<div style="margin-top:0.75rem;color:var(--text2);font-style:italic">No match found.</div>';
+  } else if (matches.length <= 3) {
+    el.innerHTML = matches.map(m => `<div style="margin-top:0.75rem;padding:0.75rem 1rem;background:var(--surface2);border-radius:var(--r);border:1px solid var(--border)"><strong>${m.name}</strong><br><span style="color:var(--text2)">Report to</span> <strong>${m.room}</strong></div>`).join('');
+  } else {
+    el.innerHTML = `<div style="margin-top:0.75rem;color:var(--text2);font-style:italic">${matches.length} matches — keep typing.</div>`;
+  }
+}
 
 const CHAMBER_DATA = {
   symphonic: [
@@ -229,6 +272,8 @@ function showEvent(act, rowEl) {
     html += renderJazzSelector();
   } else if (act.fundamentalsClass) {
     html += renderFundamentalsSelector();
+  } else if (act.escapeRoomLookup) {
+    html += renderEscapeRoomLookup();
   } else if (act.detail) {
     html += `<div class="event-detail">${act.detail}</div>`;
   }
