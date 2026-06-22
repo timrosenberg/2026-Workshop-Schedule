@@ -261,6 +261,20 @@ function showStaffEvent(act, myAssignment, rowEl) {
     }
   }
 
+  const isRallyEvent = /rally points/i.test(act.activity || '');
+  const alreadyShownMap = myAssignment && myAssignment.role === 'duty' && /Walking Group/i.test(myAssignment.detail || '');
+  if (isRallyEvent && !alreadyShownMap) {
+    const isPresser = /presser/i.test((act.location || '') + (act.activity || ''));
+    const mapUrl = isPresser ? '/assets/images/music-rally.png'
+      : '/assets/images/hatter-floor-1-rally.png';
+    const mapUrl2 = isPresser ? null : '/assets/images/hatter-floor-2-rally.png';
+    const mapBtn = "display:inline-block;padding:3px 11px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);font-size:0.85em;cursor:pointer;border:none;font-family:inherit;margin-top:6px";
+    html += `<div class="event-notes"><div class="event-notes-lbl">Rally point maps</div>`;
+    html += `<div class="event-note-line"><button onclick="openStaffMap('${mapUrl}')" style="${mapBtn}">↗ ${isPresser ? 'Presser rally map' : 'Hatter Floor 1 (Groups A–D)'}</button></div>`;
+    if (mapUrl2) html += `<div class="event-note-line"><button onclick="openStaffMap('${mapUrl2}')" style="${mapBtn}">↗ Hatter Floor 2 (Groups E–H)</button></div>`;
+    html += `</div>`;
+  }
+
   document.getElementById('eventDetail').innerHTML = html;
   document.getElementById('eventOverlay').classList.add('show');
 }
