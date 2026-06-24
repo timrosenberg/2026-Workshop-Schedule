@@ -53,7 +53,7 @@
     "items": [
       { "name": "Kolodinsky", "loc": "Presser 352", "roster": "kolodinsky-con" },
       { "name": "Amann", "loc": "Presser 202", "roster": "amann-con" },
-      { "name": "Guthrie", "loc": "Tinsley Hall", "roster": "guthrie-con" },
+      { "name": "Pyburn / Leavitt", "loc": "Tinsley Hall", "roster": "guthrie-con" },
       { "name": "Whitt", "loc": "Presser 112", "roster": "whitt-con" },
       { "name": "Hinote", "loc": "Presser 113", "roster": "hinote-con" },
       { "name": "Murphy", "loc": "Presser 349", "roster": "murphy-con" },
