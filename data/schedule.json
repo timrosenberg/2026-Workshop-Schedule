@@ -1,7 +1,7 @@
 [
   {
     "date": "2026-06-22",
-    "themeTitle": "🚀 Launch Day",
+    "themeTitle": "\ud83d\ude80 Launch Day",
     "themeDescription": "Wear something space-mission related: rockets, space shuttle, satellites, telescopes, NASA or Kennedy Space Center gear. No space gear? Wear a bright color that could be seen from space.",
     "activities": [
       {
@@ -117,10 +117,10 @@
             ],
             "mapUrl": "/assets/images/hatter-floor-1-rally.png",
             "rallyPoints": {
-              "A": "Floor 1 — W Study Room",
-              "B": "Floor 1 — Laundry Room",
-              "C": "Floor 1 — Lobby, NW (near windows)",
-              "D": "Floor 1 — Lobby, SE (near desk)"
+              "A": "Floor 1 \u2014 W Study Room",
+              "B": "Floor 1 \u2014 Laundry Room",
+              "C": "Floor 1 \u2014 Lobby, NW (near windows)",
+              "D": "Floor 1 \u2014 Lobby, SE (near desk)"
             }
           },
           {
@@ -133,10 +133,10 @@
             ],
             "mapUrl": "/assets/images/hatter-floor-2-rally.png",
             "rallyPoints": {
-              "E": "Floor 2 — W Study Room",
-              "F": "Floor 2 — Laundry Room",
-              "G": "Floor 2 — Lobby, NW",
-              "H": "Floor 2 — Lobby, SE"
+              "E": "Floor 2 \u2014 W Study Room",
+              "F": "Floor 2 \u2014 Laundry Room",
+              "G": "Floor 2 \u2014 Lobby, NW",
+              "H": "Floor 2 \u2014 Lobby, SE"
             }
           }
         ],
@@ -192,7 +192,7 @@
       },
       {
         "time": "11:45 AM - 12:15 PM",
-        "activity": "🥪 Lunch",
+        "activity": "\ud83e\udd6a Lunch",
         "location": "Carlton Union Building (CUB)",
         "mapUrl": "https://maps.app.goo.gl/wdAMPGnM3GRCCsnA8",
         "notes": []
@@ -217,8 +217,8 @@
         "location": "",
         "mapUrl": "",
         "notes": [
-          "Symphonic Saxophones (10th-12+ grade): Large Ensemble — Feasel Hall",
-          "Concert Saxophones (7th-9th grade): Chamber Ensembles — Various Rooms <a href=\"/rooms.html#concert-chamber-ensembles\" style='display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px'>↗ Guide</a>"
+          "Symphonic Saxophones (10th-12+ grade): Large Ensemble \u2014 Feasel Hall",
+          "Concert Saxophones (7th-9th grade): Chamber Ensembles \u2014 Various Rooms <a href=\"/rooms.html#concert-chamber-ensembles\" style='display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px'>\u2197 Guide</a>"
         ],
         "ensembleMap": {
           "symphonic": "large",
@@ -294,8 +294,8 @@
         "location": "",
         "mapUrl": "",
         "notes": [
-          "Symphonic Saxophones: Chamber Ensembles — Various Rooms <a href=\"/rooms.html#symphonic-chamber-ensembles\" style='display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px'>↗ Guide</a>",
-          "Concert Saxophones: Large Ensemble — Tinsley Hall (inside Presser Hall)"
+          "Symphonic Saxophones: Chamber Ensembles \u2014 Various Rooms <a href=\"/rooms.html#symphonic-chamber-ensembles\" style='display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px'>\u2197 Guide</a>",
+          "Concert Saxophones: Large Ensemble \u2014 Tinsley Hall (inside Presser Hall)"
         ],
         "ensembleMap": {
           "symphonic": "chamber",
@@ -380,7 +380,7 @@
       {
         "time": "5:20 - 6:20 PM",
         "activity": "Jazz Classes",
-        "location": "Various Rooms <a href=\"/rooms.html#jazz-classes\" style='display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px'>↗ Guide</a>",
+        "location": "Various Rooms <a href=\"/rooms.html#jazz-classes\" style='display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px'>\u2197 Guide</a>",
         "mapUrl": "",
         "notes": [],
         "jazzClasses": true,
@@ -515,7 +515,7 @@
       },
       {
         "time": "6:30 - 7:00 PM",
-        "activity": "🍽️ Dinner",
+        "activity": "\ud83c\udf7d\ufe0f Dinner",
         "location": "CUB",
         "mapUrl": "https://maps.app.goo.gl/wdAMPGnM3GRCCsnA8",
         "notes": []
@@ -535,7 +535,7 @@
         "notes": [
           "Lee Chapel is <em>inside</em> Elizabeth Hall."
         ],
-        "detail": "<div style='margin-top:0.5rem'><div class='event-notes-lbl'>Program</div><div style='margin-top:0.4rem;line-height:1.6'><strong>Castorea Quartet</strong><br><span style='padding-left:1rem'>Mario Galaxy</span><br><br><strong>M120 Project</strong><br><span style='padding-left:1rem'>Ryūkyūan Fantasy · Yasuhide Itō</span><br><span style='padding-left:1rem'>Schoolyard Suite, III. Hide and Seek · Gary Lindsay</span><br><br><strong>Faculty Ensemble</strong><br><span style='padding-left:1rem'>Ecco l'aurora con l'aurata fronte · Giovanni Gabrieli</span><br><span style='padding-left:1rem'>Corcovado (Quiet Nights of Quiet Stars) · Antonio Carlos Jobim</span><br><span style='padding-left:1rem'>Suite from <em>Dune</em> · Hans Zimmer</span><br><span style='padding-left:1rem'><em>Saxes in Space</em> · Steve Amann</span></div></div>",
+        "detail": "<div style='margin-top:0.5rem'><div class='event-notes-lbl'>Program</div><div style='margin-top:0.4rem;line-height:1.6'><strong>Castorea Quartet</strong><br><span style='padding-left:1rem'>Mario Galaxy</span><br><br><strong>M120 Project</strong><br><span style='padding-left:1rem'>Ry\u016bky\u016ban Fantasy \u00b7 Yasuhide It\u014d</span><br><span style='padding-left:1rem'>Schoolyard Suite, III. Hide and Seek \u00b7 Gary Lindsay</span><br><br><strong>Faculty Ensemble</strong><br><span style='padding-left:1rem'>Ecco l'aurora con l'aurata fronte \u00b7 Giovanni Gabrieli</span><br><span style='padding-left:1rem'>Corcovado (Quiet Nights of Quiet Stars) \u00b7 Antonio Carlos Jobim</span><br><span style='padding-left:1rem'>Suite from <em>Dune</em> \u00b7 Hans Zimmer</span><br><span style='padding-left:1rem'><em>Saxes in Space</em> \u00b7 Steve Amann</span></div></div>",
         "assignments": [
           {
             "person": "michelle",
@@ -557,7 +557,7 @@
       {
         "time": "8:45 PM",
         "activity": "Walk to Hatter Hall",
-        "location": "Presser Hall → Hatter Hall",
+        "location": "Presser Hall \u2192 Hatter Hall",
         "mapUrl": "",
         "notes": []
       },
@@ -573,23 +573,23 @@
           {
             "person": "michelle",
             "role": "duty",
-            "detail": "Floor Meeting Leader — Floor 1"
+            "detail": "Floor Meeting Leader \u2014 Floor 1"
           },
           {
             "person": "matt",
             "role": "duty",
-            "detail": "Floor Meeting Leader — Floor 2"
+            "detail": "Floor Meeting Leader \u2014 Floor 2"
           },
           {
             "person": "steve",
             "role": "duty",
-            "detail": "Floor Meeting Leader — Floor 3"
+            "detail": "Floor Meeting Leader \u2014 Floor 3"
           }
         ]
       },
       {
         "time": "10:00 PM",
-        "activity": "🛌 Lights Out",
+        "activity": "\ud83d\udecc Lights Out",
         "location": "Hatter Hall",
         "mapUrl": "",
         "notes": [],
@@ -623,12 +623,12 @@
   },
   {
     "date": "2026-06-23",
-    "themeTitle": "🌌 Deep Space",
+    "themeTitle": "\ud83c\udf0c Deep Space",
     "themeDescription": "Dress like the night sky. Dark colors: black, navy, deep purple, midnight blue. Bonus points for anything with stars, planets, or glow-in-the-dark.",
     "activities": [
       {
         "time": "7:15 AM",
-        "activity": "⏰ Wake up; prepare for the day.",
+        "activity": "\u23f0 Wake up; prepare for the day.",
         "location": "",
         "mapUrl": "",
         "notes": []
@@ -692,10 +692,10 @@
             ],
             "mapUrl": "/assets/images/hatter-floor-1-rally.png",
             "rallyPoints": {
-              "A": "Floor 1 — W Study Room",
-              "B": "Floor 1 — Laundry Room",
-              "C": "Floor 1 — Lobby, NW (near windows)",
-              "D": "Floor 1 — Lobby, SE (near desk)"
+              "A": "Floor 1 \u2014 W Study Room",
+              "B": "Floor 1 \u2014 Laundry Room",
+              "C": "Floor 1 \u2014 Lobby, NW (near windows)",
+              "D": "Floor 1 \u2014 Lobby, SE (near desk)"
             }
           },
           {
@@ -708,17 +708,17 @@
             ],
             "mapUrl": "/assets/images/hatter-floor-2-rally.png",
             "rallyPoints": {
-              "E": "Floor 2 — W Study Room",
-              "F": "Floor 2 — Laundry Room",
-              "G": "Floor 2 — Lobby, NW",
-              "H": "Floor 2 — Lobby, SE"
+              "E": "Floor 2 \u2014 W Study Room",
+              "F": "Floor 2 \u2014 Laundry Room",
+              "G": "Floor 2 \u2014 Lobby, NW",
+              "H": "Floor 2 \u2014 Lobby, SE"
             }
           }
         ]
       },
       {
         "time": "8:30 - 9:00 AM",
-        "activity": "🥞 Breakfast",
+        "activity": "\ud83e\udd5e Breakfast",
         "location": "CUB",
         "mapUrl": "",
         "notes": []
@@ -726,7 +726,7 @@
       {
         "time": "9:05 - 9:40 AM",
         "activity": "Fundamentals Class",
-        "location": "Various Rooms <a href=\"/rooms.html#fundamentals-classes\" style='display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px'>↗ Guide</a>",
+        "location": "Various Rooms <a href=\"/rooms.html#fundamentals-classes\" style='display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px'>\u2197 Guide</a>",
         "mapUrl": "",
         "fundamentalsClass": true,
         "notes": [
@@ -783,8 +783,8 @@
         "location": "",
         "mapUrl": "",
         "notes": [
-          "Symphonic Saxophones (10th-12+ grade): Large Ensemble — Feasel Hall",
-          "Concert Saxophones (7th-9th grade): Chamber Ensembles — Various Rooms <a href=\"/rooms.html#concert-chamber-ensembles\" style='display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px'>↗ Guide</a>"
+          "Symphonic Saxophones (10th-12+ grade): Large Ensemble \u2014 Feasel Hall",
+          "Concert Saxophones (7th-9th grade): Chamber Ensembles \u2014 Various Rooms <a href=\"/rooms.html#concert-chamber-ensembles\" style='display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px'>\u2197 Guide</a>"
         ],
         "ensembleMap": {
           "symphonic": "large",
@@ -856,7 +856,7 @@
       },
       {
         "time": "11:50 AM - 12:20 PM",
-        "activity": "🥪 Lunch",
+        "activity": "\ud83e\udd6a Lunch",
         "location": "CUB",
         "mapUrl": "",
         "notes": []
@@ -939,8 +939,8 @@
         "location": "",
         "mapUrl": "",
         "notes": [
-          "Symphonic Saxophones: Chamber Ensembles — Various Rooms <a href=\"/rooms.html#symphonic-chamber-ensembles\" style='display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px'>↗ Guide</a>",
-          "Concert Saxophones: Large Ensemble — Tinsley Hall (inside Presser Hall)"
+          "Symphonic Saxophones: Chamber Ensembles \u2014 Various Rooms <a href=\"/rooms.html#symphonic-chamber-ensembles\" style='display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px'>\u2197 Guide</a>",
+          "Concert Saxophones: Large Ensemble \u2014 Tinsley Hall (inside Presser Hall)"
         ],
         "ensembleMap": {
           "symphonic": "chamber",
@@ -1025,7 +1025,7 @@
       {
         "time": "4:20 - 5:20 PM",
         "activity": "Jazz Classes",
-        "location": "Various Rooms <a href=\"/rooms.html#jazz-classes\" style='display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px'>↗ Guide</a>",
+        "location": "Various Rooms <a href=\"/rooms.html#jazz-classes\" style='display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px'>\u2197 Guide</a>",
         "mapUrl": "",
         "notes": [],
         "jazzClasses": true,
@@ -1085,7 +1085,7 @@
       },
       {
         "time": "5:25 - 6:25 PM",
-        "activity": "🚀 Escape Room: Deep Space",
+        "activity": "\ud83d\ude80 Escape Room: Deep Space",
         "location": "Various Rooms",
         "mapUrl": "",
         "notes": [],
@@ -1093,52 +1093,52 @@
           {
             "person": "marc",
             "role": "duty",
-            "detail": "Room Supervisor — Presser 112"
+            "detail": "Room Supervisor \u2014 Presser 112"
           },
           {
             "person": "bill",
             "role": "duty",
-            "detail": "Room Supervisor — Presser 113"
+            "detail": "Room Supervisor \u2014 Presser 113"
           },
           {
             "person": "matt",
             "role": "duty",
-            "detail": "Room Supervisor — Presser 120"
+            "detail": "Room Supervisor \u2014 Presser 120"
           },
           {
             "person": "kaia",
             "role": "duty",
-            "detail": "Room Supervisor — Presser 128"
+            "detail": "Room Supervisor \u2014 Presser 128"
           },
           {
             "person": "sage",
             "role": "duty",
-            "detail": "Room Supervisor — Presser 202"
+            "detail": "Room Supervisor \u2014 Presser 202"
           },
           {
             "person": "david",
             "role": "duty",
-            "detail": "Room Supervisor — Presser 204A"
+            "detail": "Room Supervisor \u2014 Presser 204A"
           },
           {
             "person": "kate",
             "role": "duty",
-            "detail": "Room Supervisor — Presser 349"
+            "detail": "Room Supervisor \u2014 Presser 349"
           },
           {
             "person": "steve",
             "role": "duty",
-            "detail": "Room Supervisor — Presser 352"
+            "detail": "Room Supervisor \u2014 Presser 352"
           },
           {
             "person": "sara",
             "role": "duty",
-            "detail": "Room Supervisor — Tinsley Hall"
+            "detail": "Room Supervisor \u2014 Tinsley Hall"
           },
           {
             "person": "andrew",
             "role": "duty",
-            "detail": "Room Supervisor — Faculty Lounge (210)"
+            "detail": "Room Supervisor \u2014 Faculty Lounge (210)"
           },
           {
             "person": "kristen",
@@ -1155,7 +1155,7 @@
       },
       {
         "time": "6:30 - 7:00 PM",
-        "activity": "🍽️ Dinner",
+        "activity": "\ud83c\udf7d\ufe0f Dinner",
         "location": "CUB",
         "mapUrl": "",
         "notes": []
@@ -1177,12 +1177,12 @@
       },
       {
         "time": "7:55 - 9:33 PM",
-        "activity": "📽️ Movie Night",
+        "activity": "\ud83d\udcfd\ufe0f Movie Night",
         "location": "Lynn Business Center (LBC) Auditorium",
         "mapUrl": "https://maps.app.goo.gl/EWgwrXaMnaUfqTv66",
         "notes": [
           "Students will travel to LBC together.",
-          "No food delivery. There will be 🍿 snacks."
+          "No food delivery. There will be \ud83c\udf7f snacks."
         ],
         "assignments": [
           {
@@ -1199,7 +1199,7 @@
       },
       {
         "time": "10:00 PM",
-        "activity": "🛌 Lights Out",
+        "activity": "\ud83d\udecc Lights Out",
         "location": "Hatter Hall",
         "mapUrl": "",
         "notes": [],
@@ -1225,12 +1225,12 @@
   },
   {
     "date": "2026-06-24",
-    "themeTitle": "👽 First Contact",
+    "themeTitle": "\ud83d\udc7d First Contact",
     "themeDescription": "We are not alone. Wear something with an alien on it: E.T., Grogu, Groot, Stitch, or any others. No alien merch? Dress in green, silver, or metallic and blend right in.",
     "activities": [
       {
         "time": "7:15 AM",
-        "activity": "⏰ Wake up; prepare for the day.",
+        "activity": "\u23f0 Wake up; prepare for the day.",
         "location": "",
         "mapUrl": "",
         "notes": []
@@ -1294,10 +1294,10 @@
             ],
             "mapUrl": "/assets/images/hatter-floor-1-rally.png",
             "rallyPoints": {
-              "A": "Floor 1 — W Study Room",
-              "B": "Floor 1 — Laundry Room",
-              "C": "Floor 1 — Lobby, NW (near windows)",
-              "D": "Floor 1 — Lobby, SE (near desk)"
+              "A": "Floor 1 \u2014 W Study Room",
+              "B": "Floor 1 \u2014 Laundry Room",
+              "C": "Floor 1 \u2014 Lobby, NW (near windows)",
+              "D": "Floor 1 \u2014 Lobby, SE (near desk)"
             }
           },
           {
@@ -1310,17 +1310,17 @@
             ],
             "mapUrl": "/assets/images/hatter-floor-2-rally.png",
             "rallyPoints": {
-              "E": "Floor 2 — W Study Room",
-              "F": "Floor 2 — Laundry Room",
-              "G": "Floor 2 — Lobby, NW",
-              "H": "Floor 2 — Lobby, SE"
+              "E": "Floor 2 \u2014 W Study Room",
+              "F": "Floor 2 \u2014 Laundry Room",
+              "G": "Floor 2 \u2014 Lobby, NW",
+              "H": "Floor 2 \u2014 Lobby, SE"
             }
           }
         ]
       },
       {
         "time": "8:30 - 9:00 AM",
-        "activity": "🥞 Breakfast",
+        "activity": "\ud83e\udd5e Breakfast",
         "location": "CUB",
         "mapUrl": "",
         "notes": []
@@ -1328,7 +1328,7 @@
       {
         "time": "9:05 - 9:40 AM",
         "activity": "Fundamentals Class",
-        "location": "Various Rooms <a href=\"/rooms.html#fundamentals-classes\" style='display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px'>↗ Guide</a>",
+        "location": "Various Rooms <a href=\"/rooms.html#fundamentals-classes\" style='display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px'>\u2197 Guide</a>",
         "mapUrl": "",
         "fundamentalsClass": true,
         "notes": [],
@@ -1413,10 +1413,16 @@
             "group": "Amann Concert Quartet"
           },
           {
-            "person": "bill",
+            "person": "sara",
             "role": "coach",
             "room": "Tinsley Hall",
-            "group": "Guthrie Concert Quartet"
+            "group": "Pyburn / Leavitt Concert Quartet (was Guthrie)"
+          },
+          {
+            "person": "kaia",
+            "role": "coach",
+            "room": "Tinsley Hall",
+            "group": "Pyburn / Leavitt Concert Quartet (was Guthrie)"
           },
           {
             "person": "sage",
@@ -1442,11 +1448,6 @@
             "detail": "Presser Floor 1"
           },
           {
-            "person": "kaia",
-            "role": "monitor",
-            "detail": "Presser Floor 2"
-          },
-          {
             "person": "kate",
             "role": "monitor",
             "detail": "Presser Floor 3"
@@ -1455,7 +1456,7 @@
       },
       {
         "time": "11:50 AM - 12:20 PM",
-        "activity": "🥪 Lunch",
+        "activity": "\ud83e\udd6a Lunch",
         "location": "CUB",
         "mapUrl": "",
         "notes": []
@@ -1473,11 +1474,6 @@
           "concert": "large"
         },
         "assignments": [
-          {
-            "person": "bill",
-            "role": "conduct",
-            "ensemble": "concert"
-          },
           {
             "person": "marc",
             "role": "conduct",
@@ -1538,8 +1534,8 @@
           },
           {
             "person": "sage",
-            "role": "monitor",
-            "detail": "Presser Floor 2"
+            "role": "duty",
+            "detail": "Masterclass chair setup \u2014 Feasel Hall"
           },
           {
             "person": "david",
@@ -1559,11 +1555,6 @@
             "person": "marc",
             "role": "duty",
             "detail": "Tour d'Cosmos Set-Up"
-          },
-          {
-            "person": "bill",
-            "role": "duty",
-            "detail": "Tinsley Concert Set-Up (Aldana), then Command Center Set-Up (Hollis Atrium)"
           },
           {
             "person": "kristen",
@@ -1603,7 +1594,7 @@
           {
             "person": "sage",
             "role": "duty",
-            "detail": "Tour d'Cosmos Set-Up"
+            "detail": "Tinsley Concert Set-Up (with Kaia), then Tour d'Cosmos Set-Up"
           },
           {
             "person": "kate",
@@ -1626,21 +1617,21 @@
             "detail": "Station Walk-through Verification"
           },
           {
-            "person": "bill",
+            "person": "kaia",
             "role": "duty",
             "detail": "Station Walk-through Verification (after Tinsley setup)"
           },
           {
-            "person": "kaia",
+            "person": "michelle",
             "role": "duty",
-            "detail": "Station Walk-through Verification (after Tinsley setup)"
+            "detail": "Command Center Set-Up (Hollis Atrium)"
           }
         ]
       },
       {
         "time": "3:35 - 4:50 PM",
         "activity": "Jazz Classes",
-        "location": "Various Rooms <a href=\"/rooms.html#jazz-classes\" style='display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px'>↗ Guide</a>",
+        "location": "Various Rooms <a href=\"/rooms.html#jazz-classes\" style='display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px'>\u2197 Guide</a>",
         "mapUrl": "",
         "notes": [],
         "jazzClasses": true,
@@ -1700,63 +1691,63 @@
       },
       {
         "time": "4:55 - 6:25 PM",
-        "activity": "🏆 Tour d'Cosmos Competitions",
+        "activity": "\ud83c\udfc6 Tour d'Cosmos Competitions",
         "location": "School of Music",
         "mapUrl": "",
         "notes": [
-          "Tour d'Cosmos Skills Challenge — skill stations around School of Music",
-          "Tour d'Cosmos Trivia Challenge — knowledge game, Feasel"
+          "Tour d'Cosmos Skills Challenge \u2014 skill stations around School of Music",
+          "Tour d'Cosmos Trivia Challenge \u2014 knowledge game, Feasel"
         ],
         "assignments": [
           {
             "person": "marc",
             "role": "duty",
-            "detail": "Station 1 — Sight-Reading (Presser 112)"
+            "detail": "Station 1 \u2014 Sight-Reading (Presser 112)"
           },
           {
             "person": "steve",
             "role": "duty",
-            "detail": "Station 2 — Scales (Presser 113)"
+            "detail": "Station 2 \u2014 Scales (Presser 113)"
           },
           {
             "person": "david",
             "role": "duty",
-            "detail": "Station 3 — Altissimo (Presser 204A)"
+            "detail": "Station 3 \u2014 Altissimo (Presser 204A)"
           },
           {
             "person": "andrew",
             "role": "duty",
-            "detail": "Station 4 — Ear Training (Presser 349)"
+            "detail": "Station 4 \u2014 Ear Training (Presser 349)"
           },
           {
             "person": "kristen",
             "role": "duty",
-            "detail": "Station 5 — Trills (Faculty Lounge)"
+            "detail": "Station 5 \u2014 Trills (Faculty Lounge)"
           },
           {
             "person": "sara",
             "role": "duty",
-            "detail": "Station 6 — Articulation (Presser 202)"
+            "detail": "Station 6 \u2014 Articulation (Presser 202)"
           },
           {
             "person": "matt",
             "role": "duty",
-            "detail": "Station 7 — Transposition (Presser 352)"
+            "detail": "Station 7 \u2014 Transposition (Presser 352)"
           },
           {
             "person": "kate",
             "role": "duty",
-            "detail": "Station 8 — Rhythm Reading (Presser 120)"
+            "detail": "Station 8 \u2014 Rhythm Reading (Presser 120)"
           },
           {
-            "person": "bill",
+            "person": "michelle",
             "role": "duty",
             "detail": "Command Center (Hollis Atrium)"
           },
           {
             "person": "chandler",
             "role": "duty",
-            "detail": "Kahoot Host — Feasel Hall"
+            "detail": "Kahoot Host \u2014 Feasel Hall"
           },
           {
             "person": "sage",
@@ -1767,17 +1758,12 @@
             "person": "kaia",
             "role": "duty",
             "detail": "Organizing students & distributing scorecards"
-          },
-          {
-            "person": "michelle",
-            "role": "duty",
-            "detail": "Organizing students & distributing scorecards"
           }
         ]
       },
       {
         "time": "6:30 - 7:00 PM",
-        "activity": "🍽️ Dinner",
+        "activity": "\ud83c\udf7d\ufe0f Dinner",
         "location": "CUB",
         "mapUrl": "",
         "notes": []
@@ -1816,7 +1802,7 @@
       },
       {
         "time": "10:00 PM",
-        "activity": "🛌 Lights Out",
+        "activity": "\ud83d\udecc Lights Out",
         "location": "Hatter Hall",
         "mapUrl": "",
         "notes": [],
@@ -1850,12 +1836,12 @@
   },
   {
     "date": "2026-06-25",
-    "themeTitle": "🐱 Purrs-day Thursday",
+    "themeTitle": "\ud83d\udc31 Purrs-day Thursday",
     "themeDescription": "Wear something cat: ears, a tail, a cat shirt, cat socks. Any cat counts. Space cats welcome.",
     "activities": [
       {
         "time": "7:15 AM",
-        "activity": "⏰ Wake up; prepare for the day.",
+        "activity": "\u23f0 Wake up; prepare for the day.",
         "location": "",
         "mapUrl": "",
         "notes": []
@@ -1919,10 +1905,10 @@
             ],
             "mapUrl": "/assets/images/hatter-floor-1-rally.png",
             "rallyPoints": {
-              "A": "Floor 1 — W Study Room",
-              "B": "Floor 1 — Laundry Room",
-              "C": "Floor 1 — Lobby, NW (near windows)",
-              "D": "Floor 1 — Lobby, SE (near desk)"
+              "A": "Floor 1 \u2014 W Study Room",
+              "B": "Floor 1 \u2014 Laundry Room",
+              "C": "Floor 1 \u2014 Lobby, NW (near windows)",
+              "D": "Floor 1 \u2014 Lobby, SE (near desk)"
             }
           },
           {
@@ -1935,17 +1921,17 @@
             ],
             "mapUrl": "/assets/images/hatter-floor-2-rally.png",
             "rallyPoints": {
-              "E": "Floor 2 — W Study Room",
-              "F": "Floor 2 — Laundry Room",
-              "G": "Floor 2 — Lobby, NW",
-              "H": "Floor 2 — Lobby, SE"
+              "E": "Floor 2 \u2014 W Study Room",
+              "F": "Floor 2 \u2014 Laundry Room",
+              "G": "Floor 2 \u2014 Lobby, NW",
+              "H": "Floor 2 \u2014 Lobby, SE"
             }
           }
         ]
       },
       {
         "time": "8:30 - 9:00 AM",
-        "activity": "🥞 Breakfast",
+        "activity": "\ud83e\udd5e Breakfast",
         "location": "CUB",
         "mapUrl": "",
         "notes": []
@@ -1953,7 +1939,7 @@
       {
         "time": "9:05 - 9:40 AM",
         "activity": "Fundamentals Class",
-        "location": "Various Rooms <a href=\"/rooms.html#fundamentals-classes\" style='display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px'>↗ Guide</a>",
+        "location": "Various Rooms <a href=\"/rooms.html#fundamentals-classes\" style='display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px'>\u2197 Guide</a>",
         "mapUrl": "",
         "fundamentalsClass": true,
         "notes": [],
@@ -2080,7 +2066,7 @@
       },
       {
         "time": "11:50 AM - 12:20 PM",
-        "activity": "🥪 Lunch",
+        "activity": "\ud83e\udd6a Lunch",
         "location": "CUB",
         "mapUrl": "",
         "notes": []
@@ -2091,29 +2077,29 @@
         "location": "Feasel Hall",
         "mapUrl": "https://maps.app.goo.gl/5mDXBVoTABQhHF5L6",
         "notes": [
-          "Yamaha Instrument Try-Out also available in Tinsley Hall (inside Presser Hall) — groups rotate every 15 min."
+          "Yamaha Instrument Try-Out also available in Tinsley Hall (inside Presser Hall) \u2014 groups rotate every 15 min."
         ],
         "assignments": [
           {
             "person": "sage",
             "role": "duty",
-            "detail": "Yamaha Instrument Try-Out — Tinsley Hall"
+            "detail": "Yamaha Instrument Try-Out \u2014 Tinsley Hall"
           },
           {
             "person": "david",
             "role": "duty",
-            "detail": "Yamaha Instrument Try-Out — Tinsley Hall"
+            "detail": "Yamaha Instrument Try-Out \u2014 Tinsley Hall"
           },
           {
             "person": "steve",
             "role": "duty",
-            "detail": "Yamaha Instrument Try-Out — Tinsley Hall"
+            "detail": "Yamaha Instrument Try-Out \u2014 Tinsley Hall"
           }
         ]
       },
       {
         "time": "2:00 - 2:30 PM",
-        "activity": "Survey Says… Game",
+        "activity": "Survey Says\u2026 Game",
         "location": "Feasel Hall",
         "mapUrl": "https://maps.app.goo.gl/5mDXBVoTABQhHF5L6",
         "notes": []
@@ -2209,7 +2195,7 @@
       {
         "time": "4:30 - 5:30 PM",
         "activity": "Jazz Classes",
-        "location": "Various Rooms <a href=\"/rooms.html#jazz-classes\" style='display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px'>↗ Guide</a>",
+        "location": "Various Rooms <a href=\"/rooms.html#jazz-classes\" style='display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px'>\u2197 Guide</a>",
         "mapUrl": "",
         "notes": [
           "Change into your camp shirt after class for the group photo."
@@ -2291,14 +2277,14 @@
       },
       {
         "time": "5:40 - 5:50 PM",
-        "activity": "📸 Workshop Photo",
+        "activity": "\ud83d\udcf8 Workshop Photo",
         "location": "Sampson Hall steps",
         "mapUrl": "https://maps.app.goo.gl/xjX7xrKMzvb5211VA",
         "notes": []
       },
       {
         "time": "6:00 - 6:45 PM",
-        "activity": "🍕 Dinner: Pizza Party",
+        "activity": "\ud83c\udf55 Dinner: Pizza Party",
         "location": "Palm Court",
         "mapUrl": "https://maps.app.goo.gl/onJmxu1JX1MWwk4k8",
         "notes": [
@@ -2357,7 +2343,7 @@
       },
       {
         "time": "10:00 PM",
-        "activity": "🛌 Lights Out",
+        "activity": "\ud83d\udecc Lights Out",
         "location": "Hatter Hall",
         "mapUrl": "",
         "notes": [],
@@ -2391,12 +2377,12 @@
   },
   {
     "date": "2026-06-26",
-    "themeTitle": "🌊 Splashdown!",
+    "themeTitle": "\ud83c\udf0a Splashdown!",
     "themeDescription": "You made it back. Wear your best beach-vibe outfit: surf shirts, tropical prints, flip flops. No bathing suits. Or, go with the colors of the ocean: deep blue, sky blue, teal, or turquoise.",
     "activities": [
       {
         "time": "7:15 AM",
-        "activity": "⏰ Wake up; prepare for the day.",
+        "activity": "\u23f0 Wake up; prepare for the day.",
         "location": "",
         "mapUrl": "",
         "notes": []
@@ -2460,10 +2446,10 @@
             ],
             "mapUrl": "/assets/images/hatter-floor-1-rally.png",
             "rallyPoints": {
-              "A": "Floor 1 — W Study Room",
-              "B": "Floor 1 — Laundry Room",
-              "C": "Floor 1 — Lobby, NW (near windows)",
-              "D": "Floor 1 — Lobby, SE (near desk)"
+              "A": "Floor 1 \u2014 W Study Room",
+              "B": "Floor 1 \u2014 Laundry Room",
+              "C": "Floor 1 \u2014 Lobby, NW (near windows)",
+              "D": "Floor 1 \u2014 Lobby, SE (near desk)"
             }
           },
           {
@@ -2476,17 +2462,17 @@
             ],
             "mapUrl": "/assets/images/hatter-floor-2-rally.png",
             "rallyPoints": {
-              "E": "Floor 2 — W Study Room",
-              "F": "Floor 2 — Laundry Room",
-              "G": "Floor 2 — Lobby, NW",
-              "H": "Floor 2 — Lobby, SE"
+              "E": "Floor 2 \u2014 W Study Room",
+              "F": "Floor 2 \u2014 Laundry Room",
+              "G": "Floor 2 \u2014 Lobby, NW",
+              "H": "Floor 2 \u2014 Lobby, SE"
             }
           }
         ]
       },
       {
         "time": "8:30 - 9:00 AM",
-        "activity": "🥞 Breakfast",
+        "activity": "\ud83e\udd5e Breakfast",
         "location": "CUB",
         "mapUrl": "",
         "notes": []
@@ -2494,7 +2480,7 @@
       {
         "time": "9:05 - 9:40 AM",
         "activity": "Fundamentals Class",
-        "location": "Various Rooms <a href=\"/rooms.html#fundamentals-classes\" style='display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px'>↗ Guide</a>",
+        "location": "Various Rooms <a href=\"/rooms.html#fundamentals-classes\" style='display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px'>\u2197 Guide</a>",
         "mapUrl": "",
         "fundamentalsClass": true,
         "notes": [],
@@ -2621,7 +2607,7 @@
       },
       {
         "time": "11:50 AM - 12:20 PM",
-        "activity": "🥪 Lunch",
+        "activity": "\ud83e\udd6a Lunch",
         "location": "CUB",
         "mapUrl": "",
         "notes": []
@@ -2717,7 +2703,7 @@
       {
         "time": "2:30 - 3:30 PM",
         "activity": "Jazz Classes",
-        "location": "Various Rooms <a href=\"/rooms.html#jazz-classes\" style='display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px'>↗ Guide</a>",
+        "location": "Various Rooms <a href=\"/rooms.html#jazz-classes\" style='display:inline-block;padding:2px 9px;background:var(--forest-mid);color:#fff;border-radius:var(--r-full);text-decoration:none;font-size:0.8em;margin-left:4px'>\u2197 Guide</a>",
         "mapUrl": "",
         "notes": [],
         "jazzClasses": true,
@@ -2856,7 +2842,7 @@
       },
       {
         "time": "6:30 - 7:00 PM",
-        "activity": "🍽️ Dinner",
+        "activity": "\ud83c\udf7d\ufe0f Dinner",
         "location": "CUB",
         "mapUrl": "",
         "notes": []
@@ -2881,7 +2867,7 @@
       },
       {
         "time": "10:00 PM",
-        "activity": "🛌 Lights Out",
+        "activity": "\ud83d\udecc Lights Out",
         "location": "Hatter Hall",
         "mapUrl": "",
         "notes": [],
@@ -2911,12 +2897,12 @@
   },
   {
     "date": "2026-06-27",
-    "themeTitle": "🎓 School Spirit Day",
+    "themeTitle": "\ud83c\udf93 School Spirit Day",
     "themeDescription": "Wear your school colors or anything that shows off where you're from.",
     "activities": [
       {
         "time": "7:00 AM",
-        "activity": "⏰ Early wake up; students complete packing for move out.",
+        "activity": "\u23f0 Early wake up; students complete packing for move out.",
         "location": "Hatter Hall",
         "mapUrl": "",
         "notes": []
@@ -2980,10 +2966,10 @@
             ],
             "mapUrl": "/assets/images/hatter-floor-1-rally.png",
             "rallyPoints": {
-              "A": "Floor 1 — W Study Room",
-              "B": "Floor 1 — Laundry Room",
-              "C": "Floor 1 — Lobby, NW (near windows)",
-              "D": "Floor 1 — Lobby, SE (near desk)"
+              "A": "Floor 1 \u2014 W Study Room",
+              "B": "Floor 1 \u2014 Laundry Room",
+              "C": "Floor 1 \u2014 Lobby, NW (near windows)",
+              "D": "Floor 1 \u2014 Lobby, SE (near desk)"
             }
           },
           {
@@ -2996,17 +2982,17 @@
             ],
             "mapUrl": "/assets/images/hatter-floor-2-rally.png",
             "rallyPoints": {
-              "E": "Floor 2 — W Study Room",
-              "F": "Floor 2 — Laundry Room",
-              "G": "Floor 2 — Lobby, NW",
-              "H": "Floor 2 — Lobby, SE"
+              "E": "Floor 2 \u2014 W Study Room",
+              "F": "Floor 2 \u2014 Laundry Room",
+              "G": "Floor 2 \u2014 Lobby, NW",
+              "H": "Floor 2 \u2014 Lobby, SE"
             }
           }
         ]
       },
       {
         "time": "7:30 - 8:00 AM",
-        "activity": "🥞 Breakfast",
+        "activity": "\ud83e\udd5e Breakfast",
         "location": "CUB",
         "mapUrl": "",
         "notes": []
@@ -3076,7 +3062,7 @@
       {
         "time": "10:45 - 11:00 AM",
         "activity": "Gather; escorted walk to Lee Chapel",
-        "location": "Hatter Hall → Lee Chapel",
+        "location": "Hatter Hall \u2192 Lee Chapel",
         "mapUrl": "",
         "notes": [
           "Parents will go to Lee Chapel separately."
